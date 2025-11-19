@@ -1,0 +1,22 @@
+
+
+
+
+
+
+
+
+
+#Lut provenance
+
+yosys -qp 'read_aiger ~/Masterproef/multisynthesis/logicSynthesis/results/Aig/adder.postopt.aig; \
+           write_aiger -ascii ~/Masterproef/multisynthesis/logicSynthesis/results/Aig/adder.postopt.aag'
+
+~/Masterproef/multisynthesis/logicSynthesis/scripts/export_lut_provenance.sh \
+  --blif   ~/Masterproef/multisynthesis/logicSynthesis/results/Blif/adder.mapped.blif \
+  --aag    ~/Masterproef/multisynthesis/logicSynthesis/results/Aig/adder.postopt.aag \
+  --design adder
+
+
+
+

@@ -1,0 +1,145 @@
+{
+  "inputs": [
+    "a",
+    "b",
+    "c",
+    "d",
+    "e",
+    "f"
+  ],
+  "nodes": [
+    {
+      "id": "N10",
+      "type": "AND",
+      "inputs": [
+        {
+          "source_id": "N8",
+          "inverted": true
+        },
+        {
+          "source_id": "N9",
+          "inverted": true
+        }
+      ]
+    },
+    {
+      "id": "N11",
+      "type": "AND",
+      "inputs": [
+        {
+          "source_id": "c",
+          "inverted": false
+        },
+        {
+          "source_id": "e",
+          "inverted": false
+        }
+      ]
+    },
+    {
+      "id": "N12",
+      "type": "AND",
+      "inputs": [
+        {
+          "source_id": "N8",
+          "inverted": true
+        },
+        {
+          "source_id": "N11",
+          "inverted": true
+        }
+      ]
+    },
+    {
+      "id": "N13",
+      "type": "AND",
+      "inputs": [
+        {
+          "source_id": "N10",
+          "inverted": true
+        },
+        {
+          "source_id": "N12",
+          "inverted": true
+        }
+      ]
+    },
+    {
+      "id": "N14",
+      "type": "AND",
+      "inputs": [
+        {
+          "source_id": "f",
+          "inverted": true
+        },
+        {
+          "source_id": "N8",
+          "inverted": true
+        }
+      ]
+    },
+    {
+      "id": "N15",
+      "type": "AND",
+      "inputs": [
+        {
+          "source_id": "N13",
+          "inverted": false
+        },
+        {
+          "source_id": "N14",
+          "inverted": true
+        }
+      ]
+    },
+    {
+      "id": "N16",
+      "type": "AND",
+      "inputs": [
+        {
+          "source_id": "N13",
+          "inverted": true
+        },
+        {
+          "source_id": "N15",
+          "inverted": true
+        }
+      ]
+    },
+    {
+      "id": "N8",
+      "type": "AND",
+      "inputs": [
+        {
+          "source_id": "a",
+          "inverted": false
+        },
+        {
+          "source_id": "b",
+          "inverted": false
+        }
+      ]
+    },
+    {
+      "id": "N9",
+      "type": "AND",
+      "inputs": [
+        {
+          "source_id": "c",
+          "inverted": false
+        },
+        {
+          "source_id": "d",
+          "inverted": false
+        }
+      ]
+    }
+  ],
+  "outputs": [
+    {
+      "id": "out",
+      "source_id": "N16",
+      "inverted": true
+    }
+  ]
+}

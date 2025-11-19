@@ -1,0 +1,59 @@
+{
+  "inputs": [
+    "a",
+    "b",
+    "c",
+    "d"
+  ],
+  "nodes": [
+    {
+      "id": "N6",
+      "type": "AND",
+      "inputs": [
+        {
+          "source_id": "a",
+          "inverted": false
+        },
+        {
+          "source_id": "b",
+          "inverted": false
+        }
+      ]
+    },
+    {
+      "id": "N7",
+      "type": "AND",
+      "inputs": [
+        {
+          "source_id": "c",
+          "inverted": false
+        },
+        {
+          "source_id": "d",
+          "inverted": false
+        }
+      ]
+    },
+    {
+      "id": "N8",
+      "type": "AND",
+      "inputs": [
+        {
+          "source_id": "N6",
+          "inverted": false
+        },
+        {
+          "source_id": "N7",
+          "inverted": false
+        }
+      ]
+    }
+  ],
+  "outputs": [
+    {
+      "id": "out",
+      "source_id": "N8",
+      "inverted": false
+    }
+  ]
+}

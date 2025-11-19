@@ -1,0 +1,31 @@
+Dit is de Generale Readme
+
+
+######Sourcen van Yosys en VTR######
+
+# VTR / VPR
+export VTR_ROOT="$HOME/Masterproef/vtr-verilog-to-routing"
+export PATH="$VTR_ROOT/build/vpr:$PATH"
+
+# Sourcen 
+source ~/.bashrc
+
+# Versie checken
+which vpr && vpr --version
+which yosys && yosys -V
+
+
+########## Yosys Sourcen ######### 
+cian@MSI:~/Masterproef/multisynthesis/logicSynthesis/scripts$ export YOSYS_BIN=/usr/bin/yosys
+cian@MSI:~/Masterproef/multisynthesis/logicSynthesis/scripts$ source ~/.bashrc
+cian@MSI:~/Masterproef/multisynthesis/logicSynthesis/scripts$ "$YOSYS_BIN" -V
+
+
+
+command voor generale command run 
+
+K=6 \
+SRC_DIR="$HOME/Masterproef/_tmp_single" \
+"$HOME/Masterproef/multisynthesis/run_flow.sh"
+
+

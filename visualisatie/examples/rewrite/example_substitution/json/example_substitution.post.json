@@ -1,0 +1,49 @@
+{
+  "inputs": [
+    "a",
+    "b",
+    "c",
+    "d",
+    "e",
+    "f",
+    "g",
+    "h"
+  ],
+  "nodes": [
+    {
+      "id": "N10",
+      "type": "AND",
+      "inputs": [
+        {
+          "source_id": "a",
+          "inverted": false
+        },
+        {
+          "source_id": "b",
+          "inverted": false
+        }
+      ]
+    },
+    {
+      "id": "N11",
+      "type": "AND",
+      "inputs": [
+        {
+          "source_id": "c",
+          "inverted": true
+        },
+        {
+          "source_id": "N10",
+          "inverted": false
+        }
+      ]
+    }
+  ],
+  "outputs": [
+    {
+      "id": "out",
+      "source_id": "N11",
+      "inverted": false
+    }
+  ]
+}

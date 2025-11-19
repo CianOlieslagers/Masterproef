@@ -1,0 +1,199 @@
+{
+  "inputs": [
+    "pi0",
+    "pi1",
+    "pi2",
+    "pi3"
+  ],
+  "nodes": [
+    {
+      "id": "N10",
+      "type": "AND",
+      "inputs": [
+        {
+          "source_id": "pi0",
+          "inverted": false
+        },
+        {
+          "source_id": "pi2",
+          "inverted": true
+        }
+      ]
+    },
+    {
+      "id": "N11",
+      "type": "AND",
+      "inputs": [
+        {
+          "source_id": "N9",
+          "inverted": true
+        },
+        {
+          "source_id": "N10",
+          "inverted": true
+        }
+      ]
+    },
+    {
+      "id": "N12",
+      "type": "AND",
+      "inputs": [
+        {
+          "source_id": "pi1",
+          "inverted": true
+        },
+        {
+          "source_id": "pi3",
+          "inverted": false
+        }
+      ]
+    },
+    {
+      "id": "N13",
+      "type": "AND",
+      "inputs": [
+        {
+          "source_id": "pi1",
+          "inverted": false
+        },
+        {
+          "source_id": "pi3",
+          "inverted": true
+        }
+      ]
+    },
+    {
+      "id": "N14",
+      "type": "AND",
+      "inputs": [
+        {
+          "source_id": "N12",
+          "inverted": true
+        },
+        {
+          "source_id": "N13",
+          "inverted": true
+        }
+      ]
+    },
+    {
+      "id": "N15",
+      "type": "AND",
+      "inputs": [
+        {
+          "source_id": "N11",
+          "inverted": true
+        },
+        {
+          "source_id": "N14",
+          "inverted": false
+        }
+      ]
+    },
+    {
+      "id": "N16",
+      "type": "AND",
+      "inputs": [
+        {
+          "source_id": "N8",
+          "inverted": true
+        },
+        {
+          "source_id": "N15",
+          "inverted": true
+        }
+      ]
+    },
+    {
+      "id": "N17",
+      "type": "AND",
+      "inputs": [
+        {
+          "source_id": "N7",
+          "inverted": true
+        },
+        {
+          "source_id": "N15",
+          "inverted": false
+        }
+      ]
+    },
+    {
+      "id": "N18",
+      "type": "AND",
+      "inputs": [
+        {
+          "source_id": "N16",
+          "inverted": true
+        },
+        {
+          "source_id": "N17",
+          "inverted": true
+        }
+      ]
+    },
+    {
+      "id": "N6",
+      "type": "AND",
+      "inputs": [
+        {
+          "source_id": "pi0",
+          "inverted": false
+        },
+        {
+          "source_id": "pi1",
+          "inverted": false
+        }
+      ]
+    },
+    {
+      "id": "N7",
+      "type": "AND",
+      "inputs": [
+        {
+          "source_id": "pi2",
+          "inverted": false
+        },
+        {
+          "source_id": "pi3",
+          "inverted": false
+        }
+      ]
+    },
+    {
+      "id": "N8",
+      "type": "AND",
+      "inputs": [
+        {
+          "source_id": "N6",
+          "inverted": true
+        },
+        {
+          "source_id": "N7",
+          "inverted": true
+        }
+      ]
+    },
+    {
+      "id": "N9",
+      "type": "AND",
+      "inputs": [
+        {
+          "source_id": "pi0",
+          "inverted": true
+        },
+        {
+          "source_id": "pi2",
+          "inverted": false
+        }
+      ]
+    }
+  ],
+  "outputs": [
+    {
+      "id": "po0",
+      "source_id": "N18",
+      "inverted": true
+    }
+  ]
+}

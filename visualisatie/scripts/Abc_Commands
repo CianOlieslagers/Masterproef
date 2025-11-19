@@ -1,0 +1,12 @@
+#####Commandos##########
+
+
+# ABC commando strash #
+
+~/Masterproef/vtr-verilog-to-routing/abc/abc -c   "read example_rewrite.v; strash; write_dot example_rewrite.pre.dot"
+
+# ABC commando rewrite #
+
+~/Masterproef/vtr-verilog-to-routing/abc/abc -c   "read example_rewrite.v; strash; rewrite; write_dot example_rewrite.post.dot"
+
+

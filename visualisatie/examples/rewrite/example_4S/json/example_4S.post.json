@@ -1,0 +1,101 @@
+{
+  "inputs": [
+    "a",
+    "b",
+    "c",
+    "d"
+  ],
+  "nodes": [
+    {
+      "id": "N10",
+      "type": "AND",
+      "inputs": [
+        {
+          "source_id": "N7",
+          "inverted": false
+        },
+        {
+          "source_id": "N8",
+          "inverted": true
+        }
+      ]
+    },
+    {
+      "id": "N11",
+      "type": "AND",
+      "inputs": [
+        {
+          "source_id": "N9",
+          "inverted": true
+        },
+        {
+          "source_id": "N10",
+          "inverted": true
+        }
+      ]
+    },
+    {
+      "id": "N6",
+      "type": "AND",
+      "inputs": [
+        {
+          "source_id": "b",
+          "inverted": true
+        },
+        {
+          "source_id": "d",
+          "inverted": false
+        }
+      ]
+    },
+    {
+      "id": "N7",
+      "type": "AND",
+      "inputs": [
+        {
+          "source_id": "a",
+          "inverted": false
+        },
+        {
+          "source_id": "N6",
+          "inverted": true
+        }
+      ]
+    },
+    {
+      "id": "N8",
+      "type": "AND",
+      "inputs": [
+        {
+          "source_id": "b",
+          "inverted": true
+        },
+        {
+          "source_id": "c",
+          "inverted": false
+        }
+      ]
+    },
+    {
+      "id": "N9",
+      "type": "AND",
+      "inputs": [
+        {
+          "source_id": "N7",
+          "inverted": true
+        },
+        {
+          "source_id": "N8",
+          "inverted": false
+        }
+      ]
+    }
+  ],
+  "outputs": [
+    {
+      "id": "f",
+      "source_id": "N11",
+      "inverted": true
+    }
+  ]
+}

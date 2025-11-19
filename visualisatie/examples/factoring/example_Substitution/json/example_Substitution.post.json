@@ -1,0 +1,157 @@
+{
+  "inputs": [
+    "a",
+    "b",
+    "c",
+    "d",
+    "e",
+    "f",
+    "g",
+    "h"
+  ],
+  "nodes": [
+    {
+      "id": "N12",
+      "type": "AND",
+      "inputs": [
+        {
+          "source_id": "a",
+          "inverted": false
+        },
+        {
+          "source_id": "b",
+          "inverted": false
+        }
+      ]
+    },
+    {
+      "id": "N13",
+      "type": "AND",
+      "inputs": [
+        {
+          "source_id": "c",
+          "inverted": false
+        },
+        {
+          "source_id": "d",
+          "inverted": false
+        }
+      ]
+    },
+    {
+      "id": "N14",
+      "type": "AND",
+      "inputs": [
+        {
+          "source_id": "N12",
+          "inverted": true
+        },
+        {
+          "source_id": "N13",
+          "inverted": false
+        }
+      ]
+    },
+    {
+      "id": "N15",
+      "type": "AND",
+      "inputs": [
+        {
+          "source_id": "N12",
+          "inverted": false
+        },
+        {
+          "source_id": "N13",
+          "inverted": true
+        }
+      ]
+    },
+    {
+      "id": "N16",
+      "type": "AND",
+      "inputs": [
+        {
+          "source_id": "N14",
+          "inverted": true
+        },
+        {
+          "source_id": "N15",
+          "inverted": true
+        }
+      ]
+    },
+    {
+      "id": "N17",
+      "type": "AND",
+      "inputs": [
+        {
+          "source_id": "e",
+          "inverted": true
+        },
+        {
+          "source_id": "f",
+          "inverted": true
+        }
+      ]
+    },
+    {
+      "id": "N18",
+      "type": "AND",
+      "inputs": [
+        {
+          "source_id": "g",
+          "inverted": true
+        },
+        {
+          "source_id": "h",
+          "inverted": true
+        }
+      ]
+    },
+    {
+      "id": "N19",
+      "type": "AND",
+      "inputs": [
+        {
+          "source_id": "N17",
+          "inverted": true
+        },
+        {
+          "source_id": "N18",
+          "inverted": true
+        }
+      ]
+    },
+    {
+      "id": "N20",
+      "type": "AND",
+      "inputs": [
+        {
+          "source_id": "N16",
+          "inverted": true
+        },
+        {
+          "source_id": "N19",
+          "inverted": false
+        }
+      ]
+    }
+  ],
+  "outputs": [
+    {
+      "id": "out1",
+      "source_id": "out2",
+      "inverted": false
+    },
+    {
+      "id": "out2",
+      "source_id": "out3",
+      "inverted": false
+    },
+    {
+      "id": "out3",
+      "source_id": "N20",
+      "inverted": false
+    }
+  ]
+}

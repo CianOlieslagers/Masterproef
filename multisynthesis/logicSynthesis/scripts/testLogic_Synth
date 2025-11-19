@@ -1,0 +1,150 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+# --- Eenvoudige ABC logic-synth + K-LUT mapping ---
+# Gebruik:
+#   ./logic_synth.sh <input.{aig|aag|blif}> [--lut K] [--out-dir DIR] [--abc-bin PATH]
+
+# ===== Defaults =====
+MPROOT="${MPROOT:-$HOME/Masterproef/multisynthesis}"
+OUT_DIR="${OUT_DIR:-$MPROOT/logicSynthesis/results}"
+LOG_DIR="${LOG_DIR:-$MPROOT/logicSynthesis/logs}"
+K="${K:-6}"
+MODE="${MODE:-speed}"
+
+ABC_BIN="${ABC_BIN:-$HOME/Masterproef/vtr-verilog-to-routing/build/abc/abc}"
+
+# ===== Arg parsing (simpel) =====
+IN=""
+while [[ $# -gt 0 ]]; do
+  case "$1" in
+    --lut)       K="$2"; shift 2;;
+    --out-dir)   OUT_DIR="$(realpath -m "$2")"; shift 2;;
+    --abc-bin)   ABC_BIN="$2"; shift 2;;
+    --log-dir)   LOG_DIR="$(realpath -m "$2")"; shift 2;;
+    --mode)      MODE="$2"; shift 2;;
+    -h|--help)
+      echo "Gebruik: $0 <input.{aig|aag|blif}> [--lut K] [--out-dir DIR] [--abc-bin PATH]"
+      exit 0
+      ;;
+    *)
+      if [[ -z "${IN:-}" ]]; then
+        IN="$(realpath -m "$1")"; shift
+      else
+        echo "Onbekend argument: $1" >&2
+        exit 1
+      fi
+      ;;
+  esac
+done
+
+[[ -z "${IN:-}" ]]    && { echo "Fout: geen inputbestand opgegeven"; exit 1; }
+[[ ! -f "$IN" ]]      && { echo "Fout: bestand niet gevonden: $IN"; exit 1; }
+[[ ! -x "$ABC_BIN" ]] && { echo "Fout: ABC niet uitvoerbaar op: $ABC_BIN"; exit 1; }
+
+mkdir -p "$OUT_DIR/Aig" "$OUT_DIR/Blif" "$LOG_DIR"
+
+ext="${IN##*.}"
+base="$(basename "$IN")"       # bv. adder.pre.aag
+base="${base%.*}"              # adder.pre
+design="${base%.pre}"          # adder
+
+OUT_POSTOPT_AIG="$OUT_DIR/Aig/${design}.postopt.aig"
+OUT_POSTMAP_AIG="$OUT_DIR/Aig/${design}.postmap.aig"
+OUT_MAPPED_BLIF="$OUT_DIR/Blif/${design}.mapped.blif"
+LOG_FILE="$LOG_DIR/${design}.abc.log"
+
+# ===== Input lezen in ABC =====
+
+
+
+ext="${IN##*.}"
+base="$(basename "$IN")"
+base="${base%.*}"
+design="${base%.pre}"
+
+READ_CMD=""
+case "$ext" in
+  blif)
+    READ_CMD="read_blif \"$IN\";"
+    ;;
+  aig)
+    # binaire AIGER
+    READ_CMD="read_aiger \"$IN\";"
+    ;;
+  aag)
+    # ASCII AIGER
+    READ_CMD="read_aiger -a \"$IN\";"
+    ;;
+  *)
+    echo "Onbekende extensie: .$ext (verwacht .blif/.aig/.aag)" >&2
+    exit 1
+    ;;
+esac
+
+
+
+
+# ===== Mode-opties =====
+if [[ "$MODE" == "area" ]]; then
+  RW_OPTS="rewrite -z;"
+  IF_OPTS="-a"
+else
+  RW_OPTS="rewrite -lz;"
+  IF_OPTS=""
+fi
+
+# ===== ABC flow =====
+# 1) read_* + strash
+# 2) dch/dc2/rewrite/balance = combinatorische optimalisatie
+# 3) write_aiger postopt.aig  (pre-mapping)
+# 4) if -K K = LUT-mapping
+# 5) write_blif mapped.blif
+# 6) mapped.blif -> postmap.aig (na mapping)
+ABC_CMD="
+$READ_CMD
+strash;
+dch;
+dc2;
+$RW_OPTS
+balance;
+write_aiger -s \"$OUT_POSTOPT_AIG\";
+if -K $K $IF_OPTS;
+write_blif \"$OUT_MAPPED_BLIF\";
+read_blif \"$OUT_MAPPED_BLIF\";
+strash;
+write_aiger -s \"$OUT_POSTMAP_AIG\";
+"
+
+echo "Flow: $MODE | K=$K"
+echo "Input    : $IN"
+echo "OUT_DIR  : $OUT_DIR"
+echo "ABC_BIN  : $ABC_BIN"
+echo "Log-file : $LOG_FILE"
+echo
+echo "=== ABC command ==="
+echo "$ABC_CMD"
+echo "==================="
+echo
+
+# ===== ABC uitvoeren =====
+# Geen RUN_OUT/awk magie – gewoon loggen naar file en terminal.
+set +e
+"$ABC_BIN" -c "$ABC_CMD" 2>&1 | tee "$LOG_FILE"
+rc=$?
+set -e
+
+if [[ $rc -ne 0 ]]; then
+  echo "ABC faalde (rc=$rc). Zie log: $LOG_FILE" >&2
+  exit $rc
+fi
+
+# ===== Output-checks =====
+[[ -s "$OUT_POSTOPT_AIG" ]] || { echo "Ontbreekt of leeg: $OUT_POSTOPT_AIG" >&2; exit 1; }
+[[ -s "$OUT_MAPPED_BLIF"  ]] || { echo "Ontbreekt of leeg: $OUT_MAPPED_BLIF"  >&2; exit 1; }
+[[ -s "$OUT_POSTMAP_AIG"  ]] || { echo "Ontbreekt of leeg: $OUT_POSTMAP_AIG" >&2; exit 1; }
+
+echo
+echo "OK → $OUT_POSTOPT_AIG"
+echo "OK → $OUT_MAPPED_BLIF"
+echo "OK → $OUT_POSTMAP_AIG"

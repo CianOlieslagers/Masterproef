@@ -1,0 +1,14 @@
+{
+  "inputs": [
+    "a",
+    "b"
+  ],
+  "nodes": [],
+  "outputs": [
+    {
+      "id": "out",
+      "source_id": "a",
+      "inverted": false
+    }
+  ]
+}

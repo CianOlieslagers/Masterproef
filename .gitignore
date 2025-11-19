@@ -1,0 +1,60 @@
+########################
+# Externe tools/repos  #
+########################
+
+vtr-verilog-to-routing/
+multisynthesis/logicSynthesis/tools/mockturtle/
+
+########################
+# Benchmarks & build   #
+########################
+
+# Symlink en tijdelijke single-run folder
+_tmp_single/
+
+# Volledige benchmark-collecties (extern, downloadbaar)
+benchmarks/Benchmark/
+
+# Build/output uit jouw eigen flow
+benchmarks/build/
+
+########################
+# Multisynthesis flow  #
+########################
+
+# Elaboration output
+multisynthesis/elaboration/logs/
+multisynthesis/elaboration/results/
+
+# Logic synthesis output
+multisynthesis/logicSynthesis/logs/
+multisynthesis/logicSynthesis/results/
+
+# Place & Route output
+multisynthesis/placeAndRoute/logs/
+multisynthesis/placeAndRoute/results/
+
+# Geaggregeerde eindresultaten
+multisynthesis/results/
+
+# Topologymapping output
+multisynthesis/topologymapping/logs/
+multisynthesis/topologymapping/results/
+
+########################
+# Visualisatie         #
+########################
+
+# Logfiles van visualisatie
+visualisatie/logs/
+
+########################
+# Generieke rommel     #
+########################
+
+*.log
+*.tmp
+*.aig
+*.blif
+*.csv
+*.vcd
