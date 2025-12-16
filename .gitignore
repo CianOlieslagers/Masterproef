@@ -58,3 +58,9 @@ visualisatie/logs/
 *.blif
 *.csv
 *.vcd
+
+
+# Generated synthesis / routing results
+multisynthesis/**/results/
+*_routing/
+*.txt
