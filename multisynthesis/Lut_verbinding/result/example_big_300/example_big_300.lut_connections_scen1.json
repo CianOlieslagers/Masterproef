@@ -1,0 +1,2051 @@
+{
+  "design": "example_big_300",
+  "num_connections": 20,
+  "connections": [
+    {
+      "src": {
+        "block": "LUT_97",
+        "lut_name": "LUT_97",
+        "coords": {
+          "x": 37,
+          "y": 2
+        },
+        "aig": {
+          "found": true,
+          "lut_name": "LUT_97",
+          "lut_root": 97,
+          "leaves": [
+            6,
+            59,
+            72,
+            95
+          ],
+          "internal_nodes": [
+            89,
+            90,
+            91,
+            96
+          ],
+          "func_hex": "c382",
+          "node_functions": [
+            {
+              "node": 97,
+              "func_hex": "c382"
+            },
+            {
+              "node": 89,
+              "func_hex": "c0c0"
+            },
+            {
+              "node": 90,
+              "func_hex": "0303"
+            },
+            {
+              "node": 91,
+              "func_hex": "3c3c"
+            },
+            {
+              "node": 96,
+              "func_hex": "0055"
+            }
+          ]
+        },
+        "expr_root": "(a & ~b & ~c & ~d) | (a & b & c & ~d) | (~a & ~b & ~c & d) | (a & ~b & ~c & d) | (~a & b & c & d) | (a & b & c & d)"
+      },
+      "dst": {
+        "block": "LUT_101",
+        "lut_name": "LUT_101",
+        "coords": {
+          "x": 41,
+          "y": 4
+        },
+        "aig": {
+          "found": true,
+          "lut_name": "LUT_101",
+          "lut_root": 101,
+          "leaves": [
+            4,
+            61,
+            76,
+            97
+          ],
+          "internal_nodes": [
+            88,
+            98,
+            99,
+            100
+          ],
+          "func_hex": "a251",
+          "node_functions": [
+            {
+              "node": 101,
+              "func_hex": "a251"
+            },
+            {
+              "node": 88,
+              "func_hex": "0c0c"
+            },
+            {
+              "node": 98,
+              "func_hex": "5500"
+            },
+            {
+              "node": 99,
+              "func_hex": "00aa"
+            },
+            {
+              "node": 100,
+              "func_hex": "aa55"
+            }
+          ]
+        },
+        "expr_root": "(~a & ~b & ~c & ~d) | (~a & ~b & c & ~d) | (~a & b & c & ~d) | (a & ~b & ~c & d) | (a & ~b & c & d) | (a & b & c & d)"
+      },
+      "d_ab": 6,
+      "pitstops": []
+    },
+    {
+      "src": {
+        "block": "LUT_59",
+        "lut_name": "LUT_59",
+        "coords": {
+          "x": 41,
+          "y": 1
+        },
+        "aig": {
+          "found": true,
+          "lut_name": "LUT_59",
+          "lut_root": 59,
+          "leaves": [
+            1,
+            3,
+            4,
+            5
+          ],
+          "internal_nodes": [
+            8,
+            56,
+            57,
+            58
+          ],
+          "func_hex": "3c28",
+          "node_functions": [
+            {
+              "node": 59,
+              "func_hex": "3c28"
+            },
+            {
+              "node": 8,
+              "func_hex": "c0c0"
+            },
+            {
+              "node": 56,
+              "func_hex": "0055"
+            },
+            {
+              "node": 57,
+              "func_hex": "0303"
+            },
+            {
+              "node": 58,
+              "func_hex": "3c3c"
+            }
+          ]
+        },
+        "expr_root": "(a & b & ~c & ~d) | (a & ~b & c & ~d) | (~a & b & ~c & d) | (a & b & ~c & d) | (~a & ~b & c & d) | (a & ~b & c & d)"
+      },
+      "dst": {
+        "block": "LUT_97",
+        "lut_name": "LUT_97",
+        "coords": {
+          "x": 37,
+          "y": 2
+        },
+        "aig": {
+          "found": true,
+          "lut_name": "LUT_97",
+          "lut_root": 97,
+          "leaves": [
+            6,
+            59,
+            72,
+            95
+          ],
+          "internal_nodes": [
+            89,
+            90,
+            91,
+            96
+          ],
+          "func_hex": "c382",
+          "node_functions": [
+            {
+              "node": 97,
+              "func_hex": "c382"
+            },
+            {
+              "node": 89,
+              "func_hex": "c0c0"
+            },
+            {
+              "node": 90,
+              "func_hex": "0303"
+            },
+            {
+              "node": 91,
+              "func_hex": "3c3c"
+            },
+            {
+              "node": 96,
+              "func_hex": "0055"
+            }
+          ]
+        },
+        "expr_root": "(a & ~b & ~c & ~d) | (a & b & c & ~d) | (~a & ~b & ~c & d) | (a & ~b & ~c & d) | (~a & b & c & d) | (a & b & c & d)"
+      },
+      "d_ab": 5,
+      "pitstops": []
+    },
+    {
+      "src": {
+        "block": "LUT_76",
+        "lut_name": "LUT_76",
+        "coords": {
+          "x": 41,
+          "y": 2
+        },
+        "aig": {
+          "found": true,
+          "lut_name": "LUT_76",
+          "lut_root": 76,
+          "leaves": [
+            5,
+            43,
+            59,
+            72
+          ],
+          "internal_nodes": [
+            68,
+            73,
+            74,
+            75
+          ],
+          "func_hex": "6530",
+          "node_functions": [
+            {
+              "node": 76,
+              "func_hex": "6530"
+            },
+            {
+              "node": 68,
+              "func_hex": "3030"
+            },
+            {
+              "node": 73,
+              "func_hex": "5500"
+            },
+            {
+              "node": 74,
+              "func_hex": "1000"
+            },
+            {
+              "node": 75,
+              "func_hex": "8acf"
+            }
+          ]
+        },
+        "expr_root": "(~a & ~b & c & ~d) | (a & ~b & c & ~d) | (~a & ~b & ~c & d) | (~a & b & ~c & d) | (a & ~b & c & d) | (~a & b & c & d)"
+      },
+      "dst": {
+        "block": "LUT_120",
+        "lut_name": "LUT_120",
+        "coords": {
+          "x": 38,
+          "y": 4
+        },
+        "aig": {
+          "found": true,
+          "lut_name": "LUT_120",
+          "lut_root": 120,
+          "leaves": [
+            5,
+            76,
+            97,
+            116
+          ],
+          "internal_nodes": [
+            106,
+            117,
+            118,
+            119
+          ],
+          "func_hex": "0ca6",
+          "node_functions": [
+            {
+              "node": 120,
+              "func_hex": "0ca6"
+            },
+            {
+              "node": 106,
+              "func_hex": "0c0c"
+            },
+            {
+              "node": 117,
+              "func_hex": "00aa"
+            },
+            {
+              "node": 118,
+              "func_hex": "f351"
+            },
+            {
+              "node": 119,
+              "func_hex": "0008"
+            }
+          ]
+        },
+        "expr_root": "(a & ~b & ~c & ~d) | (~a & b & ~c & ~d) | (a & ~b & c & ~d) | (a & b & c & ~d) | (~a & b & ~c & d) | (a & b & ~c & d)"
+      },
+      "d_ab": 5,
+      "pitstops": []
+    },
+    {
+      "src": {
+        "block": "LUT_80",
+        "lut_name": "LUT_80",
+        "coords": {
+          "x": 44,
+          "y": 3
+        },
+        "aig": {
+          "found": true,
+          "lut_name": "LUT_80",
+          "lut_root": 80,
+          "leaves": [
+            3,
+            47,
+            61,
+            76
+          ],
+          "internal_nodes": [
+            67,
+            77,
+            78,
+            79
+          ],
+          "func_hex": "0ca6",
+          "node_functions": [
+            {
+              "node": 80,
+              "func_hex": "0ca6"
+            },
+            {
+              "node": 67,
+              "func_hex": "0c0c"
+            },
+            {
+              "node": 77,
+              "func_hex": "00aa"
+            },
+            {
+              "node": 78,
+              "func_hex": "f351"
+            },
+            {
+              "node": 79,
+              "func_hex": "0008"
+            }
+          ]
+        },
+        "expr_root": "(a & ~b & ~c & ~d) | (~a & b & ~c & ~d) | (a & ~b & c & ~d) | (a & b & c & ~d) | (~a & b & ~c & d) | (a & b & ~c & d)"
+      },
+      "dst": {
+        "block": "LUT_124",
+        "lut_name": "LUT_124",
+        "coords": {
+          "x": 41,
+          "y": 5
+        },
+        "aig": {
+          "found": true,
+          "lut_name": "LUT_124",
+          "lut_root": 124,
+          "leaves": [
+            1,
+            80,
+            101,
+            120
+          ],
+          "internal_nodes": [
+            105,
+            121,
+            122,
+            123
+          ],
+          "func_hex": "5603",
+          "node_functions": [
+            {
+              "node": 124,
+              "func_hex": "5603"
+            },
+            {
+              "node": 105,
+              "func_hex": "0303"
+            },
+            {
+              "node": 121,
+              "func_hex": "5500"
+            },
+            {
+              "node": 122,
+              "func_hex": "0100"
+            },
+            {
+              "node": 123,
+              "func_hex": "a8fc"
+            }
+          ]
+        },
+        "expr_root": "(~a & ~b & ~c & ~d) | (a & ~b & ~c & ~d) | (a & ~b & ~c & d) | (~a & b & ~c & d) | (~a & ~b & c & d) | (~a & b & c & d)"
+      },
+      "d_ab": 5,
+      "pitstops": []
+    },
+    {
+      "src": {
+        "block": "LUT_147",
+        "lut_name": "LUT_147",
+        "coords": {
+          "x": 40,
+          "y": 5
+        },
+        "aig": {
+          "found": true,
+          "lut_name": "LUT_147",
+          "lut_root": 147,
+          "leaves": [
+            2,
+            101,
+            120,
+            145
+          ],
+          "internal_nodes": [
+            130,
+            131,
+            132,
+            146
+          ],
+          "func_hex": "283c",
+          "node_functions": [
+            {
+              "node": 147,
+              "func_hex": "283c"
+            },
+            {
+              "node": 130,
+              "func_hex": "3030"
+            },
+            {
+              "node": 131,
+              "func_hex": "0c0c"
+            },
+            {
+              "node": 132,
+              "func_hex": "c3c3"
+            },
+            {
+              "node": 146,
+              "func_hex": "5500"
+            }
+          ]
+        },
+        "expr_root": "(~a & b & ~c & ~d) | (a & b & ~c & ~d) | (~a & ~b & c & ~d) | (a & ~b & c & ~d) | (a & b & ~c & d) | (a & ~b & c & d)"
+      },
+      "dst": {
+        "block": "LUT_199",
+        "lut_name": "LUT_199",
+        "coords": {
+          "x": 38,
+          "y": 8
+        },
+        "aig": {
+          "found": true,
+          "lut_name": "LUT_199",
+          "lut_root": 199,
+          "leaves": [
+            6,
+            147,
+            168,
+            195
+          ],
+          "internal_nodes": [
+            180,
+            196,
+            197,
+            198
+          ],
+          "func_hex": "a251",
+          "node_functions": [
+            {
+              "node": 199,
+              "func_hex": "a251"
+            },
+            {
+              "node": 180,
+              "func_hex": "0c0c"
+            },
+            {
+              "node": 196,
+              "func_hex": "5500"
+            },
+            {
+              "node": 197,
+              "func_hex": "00aa"
+            },
+            {
+              "node": 198,
+              "func_hex": "aa55"
+            }
+          ]
+        },
+        "expr_root": "(~a & ~b & ~c & ~d) | (~a & ~b & c & ~d) | (~a & b & c & ~d) | (a & ~b & ~c & d) | (a & ~b & c & d) | (a & b & c & d)"
+      },
+      "d_ab": 5,
+      "pitstops": []
+    },
+    {
+      "src": {
+        "block": "LUT_176",
+        "lut_name": "LUT_176",
+        "coords": {
+          "x": 45,
+          "y": 6
+        },
+        "aig": {
+          "found": true,
+          "lut_name": "LUT_176",
+          "lut_root": 176,
+          "leaves": [
+            1,
+            128,
+            151,
+            172
+          ],
+          "internal_nodes": [
+            152,
+            173,
+            174,
+            175
+          ],
+          "func_hex": "5603",
+          "node_functions": [
+            {
+              "node": 176,
+              "func_hex": "5603"
+            },
+            {
+              "node": 152,
+              "func_hex": "0303"
+            },
+            {
+              "node": 173,
+              "func_hex": "5500"
+            },
+            {
+              "node": 174,
+              "func_hex": "0100"
+            },
+            {
+              "node": 175,
+              "func_hex": "a8fc"
+            }
+          ]
+        },
+        "expr_root": "(~a & ~b & ~c & ~d) | (a & ~b & ~c & ~d) | (a & ~b & ~c & d) | (~a & b & ~c & d) | (~a & ~b & c & d) | (~a & b & c & d)"
+      },
+      "dst": {
+        "block": "LUT_226",
+        "lut_name": "LUT_226",
+        "coords": {
+          "x": 43,
+          "y": 9
+        },
+        "aig": {
+          "found": true,
+          "lut_name": "LUT_226",
+          "lut_root": 226,
+          "leaves": [
+            5,
+            176,
+            201,
+            222
+          ],
+          "internal_nodes": [
+            202,
+            223,
+            224,
+            225
+          ],
+          "func_hex": "0ca6",
+          "node_functions": [
+            {
+              "node": 226,
+              "func_hex": "0ca6"
+            },
+            {
+              "node": 202,
+              "func_hex": "0c0c"
+            },
+            {
+              "node": 223,
+              "func_hex": "00aa"
+            },
+            {
+              "node": 224,
+              "func_hex": "f351"
+            },
+            {
+              "node": 225,
+              "func_hex": "0008"
+            }
+          ]
+        },
+        "expr_root": "(a & ~b & ~c & ~d) | (~a & b & ~c & ~d) | (a & ~b & c & ~d) | (a & b & c & ~d) | (~a & b & ~c & d) | (a & b & ~c & d)"
+      },
+      "d_ab": 5,
+      "pitstops": []
+    },
+    {
+      "src": {
+        "block": "LUT_16",
+        "lut_name": "LUT_16",
+        "coords": {
+          "x": 40,
+          "y": 1
+        },
+        "aig": {
+          "found": true,
+          "lut_name": "LUT_16",
+          "lut_root": 16,
+          "leaves": [
+            1,
+            2,
+            3,
+            5
+          ],
+          "internal_nodes": [
+            12,
+            13,
+            14,
+            15
+          ],
+          "func_hex": "32c8",
+          "node_functions": [
+            {
+              "node": 16,
+              "func_hex": "32c8"
+            },
+            {
+              "node": 12,
+              "func_hex": "0505"
+            },
+            {
+              "node": 13,
+              "func_hex": "0033"
+            },
+            {
+              "node": 14,
+              "func_hex": "cc00"
+            },
+            {
+              "node": 15,
+              "func_hex": "33cc"
+            }
+          ]
+        },
+        "expr_root": "(a & b & ~c & ~d) | (~a & b & c & ~d) | (a & b & c & ~d) | (a & ~b & ~c & d) | (~a & ~b & c & d) | (a & ~b & c & d)"
+      },
+      "dst": {
+        "block": "LUT_36",
+        "lut_name": "LUT_36",
+        "coords": {
+          "x": 42,
+          "y": 3
+        },
+        "aig": {
+          "found": true,
+          "lut_name": "LUT_36",
+          "lut_root": 36,
+          "leaves": [
+            2,
+            16,
+            22,
+            34
+          ],
+          "internal_nodes": [
+            27,
+            28,
+            29,
+            35
+          ],
+          "func_hex": "82c3",
+          "node_functions": [
+            {
+              "node": 36,
+              "func_hex": "82c3"
+            },
+            {
+              "node": 27,
+              "func_hex": "c0c0"
+            },
+            {
+              "node": 28,
+              "func_hex": "0303"
+            },
+            {
+              "node": 29,
+              "func_hex": "3c3c"
+            },
+            {
+              "node": 35,
+              "func_hex": "5500"
+            }
+          ]
+        },
+        "expr_root": "(~a & ~b & ~c & ~d) | (a & ~b & ~c & ~d) | (~a & b & c & ~d) | (a & b & c & ~d) | (a & ~b & ~c & d) | (a & b & c & d)"
+      },
+      "d_ab": 4,
+      "pitstops": []
+    },
+    {
+      "src": {
+        "block": "LUT_51",
+        "lut_name": "LUT_51",
+        "coords": {
+          "x": 42,
+          "y": 4
+        },
+        "aig": {
+          "found": true,
+          "lut_name": "LUT_51",
+          "lut_root": 51,
+          "leaves": [
+            1,
+            26,
+            36,
+            47
+          ],
+          "internal_nodes": [
+            37,
+            48,
+            49,
+            50
+          ],
+          "func_hex": "0ca6",
+          "node_functions": [
+            {
+              "node": 51,
+              "func_hex": "0ca6"
+            },
+            {
+              "node": 37,
+              "func_hex": "0c0c"
+            },
+            {
+              "node": 48,
+              "func_hex": "00aa"
+            },
+            {
+              "node": 49,
+              "func_hex": "f351"
+            },
+            {
+              "node": 50,
+              "func_hex": "0008"
+            }
+          ]
+        },
+        "expr_root": "(a & ~b & ~c & ~d) | (~a & b & ~c & ~d) | (a & ~b & c & ~d) | (a & b & c & ~d) | (~a & b & ~c & d) | (a & b & ~c & d)"
+      },
+      "dst": {
+        "block": "LUT_260",
+        "lut_name": "LUT_260",
+        "coords": {
+          "x": 40,
+          "y": 6
+        },
+        "aig": {
+          "found": true,
+          "lut_name": "LUT_260",
+          "lut_root": 260,
+          "leaves": [
+            1,
+            51,
+            210,
+            239
+          ],
+          "internal_nodes": [
+            256,
+            257,
+            258,
+            259
+          ],
+          "func_hex": "444b",
+          "node_functions": [
+            {
+              "node": 260,
+              "func_hex": "444b"
+            },
+            {
+              "node": 256,
+              "func_hex": "000f"
+            },
+            {
+              "node": 257,
+              "func_hex": "4444"
+            },
+            {
+              "node": 258,
+              "func_hex": "0004"
+            },
+            {
+              "node": 259,
+              "func_hex": "bbb0"
+            }
+          ]
+        },
+        "expr_root": "(~a & ~b & ~c & ~d) | (a & ~b & ~c & ~d) | (a & b & ~c & ~d) | (~a & b & c & ~d) | (~a & b & ~c & d) | (~a & b & c & d)"
+      },
+      "d_ab": 4,
+      "pitstops": []
+    },
+    {
+      "src": {
+        "block": "LUT_61",
+        "lut_name": "LUT_61",
+        "coords": {
+          "x": 43,
+          "y": 2
+        },
+        "aig": {
+          "found": true,
+          "lut_name": "LUT_61",
+          "lut_root": 61,
+          "leaves": [
+            4,
+            34,
+            43,
+            59
+          ],
+          "internal_nodes": [
+            53,
+            54,
+            55,
+            60
+          ],
+          "func_hex": "3c28",
+          "node_functions": [
+            {
+              "node": 61,
+              "func_hex": "3c28"
+            },
+            {
+              "node": 53,
+              "func_hex": "3030"
+            },
+            {
+              "node": 54,
+              "func_hex": "0c0c"
+            },
+            {
+              "node": 55,
+              "func_hex": "c3c3"
+            },
+            {
+              "node": 60,
+              "func_hex": "0055"
+            }
+          ]
+        },
+        "expr_root": "(a & b & ~c & ~d) | (a & ~b & c & ~d) | (~a & b & ~c & d) | (a & b & ~c & d) | (~a & ~b & c & d) | (a & ~b & c & d)"
+      },
+      "dst": {
+        "block": "LUT_101",
+        "lut_name": "LUT_101",
+        "coords": {
+          "x": 41,
+          "y": 4
+        },
+        "aig": {
+          "found": true,
+          "lut_name": "LUT_101",
+          "lut_root": 101,
+          "leaves": [
+            4,
+            61,
+            76,
+            97
+          ],
+          "internal_nodes": [
+            88,
+            98,
+            99,
+            100
+          ],
+          "func_hex": "a251",
+          "node_functions": [
+            {
+              "node": 101,
+              "func_hex": "a251"
+            },
+            {
+              "node": 88,
+              "func_hex": "0c0c"
+            },
+            {
+              "node": 98,
+              "func_hex": "5500"
+            },
+            {
+              "node": 99,
+              "func_hex": "00aa"
+            },
+            {
+              "node": 100,
+              "func_hex": "aa55"
+            }
+          ]
+        },
+        "expr_root": "(~a & ~b & ~c & ~d) | (~a & ~b & c & ~d) | (~a & b & c & ~d) | (a & ~b & ~c & d) | (a & ~b & c & d) | (a & b & c & d)"
+      },
+      "d_ab": 4,
+      "pitstops": []
+    },
+    {
+      "src": {
+        "block": "LUT_76",
+        "lut_name": "LUT_76",
+        "coords": {
+          "x": 41,
+          "y": 2
+        },
+        "aig": {
+          "found": true,
+          "lut_name": "LUT_76",
+          "lut_root": 76,
+          "leaves": [
+            5,
+            43,
+            59,
+            72
+          ],
+          "internal_nodes": [
+            68,
+            73,
+            74,
+            75
+          ],
+          "func_hex": "6530",
+          "node_functions": [
+            {
+              "node": 76,
+              "func_hex": "6530"
+            },
+            {
+              "node": 68,
+              "func_hex": "3030"
+            },
+            {
+              "node": 73,
+              "func_hex": "5500"
+            },
+            {
+              "node": 74,
+              "func_hex": "1000"
+            },
+            {
+              "node": 75,
+              "func_hex": "8acf"
+            }
+          ]
+        },
+        "expr_root": "(~a & ~b & c & ~d) | (a & ~b & c & ~d) | (~a & ~b & ~c & d) | (~a & b & ~c & d) | (a & ~b & c & d) | (~a & b & c & d)"
+      },
+      "dst": {
+        "block": "LUT_80",
+        "lut_name": "LUT_80",
+        "coords": {
+          "x": 44,
+          "y": 3
+        },
+        "aig": {
+          "found": true,
+          "lut_name": "LUT_80",
+          "lut_root": 80,
+          "leaves": [
+            3,
+            47,
+            61,
+            76
+          ],
+          "internal_nodes": [
+            67,
+            77,
+            78,
+            79
+          ],
+          "func_hex": "0ca6",
+          "node_functions": [
+            {
+              "node": 80,
+              "func_hex": "0ca6"
+            },
+            {
+              "node": 67,
+              "func_hex": "0c0c"
+            },
+            {
+              "node": 77,
+              "func_hex": "00aa"
+            },
+            {
+              "node": 78,
+              "func_hex": "f351"
+            },
+            {
+              "node": 79,
+              "func_hex": "0008"
+            }
+          ]
+        },
+        "expr_root": "(a & ~b & ~c & ~d) | (~a & b & ~c & ~d) | (a & ~b & c & ~d) | (a & b & c & ~d) | (~a & b & ~c & d) | (a & b & ~c & d)"
+      },
+      "d_ab": 4,
+      "pitstops": []
+    },
+    {
+      "src": {
+        "block": "LUT_120",
+        "lut_name": "LUT_120",
+        "coords": {
+          "x": 38,
+          "y": 4
+        },
+        "aig": {
+          "found": true,
+          "lut_name": "LUT_120",
+          "lut_root": 120,
+          "leaves": [
+            5,
+            76,
+            97,
+            116
+          ],
+          "internal_nodes": [
+            106,
+            117,
+            118,
+            119
+          ],
+          "func_hex": "0ca6",
+          "node_functions": [
+            {
+              "node": 120,
+              "func_hex": "0ca6"
+            },
+            {
+              "node": 106,
+              "func_hex": "0c0c"
+            },
+            {
+              "node": 117,
+              "func_hex": "00aa"
+            },
+            {
+              "node": 118,
+              "func_hex": "f351"
+            },
+            {
+              "node": 119,
+              "func_hex": "0008"
+            }
+          ]
+        },
+        "expr_root": "(a & ~b & ~c & ~d) | (~a & b & ~c & ~d) | (a & ~b & c & ~d) | (a & b & c & ~d) | (~a & b & ~c & d) | (a & b & ~c & d)"
+      },
+      "dst": {
+        "block": "LUT_124",
+        "lut_name": "LUT_124",
+        "coords": {
+          "x": 41,
+          "y": 5
+        },
+        "aig": {
+          "found": true,
+          "lut_name": "LUT_124",
+          "lut_root": 124,
+          "leaves": [
+            1,
+            80,
+            101,
+            120
+          ],
+          "internal_nodes": [
+            105,
+            121,
+            122,
+            123
+          ],
+          "func_hex": "5603",
+          "node_functions": [
+            {
+              "node": 124,
+              "func_hex": "5603"
+            },
+            {
+              "node": 105,
+              "func_hex": "0303"
+            },
+            {
+              "node": 121,
+              "func_hex": "5500"
+            },
+            {
+              "node": 122,
+              "func_hex": "0100"
+            },
+            {
+              "node": 123,
+              "func_hex": "a8fc"
+            }
+          ]
+        },
+        "expr_root": "(~a & ~b & ~c & ~d) | (a & ~b & ~c & ~d) | (a & ~b & ~c & d) | (~a & b & ~c & d) | (~a & ~b & c & d) | (~a & b & c & d)"
+      },
+      "d_ab": 4,
+      "pitstops": []
+    },
+    {
+      "src": {
+        "block": "LUT_124",
+        "lut_name": "LUT_124",
+        "coords": {
+          "x": 41,
+          "y": 5
+        },
+        "aig": {
+          "found": true,
+          "lut_name": "LUT_124",
+          "lut_root": 124,
+          "leaves": [
+            1,
+            80,
+            101,
+            120
+          ],
+          "internal_nodes": [
+            105,
+            121,
+            122,
+            123
+          ],
+          "func_hex": "5603",
+          "node_functions": [
+            {
+              "node": 124,
+              "func_hex": "5603"
+            },
+            {
+              "node": 105,
+              "func_hex": "0303"
+            },
+            {
+              "node": 121,
+              "func_hex": "5500"
+            },
+            {
+              "node": 122,
+              "func_hex": "0100"
+            },
+            {
+              "node": 123,
+              "func_hex": "a8fc"
+            }
+          ]
+        },
+        "expr_root": "(~a & ~b & ~c & ~d) | (a & ~b & ~c & ~d) | (a & ~b & ~c & d) | (~a & b & ~c & d) | (~a & ~b & c & d) | (~a & b & c & d)"
+      },
+      "dst": {
+        "block": "LUT_128",
+        "lut_name": "LUT_128",
+        "coords": {
+          "x": 44,
+          "y": 6
+        },
+        "aig": {
+          "found": true,
+          "lut_name": "LUT_128",
+          "lut_root": 128,
+          "leaves": [
+            3,
+            84,
+            103,
+            124
+          ],
+          "internal_nodes": [
+            104,
+            125,
+            126,
+            127
+          ],
+          "func_hex": "0ca6",
+          "node_functions": [
+            {
+              "node": 128,
+              "func_hex": "0ca6"
+            },
+            {
+              "node": 104,
+              "func_hex": "0c0c"
+            },
+            {
+              "node": 125,
+              "func_hex": "00aa"
+            },
+            {
+              "node": 126,
+              "func_hex": "f351"
+            },
+            {
+              "node": 127,
+              "func_hex": "0008"
+            }
+          ]
+        },
+        "expr_root": "(a & ~b & ~c & ~d) | (~a & b & ~c & ~d) | (a & ~b & c & ~d) | (a & b & c & ~d) | (~a & b & ~c & d) | (a & b & ~c & d)"
+      },
+      "d_ab": 4,
+      "pitstops": []
+    },
+    {
+      "src": {
+        "block": "LUT_145",
+        "lut_name": "LUT_145",
+        "coords": {
+          "x": 37,
+          "y": 4
+        },
+        "aig": {
+          "found": true,
+          "lut_name": "LUT_145",
+          "lut_root": 145,
+          "leaves": [
+            6,
+            97,
+            116,
+            141
+          ],
+          "internal_nodes": [
+            133,
+            142,
+            143,
+            144
+          ],
+          "func_hex": "a251",
+          "node_functions": [
+            {
+              "node": 145,
+              "func_hex": "a251"
+            },
+            {
+              "node": 133,
+              "func_hex": "0c0c"
+            },
+            {
+              "node": 142,
+              "func_hex": "5500"
+            },
+            {
+              "node": 143,
+              "func_hex": "00aa"
+            },
+            {
+              "node": 144,
+              "func_hex": "aa55"
+            }
+          ]
+        },
+        "expr_root": "(~a & ~b & ~c & ~d) | (~a & ~b & c & ~d) | (~a & b & c & ~d) | (a & ~b & ~c & d) | (a & ~b & c & d) | (a & b & c & d)"
+      },
+      "dst": {
+        "block": "LUT_147",
+        "lut_name": "LUT_147",
+        "coords": {
+          "x": 40,
+          "y": 5
+        },
+        "aig": {
+          "found": true,
+          "lut_name": "LUT_147",
+          "lut_root": 147,
+          "leaves": [
+            2,
+            101,
+            120,
+            145
+          ],
+          "internal_nodes": [
+            130,
+            131,
+            132,
+            146
+          ],
+          "func_hex": "283c",
+          "node_functions": [
+            {
+              "node": 147,
+              "func_hex": "283c"
+            },
+            {
+              "node": 130,
+              "func_hex": "3030"
+            },
+            {
+              "node": 131,
+              "func_hex": "0c0c"
+            },
+            {
+              "node": 132,
+              "func_hex": "c3c3"
+            },
+            {
+              "node": 146,
+              "func_hex": "5500"
+            }
+          ]
+        },
+        "expr_root": "(~a & b & ~c & ~d) | (a & b & ~c & ~d) | (~a & ~b & c & ~d) | (a & ~b & c & ~d) | (a & b & ~c & d) | (a & ~b & c & d)"
+      },
+      "d_ab": 4,
+      "pitstops": []
+    },
+    {
+      "src": {
+        "block": "LUT_147",
+        "lut_name": "LUT_147",
+        "coords": {
+          "x": 40,
+          "y": 5
+        },
+        "aig": {
+          "found": true,
+          "lut_name": "LUT_147",
+          "lut_root": 147,
+          "leaves": [
+            2,
+            101,
+            120,
+            145
+          ],
+          "internal_nodes": [
+            130,
+            131,
+            132,
+            146
+          ],
+          "func_hex": "283c",
+          "node_functions": [
+            {
+              "node": 147,
+              "func_hex": "283c"
+            },
+            {
+              "node": 130,
+              "func_hex": "3030"
+            },
+            {
+              "node": 131,
+              "func_hex": "0c0c"
+            },
+            {
+              "node": 132,
+              "func_hex": "c3c3"
+            },
+            {
+              "node": 146,
+              "func_hex": "5500"
+            }
+          ]
+        },
+        "expr_root": "(~a & b & ~c & ~d) | (a & b & ~c & ~d) | (~a & ~b & c & ~d) | (a & ~b & c & ~d) | (a & b & ~c & d) | (a & ~b & c & d)"
+      },
+      "dst": {
+        "block": "LUT_151",
+        "lut_name": "LUT_151",
+        "coords": {
+          "x": 43,
+          "y": 6
+        },
+        "aig": {
+          "found": true,
+          "lut_name": "LUT_151",
+          "lut_root": 151,
+          "leaves": [
+            4,
+            103,
+            124,
+            147
+          ],
+          "internal_nodes": [
+            129,
+            148,
+            149,
+            150
+          ],
+          "func_hex": "a251",
+          "node_functions": [
+            {
+              "node": 151,
+              "func_hex": "a251"
+            },
+            {
+              "node": 129,
+              "func_hex": "0c0c"
+            },
+            {
+              "node": 148,
+              "func_hex": "5500"
+            },
+            {
+              "node": 149,
+              "func_hex": "00aa"
+            },
+            {
+              "node": 150,
+              "func_hex": "aa55"
+            }
+          ]
+        },
+        "expr_root": "(~a & ~b & ~c & ~d) | (~a & ~b & c & ~d) | (~a & b & c & ~d) | (a & ~b & ~c & d) | (a & ~b & c & d) | (a & b & c & d)"
+      },
+      "d_ab": 4,
+      "pitstops": []
+    },
+    {
+      "src": {
+        "block": "LUT_160",
+        "lut_name": "LUT_160",
+        "coords": {
+          "x": 39,
+          "y": 3
+        },
+        "aig": {
+          "found": true,
+          "lut_name": "LUT_160",
+          "lut_root": 160,
+          "leaves": [
+            3,
+            11,
+            112,
+            139
+          ],
+          "internal_nodes": [
+            156,
+            157,
+            158,
+            159
+          ],
+          "func_hex": "4b44",
+          "node_functions": [
+            {
+              "node": 160,
+              "func_hex": "4b44"
+            },
+            {
+              "node": 156,
+              "func_hex": "0f00"
+            },
+            {
+              "node": 157,
+              "func_hex": "4444"
+            },
+            {
+              "node": 158,
+              "func_hex": "0400"
+            },
+            {
+              "node": 159,
+              "func_hex": "b0bb"
+            }
+          ]
+        },
+        "expr_root": "(~a & b & ~c & ~d) | (~a & b & c & ~d) | (~a & ~b & ~c & d) | (a & ~b & ~c & d) | (a & b & ~c & d) | (~a & b & c & d)"
+      },
+      "dst": {
+        "block": "LUT_164",
+        "lut_name": "LUT_164",
+        "coords": {
+          "x": 37,
+          "y": 5
+        },
+        "aig": {
+          "found": true,
+          "lut_name": "LUT_164",
+          "lut_root": 164,
+          "leaves": [
+            1,
+            116,
+            141,
+            160
+          ],
+          "internal_nodes": [
+            155,
+            161,
+            162,
+            163
+          ],
+          "func_hex": "0ca6",
+          "node_functions": [
+            {
+              "node": 164,
+              "func_hex": "0ca6"
+            },
+            {
+              "node": 155,
+              "func_hex": "0c0c"
+            },
+            {
+              "node": 161,
+              "func_hex": "00aa"
+            },
+            {
+              "node": 162,
+              "func_hex": "f351"
+            },
+            {
+              "node": 163,
+              "func_hex": "0008"
+            }
+          ]
+        },
+        "expr_root": "(a & ~b & ~c & ~d) | (~a & b & ~c & ~d) | (a & ~b & c & ~d) | (a & b & c & ~d) | (~a & b & ~c & d) | (a & b & ~c & d)"
+      },
+      "d_ab": 4,
+      "pitstops": []
+    },
+    {
+      "src": {
+        "block": "LUT_168",
+        "lut_name": "LUT_168",
+        "coords": {
+          "x": 38,
+          "y": 5
+        },
+        "aig": {
+          "found": true,
+          "lut_name": "LUT_168",
+          "lut_root": 168,
+          "leaves": [
+            3,
+            120,
+            145,
+            164
+          ],
+          "internal_nodes": [
+            154,
+            165,
+            166,
+            167
+          ],
+          "func_hex": "5603",
+          "node_functions": [
+            {
+              "node": 168,
+              "func_hex": "5603"
+            },
+            {
+              "node": 154,
+              "func_hex": "0303"
+            },
+            {
+              "node": 165,
+              "func_hex": "5500"
+            },
+            {
+              "node": 166,
+              "func_hex": "0100"
+            },
+            {
+              "node": 167,
+              "func_hex": "a8fc"
+            }
+          ]
+        },
+        "expr_root": "(~a & ~b & ~c & ~d) | (a & ~b & ~c & ~d) | (a & ~b & ~c & d) | (~a & b & ~c & d) | (~a & ~b & c & d) | (~a & b & c & d)"
+      },
+      "dst": {
+        "block": "LUT_172",
+        "lut_name": "LUT_172",
+        "coords": {
+          "x": 41,
+          "y": 6
+        },
+        "aig": {
+          "found": true,
+          "lut_name": "LUT_172",
+          "lut_root": 172,
+          "leaves": [
+            5,
+            124,
+            147,
+            168
+          ],
+          "internal_nodes": [
+            153,
+            169,
+            170,
+            171
+          ],
+          "func_hex": "0ca6",
+          "node_functions": [
+            {
+              "node": 172,
+              "func_hex": "0ca6"
+            },
+            {
+              "node": 153,
+              "func_hex": "0c0c"
+            },
+            {
+              "node": 169,
+              "func_hex": "00aa"
+            },
+            {
+              "node": 170,
+              "func_hex": "f351"
+            },
+            {
+              "node": 171,
+              "func_hex": "0008"
+            }
+          ]
+        },
+        "expr_root": "(a & ~b & ~c & ~d) | (~a & b & ~c & ~d) | (a & ~b & c & ~d) | (a & b & c & ~d) | (~a & b & ~c & d) | (a & b & ~c & d)"
+      },
+      "d_ab": 4,
+      "pitstops": []
+    },
+    {
+      "src": {
+        "block": "LUT_172",
+        "lut_name": "LUT_172",
+        "coords": {
+          "x": 41,
+          "y": 6
+        },
+        "aig": {
+          "found": true,
+          "lut_name": "LUT_172",
+          "lut_root": 172,
+          "leaves": [
+            5,
+            124,
+            147,
+            168
+          ],
+          "internal_nodes": [
+            153,
+            169,
+            170,
+            171
+          ],
+          "func_hex": "0ca6",
+          "node_functions": [
+            {
+              "node": 172,
+              "func_hex": "0ca6"
+            },
+            {
+              "node": 153,
+              "func_hex": "0c0c"
+            },
+            {
+              "node": 169,
+              "func_hex": "00aa"
+            },
+            {
+              "node": 170,
+              "func_hex": "f351"
+            },
+            {
+              "node": 171,
+              "func_hex": "0008"
+            }
+          ]
+        },
+        "expr_root": "(a & ~b & ~c & ~d) | (~a & b & ~c & ~d) | (a & ~b & c & ~d) | (a & b & c & ~d) | (~a & b & ~c & d) | (a & b & ~c & d)"
+      },
+      "dst": {
+        "block": "LUT_222",
+        "lut_name": "LUT_222",
+        "coords": {
+          "x": 40,
+          "y": 9
+        },
+        "aig": {
+          "found": true,
+          "lut_name": "LUT_222",
+          "lut_root": 222,
+          "leaves": [
+            3,
+            172,
+            199,
+            218
+          ],
+          "internal_nodes": [
+            203,
+            219,
+            220,
+            221
+          ],
+          "func_hex": "5603",
+          "node_functions": [
+            {
+              "node": 222,
+              "func_hex": "5603"
+            },
+            {
+              "node": 203,
+              "func_hex": "0303"
+            },
+            {
+              "node": 219,
+              "func_hex": "5500"
+            },
+            {
+              "node": 220,
+              "func_hex": "0100"
+            },
+            {
+              "node": 221,
+              "func_hex": "a8fc"
+            }
+          ]
+        },
+        "expr_root": "(~a & ~b & ~c & ~d) | (a & ~b & ~c & ~d) | (a & ~b & ~c & d) | (~a & b & ~c & d) | (~a & ~b & c & d) | (~a & b & c & d)"
+      },
+      "d_ab": 4,
+      "pitstops": []
+    },
+    {
+      "src": {
+        "block": "LUT_172",
+        "lut_name": "LUT_172",
+        "coords": {
+          "x": 41,
+          "y": 6
+        },
+        "aig": {
+          "found": true,
+          "lut_name": "LUT_172",
+          "lut_root": 172,
+          "leaves": [
+            5,
+            124,
+            147,
+            168
+          ],
+          "internal_nodes": [
+            153,
+            169,
+            170,
+            171
+          ],
+          "func_hex": "0ca6",
+          "node_functions": [
+            {
+              "node": 172,
+              "func_hex": "0ca6"
+            },
+            {
+              "node": 153,
+              "func_hex": "0c0c"
+            },
+            {
+              "node": 169,
+              "func_hex": "00aa"
+            },
+            {
+              "node": 170,
+              "func_hex": "f351"
+            },
+            {
+              "node": 171,
+              "func_hex": "0008"
+            }
+          ]
+        },
+        "expr_root": "(a & ~b & ~c & ~d) | (~a & b & ~c & ~d) | (a & ~b & c & ~d) | (a & b & c & ~d) | (~a & b & ~c & d) | (a & b & ~c & d)"
+      },
+      "dst": {
+        "block": "LUT_176",
+        "lut_name": "LUT_176",
+        "coords": {
+          "x": 45,
+          "y": 6
+        },
+        "aig": {
+          "found": true,
+          "lut_name": "LUT_176",
+          "lut_root": 176,
+          "leaves": [
+            1,
+            128,
+            151,
+            172
+          ],
+          "internal_nodes": [
+            152,
+            173,
+            174,
+            175
+          ],
+          "func_hex": "5603",
+          "node_functions": [
+            {
+              "node": 176,
+              "func_hex": "5603"
+            },
+            {
+              "node": 152,
+              "func_hex": "0303"
+            },
+            {
+              "node": 173,
+              "func_hex": "5500"
+            },
+            {
+              "node": 174,
+              "func_hex": "0100"
+            },
+            {
+              "node": 175,
+              "func_hex": "a8fc"
+            }
+          ]
+        },
+        "expr_root": "(~a & ~b & ~c & ~d) | (a & ~b & ~c & ~d) | (a & ~b & ~c & d) | (~a & b & ~c & d) | (~a & ~b & c & d) | (~a & b & c & d)"
+      },
+      "d_ab": 4,
+      "pitstops": []
+    },
+    {
+      "src": {
+        "block": "LUT_199",
+        "lut_name": "LUT_199",
+        "coords": {
+          "x": 38,
+          "y": 8
+        },
+        "aig": {
+          "found": true,
+          "lut_name": "LUT_199",
+          "lut_root": 199,
+          "leaves": [
+            6,
+            147,
+            168,
+            195
+          ],
+          "internal_nodes": [
+            180,
+            196,
+            197,
+            198
+          ],
+          "func_hex": "a251",
+          "node_functions": [
+            {
+              "node": 199,
+              "func_hex": "a251"
+            },
+            {
+              "node": 180,
+              "func_hex": "0c0c"
+            },
+            {
+              "node": 196,
+              "func_hex": "5500"
+            },
+            {
+              "node": 197,
+              "func_hex": "00aa"
+            },
+            {
+              "node": 198,
+              "func_hex": "aa55"
+            }
+          ]
+        },
+        "expr_root": "(~a & ~b & ~c & ~d) | (~a & ~b & c & ~d) | (~a & b & c & ~d) | (a & ~b & ~c & d) | (a & ~b & c & d) | (a & b & c & d)"
+      },
+      "dst": {
+        "block": "LUT_201",
+        "lut_name": "LUT_201",
+        "coords": {
+          "x": 42,
+          "y": 8
+        },
+        "aig": {
+          "found": true,
+          "lut_name": "LUT_201",
+          "lut_root": 201,
+          "leaves": [
+            2,
+            151,
+            172,
+            199
+          ],
+          "internal_nodes": [
+            177,
+            178,
+            179,
+            200
+          ],
+          "func_hex": "283c",
+          "node_functions": [
+            {
+              "node": 201,
+              "func_hex": "283c"
+            },
+            {
+              "node": 177,
+              "func_hex": "3030"
+            },
+            {
+              "node": 178,
+              "func_hex": "0c0c"
+            },
+            {
+              "node": 179,
+              "func_hex": "c3c3"
+            },
+            {
+              "node": 200,
+              "func_hex": "5500"
+            }
+          ]
+        },
+        "expr_root": "(~a & b & ~c & ~d) | (a & b & ~c & ~d) | (~a & ~b & c & ~d) | (a & ~b & c & ~d) | (a & b & ~c & d) | (a & ~b & c & d)"
+      },
+      "d_ab": 4,
+      "pitstops": []
+    },
+    {
+      "src": {
+        "block": "LUT_218",
+        "lut_name": "LUT_218",
+        "coords": {
+          "x": 38,
+          "y": 7
+        },
+        "aig": {
+          "found": true,
+          "lut_name": "LUT_218",
+          "lut_root": 218,
+          "leaves": [
+            1,
+            168,
+            195,
+            214
+          ],
+          "internal_nodes": [
+            204,
+            215,
+            216,
+            217
+          ],
+          "func_hex": "0ca6",
+          "node_functions": [
+            {
+              "node": 218,
+              "func_hex": "0ca6"
+            },
+            {
+              "node": 204,
+              "func_hex": "0c0c"
+            },
+            {
+              "node": 215,
+              "func_hex": "00aa"
+            },
+            {
+              "node": 216,
+              "func_hex": "f351"
+            },
+            {
+              "node": 217,
+              "func_hex": "0008"
+            }
+          ]
+        },
+        "expr_root": "(a & ~b & ~c & ~d) | (~a & b & ~c & ~d) | (a & ~b & c & ~d) | (a & b & c & ~d) | (~a & b & ~c & d) | (a & b & ~c & d)"
+      },
+      "dst": {
+        "block": "LUT_222",
+        "lut_name": "LUT_222",
+        "coords": {
+          "x": 40,
+          "y": 9
+        },
+        "aig": {
+          "found": true,
+          "lut_name": "LUT_222",
+          "lut_root": 222,
+          "leaves": [
+            3,
+            172,
+            199,
+            218
+          ],
+          "internal_nodes": [
+            203,
+            219,
+            220,
+            221
+          ],
+          "func_hex": "5603",
+          "node_functions": [
+            {
+              "node": 222,
+              "func_hex": "5603"
+            },
+            {
+              "node": 203,
+              "func_hex": "0303"
+            },
+            {
+              "node": 219,
+              "func_hex": "5500"
+            },
+            {
+              "node": 220,
+              "func_hex": "0100"
+            },
+            {
+              "node": 221,
+              "func_hex": "a8fc"
+            }
+          ]
+        },
+        "expr_root": "(~a & ~b & ~c & ~d) | (a & ~b & ~c & ~d) | (a & ~b & ~c & d) | (~a & b & ~c & d) | (~a & ~b & c & d) | (~a & b & c & d)"
+      },
+      "d_ab": 4,
+      "pitstops": []
+    }
+  ],
+  "scenario1_filter": {
+    "min_leaf_overlap": 2,
+    "total_pitstops_before": 34,
+    "total_pitstops_after": 0
+  }
+}

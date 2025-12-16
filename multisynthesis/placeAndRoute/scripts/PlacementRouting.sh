@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+	#!/usr/bin/env bash
 set -euo pipefail
 
 # === Config ===
@@ -12,6 +12,10 @@ BLIF_IN=""
 CIRCUIT=""
 NPATHS="${NPATHS:-200}"
 CHANW="${CHANW:-100}"
+
+# Graphics control (defaults)
+DISP="${DISP:-off}"             # valid: on/off
+SAVE_GRAPHICS="${SAVE_GRAPHICS:-off}"  # valid: on/off
 
 while [[ $# -gt 0 ]]; do
   case "$1" in
@@ -58,72 +62,24 @@ BUILD_DIR="$PAR_ROOT/results/build_vpr/$ARCH_TAG/$CIRCUIT"
 LOG_DIR="$PAR_ROOT/logs/$ARCH_TAG/$CIRCUIT"
 mkdir -p "$BUILD_DIR" "$LOG_DIR"
 
-echo "[Stap3] Run VPR pack/place/route"
+echo "[Stap3] Run VPR pack/place (no routing)"
 pushd "$BUILD_DIR" >/dev/null
 
-
-# ... net boven de VPR run, na pushd en vóór "$VPR_BIN" ...
-TD="${TIMING_DETAIL:-detailed}"                 # fallback = detailed
-TD="${TD//[$'\t\r\n ']/}"                       # alle whitespace strippen
-[[ -z "$TD" ]] && TD="detailed"                 # leeg? opnieuw 'detailed'
-
-
-# VPR run (timing + echos + post-synth netlist)
+# VPR: alleen pack + place, geen routing, geen analysis
 "$VPR_BIN" "$ARCH_XML" "$BLIF_IN" \
-  --pack --place --route \
+  --pack --place \
   --route_chan_width "$CHANW" \
-  --analysis --echo_file on \
-  --timing_report_detail "$TD" \
-  --timing_report_npaths "$NPATHS" \
-  --gen_post_synthesis_netlist on \
-  --disp off \
+  --echo_file on \
+  --timing_report_detail debug \
+  --disp "$DISP" \
+  --save_graphics "$SAVE_GRAPHICS" \
   2>&1 | tee "$LOG_DIR/vpr_${CIRCUIT}.log"
 
-# Kies beste beschikbare setup-report (post-route is voorkeur)
-RPT=""
-for cand in \
-  "report_timing.setup.rpt" \
-  "report_unconstrained_timing.setup.rpt" \
-  "pre_pack.report_timing.setup.rpt"
-do
-  if [[ -s "$cand" ]]; then RPT="$cand"; break; fi
-done
-
-if [[ -z "$RPT" ]]; then
-  echo "⚠  Geen timing report gevonden in $BUILD_DIR" >&2
-  ls -1 *.rpt || true
-  popd >/dev/null
-  exit 2
-fi
-
-
-echo "[Stap3] Zoek bruikbaar timing report in: $BUILD_DIR"
-
-# Submap voor top-N paden
-PATH_DIR="$BUILD_DIR/top_paths"
-
-PY="${PYTHON:-python3}"
-set +e
-PARSE_OUT=$("$PY" "$SCRIPTS_DIR/parse_vtr_timing.py" \
-  --searchdir "$BUILD_DIR" \
-  --outdir "$PATH_DIR" \
-  --npaths "$NPATHS" 2>&1)
-PARSE_RC=$?
-set -e
-
-
-if [[ $PARSE_RC -ne 0 ]]; then
-  echo "$PARSE_OUT" >&2
-  echo "⚠  Geen paden gevonden. Controleer of VPR met '--analysis --timing_report_detail netlist' draaide of bekijk *.rpt in $BUILD_DIR." >&2
-  exit 3
-else
-  echo "$PARSE_OUT"
-fi
-
 echo
-echo "Klaar. Belangrijkste outputs in: $BUILD_DIR"
-echo " - $CIRCUIT.place / .route / .net"
-echo " - report_timing.*.rpt (gekozen file staat vermeld in parser-output)"
-echo " - top-N paden: $PATH_DIR/report_top_paths.csv"
-echo " - net-ranglijst: $PATH_DIR/trace_selected_nets.csv | .txt | .json"
-echo " - (echo's) atom_netlist.*.echo.blif, clusters.echo, timing_graph.*.echo*"
+echo "Klaar met pack + place in: $BUILD_DIR"
+echo "Belangrijkste files:"
+echo " - ${CIRCUIT}.net   (clustered netlist)"
+echo " - ${CIRCUIT}.place (placement, met coords)"
+echo " - vpr_${CIRCUIT}.log (bevat 'Placement estimated critical path delay ...')"
+
+popd >/dev/null

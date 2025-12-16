@@ -1,0 +1,41 @@
+{
+  "format": "eco_targets:v1",
+  "instance": "/home/cian/Masterproef/multisynthesis/EcoSat/result/example_big_300/eco_instances/example_big_300.conn000.pit000.eco_instance.json",
+  "dst": {
+    "lut_name": "LUT_101",
+    "lut_root": 101,
+    "leaves": [
+      4,
+      61,
+      76,
+      97
+    ]
+  },
+  "targets": [
+    {
+      "node": 88,
+      "func_hex": "0c0c",
+      "source": "internal_node"
+    },
+    {
+      "node": 98,
+      "func_hex": "5500",
+      "source": "internal_node"
+    },
+    {
+      "node": 99,
+      "func_hex": "00aa",
+      "source": "internal_node"
+    },
+    {
+      "node": 100,
+      "func_hex": "aa55",
+      "source": "internal_node"
+    }
+  ],
+  "notes": [
+    "targets zijn kandidaat G-nodes uit de dst cone (internal_nodes).",
+    "func_hex kan None zijn als node_functions die node niet bevat.",
+    "volgende stap: per target support bepalen (via ABC cone + support of via AIG traversal)."
+  ]
+}

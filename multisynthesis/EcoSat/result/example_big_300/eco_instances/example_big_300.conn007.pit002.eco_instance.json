@@ -1,0 +1,83 @@
+{
+  "format": "eco_candidate:v1",
+  "design": "example_big_300",
+  "connection_index": 7,
+  "pitstop_index": 2,
+  "src": {
+    "block": "LUT_51",
+    "lut_name": "LUT_51",
+    "lut_root": 51,
+    "coords": {
+      "x": 42,
+      "y": 4
+    },
+    "aig": {
+      "leaves": [
+        1,
+        26,
+        36,
+        47
+      ],
+      "func_hex": "0ca6"
+    },
+    "expr_root": "(a & ~b & ~c & ~d) | (~a & b & ~c & ~d) | (a & ~b & c & ~d) | (a & b & c & ~d) | (~a & b & ~c & d) | (a & b & ~c & d)"
+  },
+  "dst": {
+    "block": "LUT_260",
+    "lut_name": "LUT_260",
+    "lut_root": 260,
+    "coords": {
+      "x": 40,
+      "y": 6
+    },
+    "aig": {
+      "leaves": [
+        1,
+        51,
+        210,
+        239
+      ],
+      "func_hex": "444b"
+    },
+    "expr_root": "(~a & ~b & ~c & ~d) | (a & ~b & ~c & ~d) | (a & b & ~c & ~d) | (~a & b & c & ~d) | (~a & b & ~c & d) | (~a & b & c & d)"
+  },
+  "pitstop": {
+    "block": "LUT_304",
+    "lut_name": "LUT_304",
+    "lut_root": 304,
+    "coords": {
+      "x": 42,
+      "y": 6
+    },
+    "distances": {
+      "d_ac": 2,
+      "d_cb": 2,
+      "d_ab": 4
+    },
+    "costs": {
+      "direct": 16,
+      "via_mid": 8,
+      "gain": 8
+    },
+    "aig": {
+      "leaves": [
+        5,
+        84,
+        260,
+        286
+      ],
+      "func_hex": "22d2"
+    },
+    "expr_root": "(a & ~b & ~c & ~d) | (~a & ~b & c & ~d) | (~a & b & c & ~d) | (a & b & c & ~d) | (a & ~b & ~c & d) | (a & ~b & c & d)"
+  },
+  "overlaps": {
+    "src_pit": [],
+    "dst_pit": [],
+    "src_dst": [
+      1
+    ]
+  },
+  "connection": {
+    "d_ab": 4
+  }
+}

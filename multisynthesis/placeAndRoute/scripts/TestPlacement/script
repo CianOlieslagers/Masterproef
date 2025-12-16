@@ -1,0 +1,13 @@
+
+
+
+
+
+
+python3 ~/Masterproef/multisynthesis/placeAndRoute/scripts/TestPlacement/make_manhatten_json.py   --place ~/Masterproef/multisynthesis/results/example_big_300/PlaceAndRoute/01_location/example_big_300.mapped.place   --net   ~/Masterproef/multisynthesis/results/example_big_300/PlaceAndRoute/01_location/example_big_300.mapped.net   --out   ~/Masterproef/multisynthesis/results/example_big_300/PlaceAndRoute/05_custom_outputs/example_big_300.manhattan.json   --design example_big_300
+
+
+python3 ~/Masterproef/multisynthesis/placeAndRoute/scripts/TestPlacement/find_longest_manhattan_edges.py \
+  --json   ~/Masterproef/multisynthesis/results/example_big_300/PlaceAndRoute/05_custom_outputs/example_big_300.manhattan.json \
+  --top    20 \
+  --out-csv ~/Masterproef/multisynthesis/results/example_big_300/PlaceAndRoute/05_custom_outputs/example_big_300.top20_manhattan.csv

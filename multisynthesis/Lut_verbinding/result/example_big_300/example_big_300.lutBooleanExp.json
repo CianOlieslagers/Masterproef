@@ -1,0 +1,1498 @@
+{
+  "format": "lut_boolean_expressions:v1",
+  "circuit": "example_big_300",
+  "K": 4,
+  "num_luts": 85,
+  "luts": [
+    {
+      "lut_name": "LUT_11",
+      "lut_root": 11,
+      "leaves": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "func_hex": "8777",
+      "var_names": {
+        "1": "a",
+        "2": "b",
+        "3": "c",
+        "4": "d"
+      },
+      "expression": "(~a & ~b & ~c & ~d) | (a & ~b & ~c & ~d) | (~a & b & ~c & ~d) | (~a & ~b & c & ~d) | (a & ~b & c & ~d) | (~a & b & c & ~d) | (~a & ~b & ~c & d) | (a & ~b & ~c & d) | (~a & b & ~c & d) | (a & b & c & d)"
+    },
+    {
+      "lut_name": "LUT_16",
+      "lut_root": 16,
+      "leaves": [
+        1,
+        2,
+        3,
+        5
+      ],
+      "func_hex": "32c8",
+      "var_names": {
+        "1": "a",
+        "2": "b",
+        "3": "c",
+        "5": "d"
+      },
+      "expression": "(a & b & ~c & ~d) | (~a & b & c & ~d) | (a & b & c & ~d) | (a & ~b & ~c & d) | (~a & ~b & c & d) | (a & ~b & c & d)"
+    },
+    {
+      "lut_name": "LUT_22",
+      "lut_root": 22,
+      "leaves": [
+        1,
+        4,
+        5,
+        6
+      ],
+      "func_hex": "2a15",
+      "var_names": {
+        "1": "a",
+        "4": "b",
+        "5": "c",
+        "6": "d"
+      },
+      "expression": "(~a & ~b & ~c & ~d) | (~a & b & ~c & ~d) | (~a & ~b & c & ~d) | (a & ~b & ~c & d) | (a & b & ~c & d) | (a & ~b & c & d)"
+    },
+    {
+      "lut_name": "LUT_26",
+      "lut_root": 26,
+      "leaves": [
+        1,
+        11,
+        16,
+        22
+      ],
+      "func_hex": "6530",
+      "var_names": {
+        "1": "a",
+        "11": "b",
+        "16": "c",
+        "22": "d"
+      },
+      "expression": "(~a & ~b & c & ~d) | (a & ~b & c & ~d) | (~a & ~b & ~c & d) | (~a & b & ~c & d) | (a & ~b & c & d) | (~a & b & c & d)"
+    },
+    {
+      "lut_name": "LUT_34",
+      "lut_root": 34,
+      "leaves": [
+        2,
+        3,
+        4,
+        6
+      ],
+      "func_hex": "a093",
+      "var_names": {
+        "2": "a",
+        "3": "b",
+        "4": "c",
+        "6": "d"
+      },
+      "expression": "(~a & ~b & ~c & ~d) | (a & ~b & ~c & ~d) | (~a & ~b & c & ~d) | (a & b & c & ~d) | (a & ~b & c & d) | (a & b & c & d)"
+    },
+    {
+      "lut_name": "LUT_36",
+      "lut_root": 36,
+      "leaves": [
+        2,
+        16,
+        22,
+        34
+      ],
+      "func_hex": "82c3",
+      "var_names": {
+        "2": "a",
+        "16": "b",
+        "22": "c",
+        "34": "d"
+      },
+      "expression": "(~a & ~b & ~c & ~d) | (a & ~b & ~c & ~d) | (~a & b & c & ~d) | (a & b & c & ~d) | (a & ~b & ~c & d) | (a & b & c & d)"
+    },
+    {
+      "lut_name": "LUT_43",
+      "lut_root": 43,
+      "leaves": [
+        1,
+        2,
+        5,
+        6
+      ],
+      "func_hex": "c431",
+      "var_names": {
+        "1": "a",
+        "2": "b",
+        "5": "c",
+        "6": "d"
+      },
+      "expression": "(~a & ~b & ~c & ~d) | (~a & ~b & c & ~d) | (a & ~b & c & ~d) | (~a & b & ~c & d) | (~a & b & c & d) | (a & b & c & d)"
+    },
+    {
+      "lut_name": "LUT_47",
+      "lut_root": 47,
+      "leaves": [
+        3,
+        22,
+        34,
+        43
+      ],
+      "func_hex": "5603",
+      "var_names": {
+        "3": "a",
+        "22": "b",
+        "34": "c",
+        "43": "d"
+      },
+      "expression": "(~a & ~b & ~c & ~d) | (a & ~b & ~c & ~d) | (a & ~b & ~c & d) | (~a & b & ~c & d) | (~a & ~b & c & d) | (~a & b & c & d)"
+    },
+    {
+      "lut_name": "LUT_51",
+      "lut_root": 51,
+      "leaves": [
+        1,
+        26,
+        36,
+        47
+      ],
+      "func_hex": "0ca6",
+      "var_names": {
+        "1": "a",
+        "26": "b",
+        "36": "c",
+        "47": "d"
+      },
+      "expression": "(a & ~b & ~c & ~d) | (~a & b & ~c & ~d) | (a & ~b & c & ~d) | (a & b & c & ~d) | (~a & b & ~c & d) | (a & b & ~c & d)"
+    },
+    {
+      "lut_name": "LUT_59",
+      "lut_root": 59,
+      "leaves": [
+        1,
+        3,
+        4,
+        5
+      ],
+      "func_hex": "3c28",
+      "var_names": {
+        "1": "a",
+        "3": "b",
+        "4": "c",
+        "5": "d"
+      },
+      "expression": "(a & b & ~c & ~d) | (a & ~b & c & ~d) | (~a & b & ~c & d) | (a & b & ~c & d) | (~a & ~b & c & d) | (a & ~b & c & d)"
+    },
+    {
+      "lut_name": "LUT_61",
+      "lut_root": 61,
+      "leaves": [
+        4,
+        34,
+        43,
+        59
+      ],
+      "func_hex": "3c28",
+      "var_names": {
+        "4": "a",
+        "34": "b",
+        "43": "c",
+        "59": "d"
+      },
+      "expression": "(a & b & ~c & ~d) | (a & ~b & c & ~d) | (~a & b & ~c & d) | (a & b & ~c & d) | (~a & ~b & c & d) | (a & ~b & c & d)"
+    },
+    {
+      "lut_name": "LUT_65",
+      "lut_root": 65,
+      "leaves": [
+        2,
+        36,
+        47,
+        61
+      ],
+      "func_hex": "a251",
+      "var_names": {
+        "2": "a",
+        "36": "b",
+        "47": "c",
+        "61": "d"
+      },
+      "expression": "(~a & ~b & ~c & ~d) | (~a & ~b & c & ~d) | (~a & b & c & ~d) | (a & ~b & ~c & d) | (a & ~b & c & d) | (a & b & c & d)"
+    },
+    {
+      "lut_name": "LUT_72",
+      "lut_root": 72,
+      "leaves": [
+        2,
+        3,
+        5,
+        6
+      ],
+      "func_hex": "c905",
+      "var_names": {
+        "2": "a",
+        "3": "b",
+        "5": "c",
+        "6": "d"
+      },
+      "expression": "(~a & ~b & ~c & ~d) | (~a & b & ~c & ~d) | (~a & ~b & ~c & d) | (a & b & ~c & d) | (~a & b & c & d) | (a & b & c & d)"
+    },
+    {
+      "lut_name": "LUT_76",
+      "lut_root": 76,
+      "leaves": [
+        5,
+        43,
+        59,
+        72
+      ],
+      "func_hex": "6530",
+      "var_names": {
+        "5": "a",
+        "43": "b",
+        "59": "c",
+        "72": "d"
+      },
+      "expression": "(~a & ~b & c & ~d) | (a & ~b & c & ~d) | (~a & ~b & ~c & d) | (~a & b & ~c & d) | (a & ~b & c & d) | (~a & b & c & d)"
+    },
+    {
+      "lut_name": "LUT_80",
+      "lut_root": 80,
+      "leaves": [
+        3,
+        47,
+        61,
+        76
+      ],
+      "func_hex": "0ca6",
+      "var_names": {
+        "3": "a",
+        "47": "b",
+        "61": "c",
+        "76": "d"
+      },
+      "expression": "(a & ~b & ~c & ~d) | (~a & b & ~c & ~d) | (a & ~b & c & ~d) | (a & b & c & ~d) | (~a & b & ~c & d) | (a & b & ~c & d)"
+    },
+    {
+      "lut_name": "LUT_84",
+      "lut_root": 84,
+      "leaves": [
+        5,
+        51,
+        65,
+        80
+      ],
+      "func_hex": "5603",
+      "var_names": {
+        "5": "a",
+        "51": "b",
+        "65": "c",
+        "80": "d"
+      },
+      "expression": "(~a & ~b & ~c & ~d) | (a & ~b & ~c & ~d) | (a & ~b & ~c & d) | (~a & b & ~c & d) | (~a & ~b & c & d) | (~a & b & c & d)"
+    },
+    {
+      "lut_name": "LUT_95",
+      "lut_root": 95,
+      "leaves": [
+        1,
+        2,
+        4,
+        6
+      ],
+      "func_hex": "5a48",
+      "var_names": {
+        "1": "a",
+        "2": "b",
+        "4": "c",
+        "6": "d"
+      },
+      "expression": "(a & b & ~c & ~d) | (~a & b & c & ~d) | (a & ~b & ~c & d) | (a & b & ~c & d) | (~a & ~b & c & d) | (~a & b & c & d)"
+    },
+    {
+      "lut_name": "LUT_97",
+      "lut_root": 97,
+      "leaves": [
+        6,
+        59,
+        72,
+        95
+      ],
+      "func_hex": "c382",
+      "var_names": {
+        "6": "a",
+        "59": "b",
+        "72": "c",
+        "95": "d"
+      },
+      "expression": "(a & ~b & ~c & ~d) | (a & b & c & ~d) | (~a & ~b & ~c & d) | (a & ~b & ~c & d) | (~a & b & c & d) | (a & b & c & d)"
+    },
+    {
+      "lut_name": "LUT_101",
+      "lut_root": 101,
+      "leaves": [
+        4,
+        61,
+        76,
+        97
+      ],
+      "func_hex": "a251",
+      "var_names": {
+        "4": "a",
+        "61": "b",
+        "76": "c",
+        "97": "d"
+      },
+      "expression": "(~a & ~b & ~c & ~d) | (~a & ~b & c & ~d) | (~a & b & c & ~d) | (a & ~b & ~c & d) | (a & ~b & c & d) | (a & b & c & d)"
+    },
+    {
+      "lut_name": "LUT_103",
+      "lut_root": 103,
+      "leaves": [
+        6,
+        65,
+        80,
+        101
+      ],
+      "func_hex": "283c",
+      "var_names": {
+        "6": "a",
+        "65": "b",
+        "80": "c",
+        "101": "d"
+      },
+      "expression": "(~a & b & ~c & ~d) | (a & b & ~c & ~d) | (~a & ~b & c & ~d) | (a & ~b & c & ~d) | (a & b & ~c & d) | (a & ~b & c & d)"
+    },
+    {
+      "lut_name": "LUT_112",
+      "lut_root": 112,
+      "leaves": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "func_hex": "a093",
+      "var_names": {
+        "3": "a",
+        "4": "b",
+        "5": "c",
+        "6": "d"
+      },
+      "expression": "(~a & ~b & ~c & ~d) | (a & ~b & ~c & ~d) | (~a & ~b & c & ~d) | (a & b & c & ~d) | (a & ~b & c & d) | (a & b & c & d)"
+    },
+    {
+      "lut_name": "LUT_116",
+      "lut_root": 116,
+      "leaves": [
+        1,
+        72,
+        95,
+        112
+      ],
+      "func_hex": "6530",
+      "var_names": {
+        "1": "a",
+        "72": "b",
+        "95": "c",
+        "112": "d"
+      },
+      "expression": "(~a & ~b & c & ~d) | (a & ~b & c & ~d) | (~a & ~b & ~c & d) | (~a & b & ~c & d) | (a & ~b & c & d) | (~a & b & c & d)"
+    },
+    {
+      "lut_name": "LUT_120",
+      "lut_root": 120,
+      "leaves": [
+        5,
+        76,
+        97,
+        116
+      ],
+      "func_hex": "0ca6",
+      "var_names": {
+        "5": "a",
+        "76": "b",
+        "97": "c",
+        "116": "d"
+      },
+      "expression": "(a & ~b & ~c & ~d) | (~a & b & ~c & ~d) | (a & ~b & c & ~d) | (a & b & c & ~d) | (~a & b & ~c & d) | (a & b & ~c & d)"
+    },
+    {
+      "lut_name": "LUT_124",
+      "lut_root": 124,
+      "leaves": [
+        1,
+        80,
+        101,
+        120
+      ],
+      "func_hex": "5603",
+      "var_names": {
+        "1": "a",
+        "80": "b",
+        "101": "c",
+        "120": "d"
+      },
+      "expression": "(~a & ~b & ~c & ~d) | (a & ~b & ~c & ~d) | (a & ~b & ~c & d) | (~a & b & ~c & d) | (~a & ~b & c & d) | (~a & b & c & d)"
+    },
+    {
+      "lut_name": "LUT_128",
+      "lut_root": 128,
+      "leaves": [
+        3,
+        84,
+        103,
+        124
+      ],
+      "func_hex": "0ca6",
+      "var_names": {
+        "3": "a",
+        "84": "b",
+        "103": "c",
+        "124": "d"
+      },
+      "expression": "(a & ~b & ~c & ~d) | (~a & b & ~c & ~d) | (a & ~b & c & ~d) | (a & b & c & ~d) | (~a & b & ~c & d) | (a & b & ~c & d)"
+    },
+    {
+      "lut_name": "LUT_139",
+      "lut_root": 139,
+      "leaves": [
+        1,
+        2,
+        3,
+        6
+      ],
+      "func_hex": "0ee0",
+      "var_names": {
+        "1": "a",
+        "2": "b",
+        "3": "c",
+        "6": "d"
+      },
+      "expression": "(a & ~b & c & ~d) | (~a & b & c & ~d) | (a & b & c & ~d) | (a & ~b & ~c & d) | (~a & b & ~c & d) | (a & b & ~c & d)"
+    },
+    {
+      "lut_name": "LUT_141",
+      "lut_root": 141,
+      "leaves": [
+        2,
+        95,
+        112,
+        139
+      ],
+      "func_hex": "c382",
+      "var_names": {
+        "2": "a",
+        "95": "b",
+        "112": "c",
+        "139": "d"
+      },
+      "expression": "(a & ~b & ~c & ~d) | (a & b & c & ~d) | (~a & ~b & ~c & d) | (a & ~b & ~c & d) | (~a & b & c & d) | (a & b & c & d)"
+    },
+    {
+      "lut_name": "LUT_145",
+      "lut_root": 145,
+      "leaves": [
+        6,
+        97,
+        116,
+        141
+      ],
+      "func_hex": "a251",
+      "var_names": {
+        "6": "a",
+        "97": "b",
+        "116": "c",
+        "141": "d"
+      },
+      "expression": "(~a & ~b & ~c & ~d) | (~a & ~b & c & ~d) | (~a & b & c & ~d) | (a & ~b & ~c & d) | (a & ~b & c & d) | (a & b & c & d)"
+    },
+    {
+      "lut_name": "LUT_147",
+      "lut_root": 147,
+      "leaves": [
+        2,
+        101,
+        120,
+        145
+      ],
+      "func_hex": "283c",
+      "var_names": {
+        "2": "a",
+        "101": "b",
+        "120": "c",
+        "145": "d"
+      },
+      "expression": "(~a & b & ~c & ~d) | (a & b & ~c & ~d) | (~a & ~b & c & ~d) | (a & ~b & c & ~d) | (a & b & ~c & d) | (a & ~b & c & d)"
+    },
+    {
+      "lut_name": "LUT_151",
+      "lut_root": 151,
+      "leaves": [
+        4,
+        103,
+        124,
+        147
+      ],
+      "func_hex": "a251",
+      "var_names": {
+        "4": "a",
+        "103": "b",
+        "124": "c",
+        "147": "d"
+      },
+      "expression": "(~a & ~b & ~c & ~d) | (~a & ~b & c & ~d) | (~a & b & c & ~d) | (a & ~b & ~c & d) | (a & ~b & c & d) | (a & b & c & d)"
+    },
+    {
+      "lut_name": "LUT_160",
+      "lut_root": 160,
+      "leaves": [
+        3,
+        11,
+        112,
+        139
+      ],
+      "func_hex": "4b44",
+      "var_names": {
+        "3": "a",
+        "11": "b",
+        "112": "c",
+        "139": "d"
+      },
+      "expression": "(~a & b & ~c & ~d) | (~a & b & c & ~d) | (~a & ~b & ~c & d) | (a & ~b & ~c & d) | (a & b & ~c & d) | (~a & b & c & d)"
+    },
+    {
+      "lut_name": "LUT_164",
+      "lut_root": 164,
+      "leaves": [
+        1,
+        116,
+        141,
+        160
+      ],
+      "func_hex": "0ca6",
+      "var_names": {
+        "1": "a",
+        "116": "b",
+        "141": "c",
+        "160": "d"
+      },
+      "expression": "(a & ~b & ~c & ~d) | (~a & b & ~c & ~d) | (a & ~b & c & ~d) | (a & b & c & ~d) | (~a & b & ~c & d) | (a & b & ~c & d)"
+    },
+    {
+      "lut_name": "LUT_168",
+      "lut_root": 168,
+      "leaves": [
+        3,
+        120,
+        145,
+        164
+      ],
+      "func_hex": "5603",
+      "var_names": {
+        "3": "a",
+        "120": "b",
+        "145": "c",
+        "164": "d"
+      },
+      "expression": "(~a & ~b & ~c & ~d) | (a & ~b & ~c & ~d) | (a & ~b & ~c & d) | (~a & b & ~c & d) | (~a & ~b & c & d) | (~a & b & c & d)"
+    },
+    {
+      "lut_name": "LUT_172",
+      "lut_root": 172,
+      "leaves": [
+        5,
+        124,
+        147,
+        168
+      ],
+      "func_hex": "0ca6",
+      "var_names": {
+        "5": "a",
+        "124": "b",
+        "147": "c",
+        "168": "d"
+      },
+      "expression": "(a & ~b & ~c & ~d) | (~a & b & ~c & ~d) | (a & ~b & c & ~d) | (a & b & c & ~d) | (~a & b & ~c & d) | (a & b & ~c & d)"
+    },
+    {
+      "lut_name": "LUT_176",
+      "lut_root": 176,
+      "leaves": [
+        1,
+        128,
+        151,
+        172
+      ],
+      "func_hex": "5603",
+      "var_names": {
+        "1": "a",
+        "128": "b",
+        "151": "c",
+        "172": "d"
+      },
+      "expression": "(~a & ~b & ~c & ~d) | (a & ~b & ~c & ~d) | (a & ~b & ~c & d) | (~a & b & ~c & d) | (~a & ~b & c & d) | (~a & b & c & d)"
+    },
+    {
+      "lut_name": "LUT_189",
+      "lut_root": 189,
+      "leaves": [
+        4,
+        11,
+        16,
+        139
+      ],
+      "func_hex": "c832",
+      "var_names": {
+        "4": "a",
+        "11": "b",
+        "16": "c",
+        "139": "d"
+      },
+      "expression": "(a & ~b & ~c & ~d) | (~a & ~b & c & ~d) | (a & ~b & c & ~d) | (a & b & ~c & d) | (~a & b & c & d) | (a & b & c & d)"
+    },
+    {
+      "lut_name": "LUT_193",
+      "lut_root": 193,
+      "leaves": [
+        2,
+        141,
+        160,
+        189
+      ],
+      "func_hex": "a251",
+      "var_names": {
+        "2": "a",
+        "141": "b",
+        "160": "c",
+        "189": "d"
+      },
+      "expression": "(~a & ~b & ~c & ~d) | (~a & ~b & c & ~d) | (~a & b & c & ~d) | (a & ~b & ~c & d) | (a & ~b & c & d) | (a & b & c & d)"
+    },
+    {
+      "lut_name": "LUT_195",
+      "lut_root": 195,
+      "leaves": [
+        4,
+        145,
+        164,
+        193
+      ],
+      "func_hex": "283c",
+      "var_names": {
+        "4": "a",
+        "145": "b",
+        "164": "c",
+        "193": "d"
+      },
+      "expression": "(~a & b & ~c & ~d) | (a & b & ~c & ~d) | (~a & ~b & c & ~d) | (a & ~b & c & ~d) | (a & b & ~c & d) | (a & ~b & c & d)"
+    },
+    {
+      "lut_name": "LUT_199",
+      "lut_root": 199,
+      "leaves": [
+        6,
+        147,
+        168,
+        195
+      ],
+      "func_hex": "a251",
+      "var_names": {
+        "6": "a",
+        "147": "b",
+        "168": "c",
+        "195": "d"
+      },
+      "expression": "(~a & ~b & ~c & ~d) | (~a & ~b & c & ~d) | (~a & b & c & ~d) | (a & ~b & ~c & d) | (a & ~b & c & d) | (a & b & c & d)"
+    },
+    {
+      "lut_name": "LUT_201",
+      "lut_root": 201,
+      "leaves": [
+        2,
+        151,
+        172,
+        199
+      ],
+      "func_hex": "283c",
+      "var_names": {
+        "2": "a",
+        "151": "b",
+        "172": "c",
+        "199": "d"
+      },
+      "expression": "(~a & b & ~c & ~d) | (a & b & ~c & ~d) | (~a & ~b & c & ~d) | (a & ~b & c & ~d) | (a & b & ~c & d) | (a & ~b & c & d)"
+    },
+    {
+      "lut_name": "LUT_210",
+      "lut_root": 210,
+      "leaves": [
+        3,
+        26,
+        160,
+        189
+      ],
+      "func_hex": "22d2",
+      "var_names": {
+        "3": "a",
+        "26": "b",
+        "160": "c",
+        "189": "d"
+      },
+      "expression": "(a & ~b & ~c & ~d) | (~a & ~b & c & ~d) | (~a & b & c & ~d) | (a & b & c & ~d) | (a & ~b & ~c & d) | (a & ~b & c & d)"
+    },
+    {
+      "lut_name": "LUT_214",
+      "lut_root": 214,
+      "leaves": [
+        5,
+        164,
+        193,
+        210
+      ],
+      "func_hex": "5603",
+      "var_names": {
+        "5": "a",
+        "164": "b",
+        "193": "c",
+        "210": "d"
+      },
+      "expression": "(~a & ~b & ~c & ~d) | (a & ~b & ~c & ~d) | (a & ~b & ~c & d) | (~a & b & ~c & d) | (~a & ~b & c & d) | (~a & b & c & d)"
+    },
+    {
+      "lut_name": "LUT_218",
+      "lut_root": 218,
+      "leaves": [
+        1,
+        168,
+        195,
+        214
+      ],
+      "func_hex": "0ca6",
+      "var_names": {
+        "1": "a",
+        "168": "b",
+        "195": "c",
+        "214": "d"
+      },
+      "expression": "(a & ~b & ~c & ~d) | (~a & b & ~c & ~d) | (a & ~b & c & ~d) | (a & b & c & ~d) | (~a & b & ~c & d) | (a & b & ~c & d)"
+    },
+    {
+      "lut_name": "LUT_222",
+      "lut_root": 222,
+      "leaves": [
+        3,
+        172,
+        199,
+        218
+      ],
+      "func_hex": "5603",
+      "var_names": {
+        "3": "a",
+        "172": "b",
+        "199": "c",
+        "218": "d"
+      },
+      "expression": "(~a & ~b & ~c & ~d) | (a & ~b & ~c & ~d) | (a & ~b & ~c & d) | (~a & b & ~c & d) | (~a & ~b & c & d) | (~a & b & c & d)"
+    },
+    {
+      "lut_name": "LUT_226",
+      "lut_root": 226,
+      "leaves": [
+        5,
+        176,
+        201,
+        222
+      ],
+      "func_hex": "0ca6",
+      "var_names": {
+        "5": "a",
+        "176": "b",
+        "201": "c",
+        "222": "d"
+      },
+      "expression": "(a & ~b & ~c & ~d) | (~a & b & ~c & ~d) | (a & ~b & c & ~d) | (a & b & c & ~d) | (~a & b & ~c & d) | (a & b & ~c & d)"
+    },
+    {
+      "lut_name": "LUT_239",
+      "lut_root": 239,
+      "leaves": [
+        4,
+        26,
+        36,
+        189
+      ],
+      "func_hex": "84a5",
+      "var_names": {
+        "4": "a",
+        "26": "b",
+        "36": "c",
+        "189": "d"
+      },
+      "expression": "(~a & ~b & ~c & ~d) | (~a & b & ~c & ~d) | (a & ~b & c & ~d) | (a & b & c & ~d) | (~a & b & ~c & d) | (a & b & c & d)"
+    },
+    {
+      "lut_name": "LUT_241",
+      "lut_root": 241,
+      "leaves": [
+        6,
+        193,
+        210,
+        239
+      ],
+      "func_hex": "283c",
+      "var_names": {
+        "6": "a",
+        "193": "b",
+        "210": "c",
+        "239": "d"
+      },
+      "expression": "(~a & b & ~c & ~d) | (a & b & ~c & ~d) | (~a & ~b & c & ~d) | (a & ~b & c & ~d) | (a & b & ~c & d) | (a & ~b & c & d)"
+    },
+    {
+      "lut_name": "LUT_245",
+      "lut_root": 245,
+      "leaves": [
+        2,
+        195,
+        214,
+        241
+      ],
+      "func_hex": "a251",
+      "var_names": {
+        "2": "a",
+        "195": "b",
+        "214": "c",
+        "241": "d"
+      },
+      "expression": "(~a & ~b & ~c & ~d) | (~a & ~b & c & ~d) | (~a & b & c & ~d) | (a & ~b & ~c & d) | (a & ~b & c & d) | (a & b & c & d)"
+    },
+    {
+      "lut_name": "LUT_247",
+      "lut_root": 247,
+      "leaves": [
+        4,
+        199,
+        218,
+        245
+      ],
+      "func_hex": "283c",
+      "var_names": {
+        "4": "a",
+        "199": "b",
+        "218": "c",
+        "245": "d"
+      },
+      "expression": "(~a & b & ~c & ~d) | (a & b & ~c & ~d) | (~a & ~b & c & ~d) | (a & ~b & c & ~d) | (a & b & ~c & d) | (a & ~b & c & d)"
+    },
+    {
+      "lut_name": "LUT_251",
+      "lut_root": 251,
+      "leaves": [
+        6,
+        201,
+        222,
+        247
+      ],
+      "func_hex": "a251",
+      "var_names": {
+        "6": "a",
+        "201": "b",
+        "222": "c",
+        "247": "d"
+      },
+      "expression": "(~a & ~b & ~c & ~d) | (~a & ~b & c & ~d) | (~a & b & c & ~d) | (a & ~b & ~c & d) | (a & ~b & c & d) | (a & b & c & d)"
+    },
+    {
+      "lut_name": "LUT_252",
+      "lut_root": 252,
+      "leaves": [
+        226,
+        251
+      ],
+      "func_hex": "1",
+      "var_names": {
+        "226": "a",
+        "251": "b"
+      },
+      "expression": "(~a & ~b)"
+    },
+    {
+      "lut_name": "LUT_260",
+      "lut_root": 260,
+      "leaves": [
+        1,
+        51,
+        210,
+        239
+      ],
+      "func_hex": "444b",
+      "var_names": {
+        "1": "a",
+        "51": "b",
+        "210": "c",
+        "239": "d"
+      },
+      "expression": "(~a & ~b & ~c & ~d) | (a & ~b & ~c & ~d) | (a & b & ~c & ~d) | (~a & b & c & ~d) | (~a & b & ~c & d) | (~a & b & c & d)"
+    },
+    {
+      "lut_name": "LUT_264",
+      "lut_root": 264,
+      "leaves": [
+        3,
+        214,
+        241,
+        260
+      ],
+      "func_hex": "0ca6",
+      "var_names": {
+        "3": "a",
+        "214": "b",
+        "241": "c",
+        "260": "d"
+      },
+      "expression": "(a & ~b & ~c & ~d) | (~a & b & ~c & ~d) | (a & ~b & c & ~d) | (a & b & c & ~d) | (~a & b & ~c & d) | (a & b & ~c & d)"
+    },
+    {
+      "lut_name": "LUT_268",
+      "lut_root": 268,
+      "leaves": [
+        5,
+        218,
+        245,
+        264
+      ],
+      "func_hex": "5603",
+      "var_names": {
+        "5": "a",
+        "218": "b",
+        "245": "c",
+        "264": "d"
+      },
+      "expression": "(~a & ~b & ~c & ~d) | (a & ~b & ~c & ~d) | (a & ~b & ~c & d) | (~a & b & ~c & d) | (~a & ~b & c & d) | (~a & b & c & d)"
+    },
+    {
+      "lut_name": "LUT_272",
+      "lut_root": 272,
+      "leaves": [
+        1,
+        222,
+        247,
+        268
+      ],
+      "func_hex": "0ca6",
+      "var_names": {
+        "1": "a",
+        "222": "b",
+        "247": "c",
+        "268": "d"
+      },
+      "expression": "(a & ~b & ~c & ~d) | (~a & b & ~c & ~d) | (a & ~b & c & ~d) | (a & b & c & ~d) | (~a & b & ~c & d) | (a & b & ~c & d)"
+    },
+    {
+      "lut_name": "LUT_273",
+      "lut_root": 273,
+      "leaves": [
+        3,
+        272
+      ],
+      "func_hex": "4",
+      "var_names": {
+        "3": "a",
+        "272": "b"
+      },
+      "expression": "(~a & b)"
+    },
+    {
+      "lut_name": "LUT_286",
+      "lut_root": 286,
+      "leaves": [
+        2,
+        51,
+        65,
+        239
+      ],
+      "func_hex": "238c",
+      "var_names": {
+        "2": "a",
+        "51": "b",
+        "65": "c",
+        "239": "d"
+      },
+      "expression": "(~a & b & ~c & ~d) | (a & b & ~c & ~d) | (a & b & c & ~d) | (~a & ~b & ~c & d) | (a & ~b & ~c & d) | (a & ~b & c & d)"
+    },
+    {
+      "lut_name": "LUT_290",
+      "lut_root": 290,
+      "leaves": [
+        4,
+        241,
+        260,
+        286
+      ],
+      "func_hex": "a251",
+      "var_names": {
+        "4": "a",
+        "241": "b",
+        "260": "c",
+        "286": "d"
+      },
+      "expression": "(~a & ~b & ~c & ~d) | (~a & ~b & c & ~d) | (~a & b & c & ~d) | (a & ~b & ~c & d) | (a & ~b & c & d) | (a & b & c & d)"
+    },
+    {
+      "lut_name": "LUT_292",
+      "lut_root": 292,
+      "leaves": [
+        6,
+        245,
+        264,
+        290
+      ],
+      "func_hex": "283c",
+      "var_names": {
+        "6": "a",
+        "245": "b",
+        "264": "c",
+        "290": "d"
+      },
+      "expression": "(~a & b & ~c & ~d) | (a & b & ~c & ~d) | (~a & ~b & c & ~d) | (a & ~b & c & ~d) | (a & b & ~c & d) | (a & ~b & c & d)"
+    },
+    {
+      "lut_name": "LUT_296",
+      "lut_root": 296,
+      "leaves": [
+        2,
+        247,
+        268,
+        292
+      ],
+      "func_hex": "a251",
+      "var_names": {
+        "2": "a",
+        "247": "b",
+        "268": "c",
+        "292": "d"
+      },
+      "expression": "(~a & ~b & ~c & ~d) | (~a & ~b & c & ~d) | (~a & b & c & ~d) | (a & ~b & ~c & d) | (a & ~b & c & d) | (a & b & c & d)"
+    },
+    {
+      "lut_name": "LUT_297",
+      "lut_root": 297,
+      "leaves": [
+        272,
+        296
+      ],
+      "func_hex": "1",
+      "var_names": {
+        "272": "a",
+        "296": "b"
+      },
+      "expression": "(~a & ~b)"
+    },
+    {
+      "lut_name": "LUT_304",
+      "lut_root": 304,
+      "leaves": [
+        5,
+        84,
+        260,
+        286
+      ],
+      "func_hex": "22d2",
+      "var_names": {
+        "5": "a",
+        "84": "b",
+        "260": "c",
+        "286": "d"
+      },
+      "expression": "(a & ~b & ~c & ~d) | (~a & ~b & c & ~d) | (~a & b & c & ~d) | (a & b & c & ~d) | (a & ~b & ~c & d) | (a & ~b & c & d)"
+    },
+    {
+      "lut_name": "LUT_308",
+      "lut_root": 308,
+      "leaves": [
+        1,
+        264,
+        290,
+        304
+      ],
+      "func_hex": "5603",
+      "var_names": {
+        "1": "a",
+        "264": "b",
+        "290": "c",
+        "304": "d"
+      },
+      "expression": "(~a & ~b & ~c & ~d) | (a & ~b & ~c & ~d) | (a & ~b & ~c & d) | (~a & b & ~c & d) | (~a & ~b & c & d) | (~a & b & c & d)"
+    },
+    {
+      "lut_name": "LUT_312",
+      "lut_root": 312,
+      "leaves": [
+        3,
+        268,
+        292,
+        308
+      ],
+      "func_hex": "0ca6",
+      "var_names": {
+        "3": "a",
+        "268": "b",
+        "292": "c",
+        "308": "d"
+      },
+      "expression": "(a & ~b & ~c & ~d) | (~a & b & ~c & ~d) | (a & ~b & c & ~d) | (a & b & c & ~d) | (~a & b & ~c & d) | (a & b & ~c & d)"
+    },
+    {
+      "lut_name": "LUT_313",
+      "lut_root": 313,
+      "leaves": [
+        5,
+        312
+      ],
+      "func_hex": "4",
+      "var_names": {
+        "5": "a",
+        "312": "b"
+      },
+      "expression": "(~a & b)"
+    },
+    {
+      "lut_name": "LUT_317",
+      "lut_root": 317,
+      "leaves": [
+        252,
+        273,
+        297,
+        313
+      ],
+      "func_hex": "9009",
+      "var_names": {
+        "252": "a",
+        "273": "b",
+        "297": "c",
+        "313": "d"
+      },
+      "expression": "(~a & ~b & ~c & ~d) | (a & b & ~c & ~d) | (~a & ~b & c & d) | (a & b & c & d)"
+    },
+    {
+      "lut_name": "LUT_326",
+      "lut_root": 326,
+      "leaves": [
+        6,
+        84,
+        103,
+        286
+      ],
+      "func_hex": "84a5",
+      "var_names": {
+        "6": "a",
+        "84": "b",
+        "103": "c",
+        "286": "d"
+      },
+      "expression": "(~a & ~b & ~c & ~d) | (~a & b & ~c & ~d) | (a & ~b & c & ~d) | (a & b & c & ~d) | (~a & b & ~c & d) | (a & b & c & d)"
+    },
+    {
+      "lut_name": "LUT_328",
+      "lut_root": 328,
+      "leaves": [
+        2,
+        290,
+        304,
+        326
+      ],
+      "func_hex": "283c",
+      "var_names": {
+        "2": "a",
+        "290": "b",
+        "304": "c",
+        "326": "d"
+      },
+      "expression": "(~a & b & ~c & ~d) | (a & b & ~c & ~d) | (~a & ~b & c & ~d) | (a & ~b & c & ~d) | (a & b & ~c & d) | (a & ~b & c & d)"
+    },
+    {
+      "lut_name": "LUT_332",
+      "lut_root": 332,
+      "leaves": [
+        4,
+        292,
+        308,
+        328
+      ],
+      "func_hex": "a251",
+      "var_names": {
+        "4": "a",
+        "292": "b",
+        "308": "c",
+        "328": "d"
+      },
+      "expression": "(~a & ~b & ~c & ~d) | (~a & ~b & c & ~d) | (~a & b & c & ~d) | (a & ~b & ~c & d) | (a & ~b & c & d) | (a & b & c & d)"
+    },
+    {
+      "lut_name": "LUT_333",
+      "lut_root": 333,
+      "leaves": [
+        312,
+        332
+      ],
+      "func_hex": "1",
+      "var_names": {
+        "312": "a",
+        "332": "b"
+      },
+      "expression": "(~a & ~b)"
+    },
+    {
+      "lut_name": "LUT_339",
+      "lut_root": 339,
+      "leaves": [
+        3,
+        128,
+        304,
+        326
+      ],
+      "func_hex": "444b",
+      "var_names": {
+        "3": "a",
+        "128": "b",
+        "304": "c",
+        "326": "d"
+      },
+      "expression": "(~a & ~b & ~c & ~d) | (a & ~b & ~c & ~d) | (a & b & ~c & ~d) | (~a & b & c & ~d) | (~a & b & ~c & d) | (~a & b & c & d)"
+    },
+    {
+      "lut_name": "LUT_343",
+      "lut_root": 343,
+      "leaves": [
+        5,
+        308,
+        328,
+        339
+      ],
+      "func_hex": "0ca6",
+      "var_names": {
+        "5": "a",
+        "308": "b",
+        "328": "c",
+        "339": "d"
+      },
+      "expression": "(a & ~b & ~c & ~d) | (~a & b & ~c & ~d) | (a & ~b & c & ~d) | (a & b & c & ~d) | (~a & b & ~c & d) | (a & b & ~c & d)"
+    },
+    {
+      "lut_name": "LUT_352",
+      "lut_root": 352,
+      "leaves": [
+        4,
+        128,
+        151,
+        326
+      ],
+      "func_hex": "238c",
+      "var_names": {
+        "4": "a",
+        "128": "b",
+        "151": "c",
+        "326": "d"
+      },
+      "expression": "(~a & b & ~c & ~d) | (a & b & ~c & ~d) | (a & b & c & ~d) | (~a & ~b & ~c & d) | (a & ~b & ~c & d) | (a & ~b & c & d)"
+    },
+    {
+      "lut_name": "LUT_356",
+      "lut_root": 356,
+      "leaves": [
+        6,
+        328,
+        339,
+        352
+      ],
+      "func_hex": "a251",
+      "var_names": {
+        "6": "a",
+        "328": "b",
+        "339": "c",
+        "352": "d"
+      },
+      "expression": "(~a & ~b & ~c & ~d) | (~a & ~b & c & ~d) | (~a & b & c & ~d) | (a & ~b & ~c & d) | (a & ~b & c & d) | (a & b & c & d)"
+    },
+    {
+      "lut_name": "LUT_362",
+      "lut_root": 362,
+      "leaves": [
+        1,
+        176,
+        339,
+        352
+      ],
+      "func_hex": "22d2",
+      "var_names": {
+        "1": "a",
+        "176": "b",
+        "339": "c",
+        "352": "d"
+      },
+      "expression": "(a & ~b & ~c & ~d) | (~a & ~b & c & ~d) | (~a & b & c & ~d) | (a & b & c & ~d) | (a & ~b & ~c & d) | (a & ~b & c & d)"
+    },
+    {
+      "lut_name": "LUT_364",
+      "lut_root": 364,
+      "leaves": [
+        3,
+        343,
+        356,
+        362
+      ],
+      "func_hex": "a8fc",
+      "var_names": {
+        "3": "a",
+        "343": "b",
+        "356": "c",
+        "362": "d"
+      },
+      "expression": "(~a & b & ~c & ~d) | (a & b & ~c & ~d) | (~a & ~b & c & ~d) | (a & ~b & c & ~d) | (~a & b & c & ~d) | (a & b & c & ~d) | (a & b & ~c & d) | (a & ~b & c & d) | (a & b & c & d)"
+    },
+    {
+      "lut_name": "LUT_366",
+      "lut_root": 366,
+      "leaves": [
+        1,
+        333,
+        343,
+        364
+      ],
+      "func_hex": "009c",
+      "var_names": {
+        "1": "a",
+        "333": "b",
+        "343": "c",
+        "364": "d"
+      },
+      "expression": "(~a & b & ~c & ~d) | (a & b & ~c & ~d) | (~a & ~b & c & ~d) | (a & b & c & ~d)"
+    },
+    {
+      "lut_name": "LUT_369",
+      "lut_root": 369,
+      "leaves": [
+        317,
+        366
+      ],
+      "func_hex": "6",
+      "var_names": {
+        "317": "a",
+        "366": "b"
+      },
+      "expression": "(a & ~b) | (~a & b)"
+    },
+    {
+      "lut_name": "LUT_374",
+      "lut_root": 374,
+      "leaves": [
+        2,
+        176,
+        201,
+        352
+      ],
+      "func_hex": "84a5",
+      "var_names": {
+        "2": "a",
+        "176": "b",
+        "201": "c",
+        "352": "d"
+      },
+      "expression": "(~a & ~b & ~c & ~d) | (~a & b & ~c & ~d) | (a & ~b & c & ~d) | (a & b & c & ~d) | (~a & b & ~c & d) | (a & b & c & d)"
+    },
+    {
+      "lut_name": "LUT_375",
+      "lut_root": 375,
+      "leaves": [
+        362,
+        374
+      ],
+      "func_hex": "1",
+      "var_names": {
+        "362": "a",
+        "374": "b"
+      },
+      "expression": "(~a & ~b)"
+    },
+    {
+      "lut_name": "LUT_384",
+      "lut_root": 384,
+      "leaves": [
+        6,
+        226,
+        251,
+        374
+      ],
+      "func_hex": "238c",
+      "var_names": {
+        "6": "a",
+        "226": "b",
+        "251": "c",
+        "374": "d"
+      },
+      "expression": "(~a & b & ~c & ~d) | (a & b & ~c & ~d) | (a & b & c & ~d) | (~a & ~b & ~c & d) | (a & ~b & ~c & d) | (a & ~b & c & d)"
+    },
+    {
+      "lut_name": "LUT_385",
+      "lut_root": 385,
+      "leaves": [
+        5,
+        226,
+        375,
+        384
+      ],
+      "func_hex": "4b00",
+      "var_names": {
+        "5": "a",
+        "226": "b",
+        "375": "c",
+        "384": "d"
+      },
+      "expression": "(~a & ~b & ~c & d) | (a & ~b & ~c & d) | (a & b & ~c & d) | (~a & b & c & d)"
+    },
+    {
+      "lut_name": "LUT_386",
+      "lut_root": 386,
+      "leaves": [
+        369,
+        385
+      ],
+      "func_hex": "1",
+      "var_names": {
+        "369": "a",
+        "385": "b"
+      },
+      "expression": "(~a & ~b)"
+    },
+    {
+      "lut_name": "LUT_387",
+      "lut_root": 387,
+      "leaves": [
+        369,
+        385
+      ],
+      "func_hex": "8",
+      "var_names": {
+        "369": "a",
+        "385": "b"
+      },
+      "expression": "(a & b)"
+    },
+    {
+      "lut_name": "LUT_388",
+      "lut_root": 388,
+      "leaves": [
+        386,
+        387
+      ],
+      "func_hex": "1",
+      "var_names": {
+        "386": "a",
+        "387": "b"
+      },
+      "expression": "(~a & ~b)"
+    }
+  ]
+}

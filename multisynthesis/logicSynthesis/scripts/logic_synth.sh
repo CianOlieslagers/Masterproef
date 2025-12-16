@@ -23,7 +23,7 @@ set -euo pipefail
 MPROOT="${MPROOT:-$HOME/Masterproef/multisynthesis}"
 OUT_DIR="${OUT_DIR:-$MPROOT/logicSynthesis/results}"
 LOG_DIR="${LOG_DIR:-$MPROOT/logicSynthesis/logs}"
-K="${K:-6}"
+K="${K:-4}"
 MODE="${MODE:-speed}"
 
 ABC_BIN="${ABC_BIN:-$HOME/Masterproef/vtr-verilog-to-routing/build/abc/abc}"

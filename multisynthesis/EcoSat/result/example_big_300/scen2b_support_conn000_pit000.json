@@ -1,0 +1,68 @@
+{
+  "format": "eco_support_report:v1",
+  "src": "/home/cian/Masterproef/multisynthesis/EcoSat/result/example_big_300/eco_instances/example_big_300.conn000.pit000.eco_instance.json",
+  "dst": {
+    "lut_name": "LUT_101",
+    "lut_root": 101,
+    "leaves": [
+      4,
+      61,
+      76,
+      97
+    ]
+  },
+  "targets": [
+    {
+      "node": 88,
+      "func_hex": "0c0c",
+      "support_vars": [
+        1,
+        2
+      ],
+      "support_leaves": [
+        61,
+        76
+      ]
+    },
+    {
+      "node": 98,
+      "func_hex": "5500",
+      "support_vars": [
+        0,
+        3
+      ],
+      "support_leaves": [
+        4,
+        97
+      ]
+    },
+    {
+      "node": 99,
+      "func_hex": "00aa",
+      "support_vars": [
+        0,
+        3
+      ],
+      "support_leaves": [
+        4,
+        97
+      ]
+    },
+    {
+      "node": 100,
+      "func_hex": "aa55",
+      "support_vars": [
+        0,
+        3
+      ],
+      "support_leaves": [
+        4,
+        97
+      ]
+    }
+  ],
+  "notes": [
+    "support_vars indexeert dst.leaves volgorde uit targets.json",
+    "support_leaves zijn AIG-leaf IDs (zoals in lut_cones)"
+  ]
+}

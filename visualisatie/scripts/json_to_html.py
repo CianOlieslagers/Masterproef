@@ -118,15 +118,28 @@ def json_to_html(json_path, html_path):
         )
 
     # AND-nodes (levels volgens depth)
+        # AND-nodes (levels volgens depth, met rol-kleuren)
     for node in data.get("nodes", []):
         nid = node["id"]
+        role = node.get("role", "normal")
+
+        if role == "src":
+            color = "#ff3333"   # FEL ROOD
+        elif role == "dst":
+            color = "#33cc33"   # FEL GROEN
+        elif role == "pitstop":
+            color = "#aa33ff"   # PAARS
+        else:
+            color = "#88c4ff"   # standaard blauw
+
         net.add_node(
             nid,
             label=nid,
-            color="#88c4ff",
+            color=color,
             level=depth.get(nid, 1),
             shape="box",
             size=35,
+            title=f"{nid} ({role})"
         )
 
     # Outputs onderaan (depth via compute_depths)

@@ -50,10 +50,10 @@ echo
 
 # --- 1) ABC: DOT vóór en ná RESUB (substitution) ---
 echo "[ABC] pre-dot (strash)..."
-"$ABC" -c "read $VERILOG_PATH; strash; write_dot $PRE_DOT"
+"$ABC" -c "read $VERILOG_PATH; strash; ps;write_dot $PRE_DOT"
 
 echo "[ABC] post-dot (strash + resub)..."
-"$ABC" -c "read $VERILOG_PATH; strash; resub; write_dot $POST_DOT"
+"$ABC" -c "read $VERILOG_PATH; strash; resub; ps;write_dot $POST_DOT"
 
 # --- 2) DOT -> JSON ---
 echo "[dot_json] pre-dot -> json..."

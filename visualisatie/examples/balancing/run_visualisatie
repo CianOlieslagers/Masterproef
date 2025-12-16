@@ -47,10 +47,10 @@ echo "Output  : $OUT_ROOT"
 echo
 
 echo "[ABC] pre-dot (strash)..."
-"$ABC" -c "read $VERILOG_PATH; strash; write_dot $PRE_DOT"
+"$ABC" -c "read $VERILOG_PATH; strash; ps; write_dot $PRE_DOT"
 
 echo "[ABC] post-dot (strash + balance)..."
-"$ABC" -c "read $VERILOG_PATH; strash; balance; write_dot $POST_DOT"
+"$ABC" -c "read $VERILOG_PATH; strash; balance; ps;write_dot $POST_DOT"
 
 echo "[dot_json] pre-dot -> json..."
 python3 "$DOT_JSON" "$PRE_DOT" "$PRE_JSON"

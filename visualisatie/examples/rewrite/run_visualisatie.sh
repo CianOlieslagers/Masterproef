@@ -50,10 +50,10 @@ echo
 
 # --- 1) ABC: DOT vóór en ná REWRITE ---
 echo "[ABC] pre-dot genereren (na strash)..."
-"$ABC" -c "read $VERILOG_PATH; strash; write_dot $PRE_DOT"
+"$ABC" -c "read $VERILOG_PATH; strash; ps;write_dot $PRE_DOT"
 
 echo "[ABC] post-dot genereren (na rewrite)..."
-"$ABC" -c "read $VERILOG_PATH; strash; rewrite; write_dot $POST_DOT"
+"$ABC" -c "read $VERILOG_PATH; strash; rewrite; ps;write_dot $POST_DOT"
 
 # --- 2) DOT -> JSON ---
 echo "[dot_json] pre-dot -> json..."

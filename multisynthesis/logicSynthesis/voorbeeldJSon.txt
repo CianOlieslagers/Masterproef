@@ -1,0 +1,28 @@
+{
+  "format": "mt_lut_cones:v1",
+  "circuit": "example_big_300",
+  "K": 6,
+  "lut_cones": [
+    {
+      "lut_out": "new_n18",
+      "aig_root_literal": 234,
+      "aig_cone_nodes": [234, 231, 225, 220],
+      "aig_leaf_literals": [2, 6, 8, 12],
+      "is_po": false
+    },
+    {
+      "lut_out": "new_n19",
+      "aig_root_literal": 250,
+      "aig_cone_nodes": [250, 241, 238],
+      "aig_leaf_literals": [2, 4, 10, 12],
+      "is_po": false
+    },
+    {
+      "lut_out": "po0",
+      "aig_root_literal": 300,
+      "aig_cone_nodes": [300, 295, 290],
+      "aig_leaf_literals": [42, 52],
+      "is_po": true
+    }
+  ]
+}
