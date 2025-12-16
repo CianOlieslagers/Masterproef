@@ -64,3 +64,11 @@ visualisatie/logs/
 multisynthesis/**/results/
 *_routing/
 *.txt
+
+
+# Generated experiment results (VTR / Place&Route)
+multisynthesis/**/results/
+**/PlaceAndRoute/
+*.route
+*.net
+*.log
