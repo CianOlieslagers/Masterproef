@@ -1,0 +1,2248 @@
+{
+  "inputs": {
+    "aag": "/home/cian/Masterproef/multisynthesis/results/example_big_300/LogicSynthesis/Aig/example_big_300.clean.postopt.aag",
+    "cones": "/home/cian/Masterproef/multisynthesis/results/example_big_300/JsonMapping/example_big_300.lut_cones.json",
+    "conns": "/home/cian/Masterproef/multisynthesis/Lut_verbinding/result/example_big_300/example_big_300.lut_connections_full.json"
+  },
+  "summary": {
+    "errors": 75,
+    "warnings": 0,
+    "checked_luts": 43,
+    "checked_connections": 20
+  },
+  "errors": [
+    {
+      "msg": "Cutpoint closure FAIL: traversal hits boundary nodes that are not declared as leaves (cone not cut at pins)",
+      "ctx": {
+        "lut": "LUT_101",
+        "lut_root": 101,
+        "unexpected_cutpoints": [
+          1,
+          2,
+          3,
+          5,
+          6
+        ],
+        "unexpected_count": 5
+      }
+    },
+    {
+      "msg": "Cutpoint closure FAIL: some leaves are not reached from lut_root when stopping at leaves",
+      "ctx": {
+        "lut": "LUT_11",
+        "lut_root": 11,
+        "missing_leaves": [
+          1
+        ],
+        "missing_count": 1
+      }
+    },
+    {
+      "msg": "Cutpoint closure FAIL: traversal hits boundary nodes that are not declared as leaves (cone not cut at pins)",
+      "ctx": {
+        "lut": "LUT_11",
+        "lut_root": 11,
+        "unexpected_cutpoints": [
+          6
+        ],
+        "unexpected_count": 1
+      }
+    },
+    {
+      "msg": "Cutpoint closure FAIL: some leaves are not reached from lut_root when stopping at leaves",
+      "ctx": {
+        "lut": "LUT_116",
+        "lut_root": 116,
+        "missing_leaves": [
+          72,
+          95
+        ],
+        "missing_count": 2
+      }
+    },
+    {
+      "msg": "Cutpoint closure FAIL: traversal hits boundary nodes that are not declared as leaves (cone not cut at pins)",
+      "ctx": {
+        "lut": "LUT_116",
+        "lut_root": 116,
+        "unexpected_cutpoints": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "unexpected_count": 5
+      }
+    },
+    {
+      "msg": "Cutpoint closure FAIL: some leaves are not reached from lut_root when stopping at leaves",
+      "ctx": {
+        "lut": "LUT_120",
+        "lut_root": 120,
+        "missing_leaves": [
+          76
+        ],
+        "missing_count": 1
+      }
+    },
+    {
+      "msg": "Cutpoint closure FAIL: traversal hits boundary nodes that are not declared as leaves (cone not cut at pins)",
+      "ctx": {
+        "lut": "LUT_120",
+        "lut_root": 120,
+        "unexpected_cutpoints": [
+          1,
+          2,
+          3,
+          4,
+          6
+        ],
+        "unexpected_count": 5
+      }
+    },
+    {
+      "msg": "Cutpoint closure FAIL: some leaves are not reached from lut_root when stopping at leaves",
+      "ctx": {
+        "lut": "LUT_124",
+        "lut_root": 124,
+        "missing_leaves": [
+          80
+        ],
+        "missing_count": 1
+      }
+    },
+    {
+      "msg": "Cutpoint closure FAIL: traversal hits boundary nodes that are not declared as leaves (cone not cut at pins)",
+      "ctx": {
+        "lut": "LUT_124",
+        "lut_root": 124,
+        "unexpected_cutpoints": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "unexpected_count": 5
+      }
+    },
+    {
+      "msg": "Cutpoint closure FAIL: traversal hits boundary nodes that are not declared as leaves (cone not cut at pins)",
+      "ctx": {
+        "lut": "LUT_128",
+        "lut_root": 128,
+        "unexpected_cutpoints": [
+          1,
+          2,
+          4,
+          5,
+          6
+        ],
+        "unexpected_count": 5
+      }
+    },
+    {
+      "msg": "Cutpoint closure FAIL: traversal hits boundary nodes that are not declared as leaves (cone not cut at pins)",
+      "ctx": {
+        "lut": "LUT_145",
+        "lut_root": 145,
+        "unexpected_cutpoints": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "unexpected_count": 5
+      }
+    },
+    {
+      "msg": "Cutpoint closure FAIL: some leaves are not reached from lut_root when stopping at leaves",
+      "ctx": {
+        "lut": "LUT_147",
+        "lut_root": 147,
+        "missing_leaves": [
+          120
+        ],
+        "missing_count": 1
+      }
+    },
+    {
+      "msg": "Cutpoint closure FAIL: traversal hits boundary nodes that are not declared as leaves (cone not cut at pins)",
+      "ctx": {
+        "lut": "LUT_147",
+        "lut_root": 147,
+        "unexpected_cutpoints": [
+          1,
+          3,
+          4,
+          5,
+          6
+        ],
+        "unexpected_count": 5
+      }
+    },
+    {
+      "msg": "Cutpoint closure FAIL: traversal hits boundary nodes that are not declared as leaves (cone not cut at pins)",
+      "ctx": {
+        "lut": "LUT_151",
+        "lut_root": 151,
+        "unexpected_cutpoints": [
+          1,
+          2,
+          3,
+          5,
+          6
+        ],
+        "unexpected_count": 5
+      }
+    },
+    {
+      "msg": "Cutpoint closure FAIL: some leaves are not reached from lut_root when stopping at leaves",
+      "ctx": {
+        "lut": "LUT_16",
+        "lut_root": 16,
+        "missing_leaves": [
+          1,
+          2,
+          3
+        ],
+        "missing_count": 3
+      }
+    },
+    {
+      "msg": "Cutpoint closure FAIL: traversal hits boundary nodes that are not declared as leaves (cone not cut at pins)",
+      "ctx": {
+        "lut": "LUT_16",
+        "lut_root": 16,
+        "unexpected_cutpoints": [
+          4
+        ],
+        "unexpected_count": 1
+      }
+    },
+    {
+      "msg": "Cutpoint closure FAIL: some leaves are not reached from lut_root when stopping at leaves",
+      "ctx": {
+        "lut": "LUT_160",
+        "lut_root": 160,
+        "missing_leaves": [
+          11,
+          139
+        ],
+        "missing_count": 2
+      }
+    },
+    {
+      "msg": "Cutpoint closure FAIL: traversal hits boundary nodes that are not declared as leaves (cone not cut at pins)",
+      "ctx": {
+        "lut": "LUT_160",
+        "lut_root": 160,
+        "unexpected_cutpoints": [
+          1,
+          4,
+          5
+        ],
+        "unexpected_count": 3
+      }
+    },
+    {
+      "msg": "Cutpoint closure FAIL: some leaves are not reached from lut_root when stopping at leaves",
+      "ctx": {
+        "lut": "LUT_164",
+        "lut_root": 164,
+        "missing_leaves": [
+          116,
+          141
+        ],
+        "missing_count": 2
+      }
+    },
+    {
+      "msg": "Cutpoint closure FAIL: traversal hits boundary nodes that are not declared as leaves (cone not cut at pins)",
+      "ctx": {
+        "lut": "LUT_164",
+        "lut_root": 164,
+        "unexpected_cutpoints": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "unexpected_count": 5
+      }
+    },
+    {
+      "msg": "Cutpoint closure FAIL: some leaves are not reached from lut_root when stopping at leaves",
+      "ctx": {
+        "lut": "LUT_168",
+        "lut_root": 168,
+        "missing_leaves": [
+          120,
+          145
+        ],
+        "missing_count": 2
+      }
+    },
+    {
+      "msg": "Cutpoint closure FAIL: traversal hits boundary nodes that are not declared as leaves (cone not cut at pins)",
+      "ctx": {
+        "lut": "LUT_168",
+        "lut_root": 168,
+        "unexpected_cutpoints": [
+          1,
+          2,
+          4,
+          5,
+          6
+        ],
+        "unexpected_count": 5
+      }
+    },
+    {
+      "msg": "Cutpoint closure FAIL: traversal hits boundary nodes that are not declared as leaves (cone not cut at pins)",
+      "ctx": {
+        "lut": "LUT_172",
+        "lut_root": 172,
+        "unexpected_cutpoints": [
+          1,
+          2,
+          3,
+          4,
+          6
+        ],
+        "unexpected_count": 5
+      }
+    },
+    {
+      "msg": "Cutpoint closure FAIL: traversal hits boundary nodes that are not declared as leaves (cone not cut at pins)",
+      "ctx": {
+        "lut": "LUT_176",
+        "lut_root": 176,
+        "unexpected_cutpoints": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "unexpected_count": 5
+      }
+    },
+    {
+      "msg": "Cutpoint closure FAIL: some leaves are not reached from lut_root when stopping at leaves",
+      "ctx": {
+        "lut": "LUT_189",
+        "lut_root": 189,
+        "missing_leaves": [
+          139
+        ],
+        "missing_count": 1
+      }
+    },
+    {
+      "msg": "Cutpoint closure FAIL: traversal hits boundary nodes that are not declared as leaves (cone not cut at pins)",
+      "ctx": {
+        "lut": "LUT_189",
+        "lut_root": 189,
+        "unexpected_cutpoints": [
+          1,
+          2,
+          3,
+          5,
+          6
+        ],
+        "unexpected_count": 5
+      }
+    },
+    {
+      "msg": "Cutpoint closure FAIL: some leaves are not reached from lut_root when stopping at leaves",
+      "ctx": {
+        "lut": "LUT_193",
+        "lut_root": 193,
+        "missing_leaves": [
+          141
+        ],
+        "missing_count": 1
+      }
+    },
+    {
+      "msg": "Cutpoint closure FAIL: traversal hits boundary nodes that are not declared as leaves (cone not cut at pins)",
+      "ctx": {
+        "lut": "LUT_193",
+        "lut_root": 193,
+        "unexpected_cutpoints": [
+          1,
+          3,
+          4,
+          5,
+          6
+        ],
+        "unexpected_count": 5
+      }
+    },
+    {
+      "msg": "Cutpoint closure FAIL: traversal hits boundary nodes that are not declared as leaves (cone not cut at pins)",
+      "ctx": {
+        "lut": "LUT_199",
+        "lut_root": 199,
+        "unexpected_cutpoints": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "unexpected_count": 5
+      }
+    },
+    {
+      "msg": "Cutpoint closure FAIL: some leaves are not reached from lut_root when stopping at leaves",
+      "ctx": {
+        "lut": "LUT_201",
+        "lut_root": 201,
+        "missing_leaves": [
+          151
+        ],
+        "missing_count": 1
+      }
+    },
+    {
+      "msg": "Cutpoint closure FAIL: traversal hits boundary nodes that are not declared as leaves (cone not cut at pins)",
+      "ctx": {
+        "lut": "LUT_201",
+        "lut_root": 201,
+        "unexpected_cutpoints": [
+          1,
+          3,
+          4,
+          5,
+          6
+        ],
+        "unexpected_count": 5
+      }
+    },
+    {
+      "msg": "Cutpoint closure FAIL: some leaves are not reached from lut_root when stopping at leaves",
+      "ctx": {
+        "lut": "LUT_210",
+        "lut_root": 210,
+        "missing_leaves": [
+          26,
+          189
+        ],
+        "missing_count": 2
+      }
+    },
+    {
+      "msg": "Cutpoint closure FAIL: traversal hits boundary nodes that are not declared as leaves (cone not cut at pins)",
+      "ctx": {
+        "lut": "LUT_210",
+        "lut_root": 210,
+        "unexpected_cutpoints": [
+          1,
+          2,
+          4,
+          5,
+          6
+        ],
+        "unexpected_count": 5
+      }
+    },
+    {
+      "msg": "Cutpoint closure FAIL: some leaves are not reached from lut_root when stopping at leaves",
+      "ctx": {
+        "lut": "LUT_218",
+        "lut_root": 218,
+        "missing_leaves": [
+          168,
+          195
+        ],
+        "missing_count": 2
+      }
+    },
+    {
+      "msg": "Cutpoint closure FAIL: traversal hits boundary nodes that are not declared as leaves (cone not cut at pins)",
+      "ctx": {
+        "lut": "LUT_218",
+        "lut_root": 218,
+        "unexpected_cutpoints": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "unexpected_count": 5
+      }
+    },
+    {
+      "msg": "Cutpoint closure FAIL: some leaves are not reached from lut_root when stopping at leaves",
+      "ctx": {
+        "lut": "LUT_22",
+        "lut_root": 22,
+        "missing_leaves": [
+          4,
+          6
+        ],
+        "missing_count": 2
+      }
+    },
+    {
+      "msg": "Cutpoint closure FAIL: traversal hits boundary nodes that are not declared as leaves (cone not cut at pins)",
+      "ctx": {
+        "lut": "LUT_22",
+        "lut_root": 22,
+        "unexpected_cutpoints": [
+          2,
+          3
+        ],
+        "unexpected_count": 2
+      }
+    },
+    {
+      "msg": "Cutpoint closure FAIL: some leaves are not reached from lut_root when stopping at leaves",
+      "ctx": {
+        "lut": "LUT_222",
+        "lut_root": 222,
+        "missing_leaves": [
+          172
+        ],
+        "missing_count": 1
+      }
+    },
+    {
+      "msg": "Cutpoint closure FAIL: traversal hits boundary nodes that are not declared as leaves (cone not cut at pins)",
+      "ctx": {
+        "lut": "LUT_222",
+        "lut_root": 222,
+        "unexpected_cutpoints": [
+          1,
+          2,
+          4,
+          5,
+          6
+        ],
+        "unexpected_count": 5
+      }
+    },
+    {
+      "msg": "Cutpoint closure FAIL: traversal hits boundary nodes that are not declared as leaves (cone not cut at pins)",
+      "ctx": {
+        "lut": "LUT_226",
+        "lut_root": 226,
+        "unexpected_cutpoints": [
+          1,
+          2,
+          3,
+          4,
+          6
+        ],
+        "unexpected_count": 5
+      }
+    },
+    {
+      "msg": "Cutpoint closure FAIL: some leaves are not reached from lut_root when stopping at leaves",
+      "ctx": {
+        "lut": "LUT_239",
+        "lut_root": 239,
+        "missing_leaves": [
+          189
+        ],
+        "missing_count": 1
+      }
+    },
+    {
+      "msg": "Cutpoint closure FAIL: traversal hits boundary nodes that are not declared as leaves (cone not cut at pins)",
+      "ctx": {
+        "lut": "LUT_239",
+        "lut_root": 239,
+        "unexpected_cutpoints": [
+          1,
+          2,
+          3,
+          5,
+          6
+        ],
+        "unexpected_count": 5
+      }
+    },
+    {
+      "msg": "Cutpoint closure FAIL: some leaves are not reached from lut_root when stopping at leaves",
+      "ctx": {
+        "lut": "LUT_241",
+        "lut_root": 241,
+        "missing_leaves": [
+          193,
+          210
+        ],
+        "missing_count": 2
+      }
+    },
+    {
+      "msg": "Cutpoint closure FAIL: traversal hits boundary nodes that are not declared as leaves (cone not cut at pins)",
+      "ctx": {
+        "lut": "LUT_241",
+        "lut_root": 241,
+        "unexpected_cutpoints": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "unexpected_count": 5
+      }
+    },
+    {
+      "msg": "Cutpoint closure FAIL: some leaves are not reached from lut_root when stopping at leaves",
+      "ctx": {
+        "lut": "LUT_247",
+        "lut_root": 247,
+        "missing_leaves": [
+          199,
+          218
+        ],
+        "missing_count": 2
+      }
+    },
+    {
+      "msg": "Cutpoint closure FAIL: traversal hits boundary nodes that are not declared as leaves (cone not cut at pins)",
+      "ctx": {
+        "lut": "LUT_247",
+        "lut_root": 247,
+        "unexpected_cutpoints": [
+          1,
+          2,
+          3,
+          5,
+          6
+        ],
+        "unexpected_count": 5
+      }
+    },
+    {
+      "msg": "Cutpoint closure FAIL: some leaves are not reached from lut_root when stopping at leaves",
+      "ctx": {
+        "lut": "LUT_260",
+        "lut_root": 260,
+        "missing_leaves": [
+          51
+        ],
+        "missing_count": 1
+      }
+    },
+    {
+      "msg": "Cutpoint closure FAIL: traversal hits boundary nodes that are not declared as leaves (cone not cut at pins)",
+      "ctx": {
+        "lut": "LUT_260",
+        "lut_root": 260,
+        "unexpected_cutpoints": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "unexpected_count": 5
+      }
+    },
+    {
+      "msg": "Cutpoint closure FAIL: some leaves are not reached from lut_root when stopping at leaves",
+      "ctx": {
+        "lut": "LUT_264",
+        "lut_root": 264,
+        "missing_leaves": [
+          241,
+          260
+        ],
+        "missing_count": 2
+      }
+    },
+    {
+      "msg": "Cutpoint closure FAIL: traversal hits boundary nodes that are not declared as leaves (cone not cut at pins)",
+      "ctx": {
+        "lut": "LUT_264",
+        "lut_root": 264,
+        "unexpected_cutpoints": [
+          1,
+          2,
+          4,
+          5,
+          6
+        ],
+        "unexpected_count": 5
+      }
+    },
+    {
+      "msg": "Cutpoint closure FAIL: some leaves are not reached from lut_root when stopping at leaves",
+      "ctx": {
+        "lut": "LUT_268",
+        "lut_root": 268,
+        "missing_leaves": [
+          218,
+          245,
+          264
+        ],
+        "missing_count": 3
+      }
+    },
+    {
+      "msg": "Cutpoint closure FAIL: traversal hits boundary nodes that are not declared as leaves (cone not cut at pins)",
+      "ctx": {
+        "lut": "LUT_268",
+        "lut_root": 268,
+        "unexpected_cutpoints": [
+          1,
+          2,
+          3,
+          4,
+          6
+        ],
+        "unexpected_count": 5
+      }
+    },
+    {
+      "msg": "Cutpoint closure FAIL: some leaves are not reached from lut_root when stopping at leaves",
+      "ctx": {
+        "lut": "LUT_286",
+        "lut_root": 286,
+        "missing_leaves": [
+          51
+        ],
+        "missing_count": 1
+      }
+    },
+    {
+      "msg": "Cutpoint closure FAIL: traversal hits boundary nodes that are not declared as leaves (cone not cut at pins)",
+      "ctx": {
+        "lut": "LUT_286",
+        "lut_root": 286,
+        "unexpected_cutpoints": [
+          1,
+          3,
+          4,
+          5,
+          6
+        ],
+        "unexpected_count": 5
+      }
+    },
+    {
+      "msg": "Cutpoint closure FAIL: some leaves are not reached from lut_root when stopping at leaves",
+      "ctx": {
+        "lut": "LUT_292",
+        "lut_root": 292,
+        "missing_leaves": [
+          264
+        ],
+        "missing_count": 1
+      }
+    },
+    {
+      "msg": "Cutpoint closure FAIL: traversal hits boundary nodes that are not declared as leaves (cone not cut at pins)",
+      "ctx": {
+        "lut": "LUT_292",
+        "lut_root": 292,
+        "unexpected_cutpoints": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "unexpected_count": 5
+      }
+    },
+    {
+      "msg": "Cutpoint closure FAIL: some leaves are not reached from lut_root when stopping at leaves",
+      "ctx": {
+        "lut": "LUT_304",
+        "lut_root": 304,
+        "missing_leaves": [
+          5,
+          84,
+          286
+        ],
+        "missing_count": 3
+      }
+    },
+    {
+      "msg": "Cutpoint closure FAIL: traversal hits boundary nodes that are not declared as leaves (cone not cut at pins)",
+      "ctx": {
+        "lut": "LUT_304",
+        "lut_root": 304,
+        "unexpected_cutpoints": [
+          6
+        ],
+        "unexpected_count": 1
+      }
+    },
+    {
+      "msg": "Cutpoint closure FAIL: some leaves are not reached from lut_root when stopping at leaves",
+      "ctx": {
+        "lut": "LUT_308",
+        "lut_root": 308,
+        "missing_leaves": [
+          264,
+          290,
+          304
+        ],
+        "missing_count": 3
+      }
+    },
+    {
+      "msg": "Cutpoint closure FAIL: traversal hits boundary nodes that are not declared as leaves (cone not cut at pins)",
+      "ctx": {
+        "lut": "LUT_308",
+        "lut_root": 308,
+        "unexpected_cutpoints": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "unexpected_count": 5
+      }
+    },
+    {
+      "msg": "Cutpoint closure FAIL: some leaves are not reached from lut_root when stopping at leaves",
+      "ctx": {
+        "lut": "LUT_326",
+        "lut_root": 326,
+        "missing_leaves": [
+          286
+        ],
+        "missing_count": 1
+      }
+    },
+    {
+      "msg": "Cutpoint closure FAIL: traversal hits boundary nodes that are not declared as leaves (cone not cut at pins)",
+      "ctx": {
+        "lut": "LUT_326",
+        "lut_root": 326,
+        "unexpected_cutpoints": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "unexpected_count": 5
+      }
+    },
+    {
+      "msg": "Cutpoint closure FAIL: some leaves are not reached from lut_root when stopping at leaves",
+      "ctx": {
+        "lut": "LUT_36",
+        "lut_root": 36,
+        "missing_leaves": [
+          16,
+          22,
+          34
+        ],
+        "missing_count": 3
+      }
+    },
+    {
+      "msg": "Cutpoint closure FAIL: traversal hits boundary nodes that are not declared as leaves (cone not cut at pins)",
+      "ctx": {
+        "lut": "LUT_36",
+        "lut_root": 36,
+        "unexpected_cutpoints": [
+          1
+        ],
+        "unexpected_count": 1
+      }
+    },
+    {
+      "msg": "Cutpoint closure FAIL: traversal hits boundary nodes that are not declared as leaves (cone not cut at pins)",
+      "ctx": {
+        "lut": "LUT_51",
+        "lut_root": 51,
+        "unexpected_cutpoints": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "unexpected_count": 5
+      }
+    },
+    {
+      "msg": "Cutpoint closure FAIL: traversal hits boundary nodes that are not declared as leaves (cone not cut at pins)",
+      "ctx": {
+        "lut": "LUT_59",
+        "lut_root": 59,
+        "unexpected_cutpoints": [
+          2,
+          6
+        ],
+        "unexpected_count": 2
+      }
+    },
+    {
+      "msg": "Cutpoint closure FAIL: some leaves are not reached from lut_root when stopping at leaves",
+      "ctx": {
+        "lut": "LUT_61",
+        "lut_root": 61,
+        "missing_leaves": [
+          34,
+          43
+        ],
+        "missing_count": 2
+      }
+    },
+    {
+      "msg": "Cutpoint closure FAIL: traversal hits boundary nodes that are not declared as leaves (cone not cut at pins)",
+      "ctx": {
+        "lut": "LUT_61",
+        "lut_root": 61,
+        "unexpected_cutpoints": [
+          1,
+          2,
+          3
+        ],
+        "unexpected_count": 3
+      }
+    },
+    {
+      "msg": "Cutpoint closure FAIL: traversal hits boundary nodes that are not declared as leaves (cone not cut at pins)",
+      "ctx": {
+        "lut": "LUT_65",
+        "lut_root": 65,
+        "unexpected_cutpoints": [
+          1,
+          3,
+          4,
+          5,
+          6
+        ],
+        "unexpected_count": 5
+      }
+    },
+    {
+      "msg": "Cutpoint closure FAIL: some leaves are not reached from lut_root when stopping at leaves",
+      "ctx": {
+        "lut": "LUT_76",
+        "lut_root": 76,
+        "missing_leaves": [
+          43,
+          59
+        ],
+        "missing_count": 2
+      }
+    },
+    {
+      "msg": "Cutpoint closure FAIL: traversal hits boundary nodes that are not declared as leaves (cone not cut at pins)",
+      "ctx": {
+        "lut": "LUT_76",
+        "lut_root": 76,
+        "unexpected_cutpoints": [
+          1,
+          2,
+          3,
+          4,
+          6
+        ],
+        "unexpected_count": 5
+      }
+    },
+    {
+      "msg": "Cutpoint closure FAIL: some leaves are not reached from lut_root when stopping at leaves",
+      "ctx": {
+        "lut": "LUT_80",
+        "lut_root": 80,
+        "missing_leaves": [
+          47
+        ],
+        "missing_count": 1
+      }
+    },
+    {
+      "msg": "Cutpoint closure FAIL: traversal hits boundary nodes that are not declared as leaves (cone not cut at pins)",
+      "ctx": {
+        "lut": "LUT_80",
+        "lut_root": 80,
+        "unexpected_cutpoints": [
+          1,
+          2,
+          4,
+          5,
+          6
+        ],
+        "unexpected_count": 5
+      }
+    },
+    {
+      "msg": "Cutpoint closure FAIL: some leaves are not reached from lut_root when stopping at leaves",
+      "ctx": {
+        "lut": "LUT_97",
+        "lut_root": 97,
+        "missing_leaves": [
+          59,
+          72
+        ],
+        "missing_count": 2
+      }
+    },
+    {
+      "msg": "Cutpoint closure FAIL: traversal hits boundary nodes that are not declared as leaves (cone not cut at pins)",
+      "ctx": {
+        "lut": "LUT_97",
+        "lut_root": 97,
+        "unexpected_cutpoints": [
+          1,
+          3,
+          4,
+          5
+        ],
+        "unexpected_count": 4
+      }
+    }
+  ],
+  "warnings": [],
+  "lut_reports": {
+    "LUT_101": {
+      "lut_name": "LUT_101",
+      "errors": [],
+      "warnings": [],
+      "checks": {
+        "cutpoint_closure": {
+          "leaves_count": 4,
+          "reached_leaves_count": 4,
+          "missing_leaves": [],
+          "missing_count": 0,
+          "unexpected_cutpoints": [
+            1,
+            2,
+            3,
+            5,
+            6
+          ],
+          "unexpected_count": 5,
+          "unexpected_that_are_PIs": [
+            1,
+            2,
+            3,
+            5,
+            6
+          ]
+        }
+      }
+    },
+    "LUT_11": {
+      "lut_name": "LUT_11",
+      "errors": [],
+      "warnings": [],
+      "checks": {
+        "cutpoint_closure": {
+          "leaves_count": 4,
+          "reached_leaves_count": 3,
+          "missing_leaves": [
+            1
+          ],
+          "missing_count": 1,
+          "unexpected_cutpoints": [
+            6
+          ],
+          "unexpected_count": 1,
+          "unexpected_that_are_PIs": [
+            6
+          ]
+        }
+      }
+    },
+    "LUT_116": {
+      "lut_name": "LUT_116",
+      "errors": [],
+      "warnings": [],
+      "checks": {
+        "cutpoint_closure": {
+          "leaves_count": 4,
+          "reached_leaves_count": 2,
+          "missing_leaves": [
+            72,
+            95
+          ],
+          "missing_count": 2,
+          "unexpected_cutpoints": [
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "unexpected_count": 5,
+          "unexpected_that_are_PIs": [
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        }
+      }
+    },
+    "LUT_120": {
+      "lut_name": "LUT_120",
+      "errors": [],
+      "warnings": [],
+      "checks": {
+        "cutpoint_closure": {
+          "leaves_count": 4,
+          "reached_leaves_count": 3,
+          "missing_leaves": [
+            76
+          ],
+          "missing_count": 1,
+          "unexpected_cutpoints": [
+            1,
+            2,
+            3,
+            4,
+            6
+          ],
+          "unexpected_count": 5,
+          "unexpected_that_are_PIs": [
+            1,
+            2,
+            3,
+            4,
+            6
+          ]
+        }
+      }
+    },
+    "LUT_124": {
+      "lut_name": "LUT_124",
+      "errors": [],
+      "warnings": [],
+      "checks": {
+        "cutpoint_closure": {
+          "leaves_count": 4,
+          "reached_leaves_count": 3,
+          "missing_leaves": [
+            80
+          ],
+          "missing_count": 1,
+          "unexpected_cutpoints": [
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "unexpected_count": 5,
+          "unexpected_that_are_PIs": [
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        }
+      }
+    },
+    "LUT_128": {
+      "lut_name": "LUT_128",
+      "errors": [],
+      "warnings": [],
+      "checks": {
+        "cutpoint_closure": {
+          "leaves_count": 4,
+          "reached_leaves_count": 4,
+          "missing_leaves": [],
+          "missing_count": 0,
+          "unexpected_cutpoints": [
+            1,
+            2,
+            4,
+            5,
+            6
+          ],
+          "unexpected_count": 5,
+          "unexpected_that_are_PIs": [
+            1,
+            2,
+            4,
+            5,
+            6
+          ]
+        }
+      }
+    },
+    "LUT_145": {
+      "lut_name": "LUT_145",
+      "errors": [],
+      "warnings": [],
+      "checks": {
+        "cutpoint_closure": {
+          "leaves_count": 4,
+          "reached_leaves_count": 4,
+          "missing_leaves": [],
+          "missing_count": 0,
+          "unexpected_cutpoints": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "unexpected_count": 5,
+          "unexpected_that_are_PIs": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      }
+    },
+    "LUT_147": {
+      "lut_name": "LUT_147",
+      "errors": [],
+      "warnings": [],
+      "checks": {
+        "cutpoint_closure": {
+          "leaves_count": 4,
+          "reached_leaves_count": 3,
+          "missing_leaves": [
+            120
+          ],
+          "missing_count": 1,
+          "unexpected_cutpoints": [
+            1,
+            3,
+            4,
+            5,
+            6
+          ],
+          "unexpected_count": 5,
+          "unexpected_that_are_PIs": [
+            1,
+            3,
+            4,
+            5,
+            6
+          ]
+        }
+      }
+    },
+    "LUT_151": {
+      "lut_name": "LUT_151",
+      "errors": [],
+      "warnings": [],
+      "checks": {
+        "cutpoint_closure": {
+          "leaves_count": 4,
+          "reached_leaves_count": 4,
+          "missing_leaves": [],
+          "missing_count": 0,
+          "unexpected_cutpoints": [
+            1,
+            2,
+            3,
+            5,
+            6
+          ],
+          "unexpected_count": 5,
+          "unexpected_that_are_PIs": [
+            1,
+            2,
+            3,
+            5,
+            6
+          ]
+        }
+      }
+    },
+    "LUT_16": {
+      "lut_name": "LUT_16",
+      "errors": [],
+      "warnings": [],
+      "checks": {
+        "cutpoint_closure": {
+          "leaves_count": 4,
+          "reached_leaves_count": 1,
+          "missing_leaves": [
+            1,
+            2,
+            3
+          ],
+          "missing_count": 3,
+          "unexpected_cutpoints": [
+            4
+          ],
+          "unexpected_count": 1,
+          "unexpected_that_are_PIs": [
+            4
+          ]
+        }
+      }
+    },
+    "LUT_160": {
+      "lut_name": "LUT_160",
+      "errors": [],
+      "warnings": [],
+      "checks": {
+        "cutpoint_closure": {
+          "leaves_count": 4,
+          "reached_leaves_count": 2,
+          "missing_leaves": [
+            11,
+            139
+          ],
+          "missing_count": 2,
+          "unexpected_cutpoints": [
+            1,
+            4,
+            5
+          ],
+          "unexpected_count": 3,
+          "unexpected_that_are_PIs": [
+            1,
+            4,
+            5
+          ]
+        }
+      }
+    },
+    "LUT_164": {
+      "lut_name": "LUT_164",
+      "errors": [],
+      "warnings": [],
+      "checks": {
+        "cutpoint_closure": {
+          "leaves_count": 4,
+          "reached_leaves_count": 2,
+          "missing_leaves": [
+            116,
+            141
+          ],
+          "missing_count": 2,
+          "unexpected_cutpoints": [
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "unexpected_count": 5,
+          "unexpected_that_are_PIs": [
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        }
+      }
+    },
+    "LUT_168": {
+      "lut_name": "LUT_168",
+      "errors": [],
+      "warnings": [],
+      "checks": {
+        "cutpoint_closure": {
+          "leaves_count": 4,
+          "reached_leaves_count": 2,
+          "missing_leaves": [
+            120,
+            145
+          ],
+          "missing_count": 2,
+          "unexpected_cutpoints": [
+            1,
+            2,
+            4,
+            5,
+            6
+          ],
+          "unexpected_count": 5,
+          "unexpected_that_are_PIs": [
+            1,
+            2,
+            4,
+            5,
+            6
+          ]
+        }
+      }
+    },
+    "LUT_172": {
+      "lut_name": "LUT_172",
+      "errors": [],
+      "warnings": [],
+      "checks": {
+        "cutpoint_closure": {
+          "leaves_count": 4,
+          "reached_leaves_count": 4,
+          "missing_leaves": [],
+          "missing_count": 0,
+          "unexpected_cutpoints": [
+            1,
+            2,
+            3,
+            4,
+            6
+          ],
+          "unexpected_count": 5,
+          "unexpected_that_are_PIs": [
+            1,
+            2,
+            3,
+            4,
+            6
+          ]
+        }
+      }
+    },
+    "LUT_176": {
+      "lut_name": "LUT_176",
+      "errors": [],
+      "warnings": [],
+      "checks": {
+        "cutpoint_closure": {
+          "leaves_count": 4,
+          "reached_leaves_count": 4,
+          "missing_leaves": [],
+          "missing_count": 0,
+          "unexpected_cutpoints": [
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "unexpected_count": 5,
+          "unexpected_that_are_PIs": [
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        }
+      }
+    },
+    "LUT_189": {
+      "lut_name": "LUT_189",
+      "errors": [],
+      "warnings": [],
+      "checks": {
+        "cutpoint_closure": {
+          "leaves_count": 4,
+          "reached_leaves_count": 3,
+          "missing_leaves": [
+            139
+          ],
+          "missing_count": 1,
+          "unexpected_cutpoints": [
+            1,
+            2,
+            3,
+            5,
+            6
+          ],
+          "unexpected_count": 5,
+          "unexpected_that_are_PIs": [
+            1,
+            2,
+            3,
+            5,
+            6
+          ]
+        }
+      }
+    },
+    "LUT_193": {
+      "lut_name": "LUT_193",
+      "errors": [],
+      "warnings": [],
+      "checks": {
+        "cutpoint_closure": {
+          "leaves_count": 4,
+          "reached_leaves_count": 3,
+          "missing_leaves": [
+            141
+          ],
+          "missing_count": 1,
+          "unexpected_cutpoints": [
+            1,
+            3,
+            4,
+            5,
+            6
+          ],
+          "unexpected_count": 5,
+          "unexpected_that_are_PIs": [
+            1,
+            3,
+            4,
+            5,
+            6
+          ]
+        }
+      }
+    },
+    "LUT_199": {
+      "lut_name": "LUT_199",
+      "errors": [],
+      "warnings": [],
+      "checks": {
+        "cutpoint_closure": {
+          "leaves_count": 4,
+          "reached_leaves_count": 4,
+          "missing_leaves": [],
+          "missing_count": 0,
+          "unexpected_cutpoints": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "unexpected_count": 5,
+          "unexpected_that_are_PIs": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      }
+    },
+    "LUT_201": {
+      "lut_name": "LUT_201",
+      "errors": [],
+      "warnings": [],
+      "checks": {
+        "cutpoint_closure": {
+          "leaves_count": 4,
+          "reached_leaves_count": 3,
+          "missing_leaves": [
+            151
+          ],
+          "missing_count": 1,
+          "unexpected_cutpoints": [
+            1,
+            3,
+            4,
+            5,
+            6
+          ],
+          "unexpected_count": 5,
+          "unexpected_that_are_PIs": [
+            1,
+            3,
+            4,
+            5,
+            6
+          ]
+        }
+      }
+    },
+    "LUT_210": {
+      "lut_name": "LUT_210",
+      "errors": [],
+      "warnings": [],
+      "checks": {
+        "cutpoint_closure": {
+          "leaves_count": 4,
+          "reached_leaves_count": 2,
+          "missing_leaves": [
+            26,
+            189
+          ],
+          "missing_count": 2,
+          "unexpected_cutpoints": [
+            1,
+            2,
+            4,
+            5,
+            6
+          ],
+          "unexpected_count": 5,
+          "unexpected_that_are_PIs": [
+            1,
+            2,
+            4,
+            5,
+            6
+          ]
+        }
+      }
+    },
+    "LUT_218": {
+      "lut_name": "LUT_218",
+      "errors": [],
+      "warnings": [],
+      "checks": {
+        "cutpoint_closure": {
+          "leaves_count": 4,
+          "reached_leaves_count": 2,
+          "missing_leaves": [
+            168,
+            195
+          ],
+          "missing_count": 2,
+          "unexpected_cutpoints": [
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "unexpected_count": 5,
+          "unexpected_that_are_PIs": [
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        }
+      }
+    },
+    "LUT_22": {
+      "lut_name": "LUT_22",
+      "errors": [],
+      "warnings": [],
+      "checks": {
+        "cutpoint_closure": {
+          "leaves_count": 4,
+          "reached_leaves_count": 2,
+          "missing_leaves": [
+            4,
+            6
+          ],
+          "missing_count": 2,
+          "unexpected_cutpoints": [
+            2,
+            3
+          ],
+          "unexpected_count": 2,
+          "unexpected_that_are_PIs": [
+            2,
+            3
+          ]
+        }
+      }
+    },
+    "LUT_222": {
+      "lut_name": "LUT_222",
+      "errors": [],
+      "warnings": [],
+      "checks": {
+        "cutpoint_closure": {
+          "leaves_count": 4,
+          "reached_leaves_count": 3,
+          "missing_leaves": [
+            172
+          ],
+          "missing_count": 1,
+          "unexpected_cutpoints": [
+            1,
+            2,
+            4,
+            5,
+            6
+          ],
+          "unexpected_count": 5,
+          "unexpected_that_are_PIs": [
+            1,
+            2,
+            4,
+            5,
+            6
+          ]
+        }
+      }
+    },
+    "LUT_226": {
+      "lut_name": "LUT_226",
+      "errors": [],
+      "warnings": [],
+      "checks": {
+        "cutpoint_closure": {
+          "leaves_count": 4,
+          "reached_leaves_count": 4,
+          "missing_leaves": [],
+          "missing_count": 0,
+          "unexpected_cutpoints": [
+            1,
+            2,
+            3,
+            4,
+            6
+          ],
+          "unexpected_count": 5,
+          "unexpected_that_are_PIs": [
+            1,
+            2,
+            3,
+            4,
+            6
+          ]
+        }
+      }
+    },
+    "LUT_239": {
+      "lut_name": "LUT_239",
+      "errors": [],
+      "warnings": [],
+      "checks": {
+        "cutpoint_closure": {
+          "leaves_count": 4,
+          "reached_leaves_count": 3,
+          "missing_leaves": [
+            189
+          ],
+          "missing_count": 1,
+          "unexpected_cutpoints": [
+            1,
+            2,
+            3,
+            5,
+            6
+          ],
+          "unexpected_count": 5,
+          "unexpected_that_are_PIs": [
+            1,
+            2,
+            3,
+            5,
+            6
+          ]
+        }
+      }
+    },
+    "LUT_241": {
+      "lut_name": "LUT_241",
+      "errors": [],
+      "warnings": [],
+      "checks": {
+        "cutpoint_closure": {
+          "leaves_count": 4,
+          "reached_leaves_count": 2,
+          "missing_leaves": [
+            193,
+            210
+          ],
+          "missing_count": 2,
+          "unexpected_cutpoints": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "unexpected_count": 5,
+          "unexpected_that_are_PIs": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      }
+    },
+    "LUT_247": {
+      "lut_name": "LUT_247",
+      "errors": [],
+      "warnings": [],
+      "checks": {
+        "cutpoint_closure": {
+          "leaves_count": 4,
+          "reached_leaves_count": 2,
+          "missing_leaves": [
+            199,
+            218
+          ],
+          "missing_count": 2,
+          "unexpected_cutpoints": [
+            1,
+            2,
+            3,
+            5,
+            6
+          ],
+          "unexpected_count": 5,
+          "unexpected_that_are_PIs": [
+            1,
+            2,
+            3,
+            5,
+            6
+          ]
+        }
+      }
+    },
+    "LUT_260": {
+      "lut_name": "LUT_260",
+      "errors": [],
+      "warnings": [],
+      "checks": {
+        "cutpoint_closure": {
+          "leaves_count": 4,
+          "reached_leaves_count": 3,
+          "missing_leaves": [
+            51
+          ],
+          "missing_count": 1,
+          "unexpected_cutpoints": [
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "unexpected_count": 5,
+          "unexpected_that_are_PIs": [
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        }
+      }
+    },
+    "LUT_264": {
+      "lut_name": "LUT_264",
+      "errors": [],
+      "warnings": [],
+      "checks": {
+        "cutpoint_closure": {
+          "leaves_count": 4,
+          "reached_leaves_count": 2,
+          "missing_leaves": [
+            241,
+            260
+          ],
+          "missing_count": 2,
+          "unexpected_cutpoints": [
+            1,
+            2,
+            4,
+            5,
+            6
+          ],
+          "unexpected_count": 5,
+          "unexpected_that_are_PIs": [
+            1,
+            2,
+            4,
+            5,
+            6
+          ]
+        }
+      }
+    },
+    "LUT_268": {
+      "lut_name": "LUT_268",
+      "errors": [],
+      "warnings": [],
+      "checks": {
+        "cutpoint_closure": {
+          "leaves_count": 4,
+          "reached_leaves_count": 1,
+          "missing_leaves": [
+            218,
+            245,
+            264
+          ],
+          "missing_count": 3,
+          "unexpected_cutpoints": [
+            1,
+            2,
+            3,
+            4,
+            6
+          ],
+          "unexpected_count": 5,
+          "unexpected_that_are_PIs": [
+            1,
+            2,
+            3,
+            4,
+            6
+          ]
+        }
+      }
+    },
+    "LUT_286": {
+      "lut_name": "LUT_286",
+      "errors": [],
+      "warnings": [],
+      "checks": {
+        "cutpoint_closure": {
+          "leaves_count": 4,
+          "reached_leaves_count": 3,
+          "missing_leaves": [
+            51
+          ],
+          "missing_count": 1,
+          "unexpected_cutpoints": [
+            1,
+            3,
+            4,
+            5,
+            6
+          ],
+          "unexpected_count": 5,
+          "unexpected_that_are_PIs": [
+            1,
+            3,
+            4,
+            5,
+            6
+          ]
+        }
+      }
+    },
+    "LUT_292": {
+      "lut_name": "LUT_292",
+      "errors": [],
+      "warnings": [],
+      "checks": {
+        "cutpoint_closure": {
+          "leaves_count": 4,
+          "reached_leaves_count": 3,
+          "missing_leaves": [
+            264
+          ],
+          "missing_count": 1,
+          "unexpected_cutpoints": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "unexpected_count": 5,
+          "unexpected_that_are_PIs": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      }
+    },
+    "LUT_304": {
+      "lut_name": "LUT_304",
+      "errors": [],
+      "warnings": [],
+      "checks": {
+        "cutpoint_closure": {
+          "leaves_count": 4,
+          "reached_leaves_count": 1,
+          "missing_leaves": [
+            5,
+            84,
+            286
+          ],
+          "missing_count": 3,
+          "unexpected_cutpoints": [
+            6
+          ],
+          "unexpected_count": 1,
+          "unexpected_that_are_PIs": [
+            6
+          ]
+        }
+      }
+    },
+    "LUT_308": {
+      "lut_name": "LUT_308",
+      "errors": [],
+      "warnings": [],
+      "checks": {
+        "cutpoint_closure": {
+          "leaves_count": 4,
+          "reached_leaves_count": 1,
+          "missing_leaves": [
+            264,
+            290,
+            304
+          ],
+          "missing_count": 3,
+          "unexpected_cutpoints": [
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "unexpected_count": 5,
+          "unexpected_that_are_PIs": [
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        }
+      }
+    },
+    "LUT_326": {
+      "lut_name": "LUT_326",
+      "errors": [],
+      "warnings": [],
+      "checks": {
+        "cutpoint_closure": {
+          "leaves_count": 4,
+          "reached_leaves_count": 3,
+          "missing_leaves": [
+            286
+          ],
+          "missing_count": 1,
+          "unexpected_cutpoints": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "unexpected_count": 5,
+          "unexpected_that_are_PIs": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      }
+    },
+    "LUT_36": {
+      "lut_name": "LUT_36",
+      "errors": [],
+      "warnings": [],
+      "checks": {
+        "cutpoint_closure": {
+          "leaves_count": 4,
+          "reached_leaves_count": 1,
+          "missing_leaves": [
+            16,
+            22,
+            34
+          ],
+          "missing_count": 3,
+          "unexpected_cutpoints": [
+            1
+          ],
+          "unexpected_count": 1,
+          "unexpected_that_are_PIs": [
+            1
+          ]
+        }
+      }
+    },
+    "LUT_51": {
+      "lut_name": "LUT_51",
+      "errors": [],
+      "warnings": [],
+      "checks": {
+        "cutpoint_closure": {
+          "leaves_count": 4,
+          "reached_leaves_count": 4,
+          "missing_leaves": [],
+          "missing_count": 0,
+          "unexpected_cutpoints": [
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "unexpected_count": 5,
+          "unexpected_that_are_PIs": [
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        }
+      }
+    },
+    "LUT_59": {
+      "lut_name": "LUT_59",
+      "errors": [],
+      "warnings": [],
+      "checks": {
+        "cutpoint_closure": {
+          "leaves_count": 4,
+          "reached_leaves_count": 4,
+          "missing_leaves": [],
+          "missing_count": 0,
+          "unexpected_cutpoints": [
+            2,
+            6
+          ],
+          "unexpected_count": 2,
+          "unexpected_that_are_PIs": [
+            2,
+            6
+          ]
+        }
+      }
+    },
+    "LUT_61": {
+      "lut_name": "LUT_61",
+      "errors": [],
+      "warnings": [],
+      "checks": {
+        "cutpoint_closure": {
+          "leaves_count": 4,
+          "reached_leaves_count": 2,
+          "missing_leaves": [
+            34,
+            43
+          ],
+          "missing_count": 2,
+          "unexpected_cutpoints": [
+            1,
+            2,
+            3
+          ],
+          "unexpected_count": 3,
+          "unexpected_that_are_PIs": [
+            1,
+            2,
+            3
+          ]
+        }
+      }
+    },
+    "LUT_65": {
+      "lut_name": "LUT_65",
+      "errors": [],
+      "warnings": [],
+      "checks": {
+        "cutpoint_closure": {
+          "leaves_count": 4,
+          "reached_leaves_count": 4,
+          "missing_leaves": [],
+          "missing_count": 0,
+          "unexpected_cutpoints": [
+            1,
+            3,
+            4,
+            5,
+            6
+          ],
+          "unexpected_count": 5,
+          "unexpected_that_are_PIs": [
+            1,
+            3,
+            4,
+            5,
+            6
+          ]
+        }
+      }
+    },
+    "LUT_76": {
+      "lut_name": "LUT_76",
+      "errors": [],
+      "warnings": [],
+      "checks": {
+        "cutpoint_closure": {
+          "leaves_count": 4,
+          "reached_leaves_count": 2,
+          "missing_leaves": [
+            43,
+            59
+          ],
+          "missing_count": 2,
+          "unexpected_cutpoints": [
+            1,
+            2,
+            3,
+            4,
+            6
+          ],
+          "unexpected_count": 5,
+          "unexpected_that_are_PIs": [
+            1,
+            2,
+            3,
+            4,
+            6
+          ]
+        }
+      }
+    },
+    "LUT_80": {
+      "lut_name": "LUT_80",
+      "errors": [],
+      "warnings": [],
+      "checks": {
+        "cutpoint_closure": {
+          "leaves_count": 4,
+          "reached_leaves_count": 3,
+          "missing_leaves": [
+            47
+          ],
+          "missing_count": 1,
+          "unexpected_cutpoints": [
+            1,
+            2,
+            4,
+            5,
+            6
+          ],
+          "unexpected_count": 5,
+          "unexpected_that_are_PIs": [
+            1,
+            2,
+            4,
+            5,
+            6
+          ]
+        }
+      }
+    },
+    "LUT_97": {
+      "lut_name": "LUT_97",
+      "errors": [],
+      "warnings": [],
+      "checks": {
+        "cutpoint_closure": {
+          "leaves_count": 4,
+          "reached_leaves_count": 2,
+          "missing_leaves": [
+            59,
+            72
+          ],
+          "missing_count": 2,
+          "unexpected_cutpoints": [
+            1,
+            3,
+            4,
+            5
+          ],
+          "unexpected_count": 4,
+          "unexpected_that_are_PIs": [
+            1,
+            3,
+            4,
+            5
+          ]
+        }
+      }
+    }
+  }
+}

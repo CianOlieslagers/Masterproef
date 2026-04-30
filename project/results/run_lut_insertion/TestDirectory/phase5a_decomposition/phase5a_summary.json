@@ -1,0 +1,123 @@
+{
+  "phase": "FASE 5A",
+  "phase5a_status": "PASS_NO_ESTIMATED_IMPROVEMENT",
+  "phase3_json": "/home/cian/Masterproef/project/results/run_lut_insertion/TestDirectory/phase3_window_info/phase3_window_info.json",
+  "truth_table_compact_json": "/home/cian/Masterproef/project/results/run_lut_insertion/TestDirectory/phase4_truth_table/truth_table_compact.json",
+  "template_count": 13860,
+  "sat_template_count": 1,
+  "exact_candidate_count": 1,
+  "kept_candidate_count": 1,
+  "baseline_partition": {
+    "S1": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "S2": [
+      11,
+      12
+    ],
+    "D": [
+      7,
+      8,
+      9,
+      10
+    ],
+    "reconstructed": true
+  },
+  "slots": {
+    "root": {
+      "cell": "f[108]_INST_0_i_6",
+      "ref": "LUT6",
+      "loc": "SLICE_X79Y531",
+      "bel": "SLICEL.A6LUT",
+      "site": "SLICE_X79Y531",
+      "tile": "CLEL_R_X50Y531",
+      "site_x": 79,
+      "site_y": 531,
+      "init": "64'h00000EEF0EEFFFFF",
+      "num_lut_inputs": 6,
+      "num_lut_outputs": 1
+    },
+    "big_helper": {
+      "cell": "f[108]_INST_0_i_7",
+      "ref": "LUT6",
+      "loc": "SLICE_X89Y491",
+      "bel": "SLICEL.F6LUT",
+      "site": "SLICE_X89Y491",
+      "tile": "CLEL_R_X57Y491",
+      "site_x": 89,
+      "site_y": 491,
+      "init": "64'h022A2A2A0202022A",
+      "num_lut_inputs": 6,
+      "num_lut_outputs": 1
+    },
+    "small_helper": {
+      "cell": "f[108]_INST_0_i_8",
+      "ref": "LUT2",
+      "loc": "SLICE_X81Y528",
+      "bel": "SLICEM.G6LUT",
+      "site": "SLICE_X81Y528",
+      "tile": "CLEM_X52Y528",
+      "site_x": 81,
+      "site_y": 528,
+      "init": "4'h1",
+      "num_lut_inputs": 2,
+      "num_lut_outputs": 1
+    }
+  },
+  "baseline_score": 57589,
+  "best_candidate_id": "phase5a_exact_00000",
+  "best_score": 57589,
+  "estimated_improvement": false,
+  "validation_checks": [
+    {
+      "check": "phase3_status",
+      "status": "PASS",
+      "detail": "phase3_status=PASS"
+    },
+    {
+      "check": "phase4_status",
+      "status": "PASS",
+      "detail": "phase4_status=PASS"
+    },
+    {
+      "check": "boundary_count_is_12",
+      "status": "PASS",
+      "detail": "12 boundary inputs"
+    },
+    {
+      "check": "single_output",
+      "status": "PASS",
+      "detail": "1 output"
+    },
+    {
+      "check": "output_sequence_length",
+      "status": "PASS",
+      "detail": "len=4096"
+    },
+    {
+      "check": "slot_inference",
+      "status": "PASS",
+      "detail": "root=f[108]_INST_0_i_6, big=f[108]_INST_0_i_7, small=f[108]_INST_0_i_8"
+    },
+    {
+      "check": "baseline_decomposition_reconstructed",
+      "status": "PASS",
+      "detail": "S1=(1, 2, 3, 4, 5, 6) S2=(11, 12) D=(7, 8, 9, 10)"
+    },
+    {
+      "check": "exact_candidates_found",
+      "status": "PASS",
+      "detail": "1 exact candidates"
+    },
+    {
+      "check": "best_candidate_selected",
+      "status": "PASS",
+      "detail": "phase5a_exact_00000 score=57589 baseline_score=57589"
+    }
+  ]
+}

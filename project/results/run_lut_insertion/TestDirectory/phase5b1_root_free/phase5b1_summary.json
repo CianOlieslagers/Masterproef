@@ -1,0 +1,64 @@
+{
+  "phase": "FASE 5B.1",
+  "phase5b1_status": "PASS_NO_ESTIMATED_IMPROVEMENT",
+  "phase3_json": "/home/cian/Masterproef/project/results/run_lut_insertion/TestDirectory/phase3_window_info/phase3_window_info.json",
+  "truth_table_compact_json": "/home/cian/Masterproef/project/results/run_lut_insertion/TestDirectory/phase4_truth_table/truth_table_compact.json",
+  "template_count": 29568,
+  "exact_candidate_count": 2,
+  "kept_candidate_count": 2,
+  "role_assignment_count": 4,
+  "baseline_score_without_output_penalty": 57589,
+  "baseline_score_with_output_penalty": 57589,
+  "best_candidate_id": "phase5b1_exact_00000",
+  "best_score_without_output_penalty": 64631,
+  "best_score_with_output_penalty": 69631,
+  "estimated_improvement_no_output_penalty": false,
+  "estimated_improvement_with_output_penalty": false,
+  "validation_checks": [
+    {
+      "check": "phase3_status",
+      "status": "PASS",
+      "detail": "phase3_status=PASS"
+    },
+    {
+      "check": "phase4_status",
+      "status": "PASS",
+      "detail": "phase4_status=PASS"
+    },
+    {
+      "check": "boundary_count_is_12",
+      "status": "PASS",
+      "detail": "12 boundary inputs"
+    },
+    {
+      "check": "single_output",
+      "status": "PASS",
+      "detail": "1 output"
+    },
+    {
+      "check": "output_sequence_length",
+      "status": "PASS",
+      "detail": "len=4096"
+    },
+    {
+      "check": "three_luts",
+      "status": "PASS",
+      "detail": "3 LUTs"
+    },
+    {
+      "check": "role_assignments_generated",
+      "status": "PASS",
+      "detail": "count=4"
+    },
+    {
+      "check": "exact_candidates_found",
+      "status": "PASS",
+      "detail": "2 exact candidates"
+    },
+    {
+      "check": "best_candidate_selected",
+      "status": "PASS",
+      "detail": "phase5b1_exact_00000 score_no_penalty=64631 baseline_no_penalty=57589"
+    }
+  ]
+}

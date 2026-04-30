@@ -1,0 +1,37 @@
+{
+  "blif": "/home/cian/Masterproef/multisynthesis/results/example_big_300/topologymapping/example_big_300.mapped.blif",
+  "pit": "LUT_388",
+  "nrows": 4,
+  "k": 2,
+  "rows": [
+    {
+      "row": 0,
+      "status": "UNREACHABLE",
+      "reachable": false,
+      "observable": false
+    },
+    {
+      "row": 1,
+      "status": "CARE",
+      "reachable": true,
+      "observable": true
+    },
+    {
+      "row": 2,
+      "status": "UNREACHABLE",
+      "reachable": false,
+      "observable": false
+    },
+    {
+      "row": 3,
+      "status": "UNREACHABLE",
+      "reachable": false,
+      "observable": false
+    }
+  ],
+  "summary": {
+    "CARE": 1,
+    "DONT_CARE": 0,
+    "UNREACHABLE": 3
+  }
+}

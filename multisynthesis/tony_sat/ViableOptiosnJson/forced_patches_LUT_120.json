@@ -1,0 +1,26 @@
+{
+  "super": "/home/cian/Masterproef/multisynthesis/Lut_verbinding/result/example_big_300/example_big_300.super.sat.v2.json",
+  "targets": "/home/cian/Masterproef/multisynthesis/tony_sat/ViableOptiosnJson/targets_LUT_120_only.json",
+  "solver": "glucose4",
+  "total": 1,
+  "success": 0,
+  "failed": 1,
+  "results": [
+    {
+      "dst": "LUT_101",
+      "pit": "LUT_120",
+      "dst_input_pin": 0,
+      "success": false,
+      "reason": "orig_func_hex_mismatch_care_rows (indexing/pin-order/model issue)",
+      "chosen_target": null,
+      "patched_hex": null,
+      "stats": {
+        "reachable": 9,
+        "care": 5,
+        "dc_unreach": 7,
+        "dc_x": 4
+      },
+      "notes": []
+    }
+  ]
+}

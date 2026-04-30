@@ -1,0 +1,25 @@
+{
+  "phase": "FASE 0",
+  "route_report": "/home/cian/Masterproef/project/results/run_lut_insertion/TestDirectory/baseline_impl/reports/post_route_status_timingexp.rpt",
+  "drc_report": "/home/cian/Masterproef/project/results/run_lut_insertion/TestDirectory/baseline_impl/reports/post_route_drc_timingexp.rpt",
+  "timing_report": "/home/cian/Masterproef/project/results/run_lut_insertion/TestDirectory/baseline_impl/reports/post_route_timing_timingexp.rpt",
+  "route": {
+    "exists": true,
+    "fully_routed_nets": 582,
+    "nets_with_routing_errors": 0
+  },
+  "drc": {
+    "exists": true,
+    "error_rules": [],
+    "critical_warning_rules": [
+      "NSTD-1",
+      "UCIO-1"
+    ]
+  },
+  "timing": {
+    "exists": true,
+    "wns": -8.312,
+    "tns": -680.539,
+    "setup_failing_endpoints": 128
+  }
+}

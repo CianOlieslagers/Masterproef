@@ -1,0 +1,25 @@
+{
+  "id": "cand_001323",
+  "net": "p_139_in",
+  "sink_cell": "f[103]_INST_0_i_4",
+  "sink_pin": null,
+  "target_slice": "SLICE_X80Y530",
+  "lut_delay_ps": 120.0,
+  "from": "f[103]_INST_0_i_5",
+  "to": "f[103]_INST_0_i_4",
+  "distance": 8,
+  "coords": {
+    "src": [
+      81,
+      527
+    ],
+    "dest": [
+      79,
+      533
+    ]
+  },
+  "eco_ready": true,
+  "issues": [
+    "missing_sink_pin"
+  ]
+}

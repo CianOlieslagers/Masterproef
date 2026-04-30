@@ -1,0 +1,30 @@
+{
+  "id": "cand_000090",
+  "net": "f[107]_INST_0_i_2_n_0",
+  "sink_cell": "f[109]_INST_0_i_4",
+  "sink_pin": null,
+  "target_slice": "SLICE_X35Y495",
+  "lut_delay_ps": 120.0,
+  "from": "f[107]_INST_0_i_2/IBUFCTRL_INST",
+  "to": "f[109]_INST_0_i_4",
+  "distance": 144,
+  "coords": {
+    "src": [
+      1,
+      457
+    ],
+    "dest": [
+      69,
+      533
+    ]
+  },
+  "eco_ready": true,
+  "issues": [
+    "missing_sink_pin"
+  ],
+  "source_cell": "f[107]_INST_0_i_2/IBUFCTRL_INST",
+  "source_cell_type": "IBUFCTRL",
+  "sink_cell_type": "LUT5",
+  "source_site": "IOB_X1Y457",
+  "sink_site": "SLICE_X69Y533"
+}

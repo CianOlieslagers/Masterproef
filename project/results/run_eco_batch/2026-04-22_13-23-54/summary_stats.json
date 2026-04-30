@@ -1,0 +1,22 @@
+{
+  "total_candidates_seen": 2915,
+  "total_candidates_processed": 2915,
+  "status_counts": {
+    "SKIPPED_LOGICAL_ALIAS_NET": 1282,
+    "SKIPPED_NON_LUT_TO_LUT": 1633
+  },
+  "num_ok": 0,
+  "num_insert_failed": 0,
+  "num_compare_failed": 0,
+  "num_skipped_logical_alias": 1282,
+  "num_skipped_non_lut_to_lut": 1633,
+  "num_skipped_sink_pin_unresolved": 0,
+  "num_advanced_baseline": 0,
+  "ok_negative_total": 0,
+  "ok_positive_total": 0,
+  "ok_zero_total": 0,
+  "best_total_gain_ps": null,
+  "worst_total_gain_ps": null,
+  "best_interconnect_gain_ps": null,
+  "worst_interconnect_gain_ps": null
+}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FPGA AIG / LUT Visualizer</title>
+  <style>
+    :root { --bg:#0f172a; --panel:#111827; --panel-2:#1f2937; --text:#e5e7eb; --muted:#9ca3af; --border:#374151; --danger:#f87171; --ok:#34d399; }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:Inter,system-ui,sans-serif; color:var(--text); background:var(--bg); height:100vh; overflow:hidden; }
+    .app { display:grid; grid-template-columns:340px 1fr 320px; height:100vh; }
+    .sidebar,.info { background:var(--panel); overflow:auto; padding:16px; }
+    .sidebar { border-right:1px solid var(--border); }
+    .info { border-left:1px solid var(--border); }
+    .viewer { position:relative; background:#020617; }
+    canvas { width:100%; height:100%; display:block; cursor:grab; }
+    canvas.dragging { cursor:grabbing; }
+    h1,h2,h3 { margin:0 0 10px 0; line-height:1.2; }
+    h1 { font-size:20px; } h2 { font-size:15px; margin-top:18px; } h3 { font-size:13px; color:var(--muted); text-transform:uppercase; letter-spacing:.04em; }
+    p,li,label,input,button,select,.small { font-size:13px; line-height:1.45; }
+    .small { color:var(--muted); }
+    .section { padding:12px; background:var(--panel-2); border:1px solid var(--border); border-radius:12px; margin-bottom:12px; }
+    .row { display:flex; gap:8px; align-items:center; margin:8px 0; } .wrap { flex-wrap:wrap; }
+    input[type=file],input[type=text],input[type=range],select { width:100%; background:#0b1220; color:var(--text); border:1px solid var(--border); border-radius:8px; padding:8px; }
+    button { background:#2563eb; color:white; border:none; border-radius:8px; padding:8px 12px; cursor:pointer; }
+    button.secondary { background:#334155; }
+    .kv { display:grid; grid-template-columns:110px 1fr; gap:6px 10px; margin-top:8px; }
+    .kv div:nth-child(odd) { color:var(--muted); }
+    .legend-item { display:flex; align-items:center; gap:8px; margin:5px 0; }
+    .swatch { width:14px; height:14px; border-radius:50%; border:1px solid #cbd5e1; }
+    .pill { display:inline-block; padding:2px 8px; border-radius:999px; border:1px solid var(--border); background:#0b1220; margin:3px 4px 0 0; font-size:12px; }
+    .status-ok { color:var(--ok); } .status-warn { color:#fbbf24; } .status-bad { color:var(--danger); }
+    .mono { font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; }
+    .help { position:absolute; left:14px; bottom:14px; padding:10px 12px; border-radius:10px; background:rgba(17,24,39,.85); border:1px solid var(--border); color:var(--muted); backdrop-filter:blur(6px); font-size:12px; max-width:360px; }
+    .topbar { position:absolute; top:10px; right:10px; display:flex; gap:8px; z-index:4; }
+  </style>
+</head>
+<body>
+<div class="app">
+  <aside class="sidebar">
+    <h1>FPGA AIG / LUT Visualizer</h1>
+    <p class="small">Load a graph JSON generated from an ASCII <span class="mono">.aag</span> file, plus <span class="mono">lut_cones.json</span> and <span class="mono">manhattan.json</span>.</p>
+    <div class="section">
+      <h2>Input files</h2>
+      <div class="row"><label>Graph JSON</label></div><input id="graphFile" type="file" accept=".json" />
+      <div class="row"><label>LUT cones JSON</label></div><input id="conesFile" type="file" accept=".json" />
+      <div class="row"><label>Manhattan JSON</label></div><input id="manhattanFile" type="file" accept=".json" />
+      <div class="row wrap"><button id="loadBtn">Load files</button><button id="demoBtn" class="secondary">Load tiny demo</button></div>
+      <div id="loadStatus" class="small status-warn">Waiting for files.</div>
+    </div>
+    <div class="section">
+      <h2>Modes</h2>
+      <div class="row"><label><input type="radio" name="mode" value="base" checked /> Base mode</label></div>
+      <div class="small">Show the full AIG graph.</div>
+      <div class="row"><label><input type="radio" name="mode" value="roots" /> LUT root mode</label></div>
+      <div class="small">Only LUT root nodes, with edges between LUT roots when one root feeds another LUT.</div>
+      <div class="row"><label><input type="radio" name="mode" value="cones" /> LUT cone mode</label></div>
+      <div class="small">Full AIG graph, but nodes belonging to the same LUT cone are highlighted together.</div>
+      <div class="row"><label><input id="physicalToggle" type="checkbox" /> Use physical XY layout for LUT root mode</label></div>
+      <div class="small">In root mode, place LUT roots using the coordinates from <span class="mono">manhattan.json</span>.</div>
+      <div class="row"><label><input id="labelsToggle" type="checkbox" checked /> Show labels</label></div>
+      <div class="row"><label><input id="edgeToggle" type="checkbox" checked /> Show edges</label></div>
+      <div class="row"><label><input id="invertToggle" type="checkbox" checked /> Mark inverted edges</label></div>
+      <div class="row"><label><input id="leafHaloToggle" type="checkbox" checked /> Highlight LUT leaves in cone mode</label></div>
+    </div>
+    <div class="section">
+      <h2>Filtering</h2>
+      <div class="row"><label>Focus node / LUT name</label></div><input id="focusInput" type="text" placeholder="e.g. 26 or LUT_26" />
+      <div class="row wrap"><button id="focusBtn">Focus</button><button id="clearFocusBtn" class="secondary">Clear focus</button></div>
+      <div class="row"><label>Node size</label></div><input id="nodeSize" type="range" min="3" max="16" value="7" />
+    </div>
+    <div class="section">
+      <h2>Legend</h2>
+      <div class="legend-item"><span class="swatch" style="background:#60a5fa"></span> PI / leaf-like node</div>
+      <div class="legend-item"><span class="swatch" style="background:#f8fafc"></span> Generic AIG node</div>
+      <div class="legend-item"><span class="swatch" style="background:#f59e0b"></span> LUT root</div>
+      <div class="legend-item"><span class="swatch" style="background:#fb7185"></span> Output pseudo-node</div>
+    </div>
+    <div class="section"><h2>Current view</h2><div id="stats" class="kv"></div></div>
+  </aside>
+  <main class="viewer">
+    <div class="topbar"><button id="fitBtn">Fit</button><button id="resetBtn" class="secondary">Reset pan/zoom</button></div>
+    <canvas id="canvas"></canvas>
+    <div class="help">Drag to pan. Scroll to zoom. Click a node for details. In LUT cone mode, nodes are coloured by LUT cone membership. In root mode with physical layout enabled, the LUT roots use the physical XY coordinates from the Manhattan file.</div>
+  </main>
+  <aside class="info">
+    <h2>Selection</h2><div id="selectionInfo" class="small">No node selected.</div>
+    <h2>Loaded file summary</h2><div id="fileInfo" class="small">No files loaded.</div>
+    <h2>Notes</h2>
+    <ul class="small">
+      <li>The HTML expects a graph JSON, not a binary <span class="mono">.aig</span> file.</li>
+      <li>Use a converter from ASCII <span class="mono">.aag</span> to JSON before loading.</li>
+      <li>Binary <span class="mono">.aig</span> support is intentionally not guessed here.</li>
+    </ul>
+  </aside>
+</div>
+<script>
+const state={graph:null,cones:null,manhattan:null,combined:null,view:null,positions:new Map(),panX:0,panY:0,zoom:1,dragging:false,selectedNodeId:null,focusNodeId:null,colorCache:new Map()};
+const canvas=document.getElementById('canvas'); const ctx=canvas.getContext('2d');
+const statsEl=document.getElementById('stats'); const selectionInfoEl=document.getElementById('selectionInfo'); const fileInfoEl=document.getElementById('fileInfo'); const loadStatusEl=document.getElementById('loadStatus');
+function resizeCanvas(){const rect=canvas.getBoundingClientRect(); canvas.width=Math.floor(rect.width*devicePixelRatio); canvas.height=Math.floor(rect.height*devicePixelRatio); ctx.setTransform(devicePixelRatio,0,0,devicePixelRatio,0,0); render();} window.addEventListener('resize',resizeCanvas);
+function deterministicColor(seed){if(state.colorCache.has(seed)) return state.colorCache.get(seed); let h=0; const s=String(seed); for(let i=0;i<s.length;i++) h=(h*31+s.charCodeAt(i))%360; const color=`hsl(${h},75%,62%)`; state.colorCache.set(seed,color); return color;}
+function parseJSONFile(file){return new Promise((resolve,reject)=>{ if(!file) return resolve(null); const r=new FileReader(); r.onload=()=>{try{resolve(JSON.parse(r.result));}catch(e){reject(new Error(`Invalid JSON in ${file.name}: ${e.message}`));}}; r.onerror=()=>reject(new Error(`Could not read ${file.name}`)); r.readAsText(file);});}
+function coneIndex(cones){const lutByRoot=new Map(), nodeToConeRoots=new Map(); for(const cone of cones?.lut_cones||[]){lutByRoot.set(String(cone.lut_root),cone); for(const n of [cone.lut_root,...(cone.internal_nodes||[])]){const key=String(n); if(!nodeToConeRoots.has(key)) nodeToConeRoots.set(key,[]); nodeToConeRoots.get(key).push(String(cone.lut_root));}} return {lutByRoot,nodeToConeRoots};}
+function enrichData(graph,cones,manhattan){const {lutByRoot,nodeToConeRoots}=coneIndex(cones); const blockMap=new Map(Object.entries(manhattan?.blocks||{})); const nodeMap=new Map(); for(const node of graph.nodes||[]){const id=String(node.id); const lut=lutByRoot.get(id); const lutName=lut?.lut_name || `LUT_${id}`; const block=blockMap.get(lutName); nodeMap.set(id,{...node,id,isLutRoot:lutByRoot.has(id),coneRoots:nodeToConeRoots.get(id)||[],lutName,physical:block?{x:block.x,y:block.y,subtile:block.subtile,type:block.type}:null,cone:lut||null});} return {graph,cones,manhattan,lutByRoot,nodeToConeRoots,nodeMap};}
+function getMode(){return document.querySelector('input[name="mode"]:checked').value;}
+function collectFocusNeighborhood(focusId,mode,nodes,edges){const adj=new Map(); for(const n of nodes) adj.set(String(n.id),new Set()); for(const e of edges){if(!adj.has(String(e.source))) adj.set(String(e.source),new Set()); if(!adj.has(String(e.target))) adj.set(String(e.target),new Set()); adj.get(String(e.source)).add(String(e.target)); adj.get(String(e.target)).add(String(e.source));} const visited=new Set([focusId]); let frontier=[focusId]; const maxDepth=mode==='roots'?3:2; for(let d=0;d<maxDepth;d++){const next=[]; for(const cur of frontier){for(const nb of adj.get(cur)||[]){if(!visited.has(nb)){visited.add(nb); next.push(nb);}}} frontier=next;} return {nodes:Array.from(visited)};}
+function buildView(){if(!state.combined) return; const mode=getMode(); const usePhysical=document.getElementById('physicalToggle').checked; const nodeMap=state.combined.nodeMap; let nodes=[], edges=[]; if(mode==='base' || mode==='cones'){nodes=Array.from(nodeMap.values()); edges=state.combined.graph.edges.map(e=>({...e,source:String(e.source),target:String(e.target)}));} else {const rootIds=new Set(Array.from(state.combined.lutByRoot.keys())); nodes=Array.from(rootIds).map(id=>nodeMap.get(id)).filter(Boolean); for(const srcId of rootIds){const srcCone=state.combined.lutByRoot.get(srcId); for(const leaf of srcCone?.leaves||[]){const leafId=String(leaf); if(rootIds.has(leafId)) edges.push({source:leafId,target:srcId,inverted:false,isRootEdge:true});}} const d=new Map(); for(const e of edges) d.set(`${e.source}->${e.target}`,e); edges=Array.from(d.values());}
+if(state.focusNodeId){const keep=collectFocusNeighborhood(String(state.focusNodeId),mode,nodes,edges); const allowed=new Set(keep.nodes); nodes=nodes.filter(n=>allowed.has(String(n.id))); edges=edges.filter(e=>allowed.has(String(e.source))&&allowed.has(String(e.target)));}
+state.view={nodes,edges,mode,usePhysical}; computeLayout(); updateStats(); render();}
+function computeLayout(){if(!state.view) return; const {nodes,edges,mode,usePhysical}=state.view; state.positions.clear(); if(mode==='roots' && usePhysical){const xs=nodes.map(n=>n.physical?.x).filter(Number.isFinite), ys=nodes.map(n=>n.physical?.y).filter(Number.isFinite); if(xs.length){const minX=Math.min(...xs), minY=Math.min(...ys); for(const n of nodes){state.positions.set(String(n.id),{x:((n.physical?.x??minX)-minX)*100,y:((n.physical?.y??minY)-minY)*100});} fitToView(); return;}}
+const indeg=new Map(nodes.map(n=>[String(n.id),0])); const out=new Map(nodes.map(n=>[String(n.id),[]])); for(const e of edges){const s=String(e.source), t=String(e.target); if(!out.has(s)) out.set(s,[]); if(!indeg.has(t)) indeg.set(t,0); out.get(s).push(t); indeg.set(t,(indeg.get(t)||0)+1);} const q=[], layer=new Map(); for(const [id,d] of indeg.entries()) if(d===0){q.push(id); layer.set(id,0);} while(q.length){const cur=q.shift(); for(const nb of out.get(cur)||[]){layer.set(nb,Math.max(layer.get(nb)||0,(layer.get(cur)||0)+1)); indeg.set(nb,indeg.get(nb)-1); if(indeg.get(nb)===0) q.push(nb);}} for(const n of nodes) if(!layer.has(String(n.id))) layer.set(String(n.id),0); const groups=new Map(); for(const n of nodes){const l=layer.get(String(n.id))||0; if(!groups.has(l)) groups.set(l,[]); groups.get(l).push(n);} const layers=Array.from(groups.keys()).sort((a,b)=>a-b); const xGap=mode==='roots'?140:90, yGap=mode==='roots'?70:26; layers.forEach((l,idx)=>{const arr=groups.get(l); arr.sort((a,b)=>Number(a.id)-Number(b.id)); const startY=-(arr.length-1)*yGap/2; arr.forEach((n,i)=>state.positions.set(String(n.id),{x:idx*xGap,y:startY+i*yGap}));}); fitToView();}
+function fitToView(){if(!state.positions.size) return; const pts=Array.from(state.positions.values()); const minX=Math.min(...pts.map(p=>p.x)), maxX=Math.max(...pts.map(p=>p.x)), minY=Math.min(...pts.map(p=>p.y)), maxY=Math.max(...pts.map(p=>p.y)); const rect=canvas.getBoundingClientRect(); const w=Math.max(1,maxX-minX+80), h=Math.max(1,maxY-minY+80); state.zoom=Math.min(rect.width/w, rect.height/h); state.panX=rect.width/2-((minX+maxX)/2)*state.zoom; state.panY=rect.height/2-((minY+maxY)/2)*state.zoom;}
+function worldToScreen(p){return {x:p.x*state.zoom+state.panX,y:p.y*state.zoom+state.panY};} function screenToWorld(x,y){return {x:(x-state.panX)/state.zoom,y:(y-state.panY)/state.zoom};}
+function nodeRadius(n){const base=Number(document.getElementById('nodeSize').value||7); if(n.kind==='output') return base+1; if(n.isLutRoot) return base+2; return base;}
+function nodeColor(n,mode){if(mode==='cones'&&n.coneRoots.length) return deterministicColor(n.coneRoots[0]); if(n.kind==='input') return '#60a5fa'; if(n.kind==='output') return '#fb7185'; if(n.isLutRoot) return '#f59e0b'; return '#f8fafc';}
+function render(){const rect=canvas.getBoundingClientRect(); ctx.clearRect(0,0,rect.width,rect.height); ctx.fillStyle='#020617'; ctx.fillRect(0,0,rect.width,rect.height); if(!state.view) return; const mode=state.view.mode, showLabels=document.getElementById('labelsToggle').checked, showEdges=document.getElementById('edgeToggle').checked, markInverted=document.getElementById('invertToggle').checked, highlightLeaves=document.getElementById('leafHaloToggle').checked;
+if(showEdges){for(const e of state.view.edges){const p1=state.positions.get(String(e.source)), p2=state.positions.get(String(e.target)); if(!p1||!p2) continue; const s1=worldToScreen(p1), s2=worldToScreen(p2); ctx.beginPath(); ctx.moveTo(s1.x,s1.y); ctx.lineTo(s2.x,s2.y); ctx.strokeStyle=e.isRootEdge?'rgba(96,165,250,0.8)':'rgba(148,163,184,0.45)'; ctx.lineWidth=e.isRootEdge?2:1; ctx.stroke(); if(markInverted&&e.inverted){const mx=(s1.x+s2.x)/2, my=(s1.y+s2.y)/2; ctx.beginPath(); ctx.arc(mx,my,4,0,Math.PI*2); ctx.fillStyle='#f87171'; ctx.fill();}}}
+for(const n of state.view.nodes){const p=state.positions.get(String(n.id)); if(!p) continue; const s=worldToScreen(p), r=nodeRadius(n), color=nodeColor(n,mode); if(mode==='cones'&&highlightLeaves&&n.cone){for(const leaf of n.cone.leaves||[]){const lp=state.positions.get(String(leaf)); if(!lp) continue; const sl=worldToScreen(lp); ctx.beginPath(); ctx.arc(sl.x,sl.y,r+5,0,Math.PI*2); ctx.strokeStyle=color; ctx.setLineDash([4,3]); ctx.lineWidth=1; ctx.stroke(); ctx.setLineDash([]);}}
+ctx.beginPath(); ctx.arc(s.x,s.y,r,0,Math.PI*2); ctx.fillStyle=color; ctx.fill(); ctx.lineWidth=state.selectedNodeId===String(n.id)?3:(n.isLutRoot?2:1); ctx.strokeStyle=state.selectedNodeId===String(n.id)?'#22c55e':'#0f172a'; ctx.stroke(); if(mode==='cones'&&n.coneRoots.length>1){ctx.beginPath(); ctx.arc(s.x,s.y,r+4,0,Math.PI*2); ctx.strokeStyle='#fbbf24'; ctx.lineWidth=1.5; ctx.stroke();} if(showLabels){ctx.fillStyle='#cbd5e1'; ctx.font='11px Inter, sans-serif'; const label=n.isLutRoot?`LUT_${n.id}`:`${n.id}`; ctx.fillText(label,s.x+r+4,s.y+4);}}
+}
+function hitTest(x,y){const world=screenToWorld(x,y); let best=null, bestD=Infinity; for(const n of state.view?.nodes||[]){const p=state.positions.get(String(n.id)); if(!p) continue; const dx=world.x-p.x, dy=world.y-p.y, d=Math.sqrt(dx*dx+dy*dy); const r=nodeRadius(n)/state.zoom*1.5+2; if(d<r && d<bestD){best=n; bestD=d;}} return best;}
+function updateStats(){if(!state.view){statsEl.innerHTML=''; return;} const totalRoots=state.view.nodes.filter(n=>n.isLutRoot).length, totalConeMembers=state.view.nodes.filter(n=>n.coneRoots.length).length; statsEl.innerHTML=`<div>Mode</div><div>${state.view.mode}</div><div>Nodes</div><div>${state.view.nodes.length}</div><div>Edges</div><div>${state.view.edges.length}</div><div>LUT roots</div><div>${totalRoots}</div><div>Cone members</div><div>${totalConeMembers}</div><div>Focus</div><div>${state.focusNodeId||'none'}</div>`;}
+function updateSelectionInfo(node){if(!node){selectionInfoEl.innerHTML='No node selected.'; return;} const cone=node.cone, physical=node.physical; const relatedRoots=(node.coneRoots||[]).map(r=>`<span class="pill">LUT_${r}</span>`).join(' '); const leafPills=(cone?.leaves||[]).map(v=>`<span class="pill">${v}</span>`).join(' '); const internalPills=(cone?.internal_nodes||[]).map(v=>`<span class="pill">${v}</span>`).join(' '); selectionInfoEl.innerHTML=`<div class="kv"><div>ID</div><div class="mono">${node.id}</div><div>Kind</div><div>${node.kind||'and'}</div><div>LUT root</div><div>${node.isLutRoot?'yes':'no'}</div><div>LUT name</div><div>${node.lutName||'-'}</div><div>In cone(s)</div><div>${relatedRoots||'-'}</div><div>Physical XY</div><div>${physical?`(${physical.x}, ${physical.y})`:'-'}</div></div>${cone?`<h3 style="margin-top:14px">Cone details</h3><div><strong>Leaves</strong><br>${leafPills||'-'}</div><div style="margin-top:8px"><strong>Internal nodes</strong><br>${internalPills||'-'}</div><div style="margin-top:8px"><strong>Function</strong><br><span class="mono">${cone.func_hex||'-'}</span></div>`:''}`;}
+function updateFileInfo(){if(!state.combined){fileInfoEl.innerHTML='No files loaded.'; return;} const g=state.combined.graph, c=state.combined.cones, m=state.combined.manhattan; fileInfoEl.innerHTML=`<div class="kv"><div>Circuit</div><div>${g.meta?.circuit||c?.circuit||m?.design||'-'}</div><div>Graph nodes</div><div>${g.nodes.length}</div><div>Graph edges</div><div>${g.edges.length}</div><div>LUT cones</div><div>${c?.lut_cones?.length||0}</div><div>Blocks</div><div>${m?.num_blocks ?? Object.keys(m?.blocks||{}).length}</div><div>Connections</div><div>${m?.num_connections ?? m?.connections?.length ?? 0}</div></div>`;}
+async function loadFiles(){try{const [graph,cones,manhattan]=await Promise.all([parseJSONFile(document.getElementById('graphFile').files[0]),parseJSONFile(document.getElementById('conesFile').files[0]),parseJSONFile(document.getElementById('manhattanFile').files[0])]); if(!graph||!cones||!manhattan) throw new Error('Please provide all three files.'); if(!graph.nodes||!graph.edges) throw new Error('Graph JSON must contain nodes and edges arrays.'); state.graph=graph; state.cones=cones; state.manhattan=manhattan; state.combined=enrichData(graph,cones,manhattan); state.selectedNodeId=null; state.focusNodeId=null; updateFileInfo(); buildView(); loadStatusEl.textContent='Files loaded successfully.'; loadStatusEl.className='small status-ok';}catch(err){loadStatusEl.textContent=err.message; loadStatusEl.className='small status-bad';}}
+function loadDemo(){const graph={meta:{circuit:'tiny_demo'},nodes:[{id:'1',kind:'input'},{id:'2',kind:'input'},{id:'3',kind:'input'},{id:'7',kind:'and'},{id:'8',kind:'and'},{id:'11',kind:'and'},{id:'16',kind:'and'},{id:'out_1',kind:'output'}],edges:[{source:'1',target:'7',inverted:false},{source:'2',target:'7',inverted:false},{source:'7',target:'8',inverted:false},{source:'3',target:'8',inverted:true},{source:'8',target:'11',inverted:false},{source:'2',target:'11',inverted:false},{source:'11',target:'16',inverted:false},{source:'1',target:'16',inverted:false},{source:'16',target:'out_1',inverted:false}]}; const cones={format:'mt_lut_cones:v1',circuit:'tiny_demo',lut_cones:[{lut_root:11,lut_name:'LUT_11',func_hex:'8777',leaves:[1,2,3],internal_nodes:[7,8]},{lut_root:16,lut_name:'LUT_16',func_hex:'6530',leaves:[1,11],internal_nodes:[]}]}; const manhattan={design:'tiny_demo',num_blocks:2,num_connections:1,blocks:{LUT_11:{x:10,y:5,subtile:0,type:'0'},LUT_16:{x:14,y:6,subtile:0,type:'0'}},connections:[{src:'LUT_11',dst:'LUT_16',dx:4,dy:1,manhattan:5}]}; state.graph=graph; state.cones=cones; state.manhattan=manhattan; state.combined=enrichData(graph,cones,manhattan); updateFileInfo(); buildView(); loadStatusEl.textContent='Tiny demo loaded.'; loadStatusEl.className='small status-ok';}
+document.getElementById('loadBtn').addEventListener('click',loadFiles); document.getElementById('demoBtn').addEventListener('click',loadDemo); document.getElementById('fitBtn').addEventListener('click',()=>{fitToView(); render();}); document.getElementById('resetBtn').addEventListener('click',()=>{state.panX=0; state.panY=0; state.zoom=1; render();}); document.getElementById('focusBtn').addEventListener('click',()=>{const raw=document.getElementById('focusInput').value.trim(); if(!raw) return; state.focusNodeId=raw.startsWith('LUT_')?raw.replace('LUT_',''):raw; buildView();}); document.getElementById('clearFocusBtn').addEventListener('click',()=>{state.focusNodeId=null; document.getElementById('focusInput').value=''; buildView();}); document.querySelectorAll('input[name="mode"]').forEach(el=>el.addEventListener('change',buildView)); ['physicalToggle','labelsToggle','edgeToggle','invertToggle','leafHaloToggle','nodeSize'].forEach(id=>{document.getElementById(id).addEventListener('input',()=>{if(id==='physicalToggle'||id==='nodeSize') buildView(); else render();}); document.getElementById(id).addEventListener('change',()=>{if(id==='physicalToggle') buildView(); else render();});});
+canvas.addEventListener('mousedown',e=>{state.dragging=true; canvas.classList.add('dragging'); state.lastMouse={x:e.clientX,y:e.clientY};}); window.addEventListener('mouseup',()=>{state.dragging=false; canvas.classList.remove('dragging');}); window.addEventListener('mousemove',e=>{if(!state.dragging) return; state.panX+=e.clientX-state.lastMouse.x; state.panY+=e.clientY-state.lastMouse.y; state.lastMouse={x:e.clientX,y:e.clientY}; render();}); canvas.addEventListener('wheel',e=>{e.preventDefault(); const rect=canvas.getBoundingClientRect(); const mouseX=e.clientX-rect.left, mouseY=e.clientY-rect.top; const before=screenToWorld(mouseX,mouseY); const scale=e.deltaY<0?1.1:0.9; state.zoom=Math.max(.1,Math.min(8,state.zoom*scale)); const after=worldToScreen(before); state.panX+=mouseX-after.x; state.panY+=mouseY-after.y; render();},{passive:false}); canvas.addEventListener('click',e=>{const rect=canvas.getBoundingClientRect(); const node=hitTest(e.clientX-rect.left,e.clientY-rect.top); state.selectedNodeId=node?String(node.id):null; updateSelectionInfo(node); render();});
+resizeCanvas(); loadDemo();
+</script>
+</body>
+</html>

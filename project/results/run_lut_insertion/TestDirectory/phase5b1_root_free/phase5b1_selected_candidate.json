@@ -1,0 +1,198 @@
+{
+  "phase": "FASE 5B.1",
+  "phase5b1_status": "PASS_NO_ESTIMATED_IMPROVEMENT",
+  "candidate_id": "phase5b1_exact_00000",
+  "family": "root_free_exact_decomposition_fixed_capacities",
+  "same_lut_positions": true,
+  "same_window_boundary": true,
+  "root_free": true,
+  "root_changed": true,
+  "output_driver_changed": true,
+  "fixed_capacities": true,
+  "lut2_upgraded_to_lut6": false,
+  "new_topology_acyclic": true,
+  "window_depth": 2,
+  "truth_table_equivalence": true,
+  "num_checked_vectors": 4096,
+  "estimated_improvement_no_output_penalty": false,
+  "estimated_improvement_with_output_penalty": false,
+  "baseline_score_without_output_penalty": 57589,
+  "baseline_score_with_output_penalty": 57589,
+  "score_without_output_penalty": 64631,
+  "score_with_output_penalty": 69631,
+  "roles": {
+    "root": {
+      "role": "R",
+      "cell": "f[108]_INST_0_i_7",
+      "ref": "LUT6",
+      "site": "SLICE_X89Y491",
+      "bel": "SLICEL.F6LUT",
+      "new_INIT": "64'h00000EEF0EEFFFFF",
+      "inputs": [
+        {
+          "sink_pin": "I0",
+          "source": "helper1/O",
+          "source_cell": "f[108]_INST_0_i_6"
+        },
+        {
+          "sink_pin": "I1",
+          "source": "helper2/O",
+          "source_cell": "f[108]_INST_0_i_8"
+        },
+        {
+          "sink_pin": "I2",
+          "boundary_index": 7
+        },
+        {
+          "sink_pin": "I3",
+          "boundary_index": 8
+        },
+        {
+          "sink_pin": "I4",
+          "boundary_index": 9
+        },
+        {
+          "sink_pin": "I5",
+          "boundary_index": 10
+        }
+      ]
+    },
+    "helper1": {
+      "role": "H1",
+      "cell": "f[108]_INST_0_i_6",
+      "ref": "LUT6",
+      "site": "SLICE_X79Y531",
+      "bel": "SLICEL.A6LUT",
+      "new_INIT": "64'h022A2A2A0202022A",
+      "inputs": [
+        {
+          "sink_pin": "I0",
+          "boundary_index": 1
+        },
+        {
+          "sink_pin": "I1",
+          "boundary_index": 2
+        },
+        {
+          "sink_pin": "I2",
+          "boundary_index": 3
+        },
+        {
+          "sink_pin": "I3",
+          "boundary_index": 4
+        },
+        {
+          "sink_pin": "I4",
+          "boundary_index": 5
+        },
+        {
+          "sink_pin": "I5",
+          "boundary_index": 6
+        }
+      ]
+    },
+    "helper2": {
+      "role": "H2",
+      "cell": "f[108]_INST_0_i_8",
+      "ref": "LUT2",
+      "site": "SLICE_X81Y528",
+      "bel": "SLICEM.G6LUT",
+      "new_INIT": "4'h1",
+      "inputs": [
+        {
+          "sink_pin": "I0",
+          "boundary_index": 11
+        },
+        {
+          "sink_pin": "I1",
+          "boundary_index": 12
+        }
+      ]
+    }
+  },
+  "changed_pins": [
+    {
+      "sink_cell": "f[108]_INST_0_i_6",
+      "sink_pin": "I0",
+      "old_source": "INT:f[108]_INST_0_i_7/O",
+      "new_source": "BI_NET:n11840132_in"
+    },
+    {
+      "sink_cell": "f[108]_INST_0_i_6",
+      "sink_pin": "I1",
+      "old_source": "INT:f[108]_INST_0_i_8/O",
+      "new_source": "BI_NET:f[99]_INST_0_i_3_n_0"
+    },
+    {
+      "sink_cell": "f[108]_INST_0_i_6",
+      "sink_pin": "I2",
+      "old_source": "BI_NET:f[101]_INST_0_i_2_n_0",
+      "new_source": "BI_NET:f[99]_INST_0_i_2_n_0"
+    },
+    {
+      "sink_cell": "f[108]_INST_0_i_6",
+      "sink_pin": "I3",
+      "old_source": "BI_NET:f[101]_INST_0_i_3_n_0",
+      "new_source": "BI_NET:f[98]_INST_0_i_3_n_0"
+    },
+    {
+      "sink_cell": "f[108]_INST_0_i_6",
+      "sink_pin": "I4",
+      "old_source": "BI_NET:f[102]_INST_0_i_2_n_0",
+      "new_source": "BI_NET:f[98]_INST_0_i_2_n_0"
+    },
+    {
+      "sink_cell": "f[108]_INST_0_i_6",
+      "sink_pin": "I5",
+      "old_source": "BI_NET:f[102]_INST_0_i_3_n_0",
+      "new_source": "BI_NET:p_149_in"
+    },
+    {
+      "sink_cell": "f[108]_INST_0_i_7",
+      "sink_pin": "I0",
+      "old_source": "BI_NET:n11840132_in",
+      "new_source": "INT:f[108]_INST_0_i_6/O"
+    },
+    {
+      "sink_cell": "f[108]_INST_0_i_7",
+      "sink_pin": "I1",
+      "old_source": "BI_NET:f[99]_INST_0_i_3_n_0",
+      "new_source": "INT:f[108]_INST_0_i_8/O"
+    },
+    {
+      "sink_cell": "f[108]_INST_0_i_7",
+      "sink_pin": "I2",
+      "old_source": "BI_NET:f[99]_INST_0_i_2_n_0",
+      "new_source": "BI_NET:f[101]_INST_0_i_2_n_0"
+    },
+    {
+      "sink_cell": "f[108]_INST_0_i_7",
+      "sink_pin": "I3",
+      "old_source": "BI_NET:f[98]_INST_0_i_3_n_0",
+      "new_source": "BI_NET:f[101]_INST_0_i_3_n_0"
+    },
+    {
+      "sink_cell": "f[108]_INST_0_i_7",
+      "sink_pin": "I4",
+      "old_source": "BI_NET:f[98]_INST_0_i_2_n_0",
+      "new_source": "BI_NET:f[102]_INST_0_i_2_n_0"
+    },
+    {
+      "sink_cell": "f[108]_INST_0_i_7",
+      "sink_pin": "I5",
+      "old_source": "BI_NET:p_149_in",
+      "new_source": "BI_NET:f[102]_INST_0_i_3_n_0"
+    }
+  ],
+  "cost": {
+    "changed_pin_count": 12,
+    "output_driver_changed": true,
+    "output_driver_change_penalty": 5000,
+    "internal_manhattan_h1_to_root": 50,
+    "internal_manhattan_h2_to_root": 45,
+    "internal_manhattan_total": 95,
+    "internal_manhattan_max": 50,
+    "boundary_manhattan_total": 2131,
+    "boundary_manhattan_missing": 0
+  }
+}

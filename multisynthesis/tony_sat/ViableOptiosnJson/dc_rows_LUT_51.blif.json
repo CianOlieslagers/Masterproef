@@ -1,0 +1,109 @@
+{
+  "blif": "/home/cian/Masterproef/multisynthesis/results/example_big_300/topologymapping/example_big_300.mapped.blif",
+  "pit": "LUT_51",
+  "nrows": 16,
+  "k": 4,
+  "rows": [
+    {
+      "row": 0,
+      "status": "DONT_CARE",
+      "reachable": true,
+      "observable": false
+    },
+    {
+      "row": 1,
+      "status": "CARE",
+      "reachable": true,
+      "observable": true
+    },
+    {
+      "row": 2,
+      "status": "CARE",
+      "reachable": true,
+      "observable": true
+    },
+    {
+      "row": 3,
+      "status": "CARE",
+      "reachable": true,
+      "observable": true
+    },
+    {
+      "row": 4,
+      "status": "UNREACHABLE",
+      "reachable": false,
+      "observable": false
+    },
+    {
+      "row": 5,
+      "status": "CARE",
+      "reachable": true,
+      "observable": true
+    },
+    {
+      "row": 6,
+      "status": "CARE",
+      "reachable": true,
+      "observable": true
+    },
+    {
+      "row": 7,
+      "status": "CARE",
+      "reachable": true,
+      "observable": true
+    },
+    {
+      "row": 8,
+      "status": "CARE",
+      "reachable": true,
+      "observable": true
+    },
+    {
+      "row": 9,
+      "status": "CARE",
+      "reachable": true,
+      "observable": true
+    },
+    {
+      "row": 10,
+      "status": "CARE",
+      "reachable": true,
+      "observable": true
+    },
+    {
+      "row": 11,
+      "status": "CARE",
+      "reachable": true,
+      "observable": true
+    },
+    {
+      "row": 12,
+      "status": "CARE",
+      "reachable": true,
+      "observable": true
+    },
+    {
+      "row": 13,
+      "status": "CARE",
+      "reachable": true,
+      "observable": true
+    },
+    {
+      "row": 14,
+      "status": "DONT_CARE",
+      "reachable": true,
+      "observable": false
+    },
+    {
+      "row": 15,
+      "status": "DONT_CARE",
+      "reachable": true,
+      "observable": false
+    }
+  ],
+  "summary": {
+    "CARE": 12,
+    "DONT_CARE": 3,
+    "UNREACHABLE": 1
+  }
+}

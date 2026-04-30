@@ -1,0 +1,25 @@
+{
+  "id": "cand_001349",
+  "net": "p_199_in",
+  "sink_cell": "f[93]_INST_0_i_5",
+  "sink_pin": null,
+  "target_slice": "SLICE_X90Y491",
+  "lut_delay_ps": 120.0,
+  "from": "f[93]_INST_0_i_6",
+  "to": "f[93]_INST_0_i_5",
+  "distance": 2,
+  "coords": {
+    "src": [
+      91,
+      491
+    ],
+    "dest": [
+      89,
+      491
+    ]
+  },
+  "eco_ready": true,
+  "issues": [
+    "missing_sink_pin"
+  ]
+}

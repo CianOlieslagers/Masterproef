@@ -1,0 +1,25 @@
+{
+  "id": "cand_002002",
+  "net": "f[22]_INST_0_i_2/OUT",
+  "sink_cell": "f[22]_INST_0_i_2/IBUFCTRL_INST",
+  "sink_pin": null,
+  "target_slice": "SLICE_X1Y420",
+  "lut_delay_ps": 120.0,
+  "from": "f[22]_INST_0_i_2/INBUF_INST",
+  "to": "f[22]_INST_0_i_2/IBUFCTRL_INST",
+  "distance": 0,
+  "coords": {
+    "src": [
+      1,
+      420
+    ],
+    "dest": [
+      1,
+      420
+    ]
+  },
+  "eco_ready": true,
+  "issues": [
+    "missing_sink_pin"
+  ]
+}

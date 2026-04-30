@@ -1,0 +1,25 @@
+{
+  "id": "cand_001561",
+  "net": "cOut_OBUF_inst_i_5/OUT",
+  "sink_cell": "cOut_OBUF_inst_i_5/IBUFCTRL_INST",
+  "sink_pin": null,
+  "target_slice": "SLICE_X1Y433",
+  "lut_delay_ps": 120.0,
+  "from": "cOut_OBUF_inst_i_5/INBUF_INST",
+  "to": "cOut_OBUF_inst_i_5/IBUFCTRL_INST",
+  "distance": 0,
+  "coords": {
+    "src": [
+      1,
+      433
+    ],
+    "dest": [
+      1,
+      433
+    ]
+  },
+  "eco_ready": true,
+  "issues": [
+    "missing_sink_pin"
+  ]
+}

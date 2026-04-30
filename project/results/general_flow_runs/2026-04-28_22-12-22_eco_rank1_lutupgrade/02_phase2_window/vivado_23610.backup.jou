@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:36:09 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Tue Apr 28 22:13:51 2026
+# Process ID: 23610
+# Current directory: /home/cian/Masterproef/project/results/general_flow_runs/2026-04-28_22-12-22_eco_rank1_lutupgrade/02_phase2_window
+# Command line: vivado -mode batch -source /home/cian/Masterproef/project/Vivado/scripts/7_Phase_Steps_From_Hell/phase2_extract_window.tcl -tclargs /home/cian/Masterproef/project/results/run_lut_insertion/TestDirectory/baseline_impl/checkpoints/post_route_timingexp.dcp /home/cian/Masterproef/project/results/general_flow_runs/2026-04-28_22-12-22_eco_rank1_lutupgrade/01_phase1_timing_edges/phase1_lut_timing_edges.json /home/cian/Masterproef/project/results/general_flow_runs/2026-04-28_22-12-22_eco_rank1_lutupgrade/02_phase2_window 8 12 2 grow_fanin 6 30
+# Log file: /home/cian/Masterproef/project/results/general_flow_runs/2026-04-28_22-12-22_eco_rank1_lutupgrade/02_phase2_window/vivado.log
+# Journal file: /home/cian/Masterproef/project/results/general_flow_runs/2026-04-28_22-12-22_eco_rank1_lutupgrade/02_phase2_window/vivado.jou
+# Running On        :MSI
+# Platform          :Ubuntu
+# Operating System  :Ubuntu 22.04.5 LTS
+# Processor Detail  :Intel(R) Core(TM) i7-10750H CPU @ 2.60GHz
+# CPU Frequency     :2592.008 MHz
+# CPU Physical cores:6
+# CPU Logical cores :12
+# Host memory       :8232 MB
+# Swap memory       :2147 MB
+# Total Virtual     :10380 MB
+# Available Virtual :9762 MB
+#-----------------------------------------------------------
+source /home/cian/Masterproef/project/Vivado/scripts/7_Phase_Steps_From_Hell/phase2_extract_window.tcl

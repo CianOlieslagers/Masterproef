@@ -1,0 +1,8419 @@
+{
+  "json": "Lut_verbinding/result/example_big_300/example_big_300.super.sat.v2.json",
+  "reports": [
+    {
+      "dst": "LUT_101",
+      "lut_root": 101,
+      "leaves": [
+        4,
+        61,
+        76,
+        97
+      ],
+      "pins": [
+        "LUT_97",
+        "LUT_61",
+        "pi5",
+        "LUT_76"
+      ],
+      "subexprs": [
+        {
+          "node": 88,
+          "func_hex": "0c0c",
+          "support_leaf_ids": [
+            4,
+            61,
+            76
+          ],
+          "support_pin_idx": [
+            0,
+            1,
+            2
+          ],
+          "support_nets": [
+            "LUT_97",
+            "LUT_61",
+            "pi5"
+          ],
+          "support_size": 3
+        },
+        {
+          "node": 98,
+          "func_hex": "5500",
+          "support_leaf_ids": [
+            4,
+            97
+          ],
+          "support_pin_idx": [
+            0,
+            3
+          ],
+          "support_nets": [
+            "LUT_97",
+            "LUT_76"
+          ],
+          "support_size": 2
+        },
+        {
+          "node": 99,
+          "func_hex": "00aa",
+          "support_leaf_ids": [
+            4,
+            76,
+            97
+          ],
+          "support_pin_idx": [
+            0,
+            2,
+            3
+          ],
+          "support_nets": [
+            "LUT_97",
+            "pi5",
+            "LUT_76"
+          ],
+          "support_size": 3
+        },
+        {
+          "node": 100,
+          "func_hex": "aa55",
+          "support_leaf_ids": [
+            4,
+            61,
+            76,
+            97
+          ],
+          "support_pin_idx": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "support_nets": [
+            "LUT_97",
+            "LUT_61",
+            "pi5",
+            "LUT_76"
+          ],
+          "support_size": 4
+        },
+        {
+          "node": 101,
+          "func_hex": "a251",
+          "support_leaf_ids": [
+            4,
+            61,
+            76,
+            97
+          ],
+          "support_pin_idx": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "support_nets": [
+            "LUT_97",
+            "LUT_61",
+            "pi5",
+            "LUT_76"
+          ],
+          "support_size": 4
+        }
+      ],
+      "notes": []
+    },
+    {
+      "dst": "LUT_103",
+      "lut_root": 103,
+      "leaves": [
+        6,
+        65,
+        80,
+        101
+      ],
+      "pins": [
+        "LUT_101",
+        "LUT_65",
+        "pi7",
+        "LUT_80"
+      ],
+      "subexprs": [
+        {
+          "node": 85,
+          "func_hex": "3030",
+          "support_leaf_ids": [
+            6,
+            65,
+            80
+          ],
+          "support_pin_idx": [
+            0,
+            1,
+            2
+          ],
+          "support_nets": [
+            "LUT_101",
+            "LUT_65",
+            "pi7"
+          ],
+          "support_size": 3
+        },
+        {
+          "node": 86,
+          "func_hex": "0c0c",
+          "support_leaf_ids": [
+            6,
+            65,
+            80
+          ],
+          "support_pin_idx": [
+            0,
+            1,
+            2
+          ],
+          "support_nets": [
+            "LUT_101",
+            "LUT_65",
+            "pi7"
+          ],
+          "support_size": 3
+        },
+        {
+          "node": 87,
+          "func_hex": "c3c3",
+          "support_leaf_ids": [
+            6,
+            65,
+            80
+          ],
+          "support_pin_idx": [
+            0,
+            1,
+            2
+          ],
+          "support_nets": [
+            "LUT_101",
+            "LUT_65",
+            "pi7"
+          ],
+          "support_size": 3
+        },
+        {
+          "node": 102,
+          "func_hex": "5500",
+          "support_leaf_ids": [
+            6,
+            101
+          ],
+          "support_pin_idx": [
+            0,
+            3
+          ],
+          "support_nets": [
+            "LUT_101",
+            "LUT_80"
+          ],
+          "support_size": 2
+        },
+        {
+          "node": 103,
+          "func_hex": "283c",
+          "support_leaf_ids": [
+            6,
+            80,
+            101
+          ],
+          "support_pin_idx": [
+            0,
+            2,
+            3
+          ],
+          "support_nets": [
+            "LUT_101",
+            "pi7",
+            "LUT_80"
+          ],
+          "support_size": 3
+        }
+      ],
+      "notes": []
+    },
+    {
+      "dst": "LUT_11",
+      "lut_root": 11,
+      "leaves": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "pins": [
+        "pi5",
+        "pi3",
+        "pi2",
+        "pi4"
+      ],
+      "subexprs": [
+        {
+          "node": 7,
+          "func_hex": "8888",
+          "support_leaf_ids": [
+            3
+          ],
+          "support_pin_idx": [
+            2
+          ],
+          "support_nets": [
+            "pi2"
+          ],
+          "support_size": 1
+        },
+        {
+          "node": 8,
+          "func_hex": "f000",
+          "support_leaf_ids": [
+            2,
+            4
+          ],
+          "support_pin_idx": [
+            1,
+            3
+          ],
+          "support_nets": [
+            "pi3",
+            "pi4"
+          ],
+          "support_size": 2
+        },
+        {
+          "node": 9,
+          "func_hex": "0888",
+          "support_leaf_ids": [
+            2,
+            3,
+            4
+          ],
+          "support_pin_idx": [
+            1,
+            2,
+            3
+          ],
+          "support_nets": [
+            "pi3",
+            "pi2",
+            "pi4"
+          ],
+          "support_size": 3
+        },
+        {
+          "node": 10,
+          "func_hex": "7000",
+          "support_leaf_ids": [
+            2,
+            3,
+            4
+          ],
+          "support_pin_idx": [
+            1,
+            2,
+            3
+          ],
+          "support_nets": [
+            "pi3",
+            "pi2",
+            "pi4"
+          ],
+          "support_size": 3
+        },
+        {
+          "node": 11,
+          "func_hex": "8777",
+          "support_leaf_ids": [
+            2,
+            3,
+            4
+          ],
+          "support_pin_idx": [
+            1,
+            2,
+            3
+          ],
+          "support_nets": [
+            "pi3",
+            "pi2",
+            "pi4"
+          ],
+          "support_size": 3
+        }
+      ],
+      "notes": []
+    },
+    {
+      "dst": "LUT_112",
+      "lut_root": 112,
+      "leaves": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "pins": [
+        "pi7",
+        "pi5",
+        "pi4",
+        "pi6"
+      ],
+      "subexprs": [
+        {
+          "node": 108,
+          "func_hex": "a0a0",
+          "support_leaf_ids": [
+            3,
+            4,
+            5,
+            6
+          ],
+          "support_pin_idx": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "support_nets": [
+            "pi7",
+            "pi5",
+            "pi4",
+            "pi6"
+          ],
+          "support_size": 4
+        },
+        {
+          "node": 109,
+          "func_hex": "0033",
+          "support_leaf_ids": [
+            3,
+            4,
+            5,
+            6
+          ],
+          "support_pin_idx": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "support_nets": [
+            "pi7",
+            "pi5",
+            "pi4",
+            "pi6"
+          ],
+          "support_size": 4
+        },
+        {
+          "node": 110,
+          "func_hex": "0020",
+          "support_leaf_ids": [
+            3,
+            4,
+            5,
+            6
+          ],
+          "support_pin_idx": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "support_nets": [
+            "pi7",
+            "pi5",
+            "pi4",
+            "pi6"
+          ],
+          "support_size": 4
+        },
+        {
+          "node": 111,
+          "func_hex": "5f4c",
+          "support_leaf_ids": [
+            4,
+            6
+          ],
+          "support_pin_idx": [
+            1,
+            3
+          ],
+          "support_nets": [
+            "pi5",
+            "pi6"
+          ],
+          "support_size": 2
+        },
+        {
+          "node": 112,
+          "func_hex": "a093",
+          "support_leaf_ids": [
+            3,
+            4
+          ],
+          "support_pin_idx": [
+            0,
+            1
+          ],
+          "support_nets": [
+            "pi7",
+            "pi5"
+          ],
+          "support_size": 2
+        }
+      ],
+      "notes": []
+    },
+    {
+      "dst": "LUT_116",
+      "lut_root": 116,
+      "leaves": [
+        1,
+        72,
+        95,
+        112
+      ],
+      "pins": [
+        "LUT_112",
+        "LUT_72",
+        "pi2",
+        "LUT_95"
+      ],
+      "subexprs": [
+        {
+          "node": 107,
+          "func_hex": "3030",
+          "support_leaf_ids": [
+            1,
+            72
+          ],
+          "support_pin_idx": [
+            0,
+            1
+          ],
+          "support_nets": [
+            "LUT_112",
+            "LUT_72"
+          ],
+          "support_size": 2
+        },
+        {
+          "node": 113,
+          "func_hex": "5500",
+          "support_leaf_ids": [
+            112
+          ],
+          "support_pin_idx": [
+            3
+          ],
+          "support_nets": [
+            "LUT_95"
+          ],
+          "support_size": 1
+        },
+        {
+          "node": 114,
+          "func_hex": "1000",
+          "support_leaf_ids": [
+            1
+          ],
+          "support_pin_idx": [
+            0
+          ],
+          "support_nets": [
+            "LUT_112"
+          ],
+          "support_size": 1
+        },
+        {
+          "node": 115,
+          "func_hex": "8acf",
+          "support_leaf_ids": [
+            1,
+            112
+          ],
+          "support_pin_idx": [
+            0,
+            3
+          ],
+          "support_nets": [
+            "LUT_112",
+            "LUT_95"
+          ],
+          "support_size": 2
+        },
+        {
+          "node": 116,
+          "func_hex": "6530",
+          "support_leaf_ids": [
+            1,
+            112
+          ],
+          "support_pin_idx": [
+            0,
+            3
+          ],
+          "support_nets": [
+            "LUT_112",
+            "LUT_95"
+          ],
+          "support_size": 2
+        }
+      ],
+      "notes": []
+    },
+    {
+      "dst": "LUT_120",
+      "lut_root": 120,
+      "leaves": [
+        5,
+        76,
+        97,
+        116
+      ],
+      "pins": [
+        "LUT_116",
+        "LUT_76",
+        "pi6",
+        "LUT_97"
+      ],
+      "subexprs": [
+        {
+          "node": 106,
+          "func_hex": "0c0c",
+          "support_leaf_ids": [
+            5,
+            76,
+            97
+          ],
+          "support_pin_idx": [
+            0,
+            1,
+            2
+          ],
+          "support_nets": [
+            "LUT_116",
+            "LUT_76",
+            "pi6"
+          ],
+          "support_size": 3
+        },
+        {
+          "node": 117,
+          "func_hex": "00aa",
+          "support_leaf_ids": [
+            5
+          ],
+          "support_pin_idx": [
+            0
+          ],
+          "support_nets": [
+            "LUT_116"
+          ],
+          "support_size": 1
+        },
+        {
+          "node": 118,
+          "func_hex": "f351",
+          "support_leaf_ids": [
+            5,
+            116
+          ],
+          "support_pin_idx": [
+            0,
+            3
+          ],
+          "support_nets": [
+            "LUT_116",
+            "LUT_97"
+          ],
+          "support_size": 2
+        },
+        {
+          "node": 119,
+          "func_hex": "0008",
+          "support_leaf_ids": [
+            5,
+            116
+          ],
+          "support_pin_idx": [
+            0,
+            3
+          ],
+          "support_nets": [
+            "LUT_116",
+            "LUT_97"
+          ],
+          "support_size": 2
+        },
+        {
+          "node": 120,
+          "func_hex": "0ca6",
+          "support_leaf_ids": [
+            5,
+            97,
+            116
+          ],
+          "support_pin_idx": [
+            0,
+            2,
+            3
+          ],
+          "support_nets": [
+            "LUT_116",
+            "pi6",
+            "LUT_97"
+          ],
+          "support_size": 3
+        }
+      ],
+      "notes": []
+    },
+    {
+      "dst": "LUT_124",
+      "lut_root": 124,
+      "leaves": [
+        1,
+        80,
+        101,
+        120
+      ],
+      "pins": [
+        "LUT_120",
+        "LUT_80",
+        "pi2",
+        "LUT_101"
+      ],
+      "subexprs": [
+        {
+          "node": 105,
+          "func_hex": "0303",
+          "support_leaf_ids": [
+            1,
+            80,
+            101
+          ],
+          "support_pin_idx": [
+            0,
+            1,
+            2
+          ],
+          "support_nets": [
+            "LUT_120",
+            "LUT_80",
+            "pi2"
+          ],
+          "support_size": 3
+        },
+        {
+          "node": 121,
+          "func_hex": "5500",
+          "support_leaf_ids": [
+            1,
+            120
+          ],
+          "support_pin_idx": [
+            0,
+            3
+          ],
+          "support_nets": [
+            "LUT_120",
+            "LUT_101"
+          ],
+          "support_size": 2
+        },
+        {
+          "node": 122,
+          "func_hex": "0100",
+          "support_leaf_ids": [
+            1,
+            101,
+            120
+          ],
+          "support_pin_idx": [
+            0,
+            2,
+            3
+          ],
+          "support_nets": [
+            "LUT_120",
+            "pi2",
+            "LUT_101"
+          ],
+          "support_size": 3
+        },
+        {
+          "node": 123,
+          "func_hex": "a8fc",
+          "support_leaf_ids": [
+            1,
+            101,
+            120
+          ],
+          "support_pin_idx": [
+            0,
+            2,
+            3
+          ],
+          "support_nets": [
+            "LUT_120",
+            "pi2",
+            "LUT_101"
+          ],
+          "support_size": 3
+        },
+        {
+          "node": 124,
+          "func_hex": "5603",
+          "support_leaf_ids": [
+            1,
+            101,
+            120
+          ],
+          "support_pin_idx": [
+            0,
+            2,
+            3
+          ],
+          "support_nets": [
+            "LUT_120",
+            "pi2",
+            "LUT_101"
+          ],
+          "support_size": 3
+        }
+      ],
+      "notes": []
+    },
+    {
+      "dst": "LUT_128",
+      "lut_root": 128,
+      "leaves": [
+        3,
+        84,
+        103,
+        124
+      ],
+      "pins": [
+        "LUT_124",
+        "LUT_84",
+        "pi4",
+        "LUT_103"
+      ],
+      "subexprs": [
+        {
+          "node": 104,
+          "func_hex": "0c0c",
+          "support_leaf_ids": [
+            3,
+            103
+          ],
+          "support_pin_idx": [
+            0,
+            2
+          ],
+          "support_nets": [
+            "LUT_124",
+            "pi4"
+          ],
+          "support_size": 2
+        },
+        {
+          "node": 125,
+          "func_hex": "00aa",
+          "support_leaf_ids": [
+            3,
+            124
+          ],
+          "support_pin_idx": [
+            0,
+            3
+          ],
+          "support_nets": [
+            "LUT_124",
+            "LUT_103"
+          ],
+          "support_size": 2
+        },
+        {
+          "node": 126,
+          "func_hex": "f351",
+          "support_leaf_ids": [
+            3,
+            103,
+            124
+          ],
+          "support_pin_idx": [
+            0,
+            2,
+            3
+          ],
+          "support_nets": [
+            "LUT_124",
+            "pi4",
+            "LUT_103"
+          ],
+          "support_size": 3
+        },
+        {
+          "node": 127,
+          "func_hex": "0008",
+          "support_leaf_ids": [
+            3,
+            84,
+            103,
+            124
+          ],
+          "support_pin_idx": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "support_nets": [
+            "LUT_124",
+            "LUT_84",
+            "pi4",
+            "LUT_103"
+          ],
+          "support_size": 4
+        },
+        {
+          "node": 128,
+          "func_hex": "0ca6",
+          "support_leaf_ids": [
+            3,
+            84,
+            103,
+            124
+          ],
+          "support_pin_idx": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "support_nets": [
+            "LUT_124",
+            "LUT_84",
+            "pi4",
+            "LUT_103"
+          ],
+          "support_size": 4
+        }
+      ],
+      "notes": []
+    },
+    {
+      "dst": "LUT_139",
+      "lut_root": 139,
+      "leaves": [
+        1,
+        2,
+        3,
+        6
+      ],
+      "pins": [
+        "pi7",
+        "pi3",
+        "pi2",
+        "pi4"
+      ],
+      "subexprs": [
+        {
+          "node": 31,
+          "func_hex": "000f",
+          "support_leaf_ids": [
+            3,
+            6
+          ],
+          "support_pin_idx": [
+            2,
+            3
+          ],
+          "support_nets": [
+            "pi2",
+            "pi4"
+          ],
+          "support_size": 2
+        },
+        {
+          "node": 69,
+          "func_hex": "f000",
+          "support_leaf_ids": [
+            1,
+            2,
+            3,
+            6
+          ],
+          "support_pin_idx": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "support_nets": [
+            "pi7",
+            "pi3",
+            "pi2",
+            "pi4"
+          ],
+          "support_size": 4
+        },
+        {
+          "node": 137,
+          "func_hex": "1111",
+          "support_leaf_ids": [
+            1,
+            2,
+            3,
+            6
+          ],
+          "support_pin_idx": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "support_nets": [
+            "pi7",
+            "pi3",
+            "pi2",
+            "pi4"
+          ],
+          "support_size": 4
+        },
+        {
+          "node": 138,
+          "func_hex": "0ff0",
+          "support_leaf_ids": [
+            1,
+            2,
+            3,
+            6
+          ],
+          "support_pin_idx": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "support_nets": [
+            "pi7",
+            "pi3",
+            "pi2",
+            "pi4"
+          ],
+          "support_size": 4
+        },
+        {
+          "node": 139,
+          "func_hex": "0ee0",
+          "support_leaf_ids": [
+            1,
+            2,
+            3,
+            6
+          ],
+          "support_pin_idx": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "support_nets": [
+            "pi7",
+            "pi3",
+            "pi2",
+            "pi4"
+          ],
+          "support_size": 4
+        }
+      ],
+      "notes": []
+    },
+    {
+      "dst": "LUT_141",
+      "lut_root": 141,
+      "leaves": [
+        2,
+        95,
+        112,
+        139
+      ],
+      "pins": [
+        "LUT_139",
+        "LUT_95",
+        "pi3",
+        "LUT_112"
+      ],
+      "subexprs": [
+        {
+          "node": 134,
+          "func_hex": "c0c0",
+          "support_leaf_ids": [
+            2
+          ],
+          "support_pin_idx": [
+            0
+          ],
+          "support_nets": [
+            "LUT_139"
+          ],
+          "support_size": 1
+        },
+        {
+          "node": 135,
+          "func_hex": "0303",
+          "support_leaf_ids": [],
+          "support_pin_idx": [],
+          "support_nets": [],
+          "support_size": 0
+        },
+        {
+          "node": 136,
+          "func_hex": "3c3c",
+          "support_leaf_ids": [
+            2
+          ],
+          "support_pin_idx": [
+            0
+          ],
+          "support_nets": [
+            "LUT_139"
+          ],
+          "support_size": 1
+        },
+        {
+          "node": 140,
+          "func_hex": "0055",
+          "support_leaf_ids": [
+            2,
+            112,
+            139
+          ],
+          "support_pin_idx": [
+            0,
+            2,
+            3
+          ],
+          "support_nets": [
+            "LUT_139",
+            "pi3",
+            "LUT_112"
+          ],
+          "support_size": 3
+        },
+        {
+          "node": 141,
+          "func_hex": "c382",
+          "support_leaf_ids": [
+            2,
+            112,
+            139
+          ],
+          "support_pin_idx": [
+            0,
+            2,
+            3
+          ],
+          "support_nets": [
+            "LUT_139",
+            "pi3",
+            "LUT_112"
+          ],
+          "support_size": 3
+        }
+      ],
+      "notes": []
+    },
+    {
+      "dst": "LUT_145",
+      "lut_root": 145,
+      "leaves": [
+        6,
+        97,
+        116,
+        141
+      ],
+      "pins": [
+        "LUT_141",
+        "LUT_97",
+        "pi7",
+        "LUT_116"
+      ],
+      "subexprs": [
+        {
+          "node": 133,
+          "func_hex": "0c0c",
+          "support_leaf_ids": [
+            6
+          ],
+          "support_pin_idx": [
+            0
+          ],
+          "support_nets": [
+            "LUT_141"
+          ],
+          "support_size": 1
+        },
+        {
+          "node": 142,
+          "func_hex": "5500",
+          "support_leaf_ids": [
+            6,
+            97,
+            141
+          ],
+          "support_pin_idx": [
+            0,
+            1,
+            3
+          ],
+          "support_nets": [
+            "LUT_141",
+            "LUT_97",
+            "LUT_116"
+          ],
+          "support_size": 3
+        },
+        {
+          "node": 143,
+          "func_hex": "00aa",
+          "support_leaf_ids": [
+            6,
+            97,
+            141
+          ],
+          "support_pin_idx": [
+            0,
+            1,
+            3
+          ],
+          "support_nets": [
+            "LUT_141",
+            "LUT_97",
+            "LUT_116"
+          ],
+          "support_size": 3
+        },
+        {
+          "node": 144,
+          "func_hex": "aa55",
+          "support_leaf_ids": [
+            6,
+            97,
+            141
+          ],
+          "support_pin_idx": [
+            0,
+            1,
+            3
+          ],
+          "support_nets": [
+            "LUT_141",
+            "LUT_97",
+            "LUT_116"
+          ],
+          "support_size": 3
+        },
+        {
+          "node": 145,
+          "func_hex": "a251",
+          "support_leaf_ids": [
+            6,
+            97,
+            116,
+            141
+          ],
+          "support_pin_idx": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "support_nets": [
+            "LUT_141",
+            "LUT_97",
+            "pi7",
+            "LUT_116"
+          ],
+          "support_size": 4
+        }
+      ],
+      "notes": []
+    },
+    {
+      "dst": "LUT_147",
+      "lut_root": 147,
+      "leaves": [
+        2,
+        101,
+        120,
+        145
+      ],
+      "pins": [
+        "LUT_145",
+        "LUT_101",
+        "pi3",
+        "LUT_120"
+      ],
+      "subexprs": [
+        {
+          "node": 130,
+          "func_hex": "3030",
+          "support_leaf_ids": [
+            2,
+            101
+          ],
+          "support_pin_idx": [
+            0,
+            1
+          ],
+          "support_nets": [
+            "LUT_145",
+            "LUT_101"
+          ],
+          "support_size": 2
+        },
+        {
+          "node": 131,
+          "func_hex": "0c0c",
+          "support_leaf_ids": [
+            2
+          ],
+          "support_pin_idx": [
+            0
+          ],
+          "support_nets": [
+            "LUT_145"
+          ],
+          "support_size": 1
+        },
+        {
+          "node": 132,
+          "func_hex": "c3c3",
+          "support_leaf_ids": [
+            2
+          ],
+          "support_pin_idx": [
+            0
+          ],
+          "support_nets": [
+            "LUT_145"
+          ],
+          "support_size": 1
+        },
+        {
+          "node": 146,
+          "func_hex": "5500",
+          "support_leaf_ids": [
+            2,
+            101,
+            145
+          ],
+          "support_pin_idx": [
+            0,
+            1,
+            3
+          ],
+          "support_nets": [
+            "LUT_145",
+            "LUT_101",
+            "LUT_120"
+          ],
+          "support_size": 3
+        },
+        {
+          "node": 147,
+          "func_hex": "283c",
+          "support_leaf_ids": [
+            2,
+            101,
+            145
+          ],
+          "support_pin_idx": [
+            0,
+            1,
+            3
+          ],
+          "support_nets": [
+            "LUT_145",
+            "LUT_101",
+            "LUT_120"
+          ],
+          "support_size": 3
+        }
+      ],
+      "notes": []
+    },
+    {
+      "dst": "LUT_151",
+      "lut_root": 151,
+      "leaves": [
+        4,
+        103,
+        124,
+        147
+      ],
+      "pins": [
+        "LUT_147",
+        "LUT_103",
+        "pi5",
+        "LUT_124"
+      ],
+      "subexprs": [
+        {
+          "node": 129,
+          "func_hex": "0c0c",
+          "support_leaf_ids": [
+            4,
+            103
+          ],
+          "support_pin_idx": [
+            0,
+            1
+          ],
+          "support_nets": [
+            "LUT_147",
+            "LUT_103"
+          ],
+          "support_size": 2
+        },
+        {
+          "node": 148,
+          "func_hex": "5500",
+          "support_leaf_ids": [
+            4,
+            147
+          ],
+          "support_pin_idx": [
+            0,
+            3
+          ],
+          "support_nets": [
+            "LUT_147",
+            "LUT_124"
+          ],
+          "support_size": 2
+        },
+        {
+          "node": 149,
+          "func_hex": "00aa",
+          "support_leaf_ids": [
+            4,
+            124,
+            147
+          ],
+          "support_pin_idx": [
+            0,
+            2,
+            3
+          ],
+          "support_nets": [
+            "LUT_147",
+            "pi5",
+            "LUT_124"
+          ],
+          "support_size": 3
+        },
+        {
+          "node": 150,
+          "func_hex": "aa55",
+          "support_leaf_ids": [
+            4,
+            103,
+            124,
+            147
+          ],
+          "support_pin_idx": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "support_nets": [
+            "LUT_147",
+            "LUT_103",
+            "pi5",
+            "LUT_124"
+          ],
+          "support_size": 4
+        },
+        {
+          "node": 151,
+          "func_hex": "a251",
+          "support_leaf_ids": [
+            4,
+            103,
+            124,
+            147
+          ],
+          "support_pin_idx": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "support_nets": [
+            "LUT_147",
+            "LUT_103",
+            "pi5",
+            "LUT_124"
+          ],
+          "support_size": 4
+        }
+      ],
+      "notes": []
+    },
+    {
+      "dst": "LUT_16",
+      "lut_root": 16,
+      "leaves": [
+        1,
+        2,
+        3,
+        5
+      ],
+      "pins": [
+        "pi6",
+        "pi3",
+        "pi2",
+        "pi4"
+      ],
+      "subexprs": [
+        {
+          "node": 12,
+          "func_hex": "0505",
+          "support_leaf_ids": [
+            2,
+            3
+          ],
+          "support_pin_idx": [
+            1,
+            2
+          ],
+          "support_nets": [
+            "pi3",
+            "pi2"
+          ],
+          "support_size": 2
+        },
+        {
+          "node": 13,
+          "func_hex": "0033",
+          "support_leaf_ids": [
+            1
+          ],
+          "support_pin_idx": [
+            0
+          ],
+          "support_nets": [
+            "pi6"
+          ],
+          "support_size": 1
+        },
+        {
+          "node": 14,
+          "func_hex": "cc00",
+          "support_leaf_ids": [
+            1
+          ],
+          "support_pin_idx": [
+            0
+          ],
+          "support_nets": [
+            "pi6"
+          ],
+          "support_size": 1
+        },
+        {
+          "node": 15,
+          "func_hex": "33cc",
+          "support_leaf_ids": [
+            1
+          ],
+          "support_pin_idx": [
+            0
+          ],
+          "support_nets": [
+            "pi6"
+          ],
+          "support_size": 1
+        },
+        {
+          "node": 16,
+          "func_hex": "32c8",
+          "support_leaf_ids": [
+            5
+          ],
+          "support_pin_idx": [
+            3
+          ],
+          "support_nets": [
+            "pi4"
+          ],
+          "support_size": 1
+        }
+      ],
+      "notes": []
+    },
+    {
+      "dst": "LUT_160",
+      "lut_root": 160,
+      "leaves": [
+        3,
+        11,
+        112,
+        139
+      ],
+      "pins": [
+        "LUT_139",
+        "LUT_11",
+        "pi4",
+        "LUT_112"
+      ],
+      "subexprs": [
+        {
+          "node": 156,
+          "func_hex": "0f00",
+          "support_leaf_ids": [
+            3,
+            112
+          ],
+          "support_pin_idx": [
+            0,
+            2
+          ],
+          "support_nets": [
+            "LUT_139",
+            "pi4"
+          ],
+          "support_size": 2
+        },
+        {
+          "node": 157,
+          "func_hex": "4444",
+          "support_leaf_ids": [
+            3,
+            112
+          ],
+          "support_pin_idx": [
+            0,
+            2
+          ],
+          "support_nets": [
+            "LUT_139",
+            "pi4"
+          ],
+          "support_size": 2
+        },
+        {
+          "node": 158,
+          "func_hex": "0400",
+          "support_leaf_ids": [
+            3,
+            112
+          ],
+          "support_pin_idx": [
+            0,
+            2
+          ],
+          "support_nets": [
+            "LUT_139",
+            "pi4"
+          ],
+          "support_size": 2
+        },
+        {
+          "node": 159,
+          "func_hex": "b0bb",
+          "support_leaf_ids": [
+            3,
+            112
+          ],
+          "support_pin_idx": [
+            0,
+            2
+          ],
+          "support_nets": [
+            "LUT_139",
+            "pi4"
+          ],
+          "support_size": 2
+        },
+        {
+          "node": 160,
+          "func_hex": "4b44",
+          "support_leaf_ids": [
+            3,
+            112
+          ],
+          "support_pin_idx": [
+            0,
+            2
+          ],
+          "support_nets": [
+            "LUT_139",
+            "pi4"
+          ],
+          "support_size": 2
+        }
+      ],
+      "notes": []
+    },
+    {
+      "dst": "LUT_164",
+      "lut_root": 164,
+      "leaves": [
+        1,
+        116,
+        141,
+        160
+      ],
+      "pins": [
+        "LUT_160",
+        "LUT_116",
+        "pi2",
+        "LUT_141"
+      ],
+      "subexprs": [
+        {
+          "node": 155,
+          "func_hex": "0c0c",
+          "support_leaf_ids": [
+            1,
+            116
+          ],
+          "support_pin_idx": [
+            0,
+            1
+          ],
+          "support_nets": [
+            "LUT_160",
+            "LUT_116"
+          ],
+          "support_size": 2
+        },
+        {
+          "node": 161,
+          "func_hex": "00aa",
+          "support_leaf_ids": [
+            1
+          ],
+          "support_pin_idx": [
+            0
+          ],
+          "support_nets": [
+            "LUT_160"
+          ],
+          "support_size": 1
+        },
+        {
+          "node": 162,
+          "func_hex": "f351",
+          "support_leaf_ids": [
+            1
+          ],
+          "support_pin_idx": [
+            0
+          ],
+          "support_nets": [
+            "LUT_160"
+          ],
+          "support_size": 1
+        },
+        {
+          "node": 163,
+          "func_hex": "0008",
+          "support_leaf_ids": [
+            1
+          ],
+          "support_pin_idx": [
+            0
+          ],
+          "support_nets": [
+            "LUT_160"
+          ],
+          "support_size": 1
+        },
+        {
+          "node": 164,
+          "func_hex": "0ca6",
+          "support_leaf_ids": [
+            1,
+            160
+          ],
+          "support_pin_idx": [
+            0,
+            3
+          ],
+          "support_nets": [
+            "LUT_160",
+            "LUT_141"
+          ],
+          "support_size": 2
+        }
+      ],
+      "notes": []
+    },
+    {
+      "dst": "LUT_168",
+      "lut_root": 168,
+      "leaves": [
+        3,
+        120,
+        145,
+        164
+      ],
+      "pins": [
+        "LUT_164",
+        "LUT_120",
+        "pi4",
+        "LUT_145"
+      ],
+      "subexprs": [
+        {
+          "node": 154,
+          "func_hex": "0303",
+          "support_leaf_ids": [
+            3,
+            120
+          ],
+          "support_pin_idx": [
+            0,
+            1
+          ],
+          "support_nets": [
+            "LUT_164",
+            "LUT_120"
+          ],
+          "support_size": 2
+        },
+        {
+          "node": 165,
+          "func_hex": "5500",
+          "support_leaf_ids": [
+            3,
+            164
+          ],
+          "support_pin_idx": [
+            0,
+            3
+          ],
+          "support_nets": [
+            "LUT_164",
+            "LUT_145"
+          ],
+          "support_size": 2
+        },
+        {
+          "node": 166,
+          "func_hex": "0100",
+          "support_leaf_ids": [
+            3,
+            164
+          ],
+          "support_pin_idx": [
+            0,
+            3
+          ],
+          "support_nets": [
+            "LUT_164",
+            "LUT_145"
+          ],
+          "support_size": 2
+        },
+        {
+          "node": 167,
+          "func_hex": "a8fc",
+          "support_leaf_ids": [
+            3,
+            164
+          ],
+          "support_pin_idx": [
+            0,
+            3
+          ],
+          "support_nets": [
+            "LUT_164",
+            "LUT_145"
+          ],
+          "support_size": 2
+        },
+        {
+          "node": 168,
+          "func_hex": "5603",
+          "support_leaf_ids": [
+            3,
+            164
+          ],
+          "support_pin_idx": [
+            0,
+            3
+          ],
+          "support_nets": [
+            "LUT_164",
+            "LUT_145"
+          ],
+          "support_size": 2
+        }
+      ],
+      "notes": []
+    },
+    {
+      "dst": "LUT_172",
+      "lut_root": 172,
+      "leaves": [
+        5,
+        124,
+        147,
+        168
+      ],
+      "pins": [
+        "LUT_168",
+        "LUT_124",
+        "pi6",
+        "LUT_147"
+      ],
+      "subexprs": [
+        {
+          "node": 153,
+          "func_hex": "0c0c",
+          "support_leaf_ids": [
+            5,
+            124
+          ],
+          "support_pin_idx": [
+            0,
+            1
+          ],
+          "support_nets": [
+            "LUT_168",
+            "LUT_124"
+          ],
+          "support_size": 2
+        },
+        {
+          "node": 169,
+          "func_hex": "00aa",
+          "support_leaf_ids": [
+            5,
+            168
+          ],
+          "support_pin_idx": [
+            0,
+            3
+          ],
+          "support_nets": [
+            "LUT_168",
+            "LUT_147"
+          ],
+          "support_size": 2
+        },
+        {
+          "node": 170,
+          "func_hex": "f351",
+          "support_leaf_ids": [
+            5,
+            168
+          ],
+          "support_pin_idx": [
+            0,
+            3
+          ],
+          "support_nets": [
+            "LUT_168",
+            "LUT_147"
+          ],
+          "support_size": 2
+        },
+        {
+          "node": 171,
+          "func_hex": "0008",
+          "support_leaf_ids": [
+            5,
+            147,
+            168
+          ],
+          "support_pin_idx": [
+            0,
+            2,
+            3
+          ],
+          "support_nets": [
+            "LUT_168",
+            "pi6",
+            "LUT_147"
+          ],
+          "support_size": 3
+        },
+        {
+          "node": 172,
+          "func_hex": "0ca6",
+          "support_leaf_ids": [
+            5,
+            124,
+            147,
+            168
+          ],
+          "support_pin_idx": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "support_nets": [
+            "LUT_168",
+            "LUT_124",
+            "pi6",
+            "LUT_147"
+          ],
+          "support_size": 4
+        }
+      ],
+      "notes": []
+    },
+    {
+      "dst": "LUT_176",
+      "lut_root": 176,
+      "leaves": [
+        1,
+        128,
+        151,
+        172
+      ],
+      "pins": [
+        "LUT_172",
+        "LUT_128",
+        "pi2",
+        "LUT_151"
+      ],
+      "subexprs": [
+        {
+          "node": 152,
+          "func_hex": "0303",
+          "support_leaf_ids": [
+            1,
+            151
+          ],
+          "support_pin_idx": [
+            0,
+            2
+          ],
+          "support_nets": [
+            "LUT_172",
+            "pi2"
+          ],
+          "support_size": 2
+        },
+        {
+          "node": 173,
+          "func_hex": "5500",
+          "support_leaf_ids": [
+            1,
+            151,
+            172
+          ],
+          "support_pin_idx": [
+            0,
+            2,
+            3
+          ],
+          "support_nets": [
+            "LUT_172",
+            "pi2",
+            "LUT_151"
+          ],
+          "support_size": 3
+        },
+        {
+          "node": 174,
+          "func_hex": "0100",
+          "support_leaf_ids": [
+            1,
+            151,
+            172
+          ],
+          "support_pin_idx": [
+            0,
+            2,
+            3
+          ],
+          "support_nets": [
+            "LUT_172",
+            "pi2",
+            "LUT_151"
+          ],
+          "support_size": 3
+        },
+        {
+          "node": 175,
+          "func_hex": "a8fc",
+          "support_leaf_ids": [
+            1,
+            151,
+            172
+          ],
+          "support_pin_idx": [
+            0,
+            2,
+            3
+          ],
+          "support_nets": [
+            "LUT_172",
+            "pi2",
+            "LUT_151"
+          ],
+          "support_size": 3
+        },
+        {
+          "node": 176,
+          "func_hex": "5603",
+          "support_leaf_ids": [
+            1,
+            128,
+            151,
+            172
+          ],
+          "support_pin_idx": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "support_nets": [
+            "LUT_172",
+            "LUT_128",
+            "pi2",
+            "LUT_151"
+          ],
+          "support_size": 4
+        }
+      ],
+      "notes": []
+    },
+    {
+      "dst": "LUT_189",
+      "lut_root": 189,
+      "leaves": [
+        4,
+        11,
+        16,
+        139
+      ],
+      "pins": [
+        "LUT_139",
+        "LUT_11",
+        "pi5",
+        "LUT_16"
+      ],
+      "subexprs": [
+        {
+          "node": 185,
+          "func_hex": "cc00",
+          "support_leaf_ids": [
+            11,
+            16
+          ],
+          "support_pin_idx": [
+            1,
+            2
+          ],
+          "support_nets": [
+            "LUT_11",
+            "pi5"
+          ],
+          "support_size": 2
+        },
+        {
+          "node": 186,
+          "func_hex": "0033",
+          "support_leaf_ids": [
+            11,
+            16
+          ],
+          "support_pin_idx": [
+            1,
+            2
+          ],
+          "support_nets": [
+            "LUT_11",
+            "pi5"
+          ],
+          "support_size": 2
+        },
+        {
+          "node": 187,
+          "func_hex": "33cc",
+          "support_leaf_ids": [
+            11,
+            16
+          ],
+          "support_pin_idx": [
+            1,
+            2
+          ],
+          "support_nets": [
+            "LUT_11",
+            "pi5"
+          ],
+          "support_size": 2
+        },
+        {
+          "node": 188,
+          "func_hex": "0505",
+          "support_leaf_ids": [
+            11,
+            16
+          ],
+          "support_pin_idx": [
+            1,
+            2
+          ],
+          "support_nets": [
+            "LUT_11",
+            "pi5"
+          ],
+          "support_size": 2
+        },
+        {
+          "node": 189,
+          "func_hex": "c832",
+          "support_leaf_ids": [
+            4,
+            11,
+            16
+          ],
+          "support_pin_idx": [
+            0,
+            1,
+            2
+          ],
+          "support_nets": [
+            "LUT_139",
+            "LUT_11",
+            "pi5"
+          ],
+          "support_size": 3
+        }
+      ],
+      "notes": []
+    },
+    {
+      "dst": "LUT_193",
+      "lut_root": 193,
+      "leaves": [
+        2,
+        141,
+        160,
+        189
+      ],
+      "pins": [
+        "LUT_189",
+        "LUT_141",
+        "pi3",
+        "LUT_160"
+      ],
+      "subexprs": [
+        {
+          "node": 184,
+          "func_hex": "0c0c",
+          "support_leaf_ids": [
+            2
+          ],
+          "support_pin_idx": [
+            0
+          ],
+          "support_nets": [
+            "LUT_189"
+          ],
+          "support_size": 1
+        },
+        {
+          "node": 190,
+          "func_hex": "5500",
+          "support_leaf_ids": [
+            2,
+            189
+          ],
+          "support_pin_idx": [
+            0,
+            3
+          ],
+          "support_nets": [
+            "LUT_189",
+            "LUT_160"
+          ],
+          "support_size": 2
+        },
+        {
+          "node": 191,
+          "func_hex": "00aa",
+          "support_leaf_ids": [
+            2,
+            189
+          ],
+          "support_pin_idx": [
+            0,
+            3
+          ],
+          "support_nets": [
+            "LUT_189",
+            "LUT_160"
+          ],
+          "support_size": 2
+        },
+        {
+          "node": 192,
+          "func_hex": "aa55",
+          "support_leaf_ids": [
+            2,
+            189
+          ],
+          "support_pin_idx": [
+            0,
+            3
+          ],
+          "support_nets": [
+            "LUT_189",
+            "LUT_160"
+          ],
+          "support_size": 2
+        },
+        {
+          "node": 193,
+          "func_hex": "a251",
+          "support_leaf_ids": [
+            2,
+            160,
+            189
+          ],
+          "support_pin_idx": [
+            0,
+            2,
+            3
+          ],
+          "support_nets": [
+            "LUT_189",
+            "pi3",
+            "LUT_160"
+          ],
+          "support_size": 3
+        }
+      ],
+      "notes": []
+    },
+    {
+      "dst": "LUT_195",
+      "lut_root": 195,
+      "leaves": [
+        4,
+        145,
+        164,
+        193
+      ],
+      "pins": [
+        "LUT_193",
+        "LUT_145",
+        "pi5",
+        "LUT_164"
+      ],
+      "subexprs": [
+        {
+          "node": 181,
+          "func_hex": "3030",
+          "support_leaf_ids": [
+            4,
+            145
+          ],
+          "support_pin_idx": [
+            0,
+            1
+          ],
+          "support_nets": [
+            "LUT_193",
+            "LUT_145"
+          ],
+          "support_size": 2
+        },
+        {
+          "node": 182,
+          "func_hex": "0c0c",
+          "support_leaf_ids": [
+            4
+          ],
+          "support_pin_idx": [
+            0
+          ],
+          "support_nets": [
+            "LUT_193"
+          ],
+          "support_size": 1
+        },
+        {
+          "node": 183,
+          "func_hex": "c3c3",
+          "support_leaf_ids": [
+            4
+          ],
+          "support_pin_idx": [
+            0
+          ],
+          "support_nets": [
+            "LUT_193"
+          ],
+          "support_size": 1
+        },
+        {
+          "node": 194,
+          "func_hex": "5500",
+          "support_leaf_ids": [
+            4,
+            193
+          ],
+          "support_pin_idx": [
+            0,
+            3
+          ],
+          "support_nets": [
+            "LUT_193",
+            "LUT_164"
+          ],
+          "support_size": 2
+        },
+        {
+          "node": 195,
+          "func_hex": "283c",
+          "support_leaf_ids": [
+            4,
+            193
+          ],
+          "support_pin_idx": [
+            0,
+            3
+          ],
+          "support_nets": [
+            "LUT_193",
+            "LUT_164"
+          ],
+          "support_size": 2
+        }
+      ],
+      "notes": []
+    },
+    {
+      "dst": "LUT_199",
+      "lut_root": 199,
+      "leaves": [
+        6,
+        147,
+        168,
+        195
+      ],
+      "pins": [
+        "LUT_195",
+        "LUT_147",
+        "pi7",
+        "LUT_168"
+      ],
+      "subexprs": [
+        {
+          "node": 180,
+          "func_hex": "0c0c",
+          "support_leaf_ids": [
+            6,
+            147
+          ],
+          "support_pin_idx": [
+            0,
+            1
+          ],
+          "support_nets": [
+            "LUT_195",
+            "LUT_147"
+          ],
+          "support_size": 2
+        },
+        {
+          "node": 196,
+          "func_hex": "5500",
+          "support_leaf_ids": [
+            6,
+            195
+          ],
+          "support_pin_idx": [
+            0,
+            3
+          ],
+          "support_nets": [
+            "LUT_195",
+            "LUT_168"
+          ],
+          "support_size": 2
+        },
+        {
+          "node": 197,
+          "func_hex": "00aa",
+          "support_leaf_ids": [
+            6,
+            168,
+            195
+          ],
+          "support_pin_idx": [
+            0,
+            2,
+            3
+          ],
+          "support_nets": [
+            "LUT_195",
+            "pi7",
+            "LUT_168"
+          ],
+          "support_size": 3
+        },
+        {
+          "node": 198,
+          "func_hex": "aa55",
+          "support_leaf_ids": [
+            6,
+            147,
+            168,
+            195
+          ],
+          "support_pin_idx": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "support_nets": [
+            "LUT_195",
+            "LUT_147",
+            "pi7",
+            "LUT_168"
+          ],
+          "support_size": 4
+        },
+        {
+          "node": 199,
+          "func_hex": "a251",
+          "support_leaf_ids": [
+            6,
+            147,
+            168,
+            195
+          ],
+          "support_pin_idx": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "support_nets": [
+            "LUT_195",
+            "LUT_147",
+            "pi7",
+            "LUT_168"
+          ],
+          "support_size": 4
+        }
+      ],
+      "notes": []
+    },
+    {
+      "dst": "LUT_201",
+      "lut_root": 201,
+      "leaves": [
+        2,
+        151,
+        172,
+        199
+      ],
+      "pins": [
+        "LUT_199",
+        "LUT_151",
+        "pi3",
+        "LUT_172"
+      ],
+      "subexprs": [
+        {
+          "node": 177,
+          "func_hex": "3030",
+          "support_leaf_ids": [
+            2,
+            151,
+            172
+          ],
+          "support_pin_idx": [
+            0,
+            1,
+            2
+          ],
+          "support_nets": [
+            "LUT_199",
+            "LUT_151",
+            "pi3"
+          ],
+          "support_size": 3
+        },
+        {
+          "node": 178,
+          "func_hex": "0c0c",
+          "support_leaf_ids": [
+            2,
+            151,
+            172
+          ],
+          "support_pin_idx": [
+            0,
+            1,
+            2
+          ],
+          "support_nets": [
+            "LUT_199",
+            "LUT_151",
+            "pi3"
+          ],
+          "support_size": 3
+        },
+        {
+          "node": 179,
+          "func_hex": "c3c3",
+          "support_leaf_ids": [
+            2,
+            151,
+            172
+          ],
+          "support_pin_idx": [
+            0,
+            1,
+            2
+          ],
+          "support_nets": [
+            "LUT_199",
+            "LUT_151",
+            "pi3"
+          ],
+          "support_size": 3
+        },
+        {
+          "node": 200,
+          "func_hex": "5500",
+          "support_leaf_ids": [
+            2,
+            199
+          ],
+          "support_pin_idx": [
+            0,
+            3
+          ],
+          "support_nets": [
+            "LUT_199",
+            "LUT_172"
+          ],
+          "support_size": 2
+        },
+        {
+          "node": 201,
+          "func_hex": "283c",
+          "support_leaf_ids": [
+            2,
+            172,
+            199
+          ],
+          "support_pin_idx": [
+            0,
+            2,
+            3
+          ],
+          "support_nets": [
+            "LUT_199",
+            "pi3",
+            "LUT_172"
+          ],
+          "support_size": 3
+        }
+      ],
+      "notes": []
+    },
+    {
+      "dst": "LUT_210",
+      "lut_root": 210,
+      "leaves": [
+        3,
+        26,
+        160,
+        189
+      ],
+      "pins": [
+        "LUT_189",
+        "LUT_26",
+        "pi4",
+        "LUT_160"
+      ],
+      "subexprs": [
+        {
+          "node": 206,
+          "func_hex": "00f0",
+          "support_leaf_ids": [
+            3,
+            160
+          ],
+          "support_pin_idx": [
+            0,
+            2
+          ],
+          "support_nets": [
+            "LUT_189",
+            "pi4"
+          ],
+          "support_size": 2
+        },
+        {
+          "node": 207,
+          "func_hex": "2222",
+          "support_leaf_ids": [
+            3,
+            160
+          ],
+          "support_pin_idx": [
+            0,
+            2
+          ],
+          "support_nets": [
+            "LUT_189",
+            "pi4"
+          ],
+          "support_size": 2
+        },
+        {
+          "node": 208,
+          "func_hex": "dd0d",
+          "support_leaf_ids": [
+            3,
+            160
+          ],
+          "support_pin_idx": [
+            0,
+            2
+          ],
+          "support_nets": [
+            "LUT_189",
+            "pi4"
+          ],
+          "support_size": 2
+        },
+        {
+          "node": 209,
+          "func_hex": "0020",
+          "support_leaf_ids": [
+            3,
+            160
+          ],
+          "support_pin_idx": [
+            0,
+            2
+          ],
+          "support_nets": [
+            "LUT_189",
+            "pi4"
+          ],
+          "support_size": 2
+        },
+        {
+          "node": 210,
+          "func_hex": "22d2",
+          "support_leaf_ids": [
+            3,
+            160
+          ],
+          "support_pin_idx": [
+            0,
+            2
+          ],
+          "support_nets": [
+            "LUT_189",
+            "pi4"
+          ],
+          "support_size": 2
+        }
+      ],
+      "notes": []
+    },
+    {
+      "dst": "LUT_214",
+      "lut_root": 214,
+      "leaves": [
+        5,
+        164,
+        193,
+        210
+      ],
+      "pins": [
+        "LUT_210",
+        "LUT_164",
+        "pi6",
+        "LUT_193"
+      ],
+      "subexprs": [
+        {
+          "node": 205,
+          "func_hex": "0303",
+          "support_leaf_ids": [
+            5,
+            164
+          ],
+          "support_pin_idx": [
+            0,
+            1
+          ],
+          "support_nets": [
+            "LUT_210",
+            "LUT_164"
+          ],
+          "support_size": 2
+        },
+        {
+          "node": 211,
+          "func_hex": "5500",
+          "support_leaf_ids": [
+            164
+          ],
+          "support_pin_idx": [
+            1
+          ],
+          "support_nets": [
+            "LUT_164"
+          ],
+          "support_size": 1
+        },
+        {
+          "node": 212,
+          "func_hex": "0100",
+          "support_leaf_ids": [
+            164,
+            210
+          ],
+          "support_pin_idx": [
+            1,
+            3
+          ],
+          "support_nets": [
+            "LUT_164",
+            "LUT_193"
+          ],
+          "support_size": 2
+        },
+        {
+          "node": 213,
+          "func_hex": "a8fc",
+          "support_leaf_ids": [
+            5
+          ],
+          "support_pin_idx": [
+            0
+          ],
+          "support_nets": [
+            "LUT_210"
+          ],
+          "support_size": 1
+        },
+        {
+          "node": 214,
+          "func_hex": "5603",
+          "support_leaf_ids": [
+            5,
+            164,
+            210
+          ],
+          "support_pin_idx": [
+            0,
+            1,
+            3
+          ],
+          "support_nets": [
+            "LUT_210",
+            "LUT_164",
+            "LUT_193"
+          ],
+          "support_size": 3
+        }
+      ],
+      "notes": []
+    },
+    {
+      "dst": "LUT_218",
+      "lut_root": 218,
+      "leaves": [
+        1,
+        168,
+        195,
+        214
+      ],
+      "pins": [
+        "LUT_214",
+        "LUT_168",
+        "pi2",
+        "LUT_195"
+      ],
+      "subexprs": [
+        {
+          "node": 204,
+          "func_hex": "0c0c",
+          "support_leaf_ids": [
+            1,
+            168,
+            195
+          ],
+          "support_pin_idx": [
+            0,
+            1,
+            2
+          ],
+          "support_nets": [
+            "LUT_214",
+            "LUT_168",
+            "pi2"
+          ],
+          "support_size": 3
+        },
+        {
+          "node": 215,
+          "func_hex": "00aa",
+          "support_leaf_ids": [
+            1,
+            214
+          ],
+          "support_pin_idx": [
+            0,
+            3
+          ],
+          "support_nets": [
+            "LUT_214",
+            "LUT_195"
+          ],
+          "support_size": 2
+        },
+        {
+          "node": 216,
+          "func_hex": "f351",
+          "support_leaf_ids": [
+            1,
+            214
+          ],
+          "support_pin_idx": [
+            0,
+            3
+          ],
+          "support_nets": [
+            "LUT_214",
+            "LUT_195"
+          ],
+          "support_size": 2
+        },
+        {
+          "node": 217,
+          "func_hex": "0008",
+          "support_leaf_ids": [
+            1,
+            214
+          ],
+          "support_pin_idx": [
+            0,
+            3
+          ],
+          "support_nets": [
+            "LUT_214",
+            "LUT_195"
+          ],
+          "support_size": 2
+        },
+        {
+          "node": 218,
+          "func_hex": "0ca6",
+          "support_leaf_ids": [
+            1,
+            214
+          ],
+          "support_pin_idx": [
+            0,
+            3
+          ],
+          "support_nets": [
+            "LUT_214",
+            "LUT_195"
+          ],
+          "support_size": 2
+        }
+      ],
+      "notes": []
+    },
+    {
+      "dst": "LUT_22",
+      "lut_root": 22,
+      "leaves": [
+        1,
+        4,
+        5,
+        6
+      ],
+      "pins": [
+        "pi7",
+        "pi5",
+        "pi2",
+        "pi6"
+      ],
+      "subexprs": [
+        {
+          "node": 18,
+          "func_hex": "c0c0",
+          "support_leaf_ids": [
+            5
+          ],
+          "support_pin_idx": [
+            2
+          ],
+          "support_nets": [
+            "pi2"
+          ],
+          "support_size": 1
+        },
+        {
+          "node": 19,
+          "func_hex": "00aa",
+          "support_leaf_ids": [
+            5
+          ],
+          "support_pin_idx": [
+            2
+          ],
+          "support_nets": [
+            "pi2"
+          ],
+          "support_size": 1
+        },
+        {
+          "node": 20,
+          "func_hex": "5500",
+          "support_leaf_ids": [
+            5
+          ],
+          "support_pin_idx": [
+            2
+          ],
+          "support_nets": [
+            "pi2"
+          ],
+          "support_size": 1
+        },
+        {
+          "node": 21,
+          "func_hex": "aa55",
+          "support_leaf_ids": [
+            1
+          ],
+          "support_pin_idx": [
+            0
+          ],
+          "support_nets": [
+            "pi7"
+          ],
+          "support_size": 1
+        },
+        {
+          "node": 22,
+          "func_hex": "2a15",
+          "support_leaf_ids": [
+            1,
+            5
+          ],
+          "support_pin_idx": [
+            0,
+            2
+          ],
+          "support_nets": [
+            "pi7",
+            "pi2"
+          ],
+          "support_size": 2
+        }
+      ],
+      "notes": []
+    },
+    {
+      "dst": "LUT_222",
+      "lut_root": 222,
+      "leaves": [
+        3,
+        172,
+        199,
+        218
+      ],
+      "pins": [
+        "LUT_218",
+        "LUT_172",
+        "pi4",
+        "LUT_199"
+      ],
+      "subexprs": [
+        {
+          "node": 203,
+          "func_hex": "0303",
+          "support_leaf_ids": [
+            3,
+            172,
+            199
+          ],
+          "support_pin_idx": [
+            0,
+            1,
+            2
+          ],
+          "support_nets": [
+            "LUT_218",
+            "LUT_172",
+            "pi4"
+          ],
+          "support_size": 3
+        },
+        {
+          "node": 219,
+          "func_hex": "5500",
+          "support_leaf_ids": [
+            3,
+            218
+          ],
+          "support_pin_idx": [
+            0,
+            3
+          ],
+          "support_nets": [
+            "LUT_218",
+            "LUT_199"
+          ],
+          "support_size": 2
+        },
+        {
+          "node": 220,
+          "func_hex": "0100",
+          "support_leaf_ids": [
+            3,
+            218
+          ],
+          "support_pin_idx": [
+            0,
+            3
+          ],
+          "support_nets": [
+            "LUT_218",
+            "LUT_199"
+          ],
+          "support_size": 2
+        },
+        {
+          "node": 221,
+          "func_hex": "a8fc",
+          "support_leaf_ids": [
+            3,
+            199,
+            218
+          ],
+          "support_pin_idx": [
+            0,
+            2,
+            3
+          ],
+          "support_nets": [
+            "LUT_218",
+            "pi4",
+            "LUT_199"
+          ],
+          "support_size": 3
+        },
+        {
+          "node": 222,
+          "func_hex": "5603",
+          "support_leaf_ids": [
+            3,
+            199,
+            218
+          ],
+          "support_pin_idx": [
+            0,
+            2,
+            3
+          ],
+          "support_nets": [
+            "LUT_218",
+            "pi4",
+            "LUT_199"
+          ],
+          "support_size": 3
+        }
+      ],
+      "notes": []
+    },
+    {
+      "dst": "LUT_226",
+      "lut_root": 226,
+      "leaves": [
+        5,
+        176,
+        201,
+        222
+      ],
+      "pins": [
+        "LUT_222",
+        "LUT_176",
+        "pi6",
+        "LUT_201"
+      ],
+      "subexprs": [
+        {
+          "node": 202,
+          "func_hex": "0c0c",
+          "support_leaf_ids": [
+            5,
+            201
+          ],
+          "support_pin_idx": [
+            0,
+            2
+          ],
+          "support_nets": [
+            "LUT_222",
+            "pi6"
+          ],
+          "support_size": 2
+        },
+        {
+          "node": 223,
+          "func_hex": "00aa",
+          "support_leaf_ids": [
+            5,
+            222
+          ],
+          "support_pin_idx": [
+            0,
+            3
+          ],
+          "support_nets": [
+            "LUT_222",
+            "LUT_201"
+          ],
+          "support_size": 2
+        },
+        {
+          "node": 224,
+          "func_hex": "f351",
+          "support_leaf_ids": [
+            5,
+            222
+          ],
+          "support_pin_idx": [
+            0,
+            3
+          ],
+          "support_nets": [
+            "LUT_222",
+            "LUT_201"
+          ],
+          "support_size": 2
+        },
+        {
+          "node": 225,
+          "func_hex": "0008",
+          "support_leaf_ids": [
+            5,
+            201,
+            222
+          ],
+          "support_pin_idx": [
+            0,
+            2,
+            3
+          ],
+          "support_nets": [
+            "LUT_222",
+            "pi6",
+            "LUT_201"
+          ],
+          "support_size": 3
+        },
+        {
+          "node": 226,
+          "func_hex": "0ca6",
+          "support_leaf_ids": [
+            5,
+            176,
+            201,
+            222
+          ],
+          "support_pin_idx": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "support_nets": [
+            "LUT_222",
+            "LUT_176",
+            "pi6",
+            "LUT_201"
+          ],
+          "support_size": 4
+        }
+      ],
+      "notes": []
+    },
+    {
+      "dst": "LUT_239",
+      "lut_root": 239,
+      "leaves": [
+        4,
+        26,
+        36,
+        189
+      ],
+      "pins": [
+        "LUT_189",
+        "LUT_26",
+        "pi5",
+        "LUT_36"
+      ],
+      "subexprs": [
+        {
+          "node": 235,
+          "func_hex": "3300",
+          "support_leaf_ids": [
+            4,
+            26
+          ],
+          "support_pin_idx": [
+            0,
+            1
+          ],
+          "support_nets": [
+            "LUT_189",
+            "LUT_26"
+          ],
+          "support_size": 2
+        },
+        {
+          "node": 236,
+          "func_hex": "5050",
+          "support_leaf_ids": [
+            4
+          ],
+          "support_pin_idx": [
+            0
+          ],
+          "support_nets": [
+            "LUT_189"
+          ],
+          "support_size": 1
+        },
+        {
+          "node": 237,
+          "func_hex": "0a0a",
+          "support_leaf_ids": [
+            4,
+            26,
+            36
+          ],
+          "support_pin_idx": [
+            0,
+            1,
+            2
+          ],
+          "support_nets": [
+            "LUT_189",
+            "LUT_26",
+            "pi5"
+          ],
+          "support_size": 3
+        },
+        {
+          "node": 238,
+          "func_hex": "a5a5",
+          "support_leaf_ids": [
+            4,
+            26,
+            36
+          ],
+          "support_pin_idx": [
+            0,
+            1,
+            2
+          ],
+          "support_nets": [
+            "LUT_189",
+            "LUT_26",
+            "pi5"
+          ],
+          "support_size": 3
+        },
+        {
+          "node": 239,
+          "func_hex": "84a5",
+          "support_leaf_ids": [
+            4,
+            26,
+            36
+          ],
+          "support_pin_idx": [
+            0,
+            1,
+            2
+          ],
+          "support_nets": [
+            "LUT_189",
+            "LUT_26",
+            "pi5"
+          ],
+          "support_size": 3
+        }
+      ],
+      "notes": []
+    },
+    {
+      "dst": "LUT_241",
+      "lut_root": 241,
+      "leaves": [
+        6,
+        193,
+        210,
+        239
+      ],
+      "pins": [
+        "LUT_239",
+        "LUT_193",
+        "pi7",
+        "LUT_210"
+      ],
+      "subexprs": [
+        {
+          "node": 232,
+          "func_hex": "3030",
+          "support_leaf_ids": [
+            6,
+            210
+          ],
+          "support_pin_idx": [
+            0,
+            2
+          ],
+          "support_nets": [
+            "LUT_239",
+            "pi7"
+          ],
+          "support_size": 2
+        },
+        {
+          "node": 233,
+          "func_hex": "0c0c",
+          "support_leaf_ids": [
+            6,
+            210
+          ],
+          "support_pin_idx": [
+            0,
+            2
+          ],
+          "support_nets": [
+            "LUT_239",
+            "pi7"
+          ],
+          "support_size": 2
+        },
+        {
+          "node": 234,
+          "func_hex": "c3c3",
+          "support_leaf_ids": [
+            6,
+            210
+          ],
+          "support_pin_idx": [
+            0,
+            2
+          ],
+          "support_nets": [
+            "LUT_239",
+            "pi7"
+          ],
+          "support_size": 2
+        },
+        {
+          "node": 240,
+          "func_hex": "5500",
+          "support_leaf_ids": [
+            6,
+            239
+          ],
+          "support_pin_idx": [
+            0,
+            3
+          ],
+          "support_nets": [
+            "LUT_239",
+            "LUT_210"
+          ],
+          "support_size": 2
+        },
+        {
+          "node": 241,
+          "func_hex": "283c",
+          "support_leaf_ids": [
+            6,
+            239
+          ],
+          "support_pin_idx": [
+            0,
+            3
+          ],
+          "support_nets": [
+            "LUT_239",
+            "LUT_210"
+          ],
+          "support_size": 2
+        }
+      ],
+      "notes": []
+    },
+    {
+      "dst": "LUT_245",
+      "lut_root": 245,
+      "leaves": [
+        2,
+        195,
+        214,
+        241
+      ],
+      "pins": [
+        "LUT_241",
+        "LUT_195",
+        "pi3",
+        "LUT_214"
+      ],
+      "subexprs": [
+        {
+          "node": 231,
+          "func_hex": "0c0c",
+          "support_leaf_ids": [
+            2,
+            195,
+            214
+          ],
+          "support_pin_idx": [
+            0,
+            1,
+            2
+          ],
+          "support_nets": [
+            "LUT_241",
+            "LUT_195",
+            "pi3"
+          ],
+          "support_size": 3
+        },
+        {
+          "node": 242,
+          "func_hex": "5500",
+          "support_leaf_ids": [
+            2
+          ],
+          "support_pin_idx": [
+            0
+          ],
+          "support_nets": [
+            "LUT_241"
+          ],
+          "support_size": 1
+        },
+        {
+          "node": 243,
+          "func_hex": "00aa",
+          "support_leaf_ids": [
+            2,
+            241
+          ],
+          "support_pin_idx": [
+            0,
+            3
+          ],
+          "support_nets": [
+            "LUT_241",
+            "LUT_214"
+          ],
+          "support_size": 2
+        },
+        {
+          "node": 244,
+          "func_hex": "aa55",
+          "support_leaf_ids": [
+            2,
+            214,
+            241
+          ],
+          "support_pin_idx": [
+            0,
+            2,
+            3
+          ],
+          "support_nets": [
+            "LUT_241",
+            "pi3",
+            "LUT_214"
+          ],
+          "support_size": 3
+        },
+        {
+          "node": 245,
+          "func_hex": "a251",
+          "support_leaf_ids": [
+            2
+          ],
+          "support_pin_idx": [
+            0
+          ],
+          "support_nets": [
+            "LUT_241"
+          ],
+          "support_size": 1
+        }
+      ],
+      "notes": []
+    },
+    {
+      "dst": "LUT_247",
+      "lut_root": 247,
+      "leaves": [
+        4,
+        199,
+        218,
+        245
+      ],
+      "pins": [
+        "LUT_245",
+        "LUT_199",
+        "pi5",
+        "LUT_218"
+      ],
+      "subexprs": [
+        {
+          "node": 228,
+          "func_hex": "3030",
+          "support_leaf_ids": [
+            4,
+            199,
+            218
+          ],
+          "support_pin_idx": [
+            0,
+            1,
+            2
+          ],
+          "support_nets": [
+            "LUT_245",
+            "LUT_199",
+            "pi5"
+          ],
+          "support_size": 3
+        },
+        {
+          "node": 229,
+          "func_hex": "0c0c",
+          "support_leaf_ids": [
+            4,
+            199,
+            218
+          ],
+          "support_pin_idx": [
+            0,
+            1,
+            2
+          ],
+          "support_nets": [
+            "LUT_245",
+            "LUT_199",
+            "pi5"
+          ],
+          "support_size": 3
+        },
+        {
+          "node": 230,
+          "func_hex": "c3c3",
+          "support_leaf_ids": [
+            4,
+            199,
+            218
+          ],
+          "support_pin_idx": [
+            0,
+            1,
+            2
+          ],
+          "support_nets": [
+            "LUT_245",
+            "LUT_199",
+            "pi5"
+          ],
+          "support_size": 3
+        },
+        {
+          "node": 246,
+          "func_hex": "5500",
+          "support_leaf_ids": [
+            4
+          ],
+          "support_pin_idx": [
+            0
+          ],
+          "support_nets": [
+            "LUT_245"
+          ],
+          "support_size": 1
+        },
+        {
+          "node": 247,
+          "func_hex": "283c",
+          "support_leaf_ids": [
+            4,
+            245
+          ],
+          "support_pin_idx": [
+            0,
+            3
+          ],
+          "support_nets": [
+            "LUT_245",
+            "LUT_218"
+          ],
+          "support_size": 2
+        }
+      ],
+      "notes": []
+    },
+    {
+      "dst": "LUT_251",
+      "lut_root": 251,
+      "leaves": [
+        6,
+        201,
+        222,
+        247
+      ],
+      "pins": [
+        "LUT_247",
+        "LUT_201",
+        "pi7",
+        "LUT_222"
+      ],
+      "subexprs": [
+        {
+          "node": 227,
+          "func_hex": "0c0c",
+          "support_leaf_ids": [
+            6,
+            201,
+            222
+          ],
+          "support_pin_idx": [
+            0,
+            1,
+            2
+          ],
+          "support_nets": [
+            "LUT_247",
+            "LUT_201",
+            "pi7"
+          ],
+          "support_size": 3
+        },
+        {
+          "node": 248,
+          "func_hex": "5500",
+          "support_leaf_ids": [
+            6
+          ],
+          "support_pin_idx": [
+            0
+          ],
+          "support_nets": [
+            "LUT_247"
+          ],
+          "support_size": 1
+        },
+        {
+          "node": 249,
+          "func_hex": "00aa",
+          "support_leaf_ids": [
+            6,
+            247
+          ],
+          "support_pin_idx": [
+            0,
+            3
+          ],
+          "support_nets": [
+            "LUT_247",
+            "LUT_222"
+          ],
+          "support_size": 2
+        },
+        {
+          "node": 250,
+          "func_hex": "aa55",
+          "support_leaf_ids": [
+            6,
+            247
+          ],
+          "support_pin_idx": [
+            0,
+            3
+          ],
+          "support_nets": [
+            "LUT_247",
+            "LUT_222"
+          ],
+          "support_size": 2
+        },
+        {
+          "node": 251,
+          "func_hex": "a251",
+          "support_leaf_ids": [
+            6,
+            247
+          ],
+          "support_pin_idx": [
+            0,
+            3
+          ],
+          "support_nets": [
+            "LUT_247",
+            "LUT_222"
+          ],
+          "support_size": 2
+        }
+      ],
+      "notes": []
+    },
+    {
+      "dst": "LUT_252",
+      "lut_root": 252,
+      "leaves": [
+        226,
+        251
+      ],
+      "pins": [],
+      "subexprs": [
+        {
+          "node": 252,
+          "func_hex": "1",
+          "support_leaf_ids": [],
+          "support_pin_idx": [],
+          "support_nets": [],
+          "support_size": 0
+        }
+      ],
+      "notes": []
+    },
+    {
+      "dst": "LUT_26",
+      "lut_root": 26,
+      "leaves": [
+        1,
+        11,
+        16,
+        22
+      ],
+      "pins": [
+        "LUT_22",
+        "LUT_11",
+        "pi2",
+        "LUT_16"
+      ],
+      "subexprs": [
+        {
+          "node": 17,
+          "func_hex": "3030",
+          "support_leaf_ids": [
+            1,
+            16
+          ],
+          "support_pin_idx": [
+            0,
+            2
+          ],
+          "support_nets": [
+            "LUT_22",
+            "pi2"
+          ],
+          "support_size": 2
+        },
+        {
+          "node": 23,
+          "func_hex": "5500",
+          "support_leaf_ids": [
+            1,
+            16,
+            22
+          ],
+          "support_pin_idx": [
+            0,
+            2,
+            3
+          ],
+          "support_nets": [
+            "LUT_22",
+            "pi2",
+            "LUT_16"
+          ],
+          "support_size": 3
+        },
+        {
+          "node": 24,
+          "func_hex": "1000",
+          "support_leaf_ids": [
+            1,
+            16,
+            22
+          ],
+          "support_pin_idx": [
+            0,
+            2,
+            3
+          ],
+          "support_nets": [
+            "LUT_22",
+            "pi2",
+            "LUT_16"
+          ],
+          "support_size": 3
+        },
+        {
+          "node": 25,
+          "func_hex": "8acf",
+          "support_leaf_ids": [
+            1,
+            16,
+            22
+          ],
+          "support_pin_idx": [
+            0,
+            2,
+            3
+          ],
+          "support_nets": [
+            "LUT_22",
+            "pi2",
+            "LUT_16"
+          ],
+          "support_size": 3
+        },
+        {
+          "node": 26,
+          "func_hex": "6530",
+          "support_leaf_ids": [
+            1,
+            11,
+            16,
+            22
+          ],
+          "support_pin_idx": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "support_nets": [
+            "LUT_22",
+            "LUT_11",
+            "pi2",
+            "LUT_16"
+          ],
+          "support_size": 4
+        }
+      ],
+      "notes": []
+    },
+    {
+      "dst": "LUT_260",
+      "lut_root": 260,
+      "leaves": [
+        1,
+        51,
+        210,
+        239
+      ],
+      "pins": [
+        "LUT_239",
+        "LUT_51",
+        "pi2",
+        "LUT_210"
+      ],
+      "subexprs": [
+        {
+          "node": 256,
+          "func_hex": "000f",
+          "support_leaf_ids": [
+            1,
+            210,
+            239
+          ],
+          "support_pin_idx": [
+            0,
+            2,
+            3
+          ],
+          "support_nets": [
+            "LUT_239",
+            "pi2",
+            "LUT_210"
+          ],
+          "support_size": 3
+        },
+        {
+          "node": 257,
+          "func_hex": "4444",
+          "support_leaf_ids": [
+            1,
+            210,
+            239
+          ],
+          "support_pin_idx": [
+            0,
+            2,
+            3
+          ],
+          "support_nets": [
+            "LUT_239",
+            "pi2",
+            "LUT_210"
+          ],
+          "support_size": 3
+        },
+        {
+          "node": 258,
+          "func_hex": "0004",
+          "support_leaf_ids": [
+            1,
+            210,
+            239
+          ],
+          "support_pin_idx": [
+            0,
+            2,
+            3
+          ],
+          "support_nets": [
+            "LUT_239",
+            "pi2",
+            "LUT_210"
+          ],
+          "support_size": 3
+        },
+        {
+          "node": 259,
+          "func_hex": "bbb0",
+          "support_leaf_ids": [
+            1,
+            210,
+            239
+          ],
+          "support_pin_idx": [
+            0,
+            2,
+            3
+          ],
+          "support_nets": [
+            "LUT_239",
+            "pi2",
+            "LUT_210"
+          ],
+          "support_size": 3
+        },
+        {
+          "node": 260,
+          "func_hex": "444b",
+          "support_leaf_ids": [
+            1,
+            210,
+            239
+          ],
+          "support_pin_idx": [
+            0,
+            2,
+            3
+          ],
+          "support_nets": [
+            "LUT_239",
+            "pi2",
+            "LUT_210"
+          ],
+          "support_size": 3
+        }
+      ],
+      "notes": []
+    },
+    {
+      "dst": "LUT_264",
+      "lut_root": 264,
+      "leaves": [
+        3,
+        214,
+        241,
+        260
+      ],
+      "pins": [
+        "LUT_260",
+        "LUT_214",
+        "pi4",
+        "LUT_241"
+      ],
+      "subexprs": [
+        {
+          "node": 255,
+          "func_hex": "0c0c",
+          "support_leaf_ids": [
+            3,
+            214
+          ],
+          "support_pin_idx": [
+            0,
+            1
+          ],
+          "support_nets": [
+            "LUT_260",
+            "LUT_214"
+          ],
+          "support_size": 2
+        },
+        {
+          "node": 261,
+          "func_hex": "00aa",
+          "support_leaf_ids": [
+            3
+          ],
+          "support_pin_idx": [
+            0
+          ],
+          "support_nets": [
+            "LUT_260"
+          ],
+          "support_size": 1
+        },
+        {
+          "node": 262,
+          "func_hex": "f351",
+          "support_leaf_ids": [
+            3,
+            214
+          ],
+          "support_pin_idx": [
+            0,
+            1
+          ],
+          "support_nets": [
+            "LUT_260",
+            "LUT_214"
+          ],
+          "support_size": 2
+        },
+        {
+          "node": 263,
+          "func_hex": "0008",
+          "support_leaf_ids": [
+            3,
+            214
+          ],
+          "support_pin_idx": [
+            0,
+            1
+          ],
+          "support_nets": [
+            "LUT_260",
+            "LUT_214"
+          ],
+          "support_size": 2
+        },
+        {
+          "node": 264,
+          "func_hex": "0ca6",
+          "support_leaf_ids": [
+            3,
+            214
+          ],
+          "support_pin_idx": [
+            0,
+            1
+          ],
+          "support_nets": [
+            "LUT_260",
+            "LUT_214"
+          ],
+          "support_size": 2
+        }
+      ],
+      "notes": []
+    },
+    {
+      "dst": "LUT_268",
+      "lut_root": 268,
+      "leaves": [
+        5,
+        218,
+        245,
+        264
+      ],
+      "pins": [
+        "LUT_264",
+        "LUT_218",
+        "pi6",
+        "LUT_245"
+      ],
+      "subexprs": [
+        {
+          "node": 254,
+          "func_hex": "0303",
+          "support_leaf_ids": [
+            5,
+            218,
+            245
+          ],
+          "support_pin_idx": [
+            0,
+            1,
+            2
+          ],
+          "support_nets": [
+            "LUT_264",
+            "LUT_218",
+            "pi6"
+          ],
+          "support_size": 3
+        },
+        {
+          "node": 265,
+          "func_hex": "5500",
+          "support_leaf_ids": [
+            5,
+            218,
+            245,
+            264
+          ],
+          "support_pin_idx": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "support_nets": [
+            "LUT_264",
+            "LUT_218",
+            "pi6",
+            "LUT_245"
+          ],
+          "support_size": 4
+        },
+        {
+          "node": 266,
+          "func_hex": "0100",
+          "support_leaf_ids": [
+            5,
+            218,
+            245,
+            264
+          ],
+          "support_pin_idx": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "support_nets": [
+            "LUT_264",
+            "LUT_218",
+            "pi6",
+            "LUT_245"
+          ],
+          "support_size": 4
+        },
+        {
+          "node": 267,
+          "func_hex": "a8fc",
+          "support_leaf_ids": [
+            5,
+            218,
+            245,
+            264
+          ],
+          "support_pin_idx": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "support_nets": [
+            "LUT_264",
+            "LUT_218",
+            "pi6",
+            "LUT_245"
+          ],
+          "support_size": 4
+        },
+        {
+          "node": 268,
+          "func_hex": "5603",
+          "support_leaf_ids": [
+            5
+          ],
+          "support_pin_idx": [
+            0
+          ],
+          "support_nets": [
+            "LUT_264"
+          ],
+          "support_size": 1
+        }
+      ],
+      "notes": []
+    },
+    {
+      "dst": "LUT_272",
+      "lut_root": 272,
+      "leaves": [
+        1,
+        222,
+        247,
+        268
+      ],
+      "pins": [
+        "LUT_268",
+        "LUT_222",
+        "pi2",
+        "LUT_247"
+      ],
+      "subexprs": [
+        {
+          "node": 253,
+          "func_hex": "0c0c",
+          "support_leaf_ids": [
+            1,
+            247
+          ],
+          "support_pin_idx": [
+            0,
+            2
+          ],
+          "support_nets": [
+            "LUT_268",
+            "pi2"
+          ],
+          "support_size": 2
+        },
+        {
+          "node": 269,
+          "func_hex": "00aa",
+          "support_leaf_ids": [
+            1,
+            222,
+            247
+          ],
+          "support_pin_idx": [
+            0,
+            1,
+            2
+          ],
+          "support_nets": [
+            "LUT_268",
+            "LUT_222",
+            "pi2"
+          ],
+          "support_size": 3
+        },
+        {
+          "node": 270,
+          "func_hex": "f351",
+          "support_leaf_ids": [
+            1,
+            222,
+            247,
+            268
+          ],
+          "support_pin_idx": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "support_nets": [
+            "LUT_268",
+            "LUT_222",
+            "pi2",
+            "LUT_247"
+          ],
+          "support_size": 4
+        },
+        {
+          "node": 271,
+          "func_hex": "0008",
+          "support_leaf_ids": [
+            1,
+            222,
+            247,
+            268
+          ],
+          "support_pin_idx": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "support_nets": [
+            "LUT_268",
+            "LUT_222",
+            "pi2",
+            "LUT_247"
+          ],
+          "support_size": 4
+        },
+        {
+          "node": 272,
+          "func_hex": "0ca6",
+          "support_leaf_ids": [
+            1,
+            222,
+            247,
+            268
+          ],
+          "support_pin_idx": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "support_nets": [
+            "LUT_268",
+            "LUT_222",
+            "pi2",
+            "LUT_247"
+          ],
+          "support_size": 4
+        }
+      ],
+      "notes": []
+    },
+    {
+      "dst": "LUT_273",
+      "lut_root": 273,
+      "leaves": [
+        3,
+        272
+      ],
+      "pins": [],
+      "subexprs": [
+        {
+          "node": 273,
+          "func_hex": "4",
+          "support_leaf_ids": [
+            3,
+            272
+          ],
+          "support_pin_idx": [
+            0,
+            1
+          ],
+          "support_nets": [],
+          "support_size": 2
+        }
+      ],
+      "notes": []
+    },
+    {
+      "dst": "LUT_286",
+      "lut_root": 286,
+      "leaves": [
+        2,
+        51,
+        65,
+        239
+      ],
+      "pins": [
+        "LUT_239",
+        "LUT_51",
+        "pi3",
+        "LUT_65"
+      ],
+      "subexprs": [
+        {
+          "node": 282,
+          "func_hex": "00cc",
+          "support_leaf_ids": [
+            2,
+            65
+          ],
+          "support_pin_idx": [
+            0,
+            2
+          ],
+          "support_nets": [
+            "LUT_239",
+            "pi3"
+          ],
+          "support_size": 2
+        },
+        {
+          "node": 283,
+          "func_hex": "3300",
+          "support_leaf_ids": [
+            2,
+            65,
+            239
+          ],
+          "support_pin_idx": [
+            0,
+            2,
+            3
+          ],
+          "support_nets": [
+            "LUT_239",
+            "pi3",
+            "LUT_65"
+          ],
+          "support_size": 3
+        },
+        {
+          "node": 284,
+          "func_hex": "cc33",
+          "support_leaf_ids": [
+            2,
+            65,
+            239
+          ],
+          "support_pin_idx": [
+            0,
+            2,
+            3
+          ],
+          "support_nets": [
+            "LUT_239",
+            "pi3",
+            "LUT_65"
+          ],
+          "support_size": 3
+        },
+        {
+          "node": 285,
+          "func_hex": "5050",
+          "support_leaf_ids": [
+            2,
+            65,
+            239
+          ],
+          "support_pin_idx": [
+            0,
+            2,
+            3
+          ],
+          "support_nets": [
+            "LUT_239",
+            "pi3",
+            "LUT_65"
+          ],
+          "support_size": 3
+        },
+        {
+          "node": 286,
+          "func_hex": "238c",
+          "support_leaf_ids": [
+            2,
+            65,
+            239
+          ],
+          "support_pin_idx": [
+            0,
+            2,
+            3
+          ],
+          "support_nets": [
+            "LUT_239",
+            "pi3",
+            "LUT_65"
+          ],
+          "support_size": 3
+        }
+      ],
+      "notes": []
+    },
+    {
+      "dst": "LUT_290",
+      "lut_root": 290,
+      "leaves": [
+        4,
+        241,
+        260,
+        286
+      ],
+      "pins": [
+        "LUT_286",
+        "LUT_241",
+        "pi5",
+        "LUT_260"
+      ],
+      "subexprs": [
+        {
+          "node": 281,
+          "func_hex": "0c0c",
+          "support_leaf_ids": [
+            4
+          ],
+          "support_pin_idx": [
+            0
+          ],
+          "support_nets": [
+            "LUT_286"
+          ],
+          "support_size": 1
+        },
+        {
+          "node": 287,
+          "func_hex": "5500",
+          "support_leaf_ids": [
+            4,
+            286
+          ],
+          "support_pin_idx": [
+            0,
+            3
+          ],
+          "support_nets": [
+            "LUT_286",
+            "LUT_260"
+          ],
+          "support_size": 2
+        },
+        {
+          "node": 288,
+          "func_hex": "00aa",
+          "support_leaf_ids": [
+            4,
+            286
+          ],
+          "support_pin_idx": [
+            0,
+            3
+          ],
+          "support_nets": [
+            "LUT_286",
+            "LUT_260"
+          ],
+          "support_size": 2
+        },
+        {
+          "node": 289,
+          "func_hex": "aa55",
+          "support_leaf_ids": [
+            4,
+            286
+          ],
+          "support_pin_idx": [
+            0,
+            3
+          ],
+          "support_nets": [
+            "LUT_286",
+            "LUT_260"
+          ],
+          "support_size": 2
+        },
+        {
+          "node": 290,
+          "func_hex": "a251",
+          "support_leaf_ids": [
+            4,
+            241,
+            286
+          ],
+          "support_pin_idx": [
+            0,
+            1,
+            3
+          ],
+          "support_nets": [
+            "LUT_286",
+            "LUT_241",
+            "LUT_260"
+          ],
+          "support_size": 3
+        }
+      ],
+      "notes": []
+    },
+    {
+      "dst": "LUT_292",
+      "lut_root": 292,
+      "leaves": [
+        6,
+        245,
+        264,
+        290
+      ],
+      "pins": [
+        "LUT_290",
+        "LUT_245",
+        "pi7",
+        "LUT_264"
+      ],
+      "subexprs": [
+        {
+          "node": 278,
+          "func_hex": "3030",
+          "support_leaf_ids": [
+            6,
+            245,
+            264
+          ],
+          "support_pin_idx": [
+            0,
+            1,
+            2
+          ],
+          "support_nets": [
+            "LUT_290",
+            "LUT_245",
+            "pi7"
+          ],
+          "support_size": 3
+        },
+        {
+          "node": 279,
+          "func_hex": "0c0c",
+          "support_leaf_ids": [
+            6,
+            245
+          ],
+          "support_pin_idx": [
+            0,
+            1
+          ],
+          "support_nets": [
+            "LUT_290",
+            "LUT_245"
+          ],
+          "support_size": 2
+        },
+        {
+          "node": 280,
+          "func_hex": "c3c3",
+          "support_leaf_ids": [
+            6,
+            245
+          ],
+          "support_pin_idx": [
+            0,
+            1
+          ],
+          "support_nets": [
+            "LUT_290",
+            "LUT_245"
+          ],
+          "support_size": 2
+        },
+        {
+          "node": 291,
+          "func_hex": "5500",
+          "support_leaf_ids": [
+            6,
+            245,
+            290
+          ],
+          "support_pin_idx": [
+            0,
+            1,
+            3
+          ],
+          "support_nets": [
+            "LUT_290",
+            "LUT_245",
+            "LUT_264"
+          ],
+          "support_size": 3
+        },
+        {
+          "node": 292,
+          "func_hex": "283c",
+          "support_leaf_ids": [
+            6,
+            245,
+            290
+          ],
+          "support_pin_idx": [
+            0,
+            1,
+            3
+          ],
+          "support_nets": [
+            "LUT_290",
+            "LUT_245",
+            "LUT_264"
+          ],
+          "support_size": 3
+        }
+      ],
+      "notes": []
+    },
+    {
+      "dst": "LUT_296",
+      "lut_root": 296,
+      "leaves": [
+        2,
+        247,
+        268,
+        292
+      ],
+      "pins": [
+        "LUT_292",
+        "LUT_247",
+        "pi3",
+        "LUT_268"
+      ],
+      "subexprs": [
+        {
+          "node": 277,
+          "func_hex": "0c0c",
+          "support_leaf_ids": [
+            2,
+            247,
+            268
+          ],
+          "support_pin_idx": [
+            0,
+            1,
+            2
+          ],
+          "support_nets": [
+            "LUT_292",
+            "LUT_247",
+            "pi3"
+          ],
+          "support_size": 3
+        },
+        {
+          "node": 293,
+          "func_hex": "5500",
+          "support_leaf_ids": [
+            2,
+            247,
+            292
+          ],
+          "support_pin_idx": [
+            0,
+            1,
+            3
+          ],
+          "support_nets": [
+            "LUT_292",
+            "LUT_247",
+            "LUT_268"
+          ],
+          "support_size": 3
+        },
+        {
+          "node": 294,
+          "func_hex": "00aa",
+          "support_leaf_ids": [
+            2,
+            247,
+            292
+          ],
+          "support_pin_idx": [
+            0,
+            1,
+            3
+          ],
+          "support_nets": [
+            "LUT_292",
+            "LUT_247",
+            "LUT_268"
+          ],
+          "support_size": 3
+        },
+        {
+          "node": 295,
+          "func_hex": "aa55",
+          "support_leaf_ids": [
+            2,
+            247,
+            292
+          ],
+          "support_pin_idx": [
+            0,
+            1,
+            3
+          ],
+          "support_nets": [
+            "LUT_292",
+            "LUT_247",
+            "LUT_268"
+          ],
+          "support_size": 3
+        },
+        {
+          "node": 296,
+          "func_hex": "a251",
+          "support_leaf_ids": [
+            2,
+            247,
+            292
+          ],
+          "support_pin_idx": [
+            0,
+            1,
+            3
+          ],
+          "support_nets": [
+            "LUT_292",
+            "LUT_247",
+            "LUT_268"
+          ],
+          "support_size": 3
+        }
+      ],
+      "notes": []
+    },
+    {
+      "dst": "LUT_297",
+      "lut_root": 297,
+      "leaves": [
+        272,
+        296
+      ],
+      "pins": [],
+      "subexprs": [
+        {
+          "node": 297,
+          "func_hex": "1",
+          "support_leaf_ids": [
+            296
+          ],
+          "support_pin_idx": [
+            1
+          ],
+          "support_nets": [],
+          "support_size": 1
+        }
+      ],
+      "notes": []
+    },
+    {
+      "dst": "LUT_304",
+      "lut_root": 304,
+      "leaves": [
+        5,
+        84,
+        260,
+        286
+      ],
+      "pins": [
+        "LUT_286",
+        "LUT_84",
+        "pi6",
+        "LUT_260"
+      ],
+      "subexprs": [
+        {
+          "node": 300,
+          "func_hex": "00f0",
+          "support_leaf_ids": [
+            5,
+            260,
+            286
+          ],
+          "support_pin_idx": [
+            0,
+            2,
+            3
+          ],
+          "support_nets": [
+            "LUT_286",
+            "pi6",
+            "LUT_260"
+          ],
+          "support_size": 3
+        },
+        {
+          "node": 301,
+          "func_hex": "2222",
+          "support_leaf_ids": [
+            5,
+            260,
+            286
+          ],
+          "support_pin_idx": [
+            0,
+            2,
+            3
+          ],
+          "support_nets": [
+            "LUT_286",
+            "pi6",
+            "LUT_260"
+          ],
+          "support_size": 3
+        },
+        {
+          "node": 302,
+          "func_hex": "dd0d",
+          "support_leaf_ids": [
+            5,
+            84,
+            260,
+            286
+          ],
+          "support_pin_idx": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "support_nets": [
+            "LUT_286",
+            "LUT_84",
+            "pi6",
+            "LUT_260"
+          ],
+          "support_size": 4
+        },
+        {
+          "node": 303,
+          "func_hex": "0020",
+          "support_leaf_ids": [
+            5,
+            260,
+            286
+          ],
+          "support_pin_idx": [
+            0,
+            2,
+            3
+          ],
+          "support_nets": [
+            "LUT_286",
+            "pi6",
+            "LUT_260"
+          ],
+          "support_size": 3
+        },
+        {
+          "node": 304,
+          "func_hex": "22d2",
+          "support_leaf_ids": [
+            260
+          ],
+          "support_pin_idx": [
+            2
+          ],
+          "support_nets": [
+            "pi6"
+          ],
+          "support_size": 1
+        }
+      ],
+      "notes": []
+    },
+    {
+      "dst": "LUT_308",
+      "lut_root": 308,
+      "leaves": [
+        1,
+        264,
+        290,
+        304
+      ],
+      "pins": [
+        "LUT_304",
+        "LUT_264",
+        "pi2",
+        "LUT_290"
+      ],
+      "subexprs": [
+        {
+          "node": 299,
+          "func_hex": "0303",
+          "support_leaf_ids": [
+            1,
+            264,
+            290
+          ],
+          "support_pin_idx": [
+            0,
+            1,
+            2
+          ],
+          "support_nets": [
+            "LUT_304",
+            "LUT_264",
+            "pi2"
+          ],
+          "support_size": 3
+        },
+        {
+          "node": 305,
+          "func_hex": "5500",
+          "support_leaf_ids": [
+            1
+          ],
+          "support_pin_idx": [
+            0
+          ],
+          "support_nets": [
+            "LUT_304"
+          ],
+          "support_size": 1
+        },
+        {
+          "node": 306,
+          "func_hex": "0100",
+          "support_leaf_ids": [
+            1,
+            304
+          ],
+          "support_pin_idx": [
+            0,
+            3
+          ],
+          "support_nets": [
+            "LUT_304",
+            "LUT_290"
+          ],
+          "support_size": 2
+        },
+        {
+          "node": 307,
+          "func_hex": "a8fc",
+          "support_leaf_ids": [
+            1
+          ],
+          "support_pin_idx": [
+            0
+          ],
+          "support_nets": [
+            "LUT_304"
+          ],
+          "support_size": 1
+        },
+        {
+          "node": 308,
+          "func_hex": "5603",
+          "support_leaf_ids": [
+            1
+          ],
+          "support_pin_idx": [
+            0
+          ],
+          "support_nets": [
+            "LUT_304"
+          ],
+          "support_size": 1
+        }
+      ],
+      "notes": []
+    },
+    {
+      "dst": "LUT_312",
+      "lut_root": 312,
+      "leaves": [
+        3,
+        268,
+        292,
+        308
+      ],
+      "pins": [
+        "LUT_308",
+        "LUT_268",
+        "pi4",
+        "LUT_292"
+      ],
+      "subexprs": [
+        {
+          "node": 298,
+          "func_hex": "0c0c",
+          "support_leaf_ids": [
+            3,
+            292
+          ],
+          "support_pin_idx": [
+            0,
+            2
+          ],
+          "support_nets": [
+            "LUT_308",
+            "pi4"
+          ],
+          "support_size": 2
+        },
+        {
+          "node": 309,
+          "func_hex": "00aa",
+          "support_leaf_ids": [
+            3
+          ],
+          "support_pin_idx": [
+            0
+          ],
+          "support_nets": [
+            "LUT_308"
+          ],
+          "support_size": 1
+        },
+        {
+          "node": 310,
+          "func_hex": "f351",
+          "support_leaf_ids": [
+            3,
+            308
+          ],
+          "support_pin_idx": [
+            0,
+            3
+          ],
+          "support_nets": [
+            "LUT_308",
+            "LUT_292"
+          ],
+          "support_size": 2
+        },
+        {
+          "node": 311,
+          "func_hex": "0008",
+          "support_leaf_ids": [
+            3
+          ],
+          "support_pin_idx": [
+            0
+          ],
+          "support_nets": [
+            "LUT_308"
+          ],
+          "support_size": 1
+        },
+        {
+          "node": 312,
+          "func_hex": "0ca6",
+          "support_leaf_ids": [
+            3,
+            308
+          ],
+          "support_pin_idx": [
+            0,
+            3
+          ],
+          "support_nets": [
+            "LUT_308",
+            "LUT_292"
+          ],
+          "support_size": 2
+        }
+      ],
+      "notes": []
+    },
+    {
+      "dst": "LUT_313",
+      "lut_root": 313,
+      "leaves": [
+        5,
+        312
+      ],
+      "pins": [],
+      "subexprs": [
+        {
+          "node": 313,
+          "func_hex": "4",
+          "support_leaf_ids": [
+            5,
+            312
+          ],
+          "support_pin_idx": [
+            0,
+            1
+          ],
+          "support_nets": [],
+          "support_size": 2
+        }
+      ],
+      "notes": []
+    },
+    {
+      "dst": "LUT_317",
+      "lut_root": 317,
+      "leaves": [
+        252,
+        273,
+        297,
+        313
+      ],
+      "pins": [
+        "LUT_313",
+        "LUT_273",
+        "LUT_252",
+        "LUT_297"
+      ],
+      "subexprs": [
+        {
+          "node": 274,
+          "func_hex": "8888",
+          "support_leaf_ids": [
+            252
+          ],
+          "support_pin_idx": [
+            0
+          ],
+          "support_nets": [
+            "LUT_313"
+          ],
+          "support_size": 1
+        },
+        {
+          "node": 275,
+          "func_hex": "1111",
+          "support_leaf_ids": [
+            252,
+            273
+          ],
+          "support_pin_idx": [
+            0,
+            1
+          ],
+          "support_nets": [
+            "LUT_313",
+            "LUT_273"
+          ],
+          "support_size": 2
+        },
+        {
+          "node": 276,
+          "func_hex": "6666",
+          "support_leaf_ids": [
+            252,
+            273
+          ],
+          "support_pin_idx": [
+            0,
+            1
+          ],
+          "support_nets": [
+            "LUT_313",
+            "LUT_273"
+          ],
+          "support_size": 2
+        },
+        {
+          "node": 314,
+          "func_hex": "f000",
+          "support_leaf_ids": [],
+          "support_pin_idx": [],
+          "support_nets": [],
+          "support_size": 0
+        },
+        {
+          "node": 315,
+          "func_hex": "000f",
+          "support_leaf_ids": [
+            313
+          ],
+          "support_pin_idx": [
+            3
+          ],
+          "support_nets": [
+            "LUT_297"
+          ],
+          "support_size": 1
+        },
+        {
+          "node": 316,
+          "func_hex": "0ff0",
+          "support_leaf_ids": [
+            313
+          ],
+          "support_pin_idx": [
+            3
+          ],
+          "support_nets": [
+            "LUT_297"
+          ],
+          "support_size": 1
+        },
+        {
+          "node": 317,
+          "func_hex": "9009",
+          "support_leaf_ids": [
+            252,
+            313
+          ],
+          "support_pin_idx": [
+            0,
+            3
+          ],
+          "support_nets": [
+            "LUT_313",
+            "LUT_297"
+          ],
+          "support_size": 2
+        }
+      ],
+      "notes": []
+    },
+    {
+      "dst": "LUT_326",
+      "lut_root": 326,
+      "leaves": [
+        6,
+        84,
+        103,
+        286
+      ],
+      "pins": [
+        "LUT_286",
+        "LUT_84",
+        "pi7",
+        "LUT_103"
+      ],
+      "subexprs": [
+        {
+          "node": 322,
+          "func_hex": "3300",
+          "support_leaf_ids": [
+            6,
+            84,
+            103
+          ],
+          "support_pin_idx": [
+            0,
+            1,
+            2
+          ],
+          "support_nets": [
+            "LUT_286",
+            "LUT_84",
+            "pi7"
+          ],
+          "support_size": 3
+        },
+        {
+          "node": 323,
+          "func_hex": "5050",
+          "support_leaf_ids": [
+            6,
+            84,
+            103
+          ],
+          "support_pin_idx": [
+            0,
+            1,
+            2
+          ],
+          "support_nets": [
+            "LUT_286",
+            "LUT_84",
+            "pi7"
+          ],
+          "support_size": 3
+        },
+        {
+          "node": 324,
+          "func_hex": "0a0a",
+          "support_leaf_ids": [
+            6,
+            84,
+            103
+          ],
+          "support_pin_idx": [
+            0,
+            1,
+            2
+          ],
+          "support_nets": [
+            "LUT_286",
+            "LUT_84",
+            "pi7"
+          ],
+          "support_size": 3
+        },
+        {
+          "node": 325,
+          "func_hex": "a5a5",
+          "support_leaf_ids": [
+            6,
+            84,
+            103
+          ],
+          "support_pin_idx": [
+            0,
+            1,
+            2
+          ],
+          "support_nets": [
+            "LUT_286",
+            "LUT_84",
+            "pi7"
+          ],
+          "support_size": 3
+        },
+        {
+          "node": 326,
+          "func_hex": "84a5",
+          "support_leaf_ids": [
+            6,
+            84,
+            103
+          ],
+          "support_pin_idx": [
+            0,
+            1,
+            2
+          ],
+          "support_nets": [
+            "LUT_286",
+            "LUT_84",
+            "pi7"
+          ],
+          "support_size": 3
+        }
+      ],
+      "notes": []
+    },
+    {
+      "dst": "LUT_328",
+      "lut_root": 328,
+      "leaves": [
+        2,
+        290,
+        304,
+        326
+      ],
+      "pins": [
+        "LUT_326",
+        "LUT_290",
+        "pi3",
+        "LUT_304"
+      ],
+      "subexprs": [
+        {
+          "node": 319,
+          "func_hex": "3030",
+          "support_leaf_ids": [
+            2,
+            290
+          ],
+          "support_pin_idx": [
+            0,
+            1
+          ],
+          "support_nets": [
+            "LUT_326",
+            "LUT_290"
+          ],
+          "support_size": 2
+        },
+        {
+          "node": 320,
+          "func_hex": "0c0c",
+          "support_leaf_ids": [
+            2
+          ],
+          "support_pin_idx": [
+            0
+          ],
+          "support_nets": [
+            "LUT_326"
+          ],
+          "support_size": 1
+        },
+        {
+          "node": 321,
+          "func_hex": "c3c3",
+          "support_leaf_ids": [
+            2
+          ],
+          "support_pin_idx": [
+            0
+          ],
+          "support_nets": [
+            "LUT_326"
+          ],
+          "support_size": 1
+        },
+        {
+          "node": 327,
+          "func_hex": "5500",
+          "support_leaf_ids": [
+            2,
+            326
+          ],
+          "support_pin_idx": [
+            0,
+            3
+          ],
+          "support_nets": [
+            "LUT_326",
+            "LUT_304"
+          ],
+          "support_size": 2
+        },
+        {
+          "node": 328,
+          "func_hex": "283c",
+          "support_leaf_ids": [
+            2,
+            326
+          ],
+          "support_pin_idx": [
+            0,
+            3
+          ],
+          "support_nets": [
+            "LUT_326",
+            "LUT_304"
+          ],
+          "support_size": 2
+        }
+      ],
+      "notes": []
+    },
+    {
+      "dst": "LUT_332",
+      "lut_root": 332,
+      "leaves": [
+        4,
+        292,
+        308,
+        328
+      ],
+      "pins": [
+        "LUT_328",
+        "LUT_292",
+        "pi5",
+        "LUT_308"
+      ],
+      "subexprs": [
+        {
+          "node": 318,
+          "func_hex": "0c0c",
+          "support_leaf_ids": [
+            4,
+            292,
+            308
+          ],
+          "support_pin_idx": [
+            0,
+            1,
+            2
+          ],
+          "support_nets": [
+            "LUT_328",
+            "LUT_292",
+            "pi5"
+          ],
+          "support_size": 3
+        },
+        {
+          "node": 329,
+          "func_hex": "5500",
+          "support_leaf_ids": [
+            4,
+            308,
+            328
+          ],
+          "support_pin_idx": [
+            0,
+            2,
+            3
+          ],
+          "support_nets": [
+            "LUT_328",
+            "pi5",
+            "LUT_308"
+          ],
+          "support_size": 3
+        },
+        {
+          "node": 330,
+          "func_hex": "00aa",
+          "support_leaf_ids": [
+            4,
+            308,
+            328
+          ],
+          "support_pin_idx": [
+            0,
+            2,
+            3
+          ],
+          "support_nets": [
+            "LUT_328",
+            "pi5",
+            "LUT_308"
+          ],
+          "support_size": 3
+        },
+        {
+          "node": 331,
+          "func_hex": "aa55",
+          "support_leaf_ids": [
+            4,
+            292,
+            308,
+            328
+          ],
+          "support_pin_idx": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "support_nets": [
+            "LUT_328",
+            "LUT_292",
+            "pi5",
+            "LUT_308"
+          ],
+          "support_size": 4
+        },
+        {
+          "node": 332,
+          "func_hex": "a251",
+          "support_leaf_ids": [
+            4,
+            292,
+            308,
+            328
+          ],
+          "support_pin_idx": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "support_nets": [
+            "LUT_328",
+            "LUT_292",
+            "pi5",
+            "LUT_308"
+          ],
+          "support_size": 4
+        }
+      ],
+      "notes": []
+    },
+    {
+      "dst": "LUT_333",
+      "lut_root": 333,
+      "leaves": [
+        312,
+        332
+      ],
+      "pins": [],
+      "subexprs": [
+        {
+          "node": 333,
+          "func_hex": "1",
+          "support_leaf_ids": [
+            312,
+            332
+          ],
+          "support_pin_idx": [
+            0,
+            1
+          ],
+          "support_nets": [],
+          "support_size": 2
+        }
+      ],
+      "notes": []
+    },
+    {
+      "dst": "LUT_339",
+      "lut_root": 339,
+      "leaves": [
+        3,
+        128,
+        304,
+        326
+      ],
+      "pins": [
+        "LUT_326",
+        "LUT_128",
+        "pi4",
+        "LUT_304"
+      ],
+      "subexprs": [
+        {
+          "node": 335,
+          "func_hex": "000f",
+          "support_leaf_ids": [
+            3,
+            304,
+            326
+          ],
+          "support_pin_idx": [
+            0,
+            2,
+            3
+          ],
+          "support_nets": [
+            "LUT_326",
+            "pi4",
+            "LUT_304"
+          ],
+          "support_size": 3
+        },
+        {
+          "node": 336,
+          "func_hex": "4444",
+          "support_leaf_ids": [
+            3,
+            326
+          ],
+          "support_pin_idx": [
+            0,
+            3
+          ],
+          "support_nets": [
+            "LUT_326",
+            "LUT_304"
+          ],
+          "support_size": 2
+        },
+        {
+          "node": 337,
+          "func_hex": "0004",
+          "support_leaf_ids": [
+            3
+          ],
+          "support_pin_idx": [
+            0
+          ],
+          "support_nets": [
+            "LUT_326"
+          ],
+          "support_size": 1
+        },
+        {
+          "node": 338,
+          "func_hex": "bbb0",
+          "support_leaf_ids": [
+            3
+          ],
+          "support_pin_idx": [
+            0
+          ],
+          "support_nets": [
+            "LUT_326"
+          ],
+          "support_size": 1
+        },
+        {
+          "node": 339,
+          "func_hex": "444b",
+          "support_leaf_ids": [
+            3
+          ],
+          "support_pin_idx": [
+            0
+          ],
+          "support_nets": [
+            "LUT_326"
+          ],
+          "support_size": 1
+        }
+      ],
+      "notes": []
+    },
+    {
+      "dst": "LUT_34",
+      "lut_root": 34,
+      "leaves": [
+        2,
+        3,
+        4,
+        6
+      ],
+      "pins": [
+        "pi7",
+        "pi4",
+        "pi3",
+        "pi5"
+      ],
+      "subexprs": [
+        {
+          "node": 30,
+          "func_hex": "a0a0",
+          "support_leaf_ids": [
+            2,
+            3,
+            4
+          ],
+          "support_pin_idx": [
+            0,
+            1,
+            2
+          ],
+          "support_nets": [
+            "pi7",
+            "pi4",
+            "pi3"
+          ],
+          "support_size": 3
+        },
+        {
+          "node": 31,
+          "func_hex": "0033",
+          "support_leaf_ids": [
+            3,
+            6
+          ],
+          "support_pin_idx": [
+            1,
+            3
+          ],
+          "support_nets": [
+            "pi4",
+            "pi5"
+          ],
+          "support_size": 2
+        },
+        {
+          "node": 32,
+          "func_hex": "0020",
+          "support_leaf_ids": [
+            3,
+            6
+          ],
+          "support_pin_idx": [
+            1,
+            3
+          ],
+          "support_nets": [
+            "pi4",
+            "pi5"
+          ],
+          "support_size": 2
+        },
+        {
+          "node": 33,
+          "func_hex": "5f4c",
+          "support_leaf_ids": [
+            2
+          ],
+          "support_pin_idx": [
+            0
+          ],
+          "support_nets": [
+            "pi7"
+          ],
+          "support_size": 1
+        },
+        {
+          "node": 34,
+          "func_hex": "a093",
+          "support_leaf_ids": [
+            2,
+            3,
+            6
+          ],
+          "support_pin_idx": [
+            0,
+            1,
+            3
+          ],
+          "support_nets": [
+            "pi7",
+            "pi4",
+            "pi5"
+          ],
+          "support_size": 3
+        }
+      ],
+      "notes": []
+    },
+    {
+      "dst": "LUT_343",
+      "lut_root": 343,
+      "leaves": [
+        5,
+        308,
+        328,
+        339
+      ],
+      "pins": [
+        "LUT_339",
+        "LUT_308",
+        "pi6",
+        "LUT_328"
+      ],
+      "subexprs": [
+        {
+          "node": 334,
+          "func_hex": "0c0c",
+          "support_leaf_ids": [
+            5,
+            308,
+            328
+          ],
+          "support_pin_idx": [
+            0,
+            1,
+            2
+          ],
+          "support_nets": [
+            "LUT_339",
+            "LUT_308",
+            "pi6"
+          ],
+          "support_size": 3
+        },
+        {
+          "node": 340,
+          "func_hex": "00aa",
+          "support_leaf_ids": [
+            5,
+            308
+          ],
+          "support_pin_idx": [
+            0,
+            1
+          ],
+          "support_nets": [
+            "LUT_339",
+            "LUT_308"
+          ],
+          "support_size": 2
+        },
+        {
+          "node": 341,
+          "func_hex": "f351",
+          "support_leaf_ids": [
+            5
+          ],
+          "support_pin_idx": [
+            0
+          ],
+          "support_nets": [
+            "LUT_339"
+          ],
+          "support_size": 1
+        },
+        {
+          "node": 342,
+          "func_hex": "0008",
+          "support_leaf_ids": [
+            5
+          ],
+          "support_pin_idx": [
+            0
+          ],
+          "support_nets": [
+            "LUT_339"
+          ],
+          "support_size": 1
+        },
+        {
+          "node": 343,
+          "func_hex": "0ca6",
+          "support_leaf_ids": [
+            5
+          ],
+          "support_pin_idx": [
+            0
+          ],
+          "support_nets": [
+            "LUT_339"
+          ],
+          "support_size": 1
+        }
+      ],
+      "notes": []
+    },
+    {
+      "dst": "LUT_352",
+      "lut_root": 352,
+      "leaves": [
+        4,
+        128,
+        151,
+        326
+      ],
+      "pins": [
+        "LUT_326",
+        "LUT_128",
+        "pi5",
+        "LUT_151"
+      ],
+      "subexprs": [
+        {
+          "node": 348,
+          "func_hex": "00cc",
+          "support_leaf_ids": [
+            4
+          ],
+          "support_pin_idx": [
+            0
+          ],
+          "support_nets": [
+            "LUT_326"
+          ],
+          "support_size": 1
+        },
+        {
+          "node": 349,
+          "func_hex": "3300",
+          "support_leaf_ids": [
+            4,
+            151
+          ],
+          "support_pin_idx": [
+            0,
+            2
+          ],
+          "support_nets": [
+            "LUT_326",
+            "pi5"
+          ],
+          "support_size": 2
+        },
+        {
+          "node": 350,
+          "func_hex": "cc33",
+          "support_leaf_ids": [
+            4,
+            151
+          ],
+          "support_pin_idx": [
+            0,
+            2
+          ],
+          "support_nets": [
+            "LUT_326",
+            "pi5"
+          ],
+          "support_size": 2
+        },
+        {
+          "node": 351,
+          "func_hex": "5050",
+          "support_leaf_ids": [
+            4,
+            151
+          ],
+          "support_pin_idx": [
+            0,
+            2
+          ],
+          "support_nets": [
+            "LUT_326",
+            "pi5"
+          ],
+          "support_size": 2
+        },
+        {
+          "node": 352,
+          "func_hex": "238c",
+          "support_leaf_ids": [
+            4,
+            151
+          ],
+          "support_pin_idx": [
+            0,
+            2
+          ],
+          "support_nets": [
+            "LUT_326",
+            "pi5"
+          ],
+          "support_size": 2
+        }
+      ],
+      "notes": []
+    },
+    {
+      "dst": "LUT_356",
+      "lut_root": 356,
+      "leaves": [
+        6,
+        328,
+        339,
+        352
+      ],
+      "pins": [
+        "LUT_352",
+        "LUT_328",
+        "pi7",
+        "LUT_339"
+      ],
+      "subexprs": [
+        {
+          "node": 347,
+          "func_hex": "0c0c",
+          "support_leaf_ids": [
+            6,
+            328
+          ],
+          "support_pin_idx": [
+            0,
+            1
+          ],
+          "support_nets": [
+            "LUT_352",
+            "LUT_328"
+          ],
+          "support_size": 2
+        },
+        {
+          "node": 353,
+          "func_hex": "5500",
+          "support_leaf_ids": [
+            6,
+            352
+          ],
+          "support_pin_idx": [
+            0,
+            3
+          ],
+          "support_nets": [
+            "LUT_352",
+            "LUT_339"
+          ],
+          "support_size": 2
+        },
+        {
+          "node": 354,
+          "func_hex": "00aa",
+          "support_leaf_ids": [
+            6,
+            328,
+            352
+          ],
+          "support_pin_idx": [
+            0,
+            1,
+            3
+          ],
+          "support_nets": [
+            "LUT_352",
+            "LUT_328",
+            "LUT_339"
+          ],
+          "support_size": 3
+        },
+        {
+          "node": 355,
+          "func_hex": "aa55",
+          "support_leaf_ids": [
+            6,
+            328,
+            352
+          ],
+          "support_pin_idx": [
+            0,
+            1,
+            3
+          ],
+          "support_nets": [
+            "LUT_352",
+            "LUT_328",
+            "LUT_339"
+          ],
+          "support_size": 3
+        },
+        {
+          "node": 356,
+          "func_hex": "a251",
+          "support_leaf_ids": [
+            6,
+            328,
+            352
+          ],
+          "support_pin_idx": [
+            0,
+            1,
+            3
+          ],
+          "support_nets": [
+            "LUT_352",
+            "LUT_328",
+            "LUT_339"
+          ],
+          "support_size": 3
+        }
+      ],
+      "notes": []
+    },
+    {
+      "dst": "LUT_36",
+      "lut_root": 36,
+      "leaves": [
+        2,
+        16,
+        22,
+        34
+      ],
+      "pins": [
+        "LUT_34",
+        "LUT_16",
+        "pi3",
+        "LUT_22"
+      ],
+      "subexprs": [
+        {
+          "node": 27,
+          "func_hex": "c0c0",
+          "support_leaf_ids": [
+            2,
+            16,
+            22
+          ],
+          "support_pin_idx": [
+            0,
+            1,
+            2
+          ],
+          "support_nets": [
+            "LUT_34",
+            "LUT_16",
+            "pi3"
+          ],
+          "support_size": 3
+        },
+        {
+          "node": 28,
+          "func_hex": "0303",
+          "support_leaf_ids": [
+            2,
+            16,
+            22
+          ],
+          "support_pin_idx": [
+            0,
+            1,
+            2
+          ],
+          "support_nets": [
+            "LUT_34",
+            "LUT_16",
+            "pi3"
+          ],
+          "support_size": 3
+        },
+        {
+          "node": 29,
+          "func_hex": "3c3c",
+          "support_leaf_ids": [
+            2,
+            16,
+            22
+          ],
+          "support_pin_idx": [
+            0,
+            1,
+            2
+          ],
+          "support_nets": [
+            "LUT_34",
+            "LUT_16",
+            "pi3"
+          ],
+          "support_size": 3
+        },
+        {
+          "node": 35,
+          "func_hex": "5500",
+          "support_leaf_ids": [],
+          "support_pin_idx": [],
+          "support_nets": [],
+          "support_size": 0
+        },
+        {
+          "node": 36,
+          "func_hex": "82c3",
+          "support_leaf_ids": [
+            2
+          ],
+          "support_pin_idx": [
+            0
+          ],
+          "support_nets": [
+            "LUT_34"
+          ],
+          "support_size": 1
+        }
+      ],
+      "notes": []
+    },
+    {
+      "dst": "LUT_362",
+      "lut_root": 362,
+      "leaves": [
+        1,
+        176,
+        339,
+        352
+      ],
+      "pins": [
+        "LUT_352",
+        "LUT_176",
+        "pi2",
+        "LUT_339"
+      ],
+      "subexprs": [
+        {
+          "node": 358,
+          "func_hex": "00f0",
+          "support_leaf_ids": [
+            1,
+            339,
+            352
+          ],
+          "support_pin_idx": [
+            0,
+            2,
+            3
+          ],
+          "support_nets": [
+            "LUT_352",
+            "pi2",
+            "LUT_339"
+          ],
+          "support_size": 3
+        },
+        {
+          "node": 359,
+          "func_hex": "2222",
+          "support_leaf_ids": [
+            1,
+            339,
+            352
+          ],
+          "support_pin_idx": [
+            0,
+            2,
+            3
+          ],
+          "support_nets": [
+            "LUT_352",
+            "pi2",
+            "LUT_339"
+          ],
+          "support_size": 3
+        },
+        {
+          "node": 360,
+          "func_hex": "dd0d",
+          "support_leaf_ids": [
+            1,
+            339,
+            352
+          ],
+          "support_pin_idx": [
+            0,
+            2,
+            3
+          ],
+          "support_nets": [
+            "LUT_352",
+            "pi2",
+            "LUT_339"
+          ],
+          "support_size": 3
+        },
+        {
+          "node": 361,
+          "func_hex": "0020",
+          "support_leaf_ids": [
+            1,
+            339,
+            352
+          ],
+          "support_pin_idx": [
+            0,
+            2,
+            3
+          ],
+          "support_nets": [
+            "LUT_352",
+            "pi2",
+            "LUT_339"
+          ],
+          "support_size": 3
+        },
+        {
+          "node": 362,
+          "func_hex": "22d2",
+          "support_leaf_ids": [
+            1,
+            352
+          ],
+          "support_pin_idx": [
+            0,
+            3
+          ],
+          "support_nets": [
+            "LUT_352",
+            "LUT_339"
+          ],
+          "support_size": 2
+        }
+      ],
+      "notes": []
+    },
+    {
+      "dst": "LUT_364",
+      "lut_root": 364,
+      "leaves": [
+        3,
+        343,
+        356,
+        362
+      ],
+      "pins": [
+        "LUT_362",
+        "LUT_343",
+        "pi4",
+        "LUT_356"
+      ],
+      "subexprs": [
+        {
+          "node": 357,
+          "func_hex": "0303",
+          "support_leaf_ids": [
+            3,
+            343,
+            356
+          ],
+          "support_pin_idx": [
+            0,
+            1,
+            2
+          ],
+          "support_nets": [
+            "LUT_362",
+            "LUT_343",
+            "pi4"
+          ],
+          "support_size": 3
+        },
+        {
+          "node": 363,
+          "func_hex": "5500",
+          "support_leaf_ids": [
+            3,
+            343
+          ],
+          "support_pin_idx": [
+            0,
+            1
+          ],
+          "support_nets": [
+            "LUT_362",
+            "LUT_343"
+          ],
+          "support_size": 2
+        },
+        {
+          "node": 364,
+          "func_hex": "a8fc",
+          "support_leaf_ids": [
+            3,
+            343
+          ],
+          "support_pin_idx": [
+            0,
+            1
+          ],
+          "support_nets": [
+            "LUT_362",
+            "LUT_343"
+          ],
+          "support_size": 2
+        }
+      ],
+      "notes": []
+    },
+    {
+      "dst": "LUT_366",
+      "lut_root": 366,
+      "leaves": [
+        1,
+        333,
+        343,
+        364
+      ],
+      "pins": [
+        "LUT_364",
+        "LUT_333",
+        "pi2",
+        "LUT_343"
+      ],
+      "subexprs": [
+        {
+          "node": 344,
+          "func_hex": "5050",
+          "support_leaf_ids": [
+            1,
+            343
+          ],
+          "support_pin_idx": [
+            0,
+            2
+          ],
+          "support_nets": [
+            "LUT_364",
+            "pi2"
+          ],
+          "support_size": 2
+        },
+        {
+          "node": 345,
+          "func_hex": "4040",
+          "support_leaf_ids": [
+            1,
+            343
+          ],
+          "support_pin_idx": [
+            0,
+            2
+          ],
+          "support_nets": [
+            "LUT_364",
+            "pi2"
+          ],
+          "support_size": 2
+        },
+        {
+          "node": 346,
+          "func_hex": "2323",
+          "support_leaf_ids": [
+            1,
+            343
+          ],
+          "support_pin_idx": [
+            0,
+            2
+          ],
+          "support_nets": [
+            "LUT_364",
+            "pi2"
+          ],
+          "support_size": 2
+        },
+        {
+          "node": 365,
+          "func_hex": "00dc",
+          "support_leaf_ids": [
+            1,
+            343,
+            364
+          ],
+          "support_pin_idx": [
+            0,
+            2,
+            3
+          ],
+          "support_nets": [
+            "LUT_364",
+            "pi2",
+            "LUT_343"
+          ],
+          "support_size": 3
+        },
+        {
+          "node": 366,
+          "func_hex": "009c",
+          "support_leaf_ids": [
+            1
+          ],
+          "support_pin_idx": [
+            0
+          ],
+          "support_nets": [
+            "LUT_364"
+          ],
+          "support_size": 1
+        }
+      ],
+      "notes": []
+    },
+    {
+      "dst": "LUT_369",
+      "lut_root": 369,
+      "leaves": [
+        317,
+        366
+      ],
+      "pins": [],
+      "subexprs": [
+        {
+          "node": 367,
+          "func_hex": "8",
+          "support_leaf_ids": [
+            366
+          ],
+          "support_pin_idx": [
+            1
+          ],
+          "support_nets": [],
+          "support_size": 1
+        },
+        {
+          "node": 368,
+          "func_hex": "1",
+          "support_leaf_ids": [],
+          "support_pin_idx": [],
+          "support_nets": [],
+          "support_size": 0
+        },
+        {
+          "node": 369,
+          "func_hex": "6",
+          "support_leaf_ids": [],
+          "support_pin_idx": [],
+          "support_nets": [],
+          "support_size": 0
+        }
+      ],
+      "notes": []
+    },
+    {
+      "dst": "LUT_374",
+      "lut_root": 374,
+      "leaves": [
+        2,
+        176,
+        201,
+        352
+      ],
+      "pins": [
+        "LUT_352",
+        "LUT_176",
+        "pi3",
+        "LUT_201"
+      ],
+      "subexprs": [
+        {
+          "node": 370,
+          "func_hex": "3300",
+          "support_leaf_ids": [
+            2,
+            176,
+            201,
+            352
+          ],
+          "support_pin_idx": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "support_nets": [
+            "LUT_352",
+            "LUT_176",
+            "pi3",
+            "LUT_201"
+          ],
+          "support_size": 4
+        },
+        {
+          "node": 371,
+          "func_hex": "5050",
+          "support_leaf_ids": [
+            2,
+            176,
+            201,
+            352
+          ],
+          "support_pin_idx": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "support_nets": [
+            "LUT_352",
+            "LUT_176",
+            "pi3",
+            "LUT_201"
+          ],
+          "support_size": 4
+        },
+        {
+          "node": 372,
+          "func_hex": "0a0a",
+          "support_leaf_ids": [
+            2,
+            176,
+            201,
+            352
+          ],
+          "support_pin_idx": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "support_nets": [
+            "LUT_352",
+            "LUT_176",
+            "pi3",
+            "LUT_201"
+          ],
+          "support_size": 4
+        },
+        {
+          "node": 373,
+          "func_hex": "a5a5",
+          "support_leaf_ids": [
+            2,
+            176,
+            201,
+            352
+          ],
+          "support_pin_idx": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "support_nets": [
+            "LUT_352",
+            "LUT_176",
+            "pi3",
+            "LUT_201"
+          ],
+          "support_size": 4
+        },
+        {
+          "node": 374,
+          "func_hex": "84a5",
+          "support_leaf_ids": [
+            2,
+            176,
+            201,
+            352
+          ],
+          "support_pin_idx": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "support_nets": [
+            "LUT_352",
+            "LUT_176",
+            "pi3",
+            "LUT_201"
+          ],
+          "support_size": 4
+        }
+      ],
+      "notes": []
+    },
+    {
+      "dst": "LUT_375",
+      "lut_root": 375,
+      "leaves": [
+        362,
+        374
+      ],
+      "pins": [],
+      "subexprs": [
+        {
+          "node": 375,
+          "func_hex": "1",
+          "support_leaf_ids": [
+            362
+          ],
+          "support_pin_idx": [
+            0
+          ],
+          "support_nets": [],
+          "support_size": 1
+        }
+      ],
+      "notes": []
+    },
+    {
+      "dst": "LUT_384",
+      "lut_root": 384,
+      "leaves": [
+        6,
+        226,
+        251,
+        374
+      ],
+      "pins": [
+        "LUT_374",
+        "LUT_226",
+        "pi7",
+        "LUT_251"
+      ],
+      "subexprs": [
+        {
+          "node": 380,
+          "func_hex": "00cc",
+          "support_leaf_ids": [
+            6,
+            226
+          ],
+          "support_pin_idx": [
+            0,
+            1
+          ],
+          "support_nets": [
+            "LUT_374",
+            "LUT_226"
+          ],
+          "support_size": 2
+        },
+        {
+          "node": 381,
+          "func_hex": "3300",
+          "support_leaf_ids": [
+            6,
+            226
+          ],
+          "support_pin_idx": [
+            0,
+            1
+          ],
+          "support_nets": [
+            "LUT_374",
+            "LUT_226"
+          ],
+          "support_size": 2
+        },
+        {
+          "node": 382,
+          "func_hex": "cc33",
+          "support_leaf_ids": [
+            6,
+            226,
+            374
+          ],
+          "support_pin_idx": [
+            0,
+            1,
+            3
+          ],
+          "support_nets": [
+            "LUT_374",
+            "LUT_226",
+            "LUT_251"
+          ],
+          "support_size": 3
+        },
+        {
+          "node": 383,
+          "func_hex": "5050",
+          "support_leaf_ids": [
+            6,
+            226,
+            251,
+            374
+          ],
+          "support_pin_idx": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "support_nets": [
+            "LUT_374",
+            "LUT_226",
+            "pi7",
+            "LUT_251"
+          ],
+          "support_size": 4
+        },
+        {
+          "node": 384,
+          "func_hex": "238c",
+          "support_leaf_ids": [
+            6,
+            226,
+            251,
+            374
+          ],
+          "support_pin_idx": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "support_nets": [
+            "LUT_374",
+            "LUT_226",
+            "pi7",
+            "LUT_251"
+          ],
+          "support_size": 4
+        }
+      ],
+      "notes": []
+    },
+    {
+      "dst": "LUT_385",
+      "lut_root": 385,
+      "leaves": [
+        5,
+        226,
+        375,
+        384
+      ],
+      "pins": [
+        "LUT_384",
+        "LUT_226",
+        "pi6",
+        "LUT_375"
+      ],
+      "subexprs": [
+        {
+          "node": 376,
+          "func_hex": "4444",
+          "support_leaf_ids": [
+            5,
+            375
+          ],
+          "support_pin_idx": [
+            0,
+            2
+          ],
+          "support_nets": [
+            "LUT_384",
+            "pi6"
+          ],
+          "support_size": 2
+        },
+        {
+          "node": 377,
+          "func_hex": "4040",
+          "support_leaf_ids": [
+            5
+          ],
+          "support_pin_idx": [
+            0
+          ],
+          "support_nets": [
+            "LUT_384"
+          ],
+          "support_size": 1
+        },
+        {
+          "node": 378,
+          "func_hex": "0b0b",
+          "support_leaf_ids": [
+            5,
+            226
+          ],
+          "support_pin_idx": [
+            0,
+            1
+          ],
+          "support_nets": [
+            "LUT_384",
+            "LUT_226"
+          ],
+          "support_size": 2
+        },
+        {
+          "node": 379,
+          "func_hex": "b4b4",
+          "support_leaf_ids": [
+            5,
+            226
+          ],
+          "support_pin_idx": [
+            0,
+            1
+          ],
+          "support_nets": [
+            "LUT_384",
+            "LUT_226"
+          ],
+          "support_size": 2
+        },
+        {
+          "node": 385,
+          "func_hex": "4b00",
+          "support_leaf_ids": [
+            5,
+            226,
+            375,
+            384
+          ],
+          "support_pin_idx": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "support_nets": [
+            "LUT_384",
+            "LUT_226",
+            "pi6",
+            "LUT_375"
+          ],
+          "support_size": 4
+        }
+      ],
+      "notes": []
+    },
+    {
+      "dst": "LUT_386",
+      "lut_root": 386,
+      "leaves": [
+        369,
+        385
+      ],
+      "pins": [],
+      "subexprs": [
+        {
+          "node": 386,
+          "func_hex": "1",
+          "support_leaf_ids": [
+            385
+          ],
+          "support_pin_idx": [
+            1
+          ],
+          "support_nets": [],
+          "support_size": 1
+        }
+      ],
+      "notes": []
+    },
+    {
+      "dst": "LUT_387",
+      "lut_root": 387,
+      "leaves": [
+        369,
+        385
+      ],
+      "pins": [],
+      "subexprs": [
+        {
+          "node": 387,
+          "func_hex": "8",
+          "support_leaf_ids": [
+            385
+          ],
+          "support_pin_idx": [
+            1
+          ],
+          "support_nets": [],
+          "support_size": 1
+        }
+      ],
+      "notes": []
+    },
+    {
+      "dst": "LUT_388",
+      "lut_root": 388,
+      "leaves": [
+        386,
+        387
+      ],
+      "pins": [],
+      "subexprs": [
+        {
+          "node": 388,
+          "func_hex": "1",
+          "support_leaf_ids": [
+            386,
+            387
+          ],
+          "support_pin_idx": [
+            0,
+            1
+          ],
+          "support_nets": [],
+          "support_size": 2
+        }
+      ],
+      "notes": []
+    },
+    {
+      "dst": "LUT_43",
+      "lut_root": 43,
+      "leaves": [
+        1,
+        2,
+        5,
+        6
+      ],
+      "pins": [
+        "pi7",
+        "pi3",
+        "pi2",
+        "pi6"
+      ],
+      "subexprs": [
+        {
+          "node": 39,
+          "func_hex": "0a0a",
+          "support_leaf_ids": [
+            1,
+            2
+          ],
+          "support_pin_idx": [
+            0,
+            1
+          ],
+          "support_nets": [
+            "pi7",
+            "pi3"
+          ],
+          "support_size": 2
+        },
+        {
+          "node": 40,
+          "func_hex": "0033",
+          "support_leaf_ids": [
+            1,
+            2,
+            6
+          ],
+          "support_pin_idx": [
+            0,
+            1,
+            3
+          ],
+          "support_nets": [
+            "pi7",
+            "pi3",
+            "pi6"
+          ],
+          "support_size": 3
+        },
+        {
+          "node": 41,
+          "func_hex": "cc00",
+          "support_leaf_ids": [
+            1,
+            2,
+            6
+          ],
+          "support_pin_idx": [
+            0,
+            1,
+            3
+          ],
+          "support_nets": [
+            "pi7",
+            "pi3",
+            "pi6"
+          ],
+          "support_size": 3
+        },
+        {
+          "node": 42,
+          "func_hex": "33cc",
+          "support_leaf_ids": [
+            1,
+            2,
+            6
+          ],
+          "support_pin_idx": [
+            0,
+            1,
+            3
+          ],
+          "support_nets": [
+            "pi7",
+            "pi3",
+            "pi6"
+          ],
+          "support_size": 3
+        },
+        {
+          "node": 43,
+          "func_hex": "c431",
+          "support_leaf_ids": [
+            1,
+            2,
+            5,
+            6
+          ],
+          "support_pin_idx": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "support_nets": [
+            "pi7",
+            "pi3",
+            "pi2",
+            "pi6"
+          ],
+          "support_size": 4
+        }
+      ],
+      "notes": []
+    },
+    {
+      "dst": "LUT_47",
+      "lut_root": 47,
+      "leaves": [
+        3,
+        22,
+        34,
+        43
+      ],
+      "pins": [
+        "LUT_43",
+        "LUT_22",
+        "pi4",
+        "LUT_34"
+      ],
+      "subexprs": [
+        {
+          "node": 38,
+          "func_hex": "0303",
+          "support_leaf_ids": [
+            3
+          ],
+          "support_pin_idx": [
+            0
+          ],
+          "support_nets": [
+            "LUT_43"
+          ],
+          "support_size": 1
+        },
+        {
+          "node": 44,
+          "func_hex": "5500",
+          "support_leaf_ids": [],
+          "support_pin_idx": [],
+          "support_nets": [],
+          "support_size": 0
+        },
+        {
+          "node": 45,
+          "func_hex": "0100",
+          "support_leaf_ids": [
+            3,
+            22
+          ],
+          "support_pin_idx": [
+            0,
+            1
+          ],
+          "support_nets": [
+            "LUT_43",
+            "LUT_22"
+          ],
+          "support_size": 2
+        },
+        {
+          "node": 46,
+          "func_hex": "a8fc",
+          "support_leaf_ids": [
+            3,
+            22
+          ],
+          "support_pin_idx": [
+            0,
+            1
+          ],
+          "support_nets": [
+            "LUT_43",
+            "LUT_22"
+          ],
+          "support_size": 2
+        },
+        {
+          "node": 47,
+          "func_hex": "5603",
+          "support_leaf_ids": [
+            3,
+            22
+          ],
+          "support_pin_idx": [
+            0,
+            1
+          ],
+          "support_nets": [
+            "LUT_43",
+            "LUT_22"
+          ],
+          "support_size": 2
+        }
+      ],
+      "notes": []
+    },
+    {
+      "dst": "LUT_51",
+      "lut_root": 51,
+      "leaves": [
+        1,
+        26,
+        36,
+        47
+      ],
+      "pins": [
+        "LUT_47",
+        "LUT_26",
+        "pi2",
+        "LUT_36"
+      ],
+      "subexprs": [
+        {
+          "node": 37,
+          "func_hex": "0c0c",
+          "support_leaf_ids": [
+            36
+          ],
+          "support_pin_idx": [
+            2
+          ],
+          "support_nets": [
+            "pi2"
+          ],
+          "support_size": 1
+        },
+        {
+          "node": 48,
+          "func_hex": "00aa",
+          "support_leaf_ids": [
+            1,
+            36,
+            47
+          ],
+          "support_pin_idx": [
+            0,
+            2,
+            3
+          ],
+          "support_nets": [
+            "LUT_47",
+            "pi2",
+            "LUT_36"
+          ],
+          "support_size": 3
+        },
+        {
+          "node": 49,
+          "func_hex": "f351",
+          "support_leaf_ids": [
+            1,
+            36,
+            47
+          ],
+          "support_pin_idx": [
+            0,
+            2,
+            3
+          ],
+          "support_nets": [
+            "LUT_47",
+            "pi2",
+            "LUT_36"
+          ],
+          "support_size": 3
+        },
+        {
+          "node": 50,
+          "func_hex": "0008",
+          "support_leaf_ids": [
+            1,
+            26,
+            36,
+            47
+          ],
+          "support_pin_idx": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "support_nets": [
+            "LUT_47",
+            "LUT_26",
+            "pi2",
+            "LUT_36"
+          ],
+          "support_size": 4
+        },
+        {
+          "node": 51,
+          "func_hex": "0ca6",
+          "support_leaf_ids": [
+            1,
+            26,
+            36,
+            47
+          ],
+          "support_pin_idx": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "support_nets": [
+            "LUT_47",
+            "LUT_26",
+            "pi2",
+            "LUT_36"
+          ],
+          "support_size": 4
+        }
+      ],
+      "notes": []
+    },
+    {
+      "dst": "LUT_59",
+      "lut_root": 59,
+      "leaves": [
+        1,
+        3,
+        4,
+        5
+      ],
+      "pins": [
+        "pi6",
+        "pi4",
+        "pi2",
+        "pi5"
+      ],
+      "subexprs": [
+        {
+          "node": 8,
+          "func_hex": "c0c0",
+          "support_leaf_ids": [
+            4
+          ],
+          "support_pin_idx": [
+            2
+          ],
+          "support_nets": [
+            "pi2"
+          ],
+          "support_size": 1
+        },
+        {
+          "node": 56,
+          "func_hex": "0055",
+          "support_leaf_ids": [
+            3,
+            4,
+            5
+          ],
+          "support_pin_idx": [
+            1,
+            2,
+            3
+          ],
+          "support_nets": [
+            "pi4",
+            "pi2",
+            "pi5"
+          ],
+          "support_size": 3
+        },
+        {
+          "node": 57,
+          "func_hex": "0303",
+          "support_leaf_ids": [
+            3,
+            4,
+            5
+          ],
+          "support_pin_idx": [
+            1,
+            2,
+            3
+          ],
+          "support_nets": [
+            "pi4",
+            "pi2",
+            "pi5"
+          ],
+          "support_size": 3
+        },
+        {
+          "node": 58,
+          "func_hex": "3c3c",
+          "support_leaf_ids": [
+            3,
+            4,
+            5
+          ],
+          "support_pin_idx": [
+            1,
+            2,
+            3
+          ],
+          "support_nets": [
+            "pi4",
+            "pi2",
+            "pi5"
+          ],
+          "support_size": 3
+        },
+        {
+          "node": 59,
+          "func_hex": "3c28",
+          "support_leaf_ids": [
+            1,
+            3,
+            4,
+            5
+          ],
+          "support_pin_idx": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "support_nets": [
+            "pi6",
+            "pi4",
+            "pi2",
+            "pi5"
+          ],
+          "support_size": 4
+        }
+      ],
+      "notes": []
+    },
+    {
+      "dst": "LUT_61",
+      "lut_root": 61,
+      "leaves": [
+        4,
+        34,
+        43,
+        59
+      ],
+      "pins": [
+        "LUT_59",
+        "LUT_34",
+        "pi5",
+        "LUT_43"
+      ],
+      "subexprs": [
+        {
+          "node": 53,
+          "func_hex": "3030",
+          "support_leaf_ids": [
+            4
+          ],
+          "support_pin_idx": [
+            0
+          ],
+          "support_nets": [
+            "LUT_59"
+          ],
+          "support_size": 1
+        },
+        {
+          "node": 54,
+          "func_hex": "0c0c",
+          "support_leaf_ids": [
+            4
+          ],
+          "support_pin_idx": [
+            0
+          ],
+          "support_nets": [
+            "LUT_59"
+          ],
+          "support_size": 1
+        },
+        {
+          "node": 55,
+          "func_hex": "c3c3",
+          "support_leaf_ids": [],
+          "support_pin_idx": [],
+          "support_nets": [],
+          "support_size": 0
+        },
+        {
+          "node": 60,
+          "func_hex": "0055",
+          "support_leaf_ids": [
+            4,
+            59
+          ],
+          "support_pin_idx": [
+            0,
+            3
+          ],
+          "support_nets": [
+            "LUT_59",
+            "LUT_43"
+          ],
+          "support_size": 2
+        },
+        {
+          "node": 61,
+          "func_hex": "3c28",
+          "support_leaf_ids": [
+            4,
+            59
+          ],
+          "support_pin_idx": [
+            0,
+            3
+          ],
+          "support_nets": [
+            "LUT_59",
+            "LUT_43"
+          ],
+          "support_size": 2
+        }
+      ],
+      "notes": []
+    },
+    {
+      "dst": "LUT_65",
+      "lut_root": 65,
+      "leaves": [
+        2,
+        36,
+        47,
+        61
+      ],
+      "pins": [
+        "LUT_61",
+        "LUT_36",
+        "pi3",
+        "LUT_47"
+      ],
+      "subexprs": [
+        {
+          "node": 52,
+          "func_hex": "0c0c",
+          "support_leaf_ids": [
+            2,
+            36,
+            47
+          ],
+          "support_pin_idx": [
+            0,
+            1,
+            2
+          ],
+          "support_nets": [
+            "LUT_61",
+            "LUT_36",
+            "pi3"
+          ],
+          "support_size": 3
+        },
+        {
+          "node": 62,
+          "func_hex": "5500",
+          "support_leaf_ids": [
+            2,
+            36,
+            61
+          ],
+          "support_pin_idx": [
+            0,
+            1,
+            3
+          ],
+          "support_nets": [
+            "LUT_61",
+            "LUT_36",
+            "LUT_47"
+          ],
+          "support_size": 3
+        },
+        {
+          "node": 63,
+          "func_hex": "00aa",
+          "support_leaf_ids": [
+            2,
+            36,
+            61
+          ],
+          "support_pin_idx": [
+            0,
+            1,
+            3
+          ],
+          "support_nets": [
+            "LUT_61",
+            "LUT_36",
+            "LUT_47"
+          ],
+          "support_size": 3
+        },
+        {
+          "node": 64,
+          "func_hex": "aa55",
+          "support_leaf_ids": [
+            2,
+            36,
+            47,
+            61
+          ],
+          "support_pin_idx": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "support_nets": [
+            "LUT_61",
+            "LUT_36",
+            "pi3",
+            "LUT_47"
+          ],
+          "support_size": 4
+        },
+        {
+          "node": 65,
+          "func_hex": "a251",
+          "support_leaf_ids": [
+            2,
+            36,
+            47,
+            61
+          ],
+          "support_pin_idx": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "support_nets": [
+            "LUT_61",
+            "LUT_36",
+            "pi3",
+            "LUT_47"
+          ],
+          "support_size": 4
+        }
+      ],
+      "notes": []
+    },
+    {
+      "dst": "LUT_72",
+      "lut_root": 72,
+      "leaves": [
+        2,
+        3,
+        5,
+        6
+      ],
+      "pins": [
+        "pi7",
+        "pi4",
+        "pi3",
+        "pi6"
+      ],
+      "subexprs": [
+        {
+          "node": 13,
+          "func_hex": "0505",
+          "support_leaf_ids": [
+            6
+          ],
+          "support_pin_idx": [
+            3
+          ],
+          "support_nets": [
+            "pi6"
+          ],
+          "support_size": 1
+        },
+        {
+          "node": 69,
+          "func_hex": "cc00",
+          "support_leaf_ids": [
+            2,
+            3,
+            5,
+            6
+          ],
+          "support_pin_idx": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "support_nets": [
+            "pi7",
+            "pi4",
+            "pi3",
+            "pi6"
+          ],
+          "support_size": 4
+        },
+        {
+          "node": 70,
+          "func_hex": "32fa",
+          "support_leaf_ids": [
+            2,
+            3,
+            6
+          ],
+          "support_pin_idx": [
+            0,
+            1,
+            3
+          ],
+          "support_nets": [
+            "pi7",
+            "pi4",
+            "pi6"
+          ],
+          "support_size": 3
+        },
+        {
+          "node": 71,
+          "func_hex": "0400",
+          "support_leaf_ids": [],
+          "support_pin_idx": [],
+          "support_nets": [],
+          "support_size": 0
+        },
+        {
+          "node": 72,
+          "func_hex": "c905",
+          "support_leaf_ids": [],
+          "support_pin_idx": [],
+          "support_nets": [],
+          "support_size": 0
+        }
+      ],
+      "notes": []
+    },
+    {
+      "dst": "LUT_76",
+      "lut_root": 76,
+      "leaves": [
+        5,
+        43,
+        59,
+        72
+      ],
+      "pins": [
+        "LUT_72",
+        "LUT_43",
+        "pi6",
+        "LUT_59"
+      ],
+      "subexprs": [
+        {
+          "node": 68,
+          "func_hex": "3030",
+          "support_leaf_ids": [
+            43
+          ],
+          "support_pin_idx": [
+            1
+          ],
+          "support_nets": [
+            "LUT_43"
+          ],
+          "support_size": 1
+        },
+        {
+          "node": 73,
+          "func_hex": "5500",
+          "support_leaf_ids": [
+            72
+          ],
+          "support_pin_idx": [
+            3
+          ],
+          "support_nets": [
+            "LUT_59"
+          ],
+          "support_size": 1
+        },
+        {
+          "node": 74,
+          "func_hex": "1000",
+          "support_leaf_ids": [],
+          "support_pin_idx": [],
+          "support_nets": [],
+          "support_size": 0
+        },
+        {
+          "node": 75,
+          "func_hex": "8acf",
+          "support_leaf_ids": [
+            72
+          ],
+          "support_pin_idx": [
+            3
+          ],
+          "support_nets": [
+            "LUT_59"
+          ],
+          "support_size": 1
+        },
+        {
+          "node": 76,
+          "func_hex": "6530",
+          "support_leaf_ids": [
+            5,
+            72
+          ],
+          "support_pin_idx": [
+            0,
+            3
+          ],
+          "support_nets": [
+            "LUT_72",
+            "LUT_59"
+          ],
+          "support_size": 2
+        }
+      ],
+      "notes": []
+    },
+    {
+      "dst": "LUT_80",
+      "lut_root": 80,
+      "leaves": [
+        3,
+        47,
+        61,
+        76
+      ],
+      "pins": [
+        "LUT_76",
+        "LUT_47",
+        "pi4",
+        "LUT_61"
+      ],
+      "subexprs": [
+        {
+          "node": 67,
+          "func_hex": "0c0c",
+          "support_leaf_ids": [
+            3
+          ],
+          "support_pin_idx": [
+            0
+          ],
+          "support_nets": [
+            "LUT_76"
+          ],
+          "support_size": 1
+        },
+        {
+          "node": 77,
+          "func_hex": "00aa",
+          "support_leaf_ids": [
+            3
+          ],
+          "support_pin_idx": [
+            0
+          ],
+          "support_nets": [
+            "LUT_76"
+          ],
+          "support_size": 1
+        },
+        {
+          "node": 78,
+          "func_hex": "f351",
+          "support_leaf_ids": [
+            3,
+            76
+          ],
+          "support_pin_idx": [
+            0,
+            3
+          ],
+          "support_nets": [
+            "LUT_76",
+            "LUT_61"
+          ],
+          "support_size": 2
+        },
+        {
+          "node": 79,
+          "func_hex": "0008",
+          "support_leaf_ids": [
+            3,
+            76
+          ],
+          "support_pin_idx": [
+            0,
+            3
+          ],
+          "support_nets": [
+            "LUT_76",
+            "LUT_61"
+          ],
+          "support_size": 2
+        },
+        {
+          "node": 80,
+          "func_hex": "0ca6",
+          "support_leaf_ids": [
+            3,
+            61,
+            76
+          ],
+          "support_pin_idx": [
+            0,
+            2,
+            3
+          ],
+          "support_nets": [
+            "LUT_76",
+            "pi4",
+            "LUT_61"
+          ],
+          "support_size": 3
+        }
+      ],
+      "notes": []
+    },
+    {
+      "dst": "LUT_84",
+      "lut_root": 84,
+      "leaves": [
+        5,
+        51,
+        65,
+        80
+      ],
+      "pins": [
+        "LUT_80",
+        "LUT_51",
+        "pi6",
+        "LUT_65"
+      ],
+      "subexprs": [
+        {
+          "node": 66,
+          "func_hex": "0303",
+          "support_leaf_ids": [
+            5,
+            65
+          ],
+          "support_pin_idx": [
+            0,
+            2
+          ],
+          "support_nets": [
+            "LUT_80",
+            "pi6"
+          ],
+          "support_size": 2
+        },
+        {
+          "node": 81,
+          "func_hex": "5500",
+          "support_leaf_ids": [
+            5,
+            80
+          ],
+          "support_pin_idx": [
+            0,
+            3
+          ],
+          "support_nets": [
+            "LUT_80",
+            "LUT_65"
+          ],
+          "support_size": 2
+        },
+        {
+          "node": 82,
+          "func_hex": "0100",
+          "support_leaf_ids": [
+            5,
+            65,
+            80
+          ],
+          "support_pin_idx": [
+            0,
+            2,
+            3
+          ],
+          "support_nets": [
+            "LUT_80",
+            "pi6",
+            "LUT_65"
+          ],
+          "support_size": 3
+        },
+        {
+          "node": 83,
+          "func_hex": "a8fc",
+          "support_leaf_ids": [
+            5,
+            65,
+            80
+          ],
+          "support_pin_idx": [
+            0,
+            2,
+            3
+          ],
+          "support_nets": [
+            "LUT_80",
+            "pi6",
+            "LUT_65"
+          ],
+          "support_size": 3
+        },
+        {
+          "node": 84,
+          "func_hex": "5603",
+          "support_leaf_ids": [
+            5,
+            65,
+            80
+          ],
+          "support_pin_idx": [
+            0,
+            2,
+            3
+          ],
+          "support_nets": [
+            "LUT_80",
+            "pi6",
+            "LUT_65"
+          ],
+          "support_size": 3
+        }
+      ],
+      "notes": []
+    },
+    {
+      "dst": "LUT_95",
+      "lut_root": 95,
+      "leaves": [
+        1,
+        2,
+        4,
+        6
+      ],
+      "pins": [
+        "pi7",
+        "pi3",
+        "pi2",
+        "pi5"
+      ],
+      "subexprs": [
+        {
+          "node": 40,
+          "func_hex": "0033",
+          "support_leaf_ids": [
+            1,
+            2,
+            4,
+            6
+          ],
+          "support_pin_idx": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "support_nets": [
+            "pi7",
+            "pi3",
+            "pi2",
+            "pi5"
+          ],
+          "support_size": 4
+        },
+        {
+          "node": 92,
+          "func_hex": "0a0a",
+          "support_leaf_ids": [
+            2,
+            6
+          ],
+          "support_pin_idx": [
+            1,
+            3
+          ],
+          "support_nets": [
+            "pi3",
+            "pi5"
+          ],
+          "support_size": 2
+        },
+        {
+          "node": 93,
+          "func_hex": "5050",
+          "support_leaf_ids": [
+            2,
+            6
+          ],
+          "support_pin_idx": [
+            1,
+            3
+          ],
+          "support_nets": [
+            "pi3",
+            "pi5"
+          ],
+          "support_size": 2
+        },
+        {
+          "node": 94,
+          "func_hex": "a5a5",
+          "support_leaf_ids": [
+            2,
+            6
+          ],
+          "support_pin_idx": [
+            1,
+            3
+          ],
+          "support_nets": [
+            "pi3",
+            "pi5"
+          ],
+          "support_size": 2
+        },
+        {
+          "node": 95,
+          "func_hex": "5a48",
+          "support_leaf_ids": [
+            1,
+            2,
+            4,
+            6
+          ],
+          "support_pin_idx": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "support_nets": [
+            "pi7",
+            "pi3",
+            "pi2",
+            "pi5"
+          ],
+          "support_size": 4
+        }
+      ],
+      "notes": []
+    },
+    {
+      "dst": "LUT_97",
+      "lut_root": 97,
+      "leaves": [
+        6,
+        59,
+        72,
+        95
+      ],
+      "pins": [
+        "LUT_95",
+        "LUT_59",
+        "pi7",
+        "LUT_72"
+      ],
+      "subexprs": [
+        {
+          "node": 89,
+          "func_hex": "c0c0",
+          "support_leaf_ids": [
+            6,
+            59
+          ],
+          "support_pin_idx": [
+            0,
+            1
+          ],
+          "support_nets": [
+            "LUT_95",
+            "LUT_59"
+          ],
+          "support_size": 2
+        },
+        {
+          "node": 90,
+          "func_hex": "0303",
+          "support_leaf_ids": [
+            59
+          ],
+          "support_pin_idx": [
+            1
+          ],
+          "support_nets": [
+            "LUT_59"
+          ],
+          "support_size": 1
+        },
+        {
+          "node": 91,
+          "func_hex": "3c3c",
+          "support_leaf_ids": [
+            6
+          ],
+          "support_pin_idx": [
+            0
+          ],
+          "support_nets": [
+            "LUT_95"
+          ],
+          "support_size": 1
+        },
+        {
+          "node": 96,
+          "func_hex": "0055",
+          "support_leaf_ids": [
+            6,
+            95
+          ],
+          "support_pin_idx": [
+            0,
+            3
+          ],
+          "support_nets": [
+            "LUT_95",
+            "LUT_72"
+          ],
+          "support_size": 2
+        },
+        {
+          "node": 97,
+          "func_hex": "c382",
+          "support_leaf_ids": [
+            6,
+            95
+          ],
+          "support_pin_idx": [
+            0,
+            3
+          ],
+          "support_nets": [
+            "LUT_95",
+            "LUT_72"
+          ],
+          "support_size": 2
+        }
+      ],
+      "notes": []
+    }
+  ]
+}

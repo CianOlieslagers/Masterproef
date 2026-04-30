@@ -1,0 +1,25 @@
+{
+  "id": "cand_001287",
+  "net": "n11440157_in",
+  "sink_cell": "f[103]_INST_0_i_7",
+  "sink_pin": null,
+  "target_slice": "SLICE_X88Y497",
+  "lut_delay_ps": 120.0,
+  "from": "f[103]_INST_0_i_9",
+  "to": "f[103]_INST_0_i_7",
+  "distance": 13,
+  "coords": {
+    "src": [
+      89,
+      503
+    ],
+    "dest": [
+      88,
+      491
+    ]
+  },
+  "eco_ready": true,
+  "issues": [
+    "missing_sink_pin"
+  ]
+}

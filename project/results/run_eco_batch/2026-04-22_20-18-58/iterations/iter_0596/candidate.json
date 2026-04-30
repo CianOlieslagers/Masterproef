@@ -1,0 +1,25 @@
+{
+  "id": "cand_001730",
+  "net": "f[113]_INST_0_i_3/O",
+  "sink_cell": "f[118]_INST_0_i_5",
+  "sink_pin": null,
+  "target_slice": "SLICE_X30Y429",
+  "lut_delay_ps": 120.0,
+  "from": "f[113]_INST_0_i_3/IBUFCTRL_INST",
+  "to": "f[118]_INST_0_i_5",
+  "distance": 276,
+  "coords": {
+    "src": [
+      1,
+      321
+    ],
+    "dest": [
+      60,
+      538
+    ]
+  },
+  "eco_ready": true,
+  "issues": [
+    "missing_sink_pin"
+  ]
+}

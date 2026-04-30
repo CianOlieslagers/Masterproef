@@ -1,0 +1,99 @@
+run:
+  name: eco_rank1_lutupgrade_rank025
+  output_root: /home/cian/Masterproef/project/results/general_flow_runs/candidate_sweep_2026-04-28_18-47-52_eco_rank1_lutupgrade/runs
+  timestamped_output: true
+  stop_on_phase_fail: true
+  keep_intermediate_files: true
+tools:
+  vivado_bin: vivado
+  rapidwright_jar: /home/cian/Masterproef/rapidwright-2024.1.1-standalone-lin64.jar
+  java_scripts_dir: /home/cian/Masterproef/project/Readwright/scripts
+  vivado_scripts_dir: /home/cian/Masterproef/project/Vivado/scripts
+  vivado_retries: 2
+scripts:
+  phase1_tcl: /home/cian/Masterproef/project/Vivado/scripts/7_Phase_Steps_From_Hell/phase1_extract_lut_edges.tcl
+  phase2_tcl: /home/cian/Masterproef/project/Vivado/scripts/7_Phase_Steps_From_Hell/phase2_extract_window.tcl
+  phase3_tcl: /home/cian/Masterproef/project/Vivado/scripts/7_Phase_Steps_From_Hell/phase3_extract_window_info.tcl
+  phase4_py: /home/cian/Masterproef/project/Vivado/scripts/7_Phase_Steps_From_Hell/phase4_simulate_window.py
+  phase5b2_fast_py: /home/cian/Masterproef/project/Vivado/scripts/7_Phase_Steps_From_Hell/phase5b2_fast_decompose_upgrade_lut2.py
+  phase6a_py: /home/cian/Masterproef/project/Vivado/scripts/7_Phase_Steps_From_Hell/phase6a_prepare_eco_manifest.py
+  phase6b2_rewire_py: /home/cian/Masterproef/project/Vivado/scripts/7_Phase_Steps_From_Hell/phase6b2_generate_rewire_tcl.py
+  phase7_py: /home/cian/Masterproef/project/Vivado/scripts/7_Phase_Steps_From_Hell/phase7_validate_eco.py
+design:
+  part: xcu200-fsgd2104-2-e
+  baseline_dcp: /home/cian/Masterproef/project/results/run_lut_insertion/TestDirectory/baseline_impl/checkpoints/post_route_timingexp.dcp
+  baseline_reports_dir: /home/cian/Masterproef/project/results/run_lut_insertion/TestDirectory/baseline_impl/reports
+phase0:
+  enabled: true
+  require_route_errors_zero: true
+  allowed_drc_warnings:
+  - NSTD-1
+  - UCIO-1
+phase1:
+  enabled: true
+  top_paths: 10
+  nworst: 10
+  candidate_rank: 25
+  require_lut_to_lut: true
+  exclude_lut6_2: true
+  exclude_control_nets: true
+  exclude_clock_nets: true
+  min_interconnect_delay_ps: 1
+phase2:
+  enabled: true
+  max_luts: 5
+  max_boundary_inputs: 12
+  max_boundary_outputs: 2
+  include_source_lut: true
+  include_sink_lut: true
+  include_direct_fanin_luts: true
+  reject_carry: true
+  reject_dsp: true
+  reject_bram: true
+  reject_srl: true
+  reject_lut6_2: true
+  require_acyclic: true
+phase3:
+  enabled: true
+  require_all_inits: true
+  require_all_locations: true
+  require_single_driver: true
+  max_boundary_inputs_for_truth_table: 12
+phase4:
+  enabled: true
+  max_truth_table_inputs: 12
+  init_bit_order: xilinx_i0_lsb
+  require_full_truth_table: true
+phase5:
+  enabled: true
+  mode: root_free_lut_upgrade_fast
+  top_templates_to_check: 100000
+  max_candidates_to_keep: 200
+  stop_on_first_improved: false
+  allow_root_change: true
+  allow_lut_upgrade: true
+  require_truth_table_equivalence: true
+  require_estimated_improvement: true
+phase6:
+  enabled: true
+  run_feasibility_check: true
+  run_lut_upgrade_microtest: false
+  apply_eco: true
+  use_vivado_rewire: true
+  fresh_route_from_unrouted: true
+  route_mode: full
+  reload_check: true
+  allowed_drc_warnings:
+  - NSTD-1
+  - UCIO-1
+phase7:
+  enabled: true
+  run_validation: true
+  compare_wns: true
+  compare_tns: true
+  compare_drc: true
+  compare_route_status: true
+  compare_edge_checks: false
+  require_route_errors_zero: true
+  require_no_new_drc_errors: true
+  require_timing_improvement: false

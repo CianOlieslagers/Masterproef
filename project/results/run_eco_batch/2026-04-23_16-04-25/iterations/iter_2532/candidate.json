@@ -1,0 +1,30 @@
+{
+  "id": "cand_000003",
+  "net": "cOut_OBUF_inst_i_3_n_0",
+  "sink_cell": "cOut_OBUF_inst_i_1",
+  "sink_pin": null,
+  "target_slice": "SLICE_X56Y548",
+  "lut_delay_ps": 120.0,
+  "from": "cOut_OBUF_inst_i_3",
+  "to": "cOut_OBUF_inst_i_1",
+  "distance": 0,
+  "coords": {
+    "src": [
+      56,
+      548
+    ],
+    "dest": [
+      56,
+      548
+    ]
+  },
+  "eco_ready": true,
+  "issues": [
+    "missing_sink_pin"
+  ],
+  "source_cell": "cOut_OBUF_inst_i_3",
+  "source_cell_type": "LUT2",
+  "sink_cell_type": "LUT6",
+  "source_site": "SLICE_X56Y548",
+  "sink_site": "SLICE_X56Y548"
+}

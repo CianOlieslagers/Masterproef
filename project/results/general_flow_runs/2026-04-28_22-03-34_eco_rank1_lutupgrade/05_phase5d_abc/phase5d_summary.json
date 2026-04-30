@@ -1,0 +1,101 @@
+{
+  "phase": "FASE 5D ABC",
+  "phase5d_status": "FAIL",
+  "phase3_json": "/home/cian/Masterproef/project/results/general_flow_runs/2026-04-28_22-03-34_eco_rank1_lutupgrade/03_phase3_window_info/phase3_window_info.json",
+  "truth_table_compact_json": "/home/cian/Masterproef/project/results/general_flow_runs/2026-04-28_22-03-34_eco_rank1_lutupgrade/04_phase4_truth_table/truth_table_compact.json",
+  "boundary_count": 11,
+  "truth_table_length": 2048,
+  "truth_table_ones": 1024,
+  "window_lut_count": 4,
+  "abc_command": "read_pla /home/cian/Masterproef/project/results/general_flow_runs/2026-04-28_22-03-34_eco_rank1_lutupgrade/05_phase5d_abc/abc/window.pla; strash; if -K 6; write_blif /home/cian/Masterproef/project/results/general_flow_runs/2026-04-28_22-03-34_eco_rank1_lutupgrade/05_phase5d_abc/abc/mapped.blif",
+  "abc_log": "/home/cian/Masterproef/project/results/general_flow_runs/2026-04-28_22-03-34_eco_rank1_lutupgrade/05_phase5d_abc/abc/abc.log",
+  "pla_path": "/home/cian/Masterproef/project/results/general_flow_runs/2026-04-28_22-03-34_eco_rank1_lutupgrade/05_phase5d_abc/abc/window.pla",
+  "mapped_blif": "/home/cian/Masterproef/project/results/general_flow_runs/2026-04-28_22-03-34_eco_rank1_lutupgrade/05_phase5d_abc/abc/mapped.blif",
+  "abc_lut_count": 5,
+  "max_node_inputs": 6,
+  "truth_table_equivalence": true,
+  "baseline_score": 60850,
+  "best_score_without_penalties": null,
+  "best_score_with_penalties": null,
+  "estimated_improvement": false,
+  "selected_candidate_json": "/home/cian/Masterproef/project/results/general_flow_runs/2026-04-28_22-03-34_eco_rank1_lutupgrade/05_phase5d_abc/phase5d_selected_candidate.json",
+  "elapsed_seconds": 0.216,
+  "error": "ABC uses 5 LUTs but window has only 4 LUTs",
+  "validation_checks": [
+    {
+      "check": "phase3_status",
+      "status": "PASS",
+      "detail": "PASS"
+    },
+    {
+      "check": "phase4_status",
+      "status": "PASS",
+      "detail": "PASS"
+    },
+    {
+      "check": "single_output",
+      "status": "PASS",
+      "detail": "1"
+    },
+    {
+      "check": "boundary_count_supported",
+      "status": "PASS",
+      "detail": "11"
+    },
+    {
+      "check": "truth_table_length",
+      "status": "PASS",
+      "detail": "2048"
+    },
+    {
+      "check": "window_luts_present",
+      "status": "PASS",
+      "detail": "4"
+    },
+    {
+      "check": "pla_written",
+      "status": "PASS",
+      "detail": "/home/cian/Masterproef/project/results/general_flow_runs/2026-04-28_22-03-34_eco_rank1_lutupgrade/05_phase5d_abc/abc/window.pla; ones=1024"
+    },
+    {
+      "check": "abc_return_code",
+      "status": "PASS",
+      "detail": "0"
+    },
+    {
+      "check": "mapped_blif_exists",
+      "status": "PASS",
+      "detail": "/home/cian/Masterproef/project/results/general_flow_runs/2026-04-28_22-03-34_eco_rank1_lutupgrade/05_phase5d_abc/abc/mapped.blif"
+    },
+    {
+      "check": "blif_inputs",
+      "status": "PASS",
+      "detail": "11"
+    },
+    {
+      "check": "blif_outputs",
+      "status": "PASS",
+      "detail": "1"
+    },
+    {
+      "check": "blif_lut_nodes",
+      "status": "PASS",
+      "detail": "5"
+    },
+    {
+      "check": "all_nodes_lut6_or_less",
+      "status": "PASS",
+      "detail": "max_node_inputs=6"
+    },
+    {
+      "check": "blif_truth_table_equivalence",
+      "status": "PASS",
+      "detail": "rows=2048"
+    },
+    {
+      "check": "physical_assignment",
+      "status": "FAIL",
+      "detail": "ABC uses 5 LUTs but window has only 4 LUTs"
+    }
+  ]
+}

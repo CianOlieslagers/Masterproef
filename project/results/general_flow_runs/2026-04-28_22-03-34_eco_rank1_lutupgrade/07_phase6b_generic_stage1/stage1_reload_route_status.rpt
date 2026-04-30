@@ -1,0 +1,25 @@
+Design Route Status
+                                               :      # nets :
+   ------------------------------------------- : ----------- :
+   # of logical nets.......................... :        1223 :
+       # of nets not needing routing.......... :         641 :
+           # of internally routed nets........ :         641 :
+       # of routable nets..................... :         579 :
+           # of fully routed nets............. :         579 :
+       # of nets with routing errors.......... :           3 :
+           # of nets with some unplaced pins.. :           3 :
+           # of nets with antennas/islands.... :           3 :
+   ------------------------------------------- : ----------- :
+
+
+Nets with Routing Errors:
+  f[100]_INST_0_i_2/O
+    Unplaced Pin: f[108]_INST_0_i_9/I0
+    Antenna Nodes: INT_X53Y514/IMUX_E39
+  f[100]_INST_0_i_3/O
+    Unplaced Pin: f[108]_INST_0_i_9/I1
+    Antenna Nodes: INT_X53Y514/IMUX_E33
+  n11840132_in
+    Unplaced Pin: f[108]_INST_0_i_9/O
+    Antenna Nodes: CLEL_R_X53Y514/CLE_CLE_L_SITE_0_H_O
+

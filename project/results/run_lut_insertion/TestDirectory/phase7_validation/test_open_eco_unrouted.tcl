@@ -1,0 +1,3 @@
+open_checkpoint /home/cian/Masterproef/project/results/run_lut_insertion/TestDirectory/phase6b2_full_eco_patch1/phase6b2_eco_unrouted.dcp
+report_drc -file /home/cian/Masterproef/project/results/run_lut_insertion/TestDirectory/phase7_validation/test_eco_unrouted_drc.rpt
+puts "ECO_UNROUTED_OPEN_PASS"

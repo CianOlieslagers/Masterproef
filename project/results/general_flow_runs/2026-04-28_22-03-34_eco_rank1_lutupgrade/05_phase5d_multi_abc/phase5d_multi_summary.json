@@ -1,0 +1,67 @@
+{
+  "phase": "FASE 5D ABC MULTI",
+  "phase5d_multi_status": "PASS_IMPROVED_ESTIMATE",
+  "phase3_json": "/home/cian/Masterproef/project/results/general_flow_runs/2026-04-28_22-03-34_eco_rank1_lutupgrade/03_phase3_window_info/phase3_window_info.json",
+  "truth_table_compact_json": "/home/cian/Masterproef/project/results/general_flow_runs/2026-04-28_22-03-34_eco_rank1_lutupgrade/04_phase4_truth_table/truth_table_compact.json",
+  "boundary_count": 11,
+  "truth_table_length": 2048,
+  "truth_table_ones": 1024,
+  "window_lut_count": 4,
+  "baseline_score": 60850,
+  "recipes_tried": 8,
+  "usable_candidate_count": 2,
+  "best_candidate_id": "phase5d_multi_abc_00001",
+  "best_recipe_name": "r07_rewrite_refactor_rewrite_if",
+  "best_score_without_penalties": 38073,
+  "best_score_with_penalties": 44823,
+  "estimated_improvement": true,
+  "selected_candidate_json": "/home/cian/Masterproef/project/results/general_flow_runs/2026-04-28_22-03-34_eco_rank1_lutupgrade/05_phase5d_multi_abc/phase5d_multi_selected_candidate.json",
+  "elapsed_seconds": 1.225,
+  "validation_checks": [
+    {
+      "check": "phase3_status",
+      "status": "PASS",
+      "detail": "PASS"
+    },
+    {
+      "check": "phase4_status",
+      "status": "PASS",
+      "detail": "PASS"
+    },
+    {
+      "check": "single_output",
+      "status": "PASS",
+      "detail": "1"
+    },
+    {
+      "check": "boundary_count_supported",
+      "status": "PASS",
+      "detail": "11"
+    },
+    {
+      "check": "truth_table_length",
+      "status": "PASS",
+      "detail": "2048"
+    },
+    {
+      "check": "window_luts_present",
+      "status": "PASS",
+      "detail": "4"
+    },
+    {
+      "check": "pla_written",
+      "status": "PASS",
+      "detail": "/home/cian/Masterproef/project/results/general_flow_runs/2026-04-28_22-03-34_eco_rank1_lutupgrade/05_phase5d_multi_abc/abc/window.pla; ones=1024"
+    },
+    {
+      "check": "usable_candidates_found",
+      "status": "PASS",
+      "detail": "2"
+    },
+    {
+      "check": "best_candidate_selected",
+      "status": "PASS",
+      "detail": "phase5d_multi_abc_00001"
+    }
+  ]
+}

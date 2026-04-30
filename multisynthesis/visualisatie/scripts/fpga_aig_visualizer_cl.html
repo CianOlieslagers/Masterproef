@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>FPGA Multi-Mode AIG Visualizer</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+    <style>
+        :root { --primary: #2563eb; --bg: #f8fafc; --sidebar: #ffffff; --border: #e2e8f0; }
+        body { font-family: 'Inter', sans-serif; margin: 0; background: var(--bg); display: flex; height: 100vh; overflow: hidden; }
+        
+        /* SIDEBAR */
+        #sidebar { width: 340px; background: var(--sidebar); border-right: 1px solid var(--border); display: flex; flex-direction: column; padding: 20px; overflow-y: auto; z-index: 10; box-shadow: 2px 0 5px rgba(0,0,0,0.05); }
+        h2 { font-size: 1.2rem; margin-bottom: 20px; color: #1e293b; }
+        .section { margin-bottom: 25px; }
+        .label { font-size: 0.8rem; font-weight: 600; color: #64748b; text-transform: uppercase; margin-bottom: 8px; display: block; }
+        
+        .file-input { margin-bottom: 12px; font-size: 0.85rem; }
+        input[type="file"] { width: 100%; padding: 6px; border: 1px dashed #cbd5e1; border-radius: 4px; background: #f8fafc; }
+        
+        .mode-option { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; font-size: 0.95rem; cursor: pointer; color: #334155; }
+        .mode-option input { cursor: pointer; width: 16px; height: 16px; accent-color: var(--primary); }
+
+        /* MAIN */
+        #main { flex: 1; position: relative; display: flex; flex-direction: column; background: #ffffff; }
+        #canvas-container { flex: 1; position: relative; }
+        svg { width: 100%; height: 100%; cursor: grab; }
+        svg:active { cursor: grabbing; }
+
+        /* GRAPH ELEMENTS */
+        .node { cursor: pointer; }
+        .node circle { stroke-width: 1.5px; transition: stroke 0.2s; }
+        .node:hover circle { stroke: #000; stroke-width: 3px; }
+        .node text { font-size: 10px; pointer-events: none; fill: #0f172a; font-weight: 600; text-shadow: 1px 1px 2px white, -1px -1px 2px white; }
+        .edge { fill: none; stroke: #94a3b8; stroke-width: 1.5px; opacity: 0.6; }
+        .edge.inverted { stroke-dasharray: 4 3; stroke: #ef4444; }
+        
+        .lut-box rect { fill: #f8fafc; stroke-width: 2px; stroke-dasharray: 6 4; rx: 8; opacity: 0.6; }
+        .lut-label { font-size: 12px; font-weight: 800; fill: #475569; pointer-events: none; }
+        .lut-net-edge { stroke: #8b5cf6; stroke-width: 3px; opacity: 0.85; }
+
+        .btn-viz { background: var(--primary); color: white; border: none; padding: 12px; border-radius: 6px; width: 100%; cursor: pointer; font-weight: 600; font-size: 1rem; transition: background 0.2s; }
+        .btn-viz:hover { background: #1d4ed8; }
+        
+        #status { margin-top: 15px; font-size: 0.85rem; color: #dc2626; font-weight: 600; }
+    </style>
+</head>
+<body>
+
+<div id="sidebar">
+    <h2>AIG Visualizer</h2>
+    
+    <div class="section">
+        <span class="label">Bestanden Inladen</span>
+        <div class="file-input">AAG:<br><input type="file" id="f-aag" accept=".aag"></div>
+        <div class="file-input">Manhattan JSON:<br><input type="file" id="f-man" accept=".json"></div>
+        <div class="file-input">LUT Cones JSON:<br><input type="file" id="f-cones" accept=".json"></div>
+        <button class="btn-viz" onclick="processAndRender()">Visualiseer</button>
+        <div id="status"></div>
+    </div>
+
+    <div class="section">
+        <span class="label">Visualisatie Modus</span>
+        <label class="mode-option"><input type="radio" name="v-mode" value="aag" checked onchange="if(data.aag) render()"> AAG (Standaard)</label>
+        <label class="mode-option"><input type="radio" name="v-mode" value="lut" onchange="if(data.aag) render()"> LUT Mode (Manhattan)</label>
+        <label class="mode-option"><input type="radio" name="v-mode" value="internal" onchange="if(data.aag) render()"> Internal LUT Mode</label>
+        <label class="mode-option"><input type="radio" name="v-mode" value="full" onchange="if(data.aag) render()"> Full Mapping</label>
+    </div>
+</div>
+
+<div id="main">
+    <div id="canvas-container">
+        <svg id="viz">
+            <defs>
+                <marker id="arrow" viewBox="0 0 10 10" refX="14" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#94a3b8"/></marker>
+                <marker id="arrow-lut" viewBox="0 0 10 10" refX="14" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#8b5cf6"/></marker>
+            </defs>
+            <g id="g-zoom">
+                <g id="g-boxes"></g>
+                <g id="g-edges"></g>
+                <g id="g-nodes"></g>
+            </g>
+        </svg>
+    </div>
+</div>
+
+<script>
+let data = { aag: null, man: null, cones: null };
+let svg = d3.select("#viz"), gZoom = d3.select("#g-zoom");
+const LUT_COLORS = d3.scaleOrdinal(d3.schemeCategory10);
+
+// Automatisch zoomen/pannen instellen (canvas drag)
+const zoomBehavior = d3.zoom().on("zoom", (e) => gZoom.attr("transform", e.transform));
+svg.call(zoomBehavior);
+
+function setStatus(msg, isError = false) {
+    const el = document.getElementById('status');
+    el.style.color = isError ? '#dc2626' : '#16a34a';
+    el.innerText = msg;
+}
+
+async function readFile(file) {
+    if (!file) return null;
+    return new Promise((res, rej) => {
+        const r = new FileReader();
+        r.onload = (e) => {
+            try { res(file.name.endsWith('.json') ? JSON.parse(e.target.result) : e.target.result); } 
+            catch (err) { rej(err); }
+        };
+        r.readAsText(file);
+    });
+}
+
+async function processAndRender() {
+    try {
+        setStatus("Bestanden laden...");
+        data.aag = await readFile(document.getElementById('f-aag').files[0]);
+        data.man = await readFile(document.getElementById('f-man').files[0]);
+        data.cones = await readFile(document.getElementById('f-cones').files[0]);
+        
+        if (!data.aag) throw new Error("AAG bestand is verplicht.");
+        
+        render();
+        setStatus("Visualisatie voltooid.", false);
+    } catch (e) {
+        setStatus("Fout: " + e.message, true);
+        console.error(e);
+    }
+}
+
+function parseAAG(text) {
+    if (!text) return null;
+    const lines = text.trim().split('\n').map(l => l.trim().split(/\s+/));
+    const [_, M, I, L, O, A] = lines[0].map(Number);
+    const inputs = lines.slice(1, I + 1).map(l => parseInt(l[0]) >> 1);
+    
+    const outStart = 1 + I + L;
+    const outputs = lines.slice(outStart, outStart + O).map(l => parseInt(l[0]) >> 1);
+    
+    const gateStart = outStart + O;
+    const gates = lines.slice(gateStart, gateStart + A).map(l => ({
+        id: parseInt(l[0]) >> 1,
+        in0: parseInt(l[1]) >> 1, inv0: parseInt(l[1]) % 2 !== 0,
+        in1: parseInt(l[2]) >> 1, inv1: parseInt(l[2]) % 2 !== 0
+    }));
+    return { inputs, outputs, gates };
+}
+
+function render() {
+    const mode = document.querySelector('input[name="v-mode"]:checked').value;
+    const aagParsed = parseAAG(data.aag);
+    if (!aagParsed) return;
+
+    d3.select("#g-boxes").selectAll("*").remove();
+    d3.select("#g-edges").selectAll("*").remove();
+    d3.select("#g-nodes").selectAll("*").remove();
+
+    let nodes = [], edges = [], boxes = [];
+
+    // --- MODUS AAG ---
+    if (mode === 'aag') {
+        aagParsed.inputs.forEach(id => nodes.push({ id, type: 'pi' }));
+        aagParsed.gates.forEach(g => nodes.push({ id: g.id, type: 'and' }));
+        // PO's krijgen uniek ID "po_ID" om collisies te voorkomen
+        aagParsed.outputs.forEach(id => nodes.push({ id: `po_${id}`, origId: id, type: 'po' }));
+        
+        aagParsed.gates.forEach(g => {
+            edges.push({ source: g.in0, target: g.id, inv: g.inv0, type: 'aag' });
+            edges.push({ source: g.in1, target: g.id, inv: g.inv1, type: 'aag' });
+        });
+        aagParsed.outputs.forEach(id => {
+            edges.push({ source: id, target: `po_${id}`, type: 'aag' });
+        });
+        applyHierarchicalLayout(nodes, edges, 'base');
+    } 
+    // --- MODUS LUT MANHATTAN ---
+    else if (mode === 'lut') {
+        if (!data.man || !data.cones) return setStatus("Fout: Manhattan & Cones vereist.", true);
+        
+        aagParsed.inputs.forEach(id => nodes.push({ id, type: 'pi' }));
+        data.cones.lut_cones.forEach(c => nodes.push({ id: c.lut_root, type: 'root', name: c.lut_name }));
+        aagParsed.outputs.forEach(id => nodes.push({ id: `po_${id}`, origId: id, type: 'po' }));
+
+        // Manhattan edges
+        data.man.connections.forEach(c => {
+            const src = nodes.find(n => n.name === c.src || n.id == c.src);
+            const dst = nodes.find(n => n.name === c.dst || n.id == c.dst);
+            if (src && dst) edges.push({ source: src.id, target: dst.id, type: 'lut-net' });
+        });
+
+        // PI -> LUT Root
+        data.cones.lut_cones.forEach(c => {
+            c.leaves.forEach(leaf => {
+                if (aagParsed.inputs.includes(leaf)) edges.push({ source: leaf, target: c.lut_root, type: 'lut-net' });
+            });
+        });
+
+        // LUT Root -> PO
+        aagParsed.outputs.forEach(id => {
+            const root = data.cones.lut_cones.find(c => c.lut_root === id);
+            if (root) edges.push({ source: root.lut_root, target: `po_${id}`, type: 'lut-net' });
+            else if (aagParsed.inputs.includes(id)) edges.push({ source: id, target: `po_${id}`, type: 'lut-net' });
+        });
+
+        applyHierarchicalLayout(nodes, edges, 'lut');
+    }
+    // --- MODUS INTERNAL LUT & FULL MAPPING ---
+    else {
+        if (!data.cones) return setStatus("Fout: LUT Cones JSON vereist.", true);
+        
+        aagParsed.inputs.forEach(id => nodes.push({ id, origId: id, type: 'pi', isGlobal: true }));
+        aagParsed.outputs.forEach(id => nodes.push({ id: `po_${id}`, origId: id, type: 'po', isGlobal: true }));
+        
+        const rootMap = new Map();
+        data.cones.lut_cones.forEach(c => rootMap.set(c.lut_root, c.lut_name));
+
+        // Kaders en Nodes
+        data.cones.lut_cones.forEach((cone, idx) => {
+            const lutID = cone.lut_name;
+            const subNodes = [];
+            
+            const ids = [cone.lut_root, ...(cone.internal_nodes || [])];
+            ids.forEach(id => {
+                const n = { id: `${id}_${lutID}`, origId: id, lut: lutID, type: (id == cone.lut_root ? 'root' : 'int') };
+                subNodes.push(n);
+                nodes.push(n);
+            });
+
+            boxes.push({ id: lutID, nodes: subNodes, color: LUT_COLORS(idx) });
+
+            // PIs naar LUT Roots in Internal Modus
+            if (mode === 'internal') {
+                cone.leaves.forEach(leaf => {
+                    if (aagParsed.inputs.includes(leaf)) {
+                        edges.push({ source: leaf, target: `${cone.lut_root}_${lutID}`, type: 'lut-net' });
+                    }
+                });
+            }
+
+            // Full Mapping logica binnen kader
+            if (mode === 'full') {
+                ids.forEach(id => {
+                    const gate = aagParsed.gates.find(g => g.id == id);
+                    if (gate) {
+                        [gate.in0, gate.in1].forEach((inId, i) => {
+                            const localSrc = subNodes.find(sn => sn.origId == inId);
+                            if (localSrc) {
+                                edges.push({ source: localSrc.id, target: `${id}_${lutID}`, inv: i===0?gate.inv0:gate.inv1, type: 'aag' });
+                            } else {
+                                if (aagParsed.inputs.includes(inId)) {
+                                    edges.push({ source: inId, target: `${id}_${lutID}`, inv: i===0?gate.inv0:gate.inv1, type: 'aag' });
+                                } else {
+                                    const extLut = rootMap.get(inId);
+                                    if (extLut) edges.push({ source: `${inId}_${extLut}`, target: `${id}_${lutID}`, inv: i===0?gate.inv0:gate.inv1, type: 'aag' });
+                                }
+                            }
+                        });
+                    }
+                });
+            }
+        });
+
+        // Manhattan edges tussen roots
+        if (data.man) {
+            data.man.connections.forEach(c => {
+                const src = nodes.find(n => n.lut === c.src && n.type === 'root');
+                const dst = nodes.find(n => n.lut === c.dst && n.type === 'root');
+                if (src && dst) edges.push({ source: src.id, target: dst.id, type: 'lut-net' });
+            });
+        }
+
+        // PO's koppelen
+        aagParsed.outputs.forEach(id => {
+            const extLut = rootMap.get(id);
+            if (extLut) edges.push({ source: `${id}_${extLut}`, target: `po_${id}`, type: 'lut-net' });
+            else if (aagParsed.inputs.includes(id)) edges.push({ source: id, target: `po_${id}`, type: 'lut-net' });
+        });
+        
+        applyHierarchicalLayout(nodes, edges, 'mapped', boxes);
+    }
+
+    draw(nodes, edges, boxes, mode);
+    
+    // Auto-fit
+    setTimeout(() => {
+        const bounds = gZoom.node().getBBox();
+        const fullW = document.getElementById('canvas-container').clientWidth;
+        const fullH = document.getElementById('canvas-container').clientHeight;
+        const scale = Math.min(1.5, Math.min(fullW / (bounds.width + 100), fullH / (bounds.height + 100)));
+        const tx = fullW/2 - (bounds.x + bounds.width/2) * scale;
+        const ty = fullH/2 - (bounds.y + bounds.height/2) * scale;
+        svg.transition().duration(500).call(zoomBehavior.transform, d3.zoomIdentity.translate(tx, ty).scale(scale));
+    }, 100);
+}
+
+// --- LAYOUT ENGINE ---
+function applyHierarchicalLayout(nodes, edges, type, boxes = []) {
+    const marginX = 180, marginY = 50;
+    
+    if (type === 'mapped') {
+        const boxDepth = new Map();
+        boxes.forEach(b => boxDepth.set(b.id, 0));
+        
+        let changed = true; let iters = 0;
+        while(changed && iters < 1000) {
+            changed = false; iters++;
+            (data.man?.connections || []).forEach(c => {
+                const sDepth = boxDepth.get(c.src) || 0;
+                const dDepth = boxDepth.get(c.dst) || 0;
+                if (sDepth + 1 > dDepth) {
+                    boxDepth.set(c.dst, sDepth + 1);
+                    changed = true;
+                }
+            });
+        }
+
+        const columns = [];
+        boxes.forEach(b => {
+            const d = boxDepth.get(b.id) || 0;
+            if (!columns[d]) columns[d] = [];
+            columns[d].push(b);
+        });
+
+        columns.forEach((col, x) => {
+            col.forEach((box, y) => {
+                const startX = x * 350 + 200;
+                const startY = y * 200 + 100;
+                box.x = startX; box.y = startY;
+                
+                box.nodes.forEach((n, idx) => {
+                    n.x = startX + (n.type === 'root' ? 160 : 40);
+                    n.y = startY + 40 + (idx * 35);
+                });
+            });
+        });
+
+        const maxCol = Math.max(...Array.from(boxDepth.values()), 0) + 1;
+        nodes.forEach((n, i) => {
+            if (n.type === 'pi') { n.x = 40; n.y = 100 + i * 40; }
+            if (n.type === 'po') { n.x = maxCol * 350 + 250; n.y = 100 + i * 40; }
+        });
+
+    } else {
+        const depth = new Map();
+        nodes.forEach(n => depth.set(n.id, 0));
+
+        let changed = true; let iters = 0;
+        while(changed && iters < 2000) {
+            changed = false; iters++;
+            edges.forEach(e => {
+                const src = e.source.id || e.source;
+                const dst = e.target.id || e.target;
+                const sDepth = depth.get(src) || 0;
+                const dDepth = depth.get(dst) || 0;
+                if (sDepth + 1 > dDepth) {
+                    depth.set(dst, sDepth + 1);
+                    changed = true;
+                }
+            });
+        }
+
+        const counts = new Map();
+        nodes.forEach(n => {
+            const d = depth.get(n.id) || 0;
+            n.x = 100 + d * marginX;
+            n.y = 100 + (counts.get(d) || 0) * marginY;
+            counts.set(d, (counts.get(d) || 0) + 1);
+        });
+    }
+}
+
+// --- DRAWING & DRAG BEHAVIOR ---
+function draw(nodes, edges, boxes, mode) {
+    const boxG = d3.select("#g-boxes").selectAll("g.lut-group").data(boxes).join("g").attr("class", "lut-group");
+    boxG.selectAll("*").remove(); 
+    
+    boxG.append("rect")
+        .attr("class", "lut-box")
+        .attr("x", d => d.x).attr("y", d => d.y)
+        .attr("width", 220).attr("height", d => Math.max(80, d.nodes.length * 40))
+        .attr("stroke", d => d.color);
+        
+    boxG.append("text")
+        .attr("class", "lut-label")
+        .attr("x", d => d.x + 10).attr("y", d => d.y + 20)
+        .text(d => d.id)
+        .style("fill", d => d.color);
+
+    // Koppel nodes direct aan edges voor snelle updates tijdens het draggen
+    const validEdges = edges.filter(e => {
+        e.sourceNode = nodes.find(n => n.id === (e.source.id || e.source));
+        e.targetNode = nodes.find(n => n.id === (e.target.id || e.target));
+        return e.sourceNode && e.targetNode;
+    });
+
+    const edgeLines = d3.select("#g-edges").selectAll("line")
+        .data(validEdges).join("line")
+        .attr("class", e => e.type === 'lut-net' ? 'lut-net-edge edge' : 'edge')
+        .attr("x1", e => e.sourceNode.x).attr("y1", e => e.sourceNode.y)
+        .attr("x2", e => e.targetNode.x).attr("y2", e => e.targetNode.y)
+        .attr("marker-end", e => e.type === 'lut-net' ? "url(#arrow-lut)" : "url(#arrow)")
+        .classed("inverted", e => e.inv);
+
+    // DRAG LOGICA: Dynamisch verplaatsen van lijnen en nodes
+    const drag = d3.drag()
+        .on("start", function() { d3.select(this).raise(); }) // Brengt node naar voorgrond bij klik
+        .on("drag", function(event, d) {
+            d.x = event.x; d.y = event.y;
+            d3.select(this).attr("transform", `translate(${d.x},${d.y})`);
+            
+            // Fast edge render loop (update lijnen verbonden aan deze node)
+            edgeLines.filter(e => e.sourceNode === d || e.targetNode === d)
+                .attr("x1", e => e.sourceNode.x).attr("y1", e => e.sourceNode.y)
+                .attr("x2", e => e.targetNode.x).attr("y2", e => e.targetNode.y);
+        });
+
+    const nodeG = d3.select("#g-nodes").selectAll("g.node-group").data(nodes).join("g")
+        .attr("class", "node node-group")
+        .attr("transform", d => `translate(${d.x},${d.y})`)
+        .call(drag); // Activeer drag
+
+    nodeG.selectAll("*").remove();
+
+    nodeG.append("circle")
+        .attr("r", d => d.type === 'root' ? 9 : 6)
+        .attr("fill", d => {
+            if (d.type === 'pi') return '#22c55e';
+            if (d.type === 'po') return '#ef4444';
+            if (d.type === 'root') return '#f59e0b';
+            return '#3b82f6';
+        })
+        .attr("stroke", "#fff");
+
+    nodeG.append("text").text(d => d.origId !== undefined ? d.origId : d.id).attr("x", 12).attr("y", 4);
+}
+</script>
+</body>
+</html>

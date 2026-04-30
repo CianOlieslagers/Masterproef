@@ -1,0 +1,25 @@
+{
+  "id": "cand_002408",
+  "net": "f[57]_INST_0_i_3/O",
+  "sink_cell": "f[63]_INST_0_i_6",
+  "sink_pin": null,
+  "target_slice": "SLICE_X53Y466",
+  "lut_delay_ps": 120.0,
+  "from": "f[57]_INST_0_i_3/IBUFCTRL_INST",
+  "to": "f[63]_INST_0_i_6",
+  "distance": 108,
+  "coords": {
+    "src": [
+      0,
+      465
+    ],
+    "dest": [
+      106,
+      467
+    ]
+  },
+  "eco_ready": true,
+  "issues": [
+    "missing_sink_pin"
+  ]
+}

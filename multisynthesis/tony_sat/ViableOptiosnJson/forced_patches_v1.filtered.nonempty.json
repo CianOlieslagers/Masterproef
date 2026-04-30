@@ -1,0 +1,97 @@
+{
+  "super": "Lut_verbinding/result/example_big_300/example_big_300.super.sat.v2.json",
+  "targets": "tony_sat/ViableOptiosnJson/targets_per_combo.filtered.nonempty.json",
+  "solver": "glucose4",
+  "total": 5,
+  "success": 0,
+  "failed": 5,
+  "results": [
+    {
+      "dst": "LUT_101",
+      "pit": "LUT_120",
+      "dst_input_pin": 0,
+      "success": false,
+      "reason": "no_target_passed_filters",
+      "chosen_target": null,
+      "patched_hex": null,
+      "notes": [
+        "row 0: X (Y unconstrained)",
+        "row 2: X (Y unconstrained)",
+        "row 4: X (Y unconstrained)",
+        "row 12: X (Y unconstrained)"
+      ]
+    },
+    {
+      "dst": "LUT_147",
+      "pit": "LUT_168",
+      "dst_input_pin": 0,
+      "success": false,
+      "reason": "no_target_passed_filters",
+      "chosen_target": null,
+      "patched_hex": null,
+      "notes": [
+        "row 0: X (Y unconstrained)",
+        "row 2: X (Y unconstrained)",
+        "row 4: X (Y unconstrained)",
+        "row 6: X (Y unconstrained)",
+        "row 8: X (Y unconstrained)",
+        "row 10: X (Y unconstrained)"
+      ]
+    },
+    {
+      "dst": "LUT_151",
+      "pit": "LUT_172",
+      "dst_input_pin": 0,
+      "success": false,
+      "reason": "no_target_passed_filters",
+      "chosen_target": null,
+      "patched_hex": null,
+      "notes": [
+        "row 0: X (Y unconstrained)",
+        "row 1: X (Y unconstrained)",
+        "row 2: X (Y unconstrained)",
+        "row 3: X (Y unconstrained)",
+        "row 4: X (Y unconstrained)",
+        "row 6: X (Y unconstrained)",
+        "row 10: X (Y unconstrained)",
+        "row 14: X (Y unconstrained)"
+      ]
+    },
+    {
+      "dst": "LUT_164",
+      "pit": "LUT_193",
+      "dst_input_pin": 0,
+      "success": false,
+      "reason": "no_target_passed_filters",
+      "chosen_target": null,
+      "patched_hex": null,
+      "notes": [
+        "row 0: X (Y unconstrained)",
+        "row 3: X (Y unconstrained)",
+        "row 4: X (Y unconstrained)",
+        "row 6: X (Y unconstrained)",
+        "row 8: X (Y unconstrained)",
+        "row 9: X (Y unconstrained)"
+      ]
+    },
+    {
+      "dst": "LUT_222",
+      "pit": "LUT_247",
+      "dst_input_pin": 0,
+      "success": false,
+      "reason": "no_target_passed_filters",
+      "chosen_target": null,
+      "patched_hex": null,
+      "notes": [
+        "row 0: X (Y unconstrained)",
+        "row 1: X (Y unconstrained)",
+        "row 2: X (Y unconstrained)",
+        "row 3: X (Y unconstrained)",
+        "row 4: X (Y unconstrained)",
+        "row 5: X (Y unconstrained)",
+        "row 6: X (Y unconstrained)",
+        "row 7: X (Y unconstrained)"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "phase": "FASE 6B GENERIC STAGE1",
+  "input_dcp": "/home/cian/Masterproef/project/results/run_lut_insertion/TestDirectory/baseline_impl/checkpoints/post_route_timingexp.dcp",
+  "nodes_csv": "/home/cian/Masterproef/project/results/general_flow_runs/2026-04-28_22-03-34_eco_rank1_lutupgrade/06_phase6a_generic_manifest/phase6a_generic_nodes.csv",
+  "output_dcp": "/home/cian/Masterproef/project/results/general_flow_runs/2026-04-28_22-03-34_eco_rank1_lutupgrade/07_phase6b_generic_stage1/phase6b_generic_stage1_inits_upgrades.dcp",
+  "cells_seen": 4,
+  "upgrades_applied": 1,
+  "inits_set": 4,
+  "errors": 0,
+  "status": "PASS",
+  "items": [
+    {"abc_node":"new_n16_","cell":"f[108]_INST_0_i_8","status":"OK","before_type":"LUT2","effective_ref":"LUT2","after_type":"LUT2","requires_upgrade":false,"init":"4'h8"},
+    {"abc_node":"new_n17_","cell":"f[108]_INST_0_i_7","status":"OK","before_type":"LUT6","effective_ref":"LUT6","after_type":"LUT6","requires_upgrade":false,"init":"64'hE000EEE0E000EEE0"},
+    {"abc_node":"new_n15_","cell":"f[108]_INST_0_i_9","status":"OK","before_type":"LUT2","effective_ref":"LUT6","after_type":"LUT6","requires_upgrade":true,"init":"64'h015701570157157F"},
+    {"abc_node":"y","cell":"f[108]_INST_0_i_6","status":"OK","before_type":"LUT6","effective_ref":"LUT6","after_type":"LUT6","requires_upgrade":false,"init":"64'h2B2B2B2B2B2B2B2B"}
+  ]
+}

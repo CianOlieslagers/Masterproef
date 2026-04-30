@@ -1,0 +1,25 @@
+{
+  "id": "cand_001293",
+  "net": "n138407_in",
+  "sink_cell": "cOut_OBUF_inst_i_2",
+  "sink_pin": null,
+  "target_slice": "SLICE_X56Y548",
+  "lut_delay_ps": 120.0,
+  "from": "cOut_OBUF_inst_i_6",
+  "to": "cOut_OBUF_inst_i_2",
+  "distance": 0,
+  "coords": {
+    "src": [
+      56,
+      548
+    ],
+    "dest": [
+      56,
+      548
+    ]
+  },
+  "eco_ready": true,
+  "issues": [
+    "missing_sink_pin"
+  ]
+}

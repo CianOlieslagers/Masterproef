@@ -1,0 +1,25 @@
+{
+  "id": "cand_001402",
+  "net": "p_319_in",
+  "sink_cell": "f[66]_INST_0_i_4",
+  "sink_pin": null,
+  "target_slice": "SLICE_X75Y450",
+  "lut_delay_ps": 120.0,
+  "from": "f[64]_INST_0_i_4",
+  "to": "f[66]_INST_0_i_4",
+  "distance": 76,
+  "coords": {
+    "src": [
+      96,
+      468
+    ],
+    "dest": [
+      55,
+      433
+    ]
+  },
+  "eco_ready": true,
+  "issues": [
+    "missing_sink_pin"
+  ]
+}

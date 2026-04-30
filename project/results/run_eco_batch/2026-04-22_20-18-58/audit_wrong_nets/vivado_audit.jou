@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:36:09 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Wed Apr 22 23:44:26 2026
+# Process ID: 144813
+# Current directory: /home/cian/Masterproef/project/Vivado
+# Command line: vivado -mode batch -log /home/cian/Masterproef/project/results/run_eco_batch/2026-04-22_20-18-58/audit_wrong_nets/vivado_audit.log -journal /home/cian/Masterproef/project/results/run_eco_batch/2026-04-22_20-18-58/audit_wrong_nets/vivado_audit.jou -source /home/cian/Masterproef/project/results/run_eco_batch/2026-04-22_20-18-58/audit_wrong_nets/audit_wrong_nets.tcl -tclargs /home/cian/Masterproef/project/results/run_eco_batch/2026-04-22_20-18-58/audit_wrong_nets/manifest.tsv /home/cian/Masterproef/project/results/run_eco_batch/2026-04-22_20-18-58/audit_wrong_nets/audit_results.tsv
+# Log file: /home/cian/Masterproef/project/results/run_eco_batch/2026-04-22_20-18-58/audit_wrong_nets/vivado_audit.log
+# Journal file: /home/cian/Masterproef/project/results/run_eco_batch/2026-04-22_20-18-58/audit_wrong_nets/vivado_audit.jou
+# Running On        :MSI
+# Platform          :Ubuntu
+# Operating System  :Ubuntu 22.04.5 LTS
+# Processor Detail  :Intel(R) Core(TM) i7-10750H CPU @ 2.60GHz
+# CPU Frequency     :2592.007 MHz
+# CPU Physical cores:6
+# CPU Logical cores :12
+# Host memory       :8232 MB
+# Swap memory       :2147 MB
+# Total Virtual     :10380 MB
+# Available Virtual :8604 MB
+#-----------------------------------------------------------
+source /home/cian/Masterproef/project/results/run_eco_batch/2026-04-22_20-18-58/audit_wrong_nets/audit_wrong_nets.tcl

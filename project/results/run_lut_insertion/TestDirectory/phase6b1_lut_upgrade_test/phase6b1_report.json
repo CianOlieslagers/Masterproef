@@ -1,0 +1,21 @@
+{
+  "phase": "FASE 6B.1",
+  "status": "PASS",
+  "input_dcp": "/home/cian/Masterproef/project/results/run_lut_insertion/TestDirectory/baseline_impl/checkpoints/post_route_timingexp.dcp",
+  "output_dcp": "/home/cian/Masterproef/project/results/run_lut_insertion/TestDirectory/phase6b1_lut_upgrade_test/post_route_lut2_to_lut6_microtest.dcp",
+  "cell": "f[108]_INST_0_i_8",
+  "old_physical_type": "LUT2",
+  "old_edif_type": "LUT2",
+  "old_site": "SLICE_X81Y528",
+  "old_bel": "G6LUT",
+  "old_init": "4'h1",
+  "new_requested_init": "64'h00000EEF0EEFFFFF",
+  "new_physical_type": "LUT6",
+  "new_edif_type": "LUT6",
+  "new_init_readback": "64'h00000EEF0EEFFFFF",
+  "ok_set_edif_type": true,
+  "ok_set_physical_type": true,
+  "ok_create_ports": true,
+  "ok_set_init": true,
+  "ok_write_dcp": true
+}

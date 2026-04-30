@@ -1,0 +1,71 @@
+Design Route Status
+                                               :      # nets :
+   ------------------------------------------- : ----------- :
+   # of logical nets.......................... :        1223 :
+       # of nets not needing routing.......... :         641 :
+           # of internally routed nets........ :         641 :
+       # of routable nets..................... :         575 :
+           # of fully routed nets............. :         568 :
+       # of nets with routing errors.......... :          14 :
+           # of nets with some unplaced pins.. :           7 :
+           # of nets with some unrouted pins.. :           9 :
+           # of nets with resource conflicts.. :           7 :
+           # of nets with antennas/islands.... :           6 :
+   ------------------------------------------- : ----------- :
+
+
+Nets with Routing Errors:
+  eco_f_108_INST_0_i_7_O_internal
+    Unplaced Pin: f[108]_INST_0_i_9/I4
+  eco_f_108_INST_0_i_8_O_internal
+    Unplaced Pin: f[108]_INST_0_i_9/I5
+  eco_f_108_INST_0_i_9_O_internal
+    Unplaced Pin: f[108]_INST_0_i_9/O
+  f[100]_INST_0_i_2/O
+    Unplaced Pin: f[108]_INST_0_i_9/I2
+    Antenna Nodes:
+      INT_X52Y528/IMUX_W32
+      INT_X53Y514/IMUX_E39
+  f[100]_INST_0_i_3/O
+    Unplaced Pin: f[108]_INST_0_i_9/I1
+    Conflicts with Site Pins: INT_X52Y528/IMUX_W38 (SLICE_X81Y528/G5)
+    Antenna Nodes:
+      INT_X52Y528/IMUX_W38
+      INT_X53Y514/IMUX_E33
+  f[101]_INST_0_i_2/O
+    Unplaced Pin: f[108]_INST_0_i_9/I0
+    Conflicts with Site Pins: INT_X50Y531/IMUX_E22 (SLICE_X79Y531/A4)
+    Antenna Nodes: INT_X50Y531/IMUX_E22
+  f[101]_INST_0_i_3/O
+    Unplaced Pin: f[108]_INST_0_i_9/I3
+  f[102]_INST_0_i_2/O
+    Unrouted Pin: f[108]_INST_0_i_6/I1
+    Conflicts with Site Pins: INT_X50Y531/IMUX_E22 (SLICE_X79Y531/A4)
+  f[102]_INST_0_i_3/O
+    Unrouted Pin: f[108]_INST_0_i_6/I2
+  f[98]_INST_0_i_2/O
+    Unrouted Pin: f[108]_INST_0_i_7/I3
+    Conflicts with Site Pins:
+      INT_X57Y491/IMUX_E41 (SLICE_X89Y491/F3)
+      INT_X57Y491/IMUX_E45 (SLICE_X89Y491/F4)
+    Antenna Nodes: INT_X57Y491/IMUX_E41
+  f[98]_INST_0_i_3/O
+    Unrouted Pin: f[108]_INST_0_i_7/I2
+    Conflicts with Site Pins:
+      INT_X57Y491/IMUX_E41 (SLICE_X89Y491/F3)
+      INT_X57Y491/IMUX_E45 (SLICE_X89Y491/F4)
+    Antenna Nodes: INT_X57Y491/IMUX_E45
+  f[99]_INST_0_i_2/O
+    Unrouted Pin: f[108]_INST_0_i_8/I1
+  f[99]_INST_0_i_3/O
+    Unrouted Pins:
+      f[108]_INST_0_i_7/I0
+      f[108]_INST_0_i_8/I0
+    Conflicts with Site Pins:
+      INT_X52Y528/IMUX_W38 (SLICE_X81Y528/G5)
+      INT_X57Y491/IMUX_E43 (SLICE_X89Y491/F5)
+    Antenna Nodes: INT_X57Y491/IMUX_E43
+  p_149_in
+    Unrouted Pin: f[108]_INST_0_i_7/I4
+    Conflicts with Site Pins: INT_X57Y491/IMUX_E43 (SLICE_X89Y491/F5)
+

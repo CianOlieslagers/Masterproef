@@ -1,0 +1,108 @@
+{
+  "super": "Lut_verbinding/result/example_big_300/example_big_300.super.sat.v2.json",
+  "dst_subexprs": "tony_sat/ViableOptiosnJson/dst_subexprs.json",
+  "reachable": "tony_sat/ViableOptiosnJson/reachable_rows_test1.json",
+  "top": 10,
+  "max_support": 3,
+  "results": [
+    {
+      "conn_id": null,
+      "src": "LUT_97",
+      "dst": "LUT_101",
+      "pit": "LUT_120",
+      "net_link": {
+        "pit_output_net": "LUT_120",
+        "dst_input_pin": 0,
+        "dst_input_net": "LUT_97",
+        "src_output_net": "LUT_97",
+        "link_mode": "forced_target_from_src_arc"
+      },
+      "gain": 18,
+      "d_ab": 6,
+      "d_ac": 3,
+      "d_cb": 3,
+      "dst_input_pin": 0,
+      "num_dc": 7,
+      "num_reachable": 9,
+      "targets": [
+        {
+          "node": 98,
+          "func_hex": "5500",
+          "support_leaf_ids": [
+            4,
+            97
+          ],
+          "support_pin_idx": [
+            0,
+            3
+          ],
+          "support_nets": [
+            "LUT_97",
+            "LUT_76"
+          ],
+          "support_size": 2
+        }
+      ],
+      "notes": [],
+      "pit_inputs_ordered": [
+        "LUT_116",
+        "LUT_76",
+        "LUT_97",
+        "pi6"
+      ],
+      "targets_before": 3,
+      "targets_after": 1,
+      "dropped_targets": [
+        {
+          "node": 88,
+          "func_hex": "0c0c",
+          "support_leaf_ids": [
+            4,
+            61,
+            76
+          ],
+          "support_pin_idx": [
+            0,
+            1,
+            2
+          ],
+          "support_nets": [
+            "LUT_97",
+            "LUT_61",
+            "pi5"
+          ],
+          "support_size": 3,
+          "drop_reason": "support_not_subset_of_pit_inputs",
+          "missing_from_pit_inputs": [
+            "LUT_61",
+            "pi5"
+          ]
+        },
+        {
+          "node": 99,
+          "func_hex": "00aa",
+          "support_leaf_ids": [
+            4,
+            76,
+            97
+          ],
+          "support_pin_idx": [
+            0,
+            2,
+            3
+          ],
+          "support_nets": [
+            "LUT_97",
+            "pi5",
+            "LUT_76"
+          ],
+          "support_size": 3,
+          "drop_reason": "support_not_subset_of_pit_inputs",
+          "missing_from_pit_inputs": [
+            "pi5"
+          ]
+        }
+      ]
+    }
+  ]
+}

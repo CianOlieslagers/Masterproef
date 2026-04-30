@@ -1,0 +1,25 @@
+{
+  "id": "cand_000037",
+  "net": "f[102]_INST_0_i_1_n_0",
+  "sink_cell": "f[102]_INST_0",
+  "sink_pin": null,
+  "target_slice": "SLICE_X32Y523",
+  "lut_delay_ps": 120.0,
+  "from": "f[102]_INST_0_i_1",
+  "to": "f[102]_INST_0",
+  "distance": 85,
+  "coords": {
+    "src": [
+      65,
+      533
+    ],
+    "dest": [
+      0,
+      513
+    ]
+  },
+  "eco_ready": true,
+  "issues": [
+    "missing_sink_pin"
+  ]
+}

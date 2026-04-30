@@ -1,0 +1,34 @@
+digraph window_detailed {
+  rankdir=LR;
+  "f[98]_INST_0_i_7" [shape=box,label="f[98]_INST_0_i_7\nLUT6\nSLICE_X90Y491/SLICEM.C6LUT"];
+  "f[98]_INST_0_i_6" [shape=box,label="f[98]_INST_0_i_6\nLUT6\nSLICE_X89Y491/SLICEL.A6LUT"];
+  "f[98]_INST_0_i_8" [shape=box,label="f[98]_INST_0_i_8\nLUT2\nSLICE_X90Y505/SLICEM.H6LUT"];
+  "BI_1" [shape=oval,label="BI_1\nn11040182_in\nEXTERNAL_CELL"];
+  "BI_2" [shape=oval,label="BI_2\nf[89]_INST_0_i_3_n_0\nEXTERNAL_CELL"];
+  "BI_3" [shape=oval,label="BI_3\nf[89]_INST_0_i_2_n_0\nEXTERNAL_CELL"];
+  "BI_4" [shape=oval,label="BI_4\nf[88]_INST_0_i_3_n_0\nEXTERNAL_CELL"];
+  "BI_5" [shape=oval,label="BI_5\nf[88]_INST_0_i_2_n_0\nEXTERNAL_CELL"];
+  "BI_6" [shape=oval,label="BI_6\np_199_in\nEXTERNAL_CELL"];
+  "BI_7" [shape=oval,label="BI_7\nf[91]_INST_0_i_2_n_0\nEXTERNAL_CELL"];
+  "BI_8" [shape=oval,label="BI_8\nf[91]_INST_0_i_3_n_0\nEXTERNAL_CELL"];
+  "BI_9" [shape=oval,label="BI_9\nf[92]_INST_0_i_2_n_0\nEXTERNAL_CELL"];
+  "BI_10" [shape=oval,label="BI_10\nf[92]_INST_0_i_3_n_0\nEXTERNAL_CELL"];
+  "BI_11" [shape=oval,label="BI_11\nf[90]_INST_0_i_3_n_0\nEXTERNAL_CELL"];
+  "BI_12" [shape=oval,label="BI_12\nf[90]_INST_0_i_2_n_0\nEXTERNAL_CELL"];
+  "BI_1" -> "f[98]_INST_0_i_7" [label="I0"];
+  "BI_2" -> "f[98]_INST_0_i_7" [label="I1"];
+  "BI_3" -> "f[98]_INST_0_i_7" [label="I2"];
+  "BI_4" -> "f[98]_INST_0_i_7" [label="I3"];
+  "BI_5" -> "f[98]_INST_0_i_7" [label="I4"];
+  "BI_6" -> "f[98]_INST_0_i_7" [label="I5"];
+  "BI_7" -> "f[98]_INST_0_i_6" [label="I2"];
+  "BI_8" -> "f[98]_INST_0_i_6" [label="I3"];
+  "BI_9" -> "f[98]_INST_0_i_6" [label="I4"];
+  "BI_10" -> "f[98]_INST_0_i_6" [label="I5"];
+  "BI_11" -> "f[98]_INST_0_i_8" [label="I0"];
+  "BI_12" -> "f[98]_INST_0_i_8" [label="I1"];
+  "f[98]_INST_0_i_7" -> "f[98]_INST_0_i_6" [label="I0\n89ps\nM=1", penwidth=2];
+  "f[98]_INST_0_i_8" -> "f[98]_INST_0_i_6" [label="I1\n289ps\nM=15", penwidth=2];
+  "BO_1" [shape=oval,label="BO_1\np_174_in\nloads=2"];
+  "f[98]_INST_0_i_6" -> "BO_1" [label="O"];
+}

@@ -1,0 +1,26 @@
+Design Route Status
+                                               :      # nets :
+   ------------------------------------------- : ----------- :
+   # of logical nets.......................... :        1223 :
+       # of nets not needing routing.......... :         641 :
+           # of internally routed nets........ :         641 :
+       # of routable nets..................... :         582 :
+           # of fully routed nets............. :         579 :
+       # of nets with routing errors.......... :           3 :
+           # of nets with some unrouted pins.. :           1 :
+           # of nets with resource conflicts.. :           3 :
+           # of nets with antennas/islands.... :           3 :
+   ------------------------------------------- : ----------- :
+
+
+Nets with Routing Errors:
+  f[100]_INST_0_i_2/O
+    Invalid Programming for Site: SLICE_X81Y528 (type: SLICEM) (Error Msg from Site: Invalid site found)
+    Antenna Nodes: INT_X52Y528/IMUX_W32
+  f[100]_INST_0_i_3/O
+    Invalid Programming for Site: SLICE_X81Y528 (type: SLICEM) (Error Msg from Site: Invalid site found)
+    Antenna Nodes: INT_X52Y528/IMUX_W38
+  f[108]_INST_0_i_8_n_0
+    Invalid Programming for Site: SLICE_X81Y528 (type: SLICEM) (Error Msg from Site: Invalid site found)
+    Antenna Nodes: CLEM_X52Y528/CLE_CLE_M_SITE_0_G_O
+

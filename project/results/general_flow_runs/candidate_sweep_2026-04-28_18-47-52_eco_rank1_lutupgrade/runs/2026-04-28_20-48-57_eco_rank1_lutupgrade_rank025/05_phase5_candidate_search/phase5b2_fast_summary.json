@@ -1,0 +1,70 @@
+{
+  "phase": "FASE 5B.2 FAST",
+  "phase5b2_fast_status": "PASS_NO_ESTIMATED_IMPROVEMENT",
+  "phase3_json": "/home/cian/Masterproef/project/results/general_flow_runs/candidate_sweep_2026-04-28_18-47-52_eco_rank1_lutupgrade/runs/2026-04-28_20-48-57_eco_rank1_lutupgrade_rank025/03_phase3_window_info/phase3_window_info.json",
+  "truth_table_compact_json": "/home/cian/Masterproef/project/results/general_flow_runs/candidate_sweep_2026-04-28_18-47-52_eco_rank1_lutupgrade/runs/2026-04-28_20-48-57_eco_rank1_lutupgrade_rank025/04_phase4_truth_table/truth_table_compact.json",
+  "total_template_count": 706860,
+  "templates_checked": 100000,
+  "top_templates_to_check": 100000,
+  "status_counts": {
+    "too_many_signatures": 96276,
+    "not_factorable": 3722,
+    "sat": 2
+  },
+  "exact_candidate_count": 2,
+  "kept_candidate_count": 2,
+  "baseline_score": 6777,
+  "best_candidate_id": "phase5b2_fast_exact_00001",
+  "best_score_without_penalties": 6769,
+  "best_score_with_penalties": 9769,
+  "estimated_improvement": false,
+  "elapsed_seconds": 218.661,
+  "selected_candidate_json": "/home/cian/Masterproef/project/results/general_flow_runs/candidate_sweep_2026-04-28_18-47-52_eco_rank1_lutupgrade/runs/2026-04-28_20-48-57_eco_rank1_lutupgrade_rank025/05_phase5_candidate_search/phase5b2_fast_selected_candidate.json",
+  "validation_checks": [
+    {
+      "check": "phase3_status",
+      "status": "PASS",
+      "detail": "PASS"
+    },
+    {
+      "check": "phase4_status",
+      "status": "PASS",
+      "detail": "PASS"
+    },
+    {
+      "check": "boundary_count_is_12",
+      "status": "PASS",
+      "detail": "12"
+    },
+    {
+      "check": "single_output",
+      "status": "PASS",
+      "detail": "1"
+    },
+    {
+      "check": "truth_table_length",
+      "status": "PASS",
+      "detail": "4096"
+    },
+    {
+      "check": "three_luts",
+      "status": "PASS",
+      "detail": "3"
+    },
+    {
+      "check": "templates_generated",
+      "status": "PASS",
+      "detail": "total=706860, selected=100000"
+    },
+    {
+      "check": "exact_candidates_found",
+      "status": "PASS",
+      "detail": "2"
+    },
+    {
+      "check": "best_candidate_selected",
+      "status": "PASS",
+      "detail": "phase5b2_fast_exact_00001 score=9769 baseline=6777"
+    }
+  ]
+}

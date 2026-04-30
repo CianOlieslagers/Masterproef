@@ -1,0 +1,269 @@
+/*
+
+AMD Vivado v2024.1 (64-bit) [Major: 2024, Minor: 1]
+SW Build: 5076996 on Wed May 22 18:36:09 MDT 2024
+IP Build: 5075265 on Wed May 22 21:45:21 MDT 2024
+IP Build: 5075265 on Wed May 22 21:45:21 MDT 2024
+
+Process ID (PID): 1509
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Thu Apr 23 12:09:53 CEST 2026
+Time zone: 	Central European Standard Time (Europe/Brussels)
+
+OS: Ubuntu
+OS Version: 6.6.87.2-microsoft-standard-WSL2
+OS Architecture: amd64
+Available processors (cores): 12
+LSB Release Description: Ubuntu 22.04.5 LTS
+
+Display: 0
+Screen size: 1920x1080
+Local screen bounds: x = 0, y = 0, width = 1920, height = 1080
+Screen resolution (DPI): 100
+Available screens: 2
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+Scale size: 12
+OS font scaling: 100%
+Anti-Alias Enabled: false
+
+Java version: 	21.0.1 64-bit
+JavaFX version: 21.0.1
+Java home: 	/tools/Xilinx/Vivado/2024.1/tps/lnx64/jre21.0.1_12
+Java executable: 	/tools/Xilinx/Vivado/2024.1/tps/lnx64/jre21.0.1_12/bin/java
+Java arguments: 	[-Dsun.java2d.pmoffscreen=false, -Dhttps.protocols=TLSv1,TLSv1.1,TLSv1.2, -Dsun.java2d.xrender=false, -Dsun.java2d.uiScale.enabled=false, -Dswing.aatext=true, -XX:-UsePerfData, -Djdk.map.althashing.threshold=512, -XX:StringTableSize=4072, -XX:+UseStringDeduplication, -XX:MaxGCPauseMillis=200, -XX:+ParallelRefProcEnabled, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.base/java.nio=ALL-UNNAMED, --add-opens=java.desktop/sun.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/java.awt.event=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.base/java.nio=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.table=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.desktop/sun.awt.shell=ALL-UNNAMED, --add-exports=java.base/sun.security.action=ALL-UNNAMED, --add-exports=java.desktop/sun.font=ALL-UNNAMED, --add-opens=java.desktop/sun.awt.X11=ALL-UNNAMED, -XX:NewSize=80m, -XX:MaxNewSize=80m, -Xms512m, -Xmx4072m, -Xss10m, -Xrs]
+Java initial memory (-Xms): 	512 MB
+Java maximum memory (-Xmx):	 3 GB
+
+User name: 	cian
+User home directory: /home/cian
+User working directory: /home/cian/Masterproef/project/results/run_lut_insertion/2026-04-21_17-34-57/baseline_impl/checkpoints
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /tools/Xilinx/Vivado
+HDI_APPROOT: /tools/Xilinx/Vivado/2024.1
+RDI_DATADIR: /tools/Xilinx/Vivado/2024.1/data
+RDI_BINDIR: /tools/Xilinx/Vivado/2024.1/bin
+
+Vivado preferences file: /home/cian/.Xilinx/Vivado/2024.1/vivado.xml
+Vivado preferences directory: /home/cian/.Xilinx/Vivado/2024.1/
+Vivado layouts directory: /home/cian/.Xilinx/Vivado/2024.1/data/layouts
+PlanAhead jar file: 	/tools/Xilinx/Vivado/2024.1/lib/classes/planAhead.jar
+Vivado log file: 	/home/cian/Masterproef/project/results/run_lut_insertion/2026-04-21_17-34-57/baseline_impl/checkpoints/vivado.log
+Vivado journal file: 	/home/cian/Masterproef/project/results/run_lut_insertion/2026-04-21_17-34-57/baseline_impl/checkpoints/vivado.jou
+Engine tmp dir: 	./.Xil/Vivado-1509-MSI
+Non-Default Parameters:	[]
+
+Xilinx & AMD Environment Variables
+--------------------------------------------------------------------------------------------
+RDI_APPROOT: /tools/Xilinx/Vivado/2024.1
+RDI_BASEROOT: /tools/Xilinx/Vivado
+RDI_BINROOT: /tools/Xilinx/Vivado/2024.1/bin
+RDI_BUILD: yes
+RDI_DATADIR: /tools/Xilinx/Vivado/2024.1/data
+RDI_INSTALLROOT: /tools/Xilinx
+RDI_INSTALLVER: 2024.1
+RDI_JAVA_PLATFORM: 
+RDI_JAVA_VERSION: 21.0.1_12
+RDI_LIBDIR: /tools/Xilinx/Vivado/2024.1/lib/lnx64.o/Ubuntu/22:/tools/Xilinx/Vivado/2024.1/lib/lnx64.o/Ubuntu:/tools/Xilinx/Vivado/2024.1/lib/lnx64.o
+RDI_OPT_EXT: .o
+RDI_PATCHROOT: 
+RDI_PLATFORM: lnx64
+RDI_PROG: /tools/Xilinx/Vivado/2024.1/bin/unwrapped/lnx64.o/vivado
+RDI_SESSION_INFO: /home/cian/Masterproef/project/results/run_lut_insertion/2026-04-21_17-34-57/baseline_impl/checkpoints:MSI_1776938977_1468
+RDI_SHARED_DATA: /tools/Xilinx/SharedData/2024.1/data
+RDI_TPS_ROOT: /tools/Xilinx/Vivado/2024.1/tps/lnx64
+RDI_USE_JDK21: True
+SHELL: /bin/bash
+XILINX_DSP: 
+XILINX_HLS: /tools/Xilinx/Vitis_HLS/2024.1
+XILINX_PLANAHEAD: /tools/Xilinx/Vivado/2024.1
+XILINX_VIVADO: /tools/Xilinx/Vivado/2024.1
+XILINX_VIVADO_HLS: /tools/Xilinx/Vivado/2024.1
+
+
+GUI allocated memory:	512 MB
+GUI max memory:		4,072 MB
+Engine allocated memory: 1,459 MB
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: FLOW_ADDED
+// Tcl Message: open_checkpoint /home/cian/Masterproef/project/results/run_lut_insertion/2026-04-21_17-34-57/baseline_impl/checkpoints/post_route_timingexp.dcp 
+// Tcl Message: Command: open_checkpoint /home/cian/Masterproef/project/results/run_lut_insertion/2026-04-21_17-34-57/baseline_impl/checkpoints/post_route_timingexp.dcp  Starting open_checkpoint Task  Time (s): cpu = 00:00:00.13 ; elapsed = 00:00:00.07 . Memory (MB): peak = 7470.172 ; gain = 8.906 ; free physical = 4557 ; free virtual = 8761 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,529 MB. GUI used memory: 65 MB. Current time: 4/23/26, 12:09:54 PM CEST
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 113 MB (+115727kb) [00:00:19]
+// [Engine Memory]: 1,685 MB (+1614998kb) [00:00:19]
+// WARNING: HEventQueue.dispatchEvent() is taking  1485 ms.
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2024.1/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 139 MB (+21326kb) [00:00:20]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,697 MB. GUI used memory: 68 MB. Current time: 4/23/26, 12:10:09 PM CEST
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 3,473 MB. GUI used memory: 67 MB. Current time: 4/23/26, 12:10:25 PM CEST
+// [Engine Memory]: 3,473 MB (+1786848kb) [00:00:43]
+// TclEventType: DESIGN_NEW
+// Xgd.load filename: /home/cian/Masterproef/project/results/run_lut_insertion/2026-04-21_17-34-57/baseline_impl/checkpoints/./.Xil/Vivado-1509-MSI/xcu200_floorplan.xgd_4A2ECD3D elapsed time: 0.6s
+// [GUI Memory]: 148 MB (+2268kb) [00:00:44]
+// [Engine Memory]: 3,820 MB (+181660kb) [00:00:45]
+// Xgd.load filename: /home/cian/Masterproef/project/results/run_lut_insertion/2026-04-21_17-34-57/baseline_impl/checkpoints/./.Xil/Vivado-1509-MSI/xcu200_detail.xgd_4A2ECD3D elapsed time: 4.1s
+// [GUI Memory]: 204 MB (+50811kb) [00:00:49]
+// DeviceModel: Load Xgds SwingWorker Join Forever elapsed time: 4.9s
+// DeviceModel: Load Xgds SwingWorker Join Forever elapsed time: 1.8s
+// DeviceView Instantiated
+// [GUI Memory]: 222 MB (+8545kb) [00:00:49]
+// WARNING: HEventQueue.dispatchEvent() is taking  4867 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Device 21-403] Loading part xcu200-fsgd2104-2-e 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 8815.727 ; gain = 0.000 ; free physical = 3231 ; free virtual = 7436 
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 256 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2024.1 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: Read ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 8895.477 ; gain = 1.000 ; free physical = 3131 ; free virtual = 7336 
+// Tcl Message: INFO: [Timing 38-478] Restoring timing data from binary archive. INFO: [Timing 38-479] Binary timing data restore complete. INFO: [Project 1-856] Restoring constraints from binary archive. INFO: [Project 1-853] Binary constraint restore complete. INFO: [Designutils 20-5722] Start Reading Physical Databases. 
+// Tcl Message: Reading placement. 
+// Tcl Message: Read Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 9261.324 ; gain = 0.000 ; free physical = 2858 ; free virtual = 7081 
+// Tcl Message: Reading placer database... 
+// Tcl Message: Read Device Cache: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.03 . Memory (MB): peak = 9261.324 ; gain = 0.000 ; free physical = 2854 ; free virtual = 7077 Read PlaceDB: Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.05 . Memory (MB): peak = 9261.324 ; gain = 0.000 ; free physical = 2853 ; free virtual = 7076 Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 9261.324 ; gain = 0.000 ; free physical = 2853 ; free virtual = 7076 
+// Tcl Message: Reading routing. 
+// Tcl Message: Read RouteStorage: Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.02 . Memory (MB): peak = 9271.324 ; gain = 10.000 ; free physical = 2852 ; free virtual = 7075 Read Physdb Files: Time (s): cpu = 00:00:00.12 ; elapsed = 00:00:00.11 . Memory (MB): peak = 9271.324 ; gain = 10.000 ; free physical = 2852 ; free virtual = 7075 
+// Tcl Message: Restored from archive | CPU: 0.180000 secs | Memory: 2.391342 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:00.17 ; elapsed = 00:00:00.17 . Memory (MB): peak = 9271.324 ; gain = 31.812 ; free physical = 2852 ; free virtual = 7075 Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 9532.543 ; gain = 0.000 ; free physical = 2562 ; free virtual = 6815 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary:   A total of 256 instances were transformed.   IBUF => IBUF (IBUFCTRL, INBUF): 256 instances  
+// TclEventType: CURR_DESIGN_SET
+// TclEventType: PROJ_DESIGN_MODE_SET
+// [Engine Memory]: 4,098 MB (+91734kb) [00:00:49]
+// TclEventType: PROJ_DESIGN_MODE_SET
+// TclEventType: PROJECT_DASHBOARD_GADGET_DELETE
+// TclEventType: PROJ_DESIGN_MODE_SET
+// Device view-level: 0.0
+// [GUI Memory]: 240 MB (+6826kb) [00:00:50]
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// TclEventType: PROJ_DESIGN_MODE_SET
+// TclEventType: DESIGN_MODE_CHANGE
+// Tcl Message: INFO: [Project 1-604] Checkpoint was created with Vivado v2024.1 (64-bit) build 5076996 
+// Tcl Message: open_checkpoint: Time (s): cpu = 00:01:16 ; elapsed = 00:00:43 . Memory (MB): peak = 10044.477 ; gain = 2606.086 ; free physical = 1907 ; free virtual = 6191 
+// Elapsed Time for: 'd.a': 42s
+// Project name: project_post_route_timingexp; location: /home/cian/Masterproef/project/results/run_lut_insertion/2026-04-21_17-34-57/baseline_impl/checkpoints; part: xcu200-fsgd2104-2-e
+dismissDialog("Open Checkpoint"); // bj (Open Checkpoint Progress)
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgdAndInitRouteStorage elapsed time: 8.1s
+// Device view-level: 0.1
+// Device view-level: 0.6
+// Device view-level: 0.9
+// HMemoryUtils.trashcanNow. Engine heap size: 4,246 MB. GUI used memory: 164 MB. Current time: 4/23/26, 12:10:47 PM CEST
+// Device view-level: 1.5
+// Device view-level: 1.8
+// Device view-level: 2.1
+// Device view-level: 2.4
+// Device view-level: 2.7
+// HMemoryUtils.trashcanNow. Engine heap size: 5,170 MB. GUI used memory: 164 MB. Current time: 4/23/26, 12:10:48 PM CEST
+// Device view-level: 3.0
+// [Engine Memory]: 5,170 MB (+908854kb) [00:01:06]
+// Device view-level: 3.3
+// Device view-level: 3.9
+// Device view-level: 4.7
+// Device view-level: 4.4
+// HMemoryUtils.trashcanNow. Engine heap size: 4,033 MB. GUI used memory: 163 MB. Current time: 4/23/26, 12:10:50 PM CEST
+// Device view-level: 3.9
+// Device view-level: 3.6
+// Device view-level: 3.3
+// Device view-level: 3.0
+// HMemoryUtils.trashcanNow. Engine heap size: 4,027 MB. GUI used memory: 174 MB. Current time: 4/23/26, 12:10:54 PM CEST
+// Device view-level: 2.4
+// Device view-level: 1.8
+// Device view-level: 1.5
+// [GUI Memory]: 252 MB (+789kb) [00:01:12]
+// Device view-level: 1.2
+// Device view-level: 0.9
+// HMemoryUtils.trashcanNow. Engine heap size: 4,027 MB. GUI used memory: 172 MB. Current time: 4/23/26, 12:10:55 PM CEST
+// Device view-level: 0.6
+// Elapsed time: 22 seconds
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 1585732, 5790382); // t (PAResourceOtoP.PAViews_DEVICE, PlanAheadTabDevice_editor)
+/********** startDrag (1183, 509); // t (PAResourceOtoP.PAViews_DEVICE, PlanAheadTabDevice_editor) **********/
+/********** endDrag (1146, 331); // t (PAResourceOtoP.PAViews_DEVICE, PlanAheadTabDevice_editor) **********/
+// Device view-level: 0.3
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 5463256, 3933531); // t (PAResourceOtoP.PAViews_DEVICE, PlanAheadTabDevice_editor)
+/********** startDrag (1427, 429); // t (PAResourceOtoP.PAViews_DEVICE, PlanAheadTabDevice_editor) **********/
+/********** endDrag (1291, 339); // t (PAResourceOtoP.PAViews_DEVICE, PlanAheadTabDevice_editor) **********/
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 3632960, 2825720); // t (PAResourceOtoP.PAViews_DEVICE, PlanAheadTabDevice_editor)
+/********** startDrag (1317, 363); // t (PAResourceOtoP.PAViews_DEVICE, PlanAheadTabDevice_editor) **********/
+/********** endDrag (1377, 530); // t (PAResourceOtoP.PAViews_DEVICE, PlanAheadTabDevice_editor) **********/
+// Device view-level: 1.1
+// [GUI Memory]: 266 MB (+676kb) [00:01:15]
+// HMemoryUtils.trashcanNow. Engine heap size: 5,185 MB. GUI used memory: 170 MB. Current time: 4/23/26, 12:10:58 PM CEST
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 3302259, 3611855); // t (PAResourceOtoP.PAViews_DEVICE, PlanAheadTabDevice_editor)
+/********** startDrag (1527, 338); // t (PAResourceOtoP.PAViews_DEVICE, PlanAheadTabDevice_editor) **********/
+/********** endDrag (1686, 515); // t (PAResourceOtoP.PAViews_DEVICE, PlanAheadTabDevice_editor) **********/
+// Device view-level: 1.8
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 1956292, 4102316, false, false, false, true, false); // t (PAResourceOtoP.PAViews_DEVICE, PlanAheadTabDevice_editor) - Popup Trigger
+// Device select: 'Site - SLICE_X121Y446'
+selectView(PAResourceOtoP.PAViews_DEVICE, "Device", 1009, 2065, 1449, 541); // G (PAResourceOtoP.PAViews_DEVICE, PlanAheadTabDevice)
+selectView(PAResourceOtoP.PAViews_DEVICE, "Device", 1009, 2065, 1449, 541, false, false, false, true, false); // G (PAResourceOtoP.PAViews_DEVICE, PlanAheadTabDevice) - Popup Trigger
+/********** startDrag (1454, 425); // t (PAResourceOtoP.PAViews_DEVICE, PlanAheadTabDevice_editor) **********/
+/********** endDrag (1347, 373); // t (PAResourceOtoP.PAViews_DEVICE, PlanAheadTabDevice_editor) **********/
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 2742983, 3971201); // t (PAResourceOtoP.PAViews_DEVICE, PlanAheadTabDevice_editor)
+/********** leftMouseClick (1857, 364, true); // t (PAResourceOtoP.PAViews_DEVICE, PlanAheadTabDevice_editor) **********/
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 1392099, 3818233); // t (PAResourceOtoP.PAViews_DEVICE, PlanAheadTabDevice_editor)
+/********** startDrag (1179, 295); // t (PAResourceOtoP.PAViews_DEVICE, PlanAheadTabDevice_editor) **********/
+/********** endDrag (1568, 518); // t (PAResourceOtoP.PAViews_DEVICE, PlanAheadTabDevice_editor) **********/
+// Device view-level: 2.3
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 1738763, 3960867); // t (PAResourceOtoP.PAViews_DEVICE, PlanAheadTabDevice_editor)
+/********** startDrag (1122, 345); // t (PAResourceOtoP.PAViews_DEVICE, PlanAheadTabDevice_editor) **********/
+/********** endDrag (1231, 443); // t (PAResourceOtoP.PAViews_DEVICE, PlanAheadTabDevice_editor) **********/
+// Device view-level: 3.5
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 1750766, 3975882); // t (PAResourceOtoP.PAViews_DEVICE, PlanAheadTabDevice_editor)
+/********** startDrag (975, 270); // t (PAResourceOtoP.PAViews_DEVICE, PlanAheadTabDevice_editor) **********/
+/********** endDrag (1096, 333); // t (PAResourceOtoP.PAViews_DEVICE, PlanAheadTabDevice_editor) **********/
+// Device view-level: 4.9
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 1756679, 3979904); // t (PAResourceOtoP.PAViews_DEVICE, PlanAheadTabDevice_editor)
+/********** leftMouseClick (952, 337, true); // t (PAResourceOtoP.PAViews_DEVICE, PlanAheadTabDevice_editor) **********/
+// Device select: 'Cell - f[45]_INST_0_i_1'
+selectView(PAResourceOtoP.PAViews_DEVICE, "Device", 67026, 151853, 1449, 541); // G (PAResourceOtoP.PAViews_DEVICE, PlanAheadTabDevice)
+// PAPropertyPanels.initPanels (f[45]_INST_0_i_1 (LUT5)) elapsed time: 4.8s
+// WARNING: HEventQueue.dispatchEvent() is taking  4822 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 4,080 MB. GUI used memory: 171 MB. Current time: 4/23/26, 12:11:10 PM CEST
+// Device view-level: 1.4
+// WARNING: HEventQueue.dispatchEvent() is taking  1523 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 4,050 MB. GUI used memory: 169 MB. Current time: 4/23/26, 12:41:13 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 4,050 MB. GUI used memory: 168 MB. Current time: 4/23/26, 1:11:13 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 4,050 MB. GUI used memory: 148 MB. Current time: 4/23/26, 1:41:15 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 3,983 MB. GUI used memory: 146 MB. Current time: 4/23/26, 2:11:19 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 3,969 MB. GUI used memory: 147 MB. Current time: 4/23/26, 2:41:21 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 3,969 MB. GUI used memory: 147 MB. Current time: 4/23/26, 3:11:22 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 3,969 MB. GUI used memory: 147 MB. Current time: 4/23/26, 3:41:23 PM CEST
+// WARNING: HEventQueue.dispatchEvent() is taking  4732 ms.
+// Elapsed time: 14253 seconds
+closeMainWindow("post_route_timingexp.dcp - [/home/cian/Masterproef/project/results/run_lut_insertion/2026-04-21_17-34-57/baseline_impl/checkpoints/post_route_timingexp.dcp] - Vivado 2024.1"); // F (MainFrame)
+// Run Command: PAResourceCommand.PACommandNames_EXIT
+// WARNING: HEventQueue.dispatchEvent() is taking  2147 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1019 ms.

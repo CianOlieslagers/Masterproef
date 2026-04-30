@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:36:09 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Wed Apr 29 00:07:21 2026
+# Process ID: 24763
+# Current directory: /home/cian/Masterproef/project/Readwright/scripts
+# Command line: vivado -mode batch -source /home/cian/Masterproef/project/results/general_flow_runs/2026-04-28_22-03-34_eco_rank1_lutupgrade/07_phase6b_generic_stage1/check_stage1_reload.tcl -tclargs /home/cian/Masterproef/project/results/general_flow_runs/2026-04-28_22-03-34_eco_rank1_lutupgrade/07_phase6b_generic_stage1/phase6b_generic_stage1_inits_upgrades.dcp /home/cian/Masterproef/project/results/general_flow_runs/2026-04-28_22-03-34_eco_rank1_lutupgrade/06_phase6a_generic_manifest/phase6a_generic_nodes.csv /home/cian/Masterproef/project/results/general_flow_runs/2026-04-28_22-03-34_eco_rank1_lutupgrade/07_phase6b_generic_stage1/stage1_reload_check.csv
+# Log file: /home/cian/Masterproef/project/Readwright/scripts/vivado.log
+# Journal file: /home/cian/Masterproef/project/Readwright/scripts/vivado.jou
+# Running On        :MSI
+# Platform          :Ubuntu
+# Operating System  :Ubuntu 22.04.5 LTS
+# Processor Detail  :Intel(R) Core(TM) i7-10750H CPU @ 2.60GHz
+# CPU Frequency     :2592.008 MHz
+# CPU Physical cores:6
+# CPU Logical cores :12
+# Host memory       :8232 MB
+# Swap memory       :2147 MB
+# Total Virtual     :10380 MB
+# Available Virtual :9744 MB
+#-----------------------------------------------------------
+source /home/cian/Masterproef/project/results/general_flow_runs/2026-04-28_22-03-34_eco_rank1_lutupgrade/07_phase6b_generic_stage1/check_stage1_reload.tcl

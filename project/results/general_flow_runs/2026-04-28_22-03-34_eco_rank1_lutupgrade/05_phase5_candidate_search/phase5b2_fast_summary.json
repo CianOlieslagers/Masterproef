@@ -1,0 +1,49 @@
+{
+  "phase": "FASE 5E ABC_TO_PHASE6",
+  "phase5b2_fast_status": "PASS_IMPROVED_ESTIMATE",
+  "phase5d_status": "PASS_IMPROVED_ESTIMATE",
+  "source_abc_candidate_json": "/home/cian/Masterproef/project/results/general_flow_runs/2026-04-28_22-03-34_eco_rank1_lutupgrade/05_phase5d_multi_abc/phase5d_multi_selected_candidate.json",
+  "exact_candidate_count": 1,
+  "kept_candidate_count": 1,
+  "best_candidate_id": "phase5d_multi_abc_00001",
+  "baseline_score": 60850,
+  "best_score_without_penalties": 38073,
+  "best_score_with_penalties": 44823,
+  "estimated_improvement": true,
+  "selected_candidate_json": "/home/cian/Masterproef/project/results/general_flow_runs/2026-04-28_22-03-34_eco_rank1_lutupgrade/05_phase5_candidate_search/phase5b2_fast_selected_candidate.json",
+  "abc_lut_count": 4,
+  "window_lut_count": 4,
+  "role_count": 4,
+  "upgrade_count": 2,
+  "upgraded_cells": [
+    "f[108]_INST_0_i_8",
+    "f[108]_INST_0_i_9"
+  ],
+  "validation_checks": [
+    {
+      "check": "abc_candidate_status",
+      "status": "PASS",
+      "detail": "PASS_IMPROVED_ESTIMATE"
+    },
+    {
+      "check": "truth_table_equivalence",
+      "status": "PASS",
+      "detail": "True"
+    },
+    {
+      "check": "nodes_present",
+      "status": "PASS",
+      "detail": "nodes=4"
+    },
+    {
+      "check": "output_driver_present",
+      "status": "PASS",
+      "detail": "f[108]_INST_0_i_6/f[108]_INST_0_i_6/O"
+    },
+    {
+      "check": "output_node_found",
+      "status": "PASS",
+      "detail": "y"
+    }
+  ]
+}

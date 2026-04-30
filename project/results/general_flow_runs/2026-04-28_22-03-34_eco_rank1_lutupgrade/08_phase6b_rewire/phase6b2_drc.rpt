@@ -1,0 +1,82 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (lin64) Build 5076996 Wed May 22 18:36:09 MDT 2024
+| Date         : Wed Apr 29 01:31:14 2026
+| Host         : MSI running 64-bit Ubuntu 22.04.5 LTS
+| Command      : report_drc -file /home/cian/Masterproef/project/results/general_flow_runs/2026-04-28_22-03-34_eco_rank1_lutupgrade/08_phase6b_rewire/phase6b2_drc.rpt
+| Design       : top
+| Device       : xcu200-fsgd2104-2-e
+| Speed File   : -2
+| Design State : Fully Routed
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: checkpoint_phase6b2_stage1_upgraded_inits
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 8
++-------------+------------------+----------------------------+------------+
+| Rule        | Severity         | Description                | Violations |
++-------------+------------------+----------------------------+------------+
+| LUTOI-1     | Critical Warning | LUT has unconnected input  | 1          |
+| NSTD-1      | Critical Warning | Unspecified I/O Standard   | 1          |
+| UCIO-1      | Critical Warning | Unconstrained Logical Port | 1          |
+| IOBUSSLRC-1 | Warning          | IO Bus SLR Crossings       | 1          |
+| PDCN-1569   | Warning          | LUT equation term check    | 4          |
++-------------+------------------+----------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+LUTOI-1#1 Critical Warning
+LUT has unconnected input  
+LUT cell f[108]_INST_0_i_8 has unconnected input(s) and may not function as expected or may have problems routing. Please check your design.
+Related violations: <none>
+
+NSTD-1#1 Critical Warning
+Unspecified I/O Standard  
+385 out of 385 logical ports use I/O standard (IOSTANDARD) value 'DEFAULT', instead of a user assigned specific value. This may cause I/O contention or incompatibility with the board power or connectivity affecting performance, signal integrity or in extreme cases cause damage to the device or the components to which it is connected. To correct this violation, specify all I/O standards. This design will fail to generate a bitstream unless all logical ports have a user specified I/O standard value defined. To allow bitstream creation with unspecified I/O standard values (not recommended), use this command: set_property SEVERITY {Warning} [get_drc_checks NSTD-1].  NOTE: When using the Vivado Runs infrastructure (e.g. launch_runs Tcl command), add this command to a .tcl file and add that file as a pre-hook for write_bitstream step for the implementation run. Problem ports: a[127:0], b[127:0], cOut, f[127:0].
+Related violations: <none>
+
+UCIO-1#1 Critical Warning
+Unconstrained Logical Port  
+385 out of 385 logical ports have no user assigned specific location constraint (LOC). This may cause I/O contention or incompatibility with the board power or connectivity affecting performance, signal integrity or in extreme cases cause damage to the device or the components to which it is connected. To correct this violation, specify all pin locations. This design will fail to generate a bitstream unless all logical ports have a user specified site LOC constraint defined.  To allow bitstream creation with unspecified pin locations (not recommended), use this command: set_property SEVERITY {Warning} [get_drc_checks UCIO-1].  NOTE: When using the Vivado Runs infrastructure (e.g. launch_runs Tcl command), add this command to a .tcl file and add that file as a pre-hook for write_bitstream step for the implementation run.  Problem ports: a[127:0], b[127:0], cOut, f[127:0].
+Related violations: <none>
+
+IOBUSSLRC-1#1 Warning
+IO Bus SLR Crossings  
+Bus port f spans more than one Super Logic Region (SLR).   Bits placed in SLR 2:  7-9, 78-99.  
+  Bits placed in SLR 1:  0-6, 10-77, 100-127.  
+
+Related violations: <none>
+
+PDCN-1569#1 Warning
+LUT equation term check  
+Used physical LUT pin 'A1' of cell f[108]_INST_0_i_6 (pin f[108]_INST_0_i_6/I3) is not included in the LUT equation: 'O6=(A6*A3*(~A2))+(A6*(~A3))+((~A6)*(~A3)*(~A2))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#2 Warning
+LUT equation term check  
+Used physical LUT pin 'A3' of cell f[108]_INST_0_i_7 (pin f[108]_INST_0_i_7/I5) is not included in the LUT equation: 'O6=(A2*A4*A5)+(A2*A4*(~A5)*(~A6))+(A2*(~A4)*A5*(~A6))+((~A2)*A1*A4*A5)+((~A2)*A1*A4*(~A5)*(~A6))+((~A2)*A1*(~A4)*A5*(~A6))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#3 Warning
+LUT equation term check  
+Used physical LUT pin 'A4' of cell f[108]_INST_0_i_6 (pin f[108]_INST_0_i_6/I5) is not included in the LUT equation: 'O6=(A6*A3*(~A2))+(A6*(~A3))+((~A6)*(~A3)*(~A2))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#4 Warning
+LUT equation term check  
+Used physical LUT pin 'A5' of cell f[108]_INST_0_i_6 (pin f[108]_INST_0_i_6/I4) is not included in the LUT equation: 'O6=(A6*A3*(~A2))+(A6*(~A3))+((~A6)*(~A3)*(~A2))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+

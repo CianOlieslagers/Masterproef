@@ -1,0 +1,62 @@
+{
+  "run_name": "eco_rank1_lutupgrade",
+  "run_dir": "/home/cian/Masterproef/project/results/general_flow_runs/2026-04-26_17-05-12_eco_rank1_lutupgrade",
+  "copied_config": "/home/cian/Masterproef/project/results/general_flow_runs/2026-04-26_17-05-12_eco_rank1_lutupgrade/00_config/config.yaml",
+  "status": "PASS_INITIAL_SETUP",
+  "phase_rows": [
+    {
+      "phase": "precheck",
+      "status": "PASS",
+      "detail": "baseline_dcp: /home/cian/Masterproef/project/results/run_lut_insertion/TestDirectory/baseline_impl/checkpoints/post_route_timingexp.dcp"
+    },
+    {
+      "phase": "precheck",
+      "status": "PASS",
+      "detail": "baseline_reports_dir: /home/cian/Masterproef/project/results/run_lut_insertion/TestDirectory/baseline_impl/reports"
+    },
+    {
+      "phase": "precheck",
+      "status": "PASS",
+      "detail": "rapidwright_jar: /home/cian/Masterproef/rapidwright-2024.1.1-standalone-lin64.jar"
+    },
+    {
+      "phase": "precheck",
+      "status": "PASS",
+      "detail": "java_scripts_dir: /home/cian/Masterproef/project/Readwright/scripts"
+    },
+    {
+      "phase": "precheck",
+      "status": "PASS",
+      "detail": "vivado_scripts_dir: /home/cian/Masterproef/project/Vivado/scripts"
+    },
+    {
+      "phase": "phase0",
+      "status": "PASS",
+      "detail": "route_errors=0"
+    },
+    {
+      "phase": "phase0",
+      "status": "PASS",
+      "detail": "no DRC Error rules"
+    },
+    {
+      "phase": "phase0",
+      "status": "PASS",
+      "detail": "WNS=-8.312, TNS=-680.539"
+    }
+  ],
+  "important_outputs": {
+    "logs": "/home/cian/Masterproef/project/results/general_flow_runs/2026-04-26_17-05-12_eco_rank1_lutupgrade/00_logs",
+    "status": "/home/cian/Masterproef/project/results/general_flow_runs/2026-04-26_17-05-12_eco_rank1_lutupgrade/00_status",
+    "phase1": "/home/cian/Masterproef/project/results/general_flow_runs/2026-04-26_17-05-12_eco_rank1_lutupgrade/01_phase1_timing_edges",
+    "phase2": "/home/cian/Masterproef/project/results/general_flow_runs/2026-04-26_17-05-12_eco_rank1_lutupgrade/02_phase2_window",
+    "phase3": "/home/cian/Masterproef/project/results/general_flow_runs/2026-04-26_17-05-12_eco_rank1_lutupgrade/03_phase3_window_info",
+    "phase4": "/home/cian/Masterproef/project/results/general_flow_runs/2026-04-26_17-05-12_eco_rank1_lutupgrade/04_phase4_truth_table",
+    "phase5": "/home/cian/Masterproef/project/results/general_flow_runs/2026-04-26_17-05-12_eco_rank1_lutupgrade/05_phase5_candidate_search",
+    "phase6a": "/home/cian/Masterproef/project/results/general_flow_runs/2026-04-26_17-05-12_eco_rank1_lutupgrade/06_phase6a_manifest",
+    "phase6b_stage1": "/home/cian/Masterproef/project/results/general_flow_runs/2026-04-26_17-05-12_eco_rank1_lutupgrade/07_phase6b_stage1",
+    "phase6b_rewire": "/home/cian/Masterproef/project/results/general_flow_runs/2026-04-26_17-05-12_eco_rank1_lutupgrade/08_phase6b_rewire",
+    "phase6c": "/home/cian/Masterproef/project/results/general_flow_runs/2026-04-26_17-05-12_eco_rank1_lutupgrade/09_phase6c_fresh_route",
+    "phase7": "/home/cian/Masterproef/project/results/general_flow_runs/2026-04-26_17-05-12_eco_rank1_lutupgrade/10_phase7_validation"
+  }
+}

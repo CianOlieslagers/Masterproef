@@ -1,0 +1,8 @@
+digraph window {
+  rankdir=LR;
+  "f[18]_INST_0_i_7" [label="f[18]_INST_0_i_7\nLUT6\nSLICE_X106Y481/SLICEL.H6LUT"];
+  "f[18]_INST_0_i_6" [label="f[18]_INST_0_i_6\nLUT6\nSLICE_X106Y479/SLICEL.E6LUT"];
+  "f[18]_INST_0_i_8" [label="f[18]_INST_0_i_8\nLUT2\nSLICE_X110Y481/SLICEM.A6LUT"];
+  "f[18]_INST_0_i_7" -> "f[18]_INST_0_i_6" [label="I0\n91ps\nM=2", penwidth=3];
+  "f[18]_INST_0_i_8" -> "f[18]_INST_0_i_6" [label="I1\n221ps\nM=6"];
+}

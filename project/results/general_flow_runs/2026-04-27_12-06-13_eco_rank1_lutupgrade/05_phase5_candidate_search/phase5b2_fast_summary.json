@@ -1,0 +1,70 @@
+{
+  "phase": "FASE 5B.2 FAST",
+  "phase5b2_fast_status": "PASS_IMPROVED_ESTIMATE",
+  "phase3_json": "/home/cian/Masterproef/project/results/general_flow_runs/2026-04-27_12-06-13_eco_rank1_lutupgrade/03_phase3_window_info/phase3_window_info.json",
+  "truth_table_compact_json": "/home/cian/Masterproef/project/results/general_flow_runs/2026-04-27_12-06-13_eco_rank1_lutupgrade/04_phase4_truth_table/truth_table_compact.json",
+  "total_template_count": 706860,
+  "templates_checked": 100000,
+  "top_templates_to_check": 100000,
+  "status_counts": {
+    "too_many_signatures": 96426,
+    "not_factorable": 3572,
+    "sat": 2
+  },
+  "exact_candidate_count": 2,
+  "kept_candidate_count": 2,
+  "baseline_score": 57589,
+  "best_candidate_id": "phase5b2_fast_exact_00000",
+  "best_score_without_penalties": 52087,
+  "best_score_with_penalties": 60087,
+  "estimated_improvement": true,
+  "elapsed_seconds": 212.227,
+  "selected_candidate_json": "/home/cian/Masterproef/project/results/general_flow_runs/2026-04-27_12-06-13_eco_rank1_lutupgrade/05_phase5_candidate_search/phase5b2_fast_selected_candidate.json",
+  "validation_checks": [
+    {
+      "check": "phase3_status",
+      "status": "PASS",
+      "detail": "PASS"
+    },
+    {
+      "check": "phase4_status",
+      "status": "PASS",
+      "detail": "PASS"
+    },
+    {
+      "check": "boundary_count_is_12",
+      "status": "PASS",
+      "detail": "12"
+    },
+    {
+      "check": "single_output",
+      "status": "PASS",
+      "detail": "1"
+    },
+    {
+      "check": "truth_table_length",
+      "status": "PASS",
+      "detail": "4096"
+    },
+    {
+      "check": "three_luts",
+      "status": "PASS",
+      "detail": "3"
+    },
+    {
+      "check": "templates_generated",
+      "status": "PASS",
+      "detail": "total=706860, selected=100000"
+    },
+    {
+      "check": "exact_candidates_found",
+      "status": "PASS",
+      "detail": "2"
+    },
+    {
+      "check": "best_candidate_selected",
+      "status": "PASS",
+      "detail": "phase5b2_fast_exact_00000 score=52087 baseline=57589"
+    }
+  ]
+}

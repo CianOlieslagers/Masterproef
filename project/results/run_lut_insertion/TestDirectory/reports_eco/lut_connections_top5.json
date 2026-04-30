@@ -1,0 +1,147 @@
+[
+  {
+    "id": "cand_001141",
+    "net": "f[88]_INST_0_i_2_n_0",
+    "from": "f[88]_INST_0_i_2/IBUFCTRL_INST",
+    "to": "f[88]_INST_0_i_1",
+    "distance": 445,
+    "coords": {
+      "src": [
+        1,
+        351
+      ],
+      "dest": [
+        90,
+        707
+      ]
+    },
+    "source_cell": "f[88]_INST_0_i_2/IBUFCTRL_INST",
+    "source_pin": null,
+    "source_site": "IOB_X1Y351",
+    "sink_cell": "f[88]_INST_0_i_1",
+    "sink_pin": null,
+    "sink_site": "SLICE_X90Y707",
+    "target_slice": "SLICE_X45Y529",
+    "eco_ready": false,
+    "source_cell_type": "IBUFCTRL",
+    "sink_cell_type": "LUT5",
+    "source_bel": "IBUFCTRL",
+    "sink_bel": "A6LUT"
+  },
+  {
+    "id": "cand_002764",
+    "net": "f[88]_INST_0_i_2/O",
+    "from": "f[88]_INST_0_i_2/IBUFCTRL_INST",
+    "to": "f[88]_INST_0_i_1",
+    "distance": 445,
+    "coords": {
+      "src": [
+        1,
+        351
+      ],
+      "dest": [
+        90,
+        707
+      ]
+    },
+    "source_cell": "f[88]_INST_0_i_2/IBUFCTRL_INST",
+    "source_pin": null,
+    "source_site": "IOB_X1Y351",
+    "sink_cell": "f[88]_INST_0_i_1",
+    "sink_pin": null,
+    "sink_site": "SLICE_X90Y707",
+    "target_slice": "SLICE_X45Y529",
+    "eco_ready": false,
+    "source_cell_type": "IBUFCTRL",
+    "sink_cell_type": "LUT5",
+    "source_bel": "IBUFCTRL",
+    "sink_bel": "A6LUT"
+  },
+  {
+    "id": "cand_001134",
+    "net": "f[87]_INST_0_i_2_n_0",
+    "from": "f[87]_INST_0_i_2/IBUFCTRL_INST",
+    "to": "f[88]_INST_0_i_1",
+    "distance": 442,
+    "coords": {
+      "src": [
+        1,
+        354
+      ],
+      "dest": [
+        90,
+        707
+      ]
+    },
+    "source_cell": "f[87]_INST_0_i_2/IBUFCTRL_INST",
+    "source_pin": null,
+    "source_site": "IOB_X1Y354",
+    "sink_cell": "f[88]_INST_0_i_1",
+    "sink_pin": null,
+    "sink_site": "SLICE_X90Y707",
+    "target_slice": "SLICE_X45Y530",
+    "eco_ready": false,
+    "source_cell_type": "IBUFCTRL",
+    "sink_cell_type": "LUT5",
+    "source_bel": "IBUFCTRL",
+    "sink_bel": "A6LUT"
+  },
+  {
+    "id": "cand_002756",
+    "net": "f[87]_INST_0_i_2/O",
+    "from": "f[87]_INST_0_i_2/IBUFCTRL_INST",
+    "to": "f[88]_INST_0_i_1",
+    "distance": 442,
+    "coords": {
+      "src": [
+        1,
+        354
+      ],
+      "dest": [
+        90,
+        707
+      ]
+    },
+    "source_cell": "f[87]_INST_0_i_2/IBUFCTRL_INST",
+    "source_pin": null,
+    "source_site": "IOB_X1Y354",
+    "sink_cell": "f[88]_INST_0_i_1",
+    "sink_pin": null,
+    "sink_site": "SLICE_X90Y707",
+    "target_slice": "SLICE_X45Y530",
+    "eco_ready": false,
+    "source_cell_type": "IBUFCTRL",
+    "sink_cell_type": "LUT5",
+    "source_bel": "IBUFCTRL",
+    "sink_bel": "A6LUT"
+  },
+  {
+    "id": "cand_001145",
+    "net": "f[88]_INST_0_i_3_n_0",
+    "from": "f[88]_INST_0_i_3/IBUFCTRL_INST",
+    "to": "f[88]_INST_0_i_1",
+    "distance": 368,
+    "coords": {
+      "src": [
+        0,
+        429
+      ],
+      "dest": [
+        90,
+        707
+      ]
+    },
+    "source_cell": "f[88]_INST_0_i_3/IBUFCTRL_INST",
+    "source_pin": null,
+    "source_site": "IOB_X0Y429",
+    "sink_cell": "f[88]_INST_0_i_1",
+    "sink_pin": null,
+    "sink_site": "SLICE_X90Y707",
+    "target_slice": "SLICE_X45Y568",
+    "eco_ready": false,
+    "source_cell_type": "IBUFCTRL",
+    "sink_cell_type": "LUT5",
+    "source_bel": "IBUFCTRL",
+    "sink_bel": "A6LUT"
+  }
+]

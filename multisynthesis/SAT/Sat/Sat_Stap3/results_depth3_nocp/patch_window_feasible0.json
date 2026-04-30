@@ -1,0 +1,272 @@
+{
+  "design": null,
+  "K": 4,
+  "target_file": "/home/cian/Masterproef/multisynthesis/results/example_big_300/Sat/Sat_Stap2/results/target_feasible0.super.sat.v2.json",
+  "fanout_file": "/home/cian/Masterproef/multisynthesis/results/example_big_300/Sat/Sat_Stap1/fanout/result/fanout.json",
+  "rewire_patch_used": {
+    "dst_lut": "LUT_101",
+    "replace_input_pin": 3,
+    "new_driver": "LUT_120",
+    "inversion": false,
+    "meta": {
+      "src": "LUT_97",
+      "connection_index": 0,
+      "pitstop_index": 1,
+      "support_ok": true,
+      "d_src_dst": 6,
+      "d_pit_dst": 3,
+      "pitstop_fanout": 3
+    }
+  },
+  "depth": 3,
+  "PATCH_LUTS": [
+    "LUT_101",
+    "LUT_103",
+    "LUT_120",
+    "LUT_124",
+    "LUT_128",
+    "LUT_147",
+    "LUT_151",
+    "LUT_168",
+    "LUT_172",
+    "LUT_199",
+    "LUT_218",
+    "LUT_326"
+  ],
+  "CUTPOINT_NETS": [
+    "LUT_176",
+    "LUT_201",
+    "LUT_222",
+    "LUT_247",
+    "LUT_268",
+    "LUT_328",
+    "LUT_339",
+    "LUT_352"
+  ],
+  "debug": {
+    "window_expansion": {
+      "depth": 3,
+      "seeds": [
+        "LUT_101",
+        "LUT_120"
+      ],
+      "expansion_events": [
+        {
+          "from": "LUT_120",
+          "depth_from_seed": 0,
+          "added": [
+            "LUT_124",
+            "LUT_147",
+            "LUT_168"
+          ]
+        },
+        {
+          "from": "LUT_101",
+          "depth_from_seed": 0,
+          "added": [
+            "LUT_103"
+          ]
+        },
+        {
+          "from": "LUT_124",
+          "depth_from_seed": 1,
+          "added": [
+            "LUT_128",
+            "LUT_151",
+            "LUT_172"
+          ]
+        },
+        {
+          "from": "LUT_147",
+          "depth_from_seed": 1,
+          "added": [
+            "LUT_199"
+          ]
+        },
+        {
+          "from": "LUT_168",
+          "depth_from_seed": 1,
+          "added": [
+            "LUT_218"
+          ]
+        },
+        {
+          "from": "LUT_103",
+          "depth_from_seed": 1,
+          "added": [
+            "LUT_326"
+          ]
+        },
+        {
+          "from": "LUT_128",
+          "depth_from_seed": 2,
+          "added": [
+            "LUT_176",
+            "LUT_339",
+            "LUT_352"
+          ]
+        },
+        {
+          "from": "LUT_151",
+          "depth_from_seed": 2,
+          "added": [
+            "LUT_201"
+          ]
+        },
+        {
+          "from": "LUT_172",
+          "depth_from_seed": 2,
+          "added": [
+            "LUT_222"
+          ]
+        },
+        {
+          "from": "LUT_199",
+          "depth_from_seed": 2,
+          "added": [
+            "LUT_247"
+          ]
+        },
+        {
+          "from": "LUT_218",
+          "depth_from_seed": 2,
+          "added": [
+            "LUT_268"
+          ]
+        },
+        {
+          "from": "LUT_326",
+          "depth_from_seed": 2,
+          "added": [
+            "LUT_328"
+          ]
+        }
+      ]
+    },
+    "cutpoints": {
+      "edges_leaving_window": [
+        {
+          "from": "LUT_176",
+          "to": "LUT_226",
+          "to_pin": 1
+        },
+        {
+          "from": "LUT_176",
+          "to": "LUT_362",
+          "to_pin": 1
+        },
+        {
+          "from": "LUT_176",
+          "to": "LUT_374",
+          "to_pin": 1
+        },
+        {
+          "from": "LUT_201",
+          "to": "LUT_226",
+          "to_pin": 2
+        },
+        {
+          "from": "LUT_201",
+          "to": "LUT_251",
+          "to_pin": 1
+        },
+        {
+          "from": "LUT_201",
+          "to": "LUT_374",
+          "to_pin": 2
+        },
+        {
+          "from": "LUT_222",
+          "to": "LUT_226",
+          "to_pin": 3
+        },
+        {
+          "from": "LUT_222",
+          "to": "LUT_251",
+          "to_pin": 2
+        },
+        {
+          "from": "LUT_222",
+          "to": "LUT_272",
+          "to_pin": 1
+        },
+        {
+          "from": "LUT_247",
+          "to": "LUT_251",
+          "to_pin": 3
+        },
+        {
+          "from": "LUT_247",
+          "to": "LUT_272",
+          "to_pin": 2
+        },
+        {
+          "from": "LUT_247",
+          "to": "LUT_296",
+          "to_pin": 1
+        },
+        {
+          "from": "LUT_268",
+          "to": "LUT_272",
+          "to_pin": 3
+        },
+        {
+          "from": "LUT_268",
+          "to": "LUT_296",
+          "to_pin": 2
+        },
+        {
+          "from": "LUT_268",
+          "to": "LUT_312",
+          "to_pin": 1
+        },
+        {
+          "from": "LUT_328",
+          "to": "LUT_332",
+          "to_pin": 3
+        },
+        {
+          "from": "LUT_328",
+          "to": "LUT_343",
+          "to_pin": 2
+        },
+        {
+          "from": "LUT_328",
+          "to": "LUT_356",
+          "to_pin": 1
+        },
+        {
+          "from": "LUT_339",
+          "to": "LUT_343",
+          "to_pin": 3
+        },
+        {
+          "from": "LUT_339",
+          "to": "LUT_356",
+          "to_pin": 2
+        },
+        {
+          "from": "LUT_339",
+          "to": "LUT_362",
+          "to_pin": 2
+        },
+        {
+          "from": "LUT_352",
+          "to": "LUT_356",
+          "to_pin": 3
+        },
+        {
+          "from": "LUT_352",
+          "to": "LUT_362",
+          "to_pin": 3
+        },
+        {
+          "from": "LUT_352",
+          "to": "LUT_374",
+          "to_pin": 3
+        }
+      ],
+      "num_edges_leaving_window": 24
+    }
+  }
+}

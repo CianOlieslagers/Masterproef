@@ -1,0 +1,7 @@
+{
+  "sat_for_diff1": false,
+  "expected": "UNSAT (sat_for_diff1 should be false)",
+  "vars": 199,
+  "clauses": 2787,
+  "diff_or_var": 199
+}

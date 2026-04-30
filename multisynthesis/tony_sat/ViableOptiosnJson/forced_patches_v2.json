@@ -1,0 +1,90 @@
+{
+  "super": "/home/cian/Masterproef/multisynthesis/Lut_verbinding/result/example_big_300/example_big_300.super.sat.v2.json",
+  "targets": "/home/cian/Masterproef/multisynthesis/tony_sat/ViableOptiosnJson/targets_per_combo.filtered.nonempty.json",
+  "solver": "glucose4",
+  "total": 5,
+  "success": 0,
+  "failed": 5,
+  "results": [
+    {
+      "dst": "LUT_101",
+      "pit": "LUT_120",
+      "dst_input_pin": 0,
+      "success": false,
+      "reason": "orig_func_hex_mismatch_care_rows (indexing/pin-order/model issue)",
+      "chosen_target": null,
+      "patched_hex": null,
+      "stats": {
+        "reachable": 9,
+        "care": 5,
+        "dc_unreach": 7,
+        "dc_x": 4
+      },
+      "notes": []
+    },
+    {
+      "dst": "LUT_147",
+      "pit": "LUT_168",
+      "dst_input_pin": 0,
+      "success": false,
+      "reason": "orig_func_hex_mismatch_care_rows (indexing/pin-order/model issue)",
+      "chosen_target": null,
+      "patched_hex": null,
+      "stats": {
+        "reachable": 12,
+        "care": 8,
+        "dc_unreach": 4,
+        "dc_x": 4
+      },
+      "notes": []
+    },
+    {
+      "dst": "LUT_151",
+      "pit": "LUT_172",
+      "dst_input_pin": 0,
+      "success": false,
+      "reason": "orig_func_hex_mismatch_care_rows (indexing/pin-order/model issue)",
+      "chosen_target": null,
+      "patched_hex": null,
+      "stats": {
+        "reachable": 10,
+        "care": 2,
+        "dc_unreach": 6,
+        "dc_x": 8
+      },
+      "notes": []
+    },
+    {
+      "dst": "LUT_164",
+      "pit": "LUT_193",
+      "dst_input_pin": 0,
+      "success": false,
+      "reason": "orig_func_hex_mismatch_care_rows (indexing/pin-order/model issue)",
+      "chosen_target": null,
+      "patched_hex": null,
+      "stats": {
+        "reachable": 15,
+        "care": 9,
+        "dc_unreach": 1,
+        "dc_x": 6
+      },
+      "notes": []
+    },
+    {
+      "dst": "LUT_222",
+      "pit": "LUT_247",
+      "dst_input_pin": 0,
+      "success": false,
+      "reason": "orig_func_hex_mismatch_care_rows (indexing/pin-order/model issue)",
+      "chosen_target": null,
+      "patched_hex": null,
+      "stats": {
+        "reachable": 15,
+        "care": 11,
+        "dc_unreach": 1,
+        "dc_x": 4
+      },
+      "notes": []
+    }
+  ]
+}

@@ -1,0 +1,3797 @@
+{
+  "summary": {
+    "errors": 144
+  },
+  "errors": [
+    {
+      "msg": "Missing leaves: listed as leaf but not reached when cutting at leaves",
+      "ctx": {
+        "lut": "LUT_11",
+        "missing_leaves": [
+          1
+        ],
+        "missing_count": 1
+      }
+    },
+    {
+      "msg": "Cone leaks beyond leaves: hit PI/boundary node before encountering a leaf",
+      "ctx": {
+        "lut": "LUT_11",
+        "boundary_outside_leaves": [
+          6
+        ],
+        "count": 1
+      }
+    },
+    {
+      "msg": "Missing leaves: listed as leaf but not reached when cutting at leaves",
+      "ctx": {
+        "lut": "LUT_16",
+        "missing_leaves": [
+          1,
+          2,
+          3
+        ],
+        "missing_count": 3
+      }
+    },
+    {
+      "msg": "Cone leaks beyond leaves: hit PI/boundary node before encountering a leaf",
+      "ctx": {
+        "lut": "LUT_16",
+        "boundary_outside_leaves": [
+          4
+        ],
+        "count": 1
+      }
+    },
+    {
+      "msg": "Missing leaves: listed as leaf but not reached when cutting at leaves",
+      "ctx": {
+        "lut": "LUT_22",
+        "missing_leaves": [
+          4,
+          6
+        ],
+        "missing_count": 2
+      }
+    },
+    {
+      "msg": "Cone leaks beyond leaves: hit PI/boundary node before encountering a leaf",
+      "ctx": {
+        "lut": "LUT_22",
+        "boundary_outside_leaves": [
+          2,
+          3
+        ],
+        "count": 2
+      }
+    },
+    {
+      "msg": "Cone leaks beyond leaves: hit PI/boundary node before encountering a leaf",
+      "ctx": {
+        "lut": "LUT_26",
+        "boundary_outside_leaves": [
+          2,
+          6
+        ],
+        "count": 2
+      }
+    },
+    {
+      "msg": "Missing leaves: listed as leaf but not reached when cutting at leaves",
+      "ctx": {
+        "lut": "LUT_34",
+        "missing_leaves": [
+          4
+        ],
+        "missing_count": 1
+      }
+    },
+    {
+      "msg": "Cone leaks beyond leaves: hit PI/boundary node before encountering a leaf",
+      "ctx": {
+        "lut": "LUT_34",
+        "boundary_outside_leaves": [
+          1
+        ],
+        "count": 1
+      }
+    },
+    {
+      "msg": "Missing leaves: listed as leaf but not reached when cutting at leaves",
+      "ctx": {
+        "lut": "LUT_36",
+        "missing_leaves": [
+          16,
+          22,
+          34
+        ],
+        "missing_count": 3
+      }
+    },
+    {
+      "msg": "Cone leaks beyond leaves: hit PI/boundary node before encountering a leaf",
+      "ctx": {
+        "lut": "LUT_36",
+        "boundary_outside_leaves": [
+          1
+        ],
+        "count": 1
+      }
+    },
+    {
+      "msg": "Cone leaks beyond leaves: hit PI/boundary node before encountering a leaf",
+      "ctx": {
+        "lut": "LUT_43",
+        "boundary_outside_leaves": [
+          3,
+          4
+        ],
+        "count": 2
+      }
+    },
+    {
+      "msg": "Missing leaves: listed as leaf but not reached when cutting at leaves",
+      "ctx": {
+        "lut": "LUT_47",
+        "missing_leaves": [
+          34,
+          43
+        ],
+        "missing_count": 2
+      }
+    },
+    {
+      "msg": "Cone leaks beyond leaves: hit PI/boundary node before encountering a leaf",
+      "ctx": {
+        "lut": "LUT_47",
+        "boundary_outside_leaves": [
+          1,
+          2,
+          4,
+          5,
+          6
+        ],
+        "count": 5
+      }
+    },
+    {
+      "msg": "Cone leaks beyond leaves: hit PI/boundary node before encountering a leaf",
+      "ctx": {
+        "lut": "LUT_51",
+        "boundary_outside_leaves": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "count": 5
+      }
+    },
+    {
+      "msg": "Cone leaks beyond leaves: hit PI/boundary node before encountering a leaf",
+      "ctx": {
+        "lut": "LUT_59",
+        "boundary_outside_leaves": [
+          2,
+          6
+        ],
+        "count": 2
+      }
+    },
+    {
+      "msg": "Missing leaves: listed as leaf but not reached when cutting at leaves",
+      "ctx": {
+        "lut": "LUT_61",
+        "missing_leaves": [
+          34,
+          43
+        ],
+        "missing_count": 2
+      }
+    },
+    {
+      "msg": "Cone leaks beyond leaves: hit PI/boundary node before encountering a leaf",
+      "ctx": {
+        "lut": "LUT_61",
+        "boundary_outside_leaves": [
+          1,
+          2,
+          3
+        ],
+        "count": 3
+      }
+    },
+    {
+      "msg": "Cone leaks beyond leaves: hit PI/boundary node before encountering a leaf",
+      "ctx": {
+        "lut": "LUT_65",
+        "boundary_outside_leaves": [
+          1,
+          3,
+          4,
+          5,
+          6
+        ],
+        "count": 5
+      }
+    },
+    {
+      "msg": "Missing leaves: listed as leaf but not reached when cutting at leaves",
+      "ctx": {
+        "lut": "LUT_72",
+        "missing_leaves": [
+          2,
+          3,
+          5,
+          6
+        ],
+        "missing_count": 4
+      }
+    },
+    {
+      "msg": "Cone leaks beyond leaves: hit PI/boundary node before encountering a leaf",
+      "ctx": {
+        "lut": "LUT_72",
+        "boundary_outside_leaves": [
+          1,
+          4
+        ],
+        "count": 2
+      }
+    },
+    {
+      "msg": "Missing leaves: listed as leaf but not reached when cutting at leaves",
+      "ctx": {
+        "lut": "LUT_76",
+        "missing_leaves": [
+          43,
+          59
+        ],
+        "missing_count": 2
+      }
+    },
+    {
+      "msg": "Cone leaks beyond leaves: hit PI/boundary node before encountering a leaf",
+      "ctx": {
+        "lut": "LUT_76",
+        "boundary_outside_leaves": [
+          1,
+          2,
+          3,
+          4,
+          6
+        ],
+        "count": 5
+      }
+    },
+    {
+      "msg": "Missing leaves: listed as leaf but not reached when cutting at leaves",
+      "ctx": {
+        "lut": "LUT_80",
+        "missing_leaves": [
+          47
+        ],
+        "missing_count": 1
+      }
+    },
+    {
+      "msg": "Cone leaks beyond leaves: hit PI/boundary node before encountering a leaf",
+      "ctx": {
+        "lut": "LUT_80",
+        "boundary_outside_leaves": [
+          1,
+          2,
+          4,
+          5,
+          6
+        ],
+        "count": 5
+      }
+    },
+    {
+      "msg": "Missing leaves: listed as leaf but not reached when cutting at leaves",
+      "ctx": {
+        "lut": "LUT_84",
+        "missing_leaves": [
+          51
+        ],
+        "missing_count": 1
+      }
+    },
+    {
+      "msg": "Cone leaks beyond leaves: hit PI/boundary node before encountering a leaf",
+      "ctx": {
+        "lut": "LUT_84",
+        "boundary_outside_leaves": [
+          1,
+          2,
+          3,
+          4,
+          6
+        ],
+        "count": 5
+      }
+    },
+    {
+      "msg": "Cone leaks beyond leaves: hit PI/boundary node before encountering a leaf",
+      "ctx": {
+        "lut": "LUT_95",
+        "boundary_outside_leaves": [
+          3,
+          5
+        ],
+        "count": 2
+      }
+    },
+    {
+      "msg": "Missing leaves: listed as leaf but not reached when cutting at leaves",
+      "ctx": {
+        "lut": "LUT_97",
+        "missing_leaves": [
+          59,
+          72
+        ],
+        "missing_count": 2
+      }
+    },
+    {
+      "msg": "Cone leaks beyond leaves: hit PI/boundary node before encountering a leaf",
+      "ctx": {
+        "lut": "LUT_97",
+        "boundary_outside_leaves": [
+          1,
+          3,
+          4,
+          5
+        ],
+        "count": 4
+      }
+    },
+    {
+      "msg": "Cone leaks beyond leaves: hit PI/boundary node before encountering a leaf",
+      "ctx": {
+        "lut": "LUT_101",
+        "boundary_outside_leaves": [
+          1,
+          2,
+          3,
+          5,
+          6
+        ],
+        "count": 5
+      }
+    },
+    {
+      "msg": "Missing leaves: listed as leaf but not reached when cutting at leaves",
+      "ctx": {
+        "lut": "LUT_103",
+        "missing_leaves": [
+          65
+        ],
+        "missing_count": 1
+      }
+    },
+    {
+      "msg": "Cone leaks beyond leaves: hit PI/boundary node before encountering a leaf",
+      "ctx": {
+        "lut": "LUT_103",
+        "boundary_outside_leaves": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "count": 5
+      }
+    },
+    {
+      "msg": "Missing leaves: listed as leaf but not reached when cutting at leaves",
+      "ctx": {
+        "lut": "LUT_112",
+        "missing_leaves": [
+          5,
+          6
+        ],
+        "missing_count": 2
+      }
+    },
+    {
+      "msg": "Missing leaves: listed as leaf but not reached when cutting at leaves",
+      "ctx": {
+        "lut": "LUT_116",
+        "missing_leaves": [
+          72,
+          95
+        ],
+        "missing_count": 2
+      }
+    },
+    {
+      "msg": "Cone leaks beyond leaves: hit PI/boundary node before encountering a leaf",
+      "ctx": {
+        "lut": "LUT_116",
+        "boundary_outside_leaves": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "count": 5
+      }
+    },
+    {
+      "msg": "Missing leaves: listed as leaf but not reached when cutting at leaves",
+      "ctx": {
+        "lut": "LUT_120",
+        "missing_leaves": [
+          76
+        ],
+        "missing_count": 1
+      }
+    },
+    {
+      "msg": "Cone leaks beyond leaves: hit PI/boundary node before encountering a leaf",
+      "ctx": {
+        "lut": "LUT_120",
+        "boundary_outside_leaves": [
+          1,
+          2,
+          3,
+          4,
+          6
+        ],
+        "count": 5
+      }
+    },
+    {
+      "msg": "Missing leaves: listed as leaf but not reached when cutting at leaves",
+      "ctx": {
+        "lut": "LUT_124",
+        "missing_leaves": [
+          80
+        ],
+        "missing_count": 1
+      }
+    },
+    {
+      "msg": "Cone leaks beyond leaves: hit PI/boundary node before encountering a leaf",
+      "ctx": {
+        "lut": "LUT_124",
+        "boundary_outside_leaves": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "count": 5
+      }
+    },
+    {
+      "msg": "Cone leaks beyond leaves: hit PI/boundary node before encountering a leaf",
+      "ctx": {
+        "lut": "LUT_128",
+        "boundary_outside_leaves": [
+          1,
+          2,
+          4,
+          5,
+          6
+        ],
+        "count": 5
+      }
+    },
+    {
+      "msg": "Cone leaks beyond leaves: hit PI/boundary node before encountering a leaf",
+      "ctx": {
+        "lut": "LUT_139",
+        "boundary_outside_leaves": [
+          4,
+          5
+        ],
+        "count": 2
+      }
+    },
+    {
+      "msg": "Missing leaves: listed as leaf but not reached when cutting at leaves",
+      "ctx": {
+        "lut": "LUT_141",
+        "missing_leaves": [
+          95
+        ],
+        "missing_count": 1
+      }
+    },
+    {
+      "msg": "Cone leaks beyond leaves: hit PI/boundary node before encountering a leaf",
+      "ctx": {
+        "lut": "LUT_141",
+        "boundary_outside_leaves": [
+          1,
+          3,
+          4,
+          5,
+          6
+        ],
+        "count": 5
+      }
+    },
+    {
+      "msg": "Cone leaks beyond leaves: hit PI/boundary node before encountering a leaf",
+      "ctx": {
+        "lut": "LUT_145",
+        "boundary_outside_leaves": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "count": 5
+      }
+    },
+    {
+      "msg": "Missing leaves: listed as leaf but not reached when cutting at leaves",
+      "ctx": {
+        "lut": "LUT_147",
+        "missing_leaves": [
+          120
+        ],
+        "missing_count": 1
+      }
+    },
+    {
+      "msg": "Cone leaks beyond leaves: hit PI/boundary node before encountering a leaf",
+      "ctx": {
+        "lut": "LUT_147",
+        "boundary_outside_leaves": [
+          1,
+          3,
+          4,
+          5,
+          6
+        ],
+        "count": 5
+      }
+    },
+    {
+      "msg": "Cone leaks beyond leaves: hit PI/boundary node before encountering a leaf",
+      "ctx": {
+        "lut": "LUT_151",
+        "boundary_outside_leaves": [
+          1,
+          2,
+          3,
+          5,
+          6
+        ],
+        "count": 5
+      }
+    },
+    {
+      "msg": "Missing leaves: listed as leaf but not reached when cutting at leaves",
+      "ctx": {
+        "lut": "LUT_160",
+        "missing_leaves": [
+          11,
+          139
+        ],
+        "missing_count": 2
+      }
+    },
+    {
+      "msg": "Cone leaks beyond leaves: hit PI/boundary node before encountering a leaf",
+      "ctx": {
+        "lut": "LUT_160",
+        "boundary_outside_leaves": [
+          1,
+          4,
+          5
+        ],
+        "count": 3
+      }
+    },
+    {
+      "msg": "Missing leaves: listed as leaf but not reached when cutting at leaves",
+      "ctx": {
+        "lut": "LUT_164",
+        "missing_leaves": [
+          116,
+          141
+        ],
+        "missing_count": 2
+      }
+    },
+    {
+      "msg": "Cone leaks beyond leaves: hit PI/boundary node before encountering a leaf",
+      "ctx": {
+        "lut": "LUT_164",
+        "boundary_outside_leaves": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "count": 5
+      }
+    },
+    {
+      "msg": "Missing leaves: listed as leaf but not reached when cutting at leaves",
+      "ctx": {
+        "lut": "LUT_168",
+        "missing_leaves": [
+          120,
+          145
+        ],
+        "missing_count": 2
+      }
+    },
+    {
+      "msg": "Cone leaks beyond leaves: hit PI/boundary node before encountering a leaf",
+      "ctx": {
+        "lut": "LUT_168",
+        "boundary_outside_leaves": [
+          1,
+          2,
+          4,
+          5,
+          6
+        ],
+        "count": 5
+      }
+    },
+    {
+      "msg": "Cone leaks beyond leaves: hit PI/boundary node before encountering a leaf",
+      "ctx": {
+        "lut": "LUT_172",
+        "boundary_outside_leaves": [
+          1,
+          2,
+          3,
+          4,
+          6
+        ],
+        "count": 5
+      }
+    },
+    {
+      "msg": "Cone leaks beyond leaves: hit PI/boundary node before encountering a leaf",
+      "ctx": {
+        "lut": "LUT_176",
+        "boundary_outside_leaves": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "count": 5
+      }
+    },
+    {
+      "msg": "Missing leaves: listed as leaf but not reached when cutting at leaves",
+      "ctx": {
+        "lut": "LUT_189",
+        "missing_leaves": [
+          139
+        ],
+        "missing_count": 1
+      }
+    },
+    {
+      "msg": "Cone leaks beyond leaves: hit PI/boundary node before encountering a leaf",
+      "ctx": {
+        "lut": "LUT_189",
+        "boundary_outside_leaves": [
+          1,
+          2,
+          3,
+          5,
+          6
+        ],
+        "count": 5
+      }
+    },
+    {
+      "msg": "Missing leaves: listed as leaf but not reached when cutting at leaves",
+      "ctx": {
+        "lut": "LUT_193",
+        "missing_leaves": [
+          141
+        ],
+        "missing_count": 1
+      }
+    },
+    {
+      "msg": "Cone leaks beyond leaves: hit PI/boundary node before encountering a leaf",
+      "ctx": {
+        "lut": "LUT_193",
+        "boundary_outside_leaves": [
+          1,
+          3,
+          4,
+          5,
+          6
+        ],
+        "count": 5
+      }
+    },
+    {
+      "msg": "Missing leaves: listed as leaf but not reached when cutting at leaves",
+      "ctx": {
+        "lut": "LUT_195",
+        "missing_leaves": [
+          145,
+          164
+        ],
+        "missing_count": 2
+      }
+    },
+    {
+      "msg": "Cone leaks beyond leaves: hit PI/boundary node before encountering a leaf",
+      "ctx": {
+        "lut": "LUT_195",
+        "boundary_outside_leaves": [
+          1,
+          2,
+          3,
+          5,
+          6
+        ],
+        "count": 5
+      }
+    },
+    {
+      "msg": "Cone leaks beyond leaves: hit PI/boundary node before encountering a leaf",
+      "ctx": {
+        "lut": "LUT_199",
+        "boundary_outside_leaves": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "count": 5
+      }
+    },
+    {
+      "msg": "Missing leaves: listed as leaf but not reached when cutting at leaves",
+      "ctx": {
+        "lut": "LUT_201",
+        "missing_leaves": [
+          151
+        ],
+        "missing_count": 1
+      }
+    },
+    {
+      "msg": "Cone leaks beyond leaves: hit PI/boundary node before encountering a leaf",
+      "ctx": {
+        "lut": "LUT_201",
+        "boundary_outside_leaves": [
+          1,
+          3,
+          4,
+          5,
+          6
+        ],
+        "count": 5
+      }
+    },
+    {
+      "msg": "Missing leaves: listed as leaf but not reached when cutting at leaves",
+      "ctx": {
+        "lut": "LUT_210",
+        "missing_leaves": [
+          26,
+          189
+        ],
+        "missing_count": 2
+      }
+    },
+    {
+      "msg": "Cone leaks beyond leaves: hit PI/boundary node before encountering a leaf",
+      "ctx": {
+        "lut": "LUT_210",
+        "boundary_outside_leaves": [
+          1,
+          2,
+          4,
+          5,
+          6
+        ],
+        "count": 5
+      }
+    },
+    {
+      "msg": "Missing leaves: listed as leaf but not reached when cutting at leaves",
+      "ctx": {
+        "lut": "LUT_214",
+        "missing_leaves": [
+          193
+        ],
+        "missing_count": 1
+      }
+    },
+    {
+      "msg": "Cone leaks beyond leaves: hit PI/boundary node before encountering a leaf",
+      "ctx": {
+        "lut": "LUT_214",
+        "boundary_outside_leaves": [
+          1,
+          2,
+          3,
+          4,
+          6
+        ],
+        "count": 5
+      }
+    },
+    {
+      "msg": "Missing leaves: listed as leaf but not reached when cutting at leaves",
+      "ctx": {
+        "lut": "LUT_218",
+        "missing_leaves": [
+          168,
+          195
+        ],
+        "missing_count": 2
+      }
+    },
+    {
+      "msg": "Cone leaks beyond leaves: hit PI/boundary node before encountering a leaf",
+      "ctx": {
+        "lut": "LUT_218",
+        "boundary_outside_leaves": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "count": 5
+      }
+    },
+    {
+      "msg": "Missing leaves: listed as leaf but not reached when cutting at leaves",
+      "ctx": {
+        "lut": "LUT_222",
+        "missing_leaves": [
+          172
+        ],
+        "missing_count": 1
+      }
+    },
+    {
+      "msg": "Cone leaks beyond leaves: hit PI/boundary node before encountering a leaf",
+      "ctx": {
+        "lut": "LUT_222",
+        "boundary_outside_leaves": [
+          1,
+          2,
+          4,
+          5,
+          6
+        ],
+        "count": 5
+      }
+    },
+    {
+      "msg": "Cone leaks beyond leaves: hit PI/boundary node before encountering a leaf",
+      "ctx": {
+        "lut": "LUT_226",
+        "boundary_outside_leaves": [
+          1,
+          2,
+          3,
+          4,
+          6
+        ],
+        "count": 5
+      }
+    },
+    {
+      "msg": "Missing leaves: listed as leaf but not reached when cutting at leaves",
+      "ctx": {
+        "lut": "LUT_239",
+        "missing_leaves": [
+          189
+        ],
+        "missing_count": 1
+      }
+    },
+    {
+      "msg": "Cone leaks beyond leaves: hit PI/boundary node before encountering a leaf",
+      "ctx": {
+        "lut": "LUT_239",
+        "boundary_outside_leaves": [
+          1,
+          2,
+          3,
+          5,
+          6
+        ],
+        "count": 5
+      }
+    },
+    {
+      "msg": "Missing leaves: listed as leaf but not reached when cutting at leaves",
+      "ctx": {
+        "lut": "LUT_241",
+        "missing_leaves": [
+          193,
+          210
+        ],
+        "missing_count": 2
+      }
+    },
+    {
+      "msg": "Cone leaks beyond leaves: hit PI/boundary node before encountering a leaf",
+      "ctx": {
+        "lut": "LUT_241",
+        "boundary_outside_leaves": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "count": 5
+      }
+    },
+    {
+      "msg": "Missing leaves: listed as leaf but not reached when cutting at leaves",
+      "ctx": {
+        "lut": "LUT_245",
+        "missing_leaves": [
+          195,
+          214,
+          241
+        ],
+        "missing_count": 3
+      }
+    },
+    {
+      "msg": "Cone leaks beyond leaves: hit PI/boundary node before encountering a leaf",
+      "ctx": {
+        "lut": "LUT_245",
+        "boundary_outside_leaves": [
+          1,
+          3,
+          4,
+          5,
+          6
+        ],
+        "count": 5
+      }
+    },
+    {
+      "msg": "Missing leaves: listed as leaf but not reached when cutting at leaves",
+      "ctx": {
+        "lut": "LUT_247",
+        "missing_leaves": [
+          199,
+          218
+        ],
+        "missing_count": 2
+      }
+    },
+    {
+      "msg": "Cone leaks beyond leaves: hit PI/boundary node before encountering a leaf",
+      "ctx": {
+        "lut": "LUT_247",
+        "boundary_outside_leaves": [
+          1,
+          2,
+          3,
+          5,
+          6
+        ],
+        "count": 5
+      }
+    },
+    {
+      "msg": "Missing leaves: listed as leaf but not reached when cutting at leaves",
+      "ctx": {
+        "lut": "LUT_251",
+        "missing_leaves": [
+          201,
+          222
+        ],
+        "missing_count": 2
+      }
+    },
+    {
+      "msg": "Cone leaks beyond leaves: hit PI/boundary node before encountering a leaf",
+      "ctx": {
+        "lut": "LUT_251",
+        "boundary_outside_leaves": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "count": 5
+      }
+    },
+    {
+      "msg": "Missing leaves: listed as leaf but not reached when cutting at leaves",
+      "ctx": {
+        "lut": "LUT_252",
+        "missing_leaves": [
+          226,
+          251
+        ],
+        "missing_count": 2
+      }
+    },
+    {
+      "msg": "Cone leaks beyond leaves: hit PI/boundary node before encountering a leaf",
+      "ctx": {
+        "lut": "LUT_252",
+        "boundary_outside_leaves": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "count": 6
+      }
+    },
+    {
+      "msg": "Missing leaves: listed as leaf but not reached when cutting at leaves",
+      "ctx": {
+        "lut": "LUT_260",
+        "missing_leaves": [
+          51
+        ],
+        "missing_count": 1
+      }
+    },
+    {
+      "msg": "Cone leaks beyond leaves: hit PI/boundary node before encountering a leaf",
+      "ctx": {
+        "lut": "LUT_260",
+        "boundary_outside_leaves": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "count": 5
+      }
+    },
+    {
+      "msg": "Missing leaves: listed as leaf but not reached when cutting at leaves",
+      "ctx": {
+        "lut": "LUT_264",
+        "missing_leaves": [
+          241,
+          260
+        ],
+        "missing_count": 2
+      }
+    },
+    {
+      "msg": "Cone leaks beyond leaves: hit PI/boundary node before encountering a leaf",
+      "ctx": {
+        "lut": "LUT_264",
+        "boundary_outside_leaves": [
+          1,
+          2,
+          4,
+          5,
+          6
+        ],
+        "count": 5
+      }
+    },
+    {
+      "msg": "Missing leaves: listed as leaf but not reached when cutting at leaves",
+      "ctx": {
+        "lut": "LUT_268",
+        "missing_leaves": [
+          218,
+          245,
+          264
+        ],
+        "missing_count": 3
+      }
+    },
+    {
+      "msg": "Cone leaks beyond leaves: hit PI/boundary node before encountering a leaf",
+      "ctx": {
+        "lut": "LUT_268",
+        "boundary_outside_leaves": [
+          1,
+          2,
+          3,
+          4,
+          6
+        ],
+        "count": 5
+      }
+    },
+    {
+      "msg": "Cone leaks beyond leaves: hit PI/boundary node before encountering a leaf",
+      "ctx": {
+        "lut": "LUT_272",
+        "boundary_outside_leaves": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "count": 5
+      }
+    },
+    {
+      "msg": "Cone leaks beyond leaves: hit PI/boundary node before encountering a leaf",
+      "ctx": {
+        "lut": "LUT_273",
+        "boundary_outside_leaves": [
+          1,
+          2,
+          4,
+          5,
+          6
+        ],
+        "count": 5
+      }
+    },
+    {
+      "msg": "Missing leaves: listed as leaf but not reached when cutting at leaves",
+      "ctx": {
+        "lut": "LUT_286",
+        "missing_leaves": [
+          51
+        ],
+        "missing_count": 1
+      }
+    },
+    {
+      "msg": "Cone leaks beyond leaves: hit PI/boundary node before encountering a leaf",
+      "ctx": {
+        "lut": "LUT_286",
+        "boundary_outside_leaves": [
+          1,
+          3,
+          4,
+          5,
+          6
+        ],
+        "count": 5
+      }
+    },
+    {
+      "msg": "Missing leaves: listed as leaf but not reached when cutting at leaves",
+      "ctx": {
+        "lut": "LUT_290",
+        "missing_leaves": [
+          260
+        ],
+        "missing_count": 1
+      }
+    },
+    {
+      "msg": "Cone leaks beyond leaves: hit PI/boundary node before encountering a leaf",
+      "ctx": {
+        "lut": "LUT_290",
+        "boundary_outside_leaves": [
+          1,
+          2,
+          3,
+          5,
+          6
+        ],
+        "count": 5
+      }
+    },
+    {
+      "msg": "Missing leaves: listed as leaf but not reached when cutting at leaves",
+      "ctx": {
+        "lut": "LUT_292",
+        "missing_leaves": [
+          264
+        ],
+        "missing_count": 1
+      }
+    },
+    {
+      "msg": "Cone leaks beyond leaves: hit PI/boundary node before encountering a leaf",
+      "ctx": {
+        "lut": "LUT_292",
+        "boundary_outside_leaves": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "count": 5
+      }
+    },
+    {
+      "msg": "Missing leaves: listed as leaf but not reached when cutting at leaves",
+      "ctx": {
+        "lut": "LUT_296",
+        "missing_leaves": [
+          268
+        ],
+        "missing_count": 1
+      }
+    },
+    {
+      "msg": "Cone leaks beyond leaves: hit PI/boundary node before encountering a leaf",
+      "ctx": {
+        "lut": "LUT_296",
+        "boundary_outside_leaves": [
+          1,
+          3,
+          4,
+          5,
+          6
+        ],
+        "count": 5
+      }
+    },
+    {
+      "msg": "Missing leaves: listed as leaf but not reached when cutting at leaves",
+      "ctx": {
+        "lut": "LUT_297",
+        "missing_leaves": [
+          272
+        ],
+        "missing_count": 1
+      }
+    },
+    {
+      "msg": "Cone leaks beyond leaves: hit PI/boundary node before encountering a leaf",
+      "ctx": {
+        "lut": "LUT_297",
+        "boundary_outside_leaves": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "count": 6
+      }
+    },
+    {
+      "msg": "Missing leaves: listed as leaf but not reached when cutting at leaves",
+      "ctx": {
+        "lut": "LUT_304",
+        "missing_leaves": [
+          5,
+          84,
+          286
+        ],
+        "missing_count": 3
+      }
+    },
+    {
+      "msg": "Cone leaks beyond leaves: hit PI/boundary node before encountering a leaf",
+      "ctx": {
+        "lut": "LUT_304",
+        "boundary_outside_leaves": [
+          6
+        ],
+        "count": 1
+      }
+    },
+    {
+      "msg": "Missing leaves: listed as leaf but not reached when cutting at leaves",
+      "ctx": {
+        "lut": "LUT_308",
+        "missing_leaves": [
+          264,
+          290,
+          304
+        ],
+        "missing_count": 3
+      }
+    },
+    {
+      "msg": "Cone leaks beyond leaves: hit PI/boundary node before encountering a leaf",
+      "ctx": {
+        "lut": "LUT_308",
+        "boundary_outside_leaves": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "count": 5
+      }
+    },
+    {
+      "msg": "Missing leaves: listed as leaf but not reached when cutting at leaves",
+      "ctx": {
+        "lut": "LUT_312",
+        "missing_leaves": [
+          268,
+          292
+        ],
+        "missing_count": 2
+      }
+    },
+    {
+      "msg": "Cone leaks beyond leaves: hit PI/boundary node before encountering a leaf",
+      "ctx": {
+        "lut": "LUT_312",
+        "boundary_outside_leaves": [
+          1,
+          2,
+          4,
+          5,
+          6
+        ],
+        "count": 5
+      }
+    },
+    {
+      "msg": "Cone leaks beyond leaves: hit PI/boundary node before encountering a leaf",
+      "ctx": {
+        "lut": "LUT_313",
+        "boundary_outside_leaves": [
+          1,
+          2,
+          3,
+          4,
+          6
+        ],
+        "count": 5
+      }
+    },
+    {
+      "msg": "Missing leaves: listed as leaf but not reached when cutting at leaves",
+      "ctx": {
+        "lut": "LUT_317",
+        "missing_leaves": [
+          273,
+          297
+        ],
+        "missing_count": 2
+      }
+    },
+    {
+      "msg": "Cone leaks beyond leaves: hit PI/boundary node before encountering a leaf",
+      "ctx": {
+        "lut": "LUT_317",
+        "boundary_outside_leaves": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "count": 6
+      }
+    },
+    {
+      "msg": "Missing leaves: listed as leaf but not reached when cutting at leaves",
+      "ctx": {
+        "lut": "LUT_326",
+        "missing_leaves": [
+          286
+        ],
+        "missing_count": 1
+      }
+    },
+    {
+      "msg": "Cone leaks beyond leaves: hit PI/boundary node before encountering a leaf",
+      "ctx": {
+        "lut": "LUT_326",
+        "boundary_outside_leaves": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "count": 5
+      }
+    },
+    {
+      "msg": "Missing leaves: listed as leaf but not reached when cutting at leaves",
+      "ctx": {
+        "lut": "LUT_328",
+        "missing_leaves": [
+          290,
+          304
+        ],
+        "missing_count": 2
+      }
+    },
+    {
+      "msg": "Cone leaks beyond leaves: hit PI/boundary node before encountering a leaf",
+      "ctx": {
+        "lut": "LUT_328",
+        "boundary_outside_leaves": [
+          1,
+          3,
+          4,
+          5,
+          6
+        ],
+        "count": 5
+      }
+    },
+    {
+      "msg": "Cone leaks beyond leaves: hit PI/boundary node before encountering a leaf",
+      "ctx": {
+        "lut": "LUT_332",
+        "boundary_outside_leaves": [
+          1,
+          2,
+          3,
+          5,
+          6
+        ],
+        "count": 5
+      }
+    },
+    {
+      "msg": "Cone leaks beyond leaves: hit PI/boundary node before encountering a leaf",
+      "ctx": {
+        "lut": "LUT_333",
+        "boundary_outside_leaves": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "count": 6
+      }
+    },
+    {
+      "msg": "Missing leaves: listed as leaf but not reached when cutting at leaves",
+      "ctx": {
+        "lut": "LUT_339",
+        "missing_leaves": [
+          128,
+          304,
+          326
+        ],
+        "missing_count": 3
+      }
+    },
+    {
+      "msg": "Cone leaks beyond leaves: hit PI/boundary node before encountering a leaf",
+      "ctx": {
+        "lut": "LUT_339",
+        "boundary_outside_leaves": [
+          1,
+          2,
+          4,
+          5,
+          6
+        ],
+        "count": 5
+      }
+    },
+    {
+      "msg": "Missing leaves: listed as leaf but not reached when cutting at leaves",
+      "ctx": {
+        "lut": "LUT_343",
+        "missing_leaves": [
+          308,
+          328,
+          339
+        ],
+        "missing_count": 3
+      }
+    },
+    {
+      "msg": "Cone leaks beyond leaves: hit PI/boundary node before encountering a leaf",
+      "ctx": {
+        "lut": "LUT_343",
+        "boundary_outside_leaves": [
+          1,
+          2,
+          3,
+          4,
+          6
+        ],
+        "count": 5
+      }
+    },
+    {
+      "msg": "Missing leaves: listed as leaf but not reached when cutting at leaves",
+      "ctx": {
+        "lut": "LUT_352",
+        "missing_leaves": [
+          128,
+          326
+        ],
+        "missing_count": 2
+      }
+    },
+    {
+      "msg": "Cone leaks beyond leaves: hit PI/boundary node before encountering a leaf",
+      "ctx": {
+        "lut": "LUT_352",
+        "boundary_outside_leaves": [
+          1,
+          2,
+          3,
+          5,
+          6
+        ],
+        "count": 5
+      }
+    },
+    {
+      "msg": "Missing leaves: listed as leaf but not reached when cutting at leaves",
+      "ctx": {
+        "lut": "LUT_356",
+        "missing_leaves": [
+          339
+        ],
+        "missing_count": 1
+      }
+    },
+    {
+      "msg": "Cone leaks beyond leaves: hit PI/boundary node before encountering a leaf",
+      "ctx": {
+        "lut": "LUT_356",
+        "boundary_outside_leaves": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "count": 5
+      }
+    },
+    {
+      "msg": "Missing leaves: listed as leaf but not reached when cutting at leaves",
+      "ctx": {
+        "lut": "LUT_362",
+        "missing_leaves": [
+          176,
+          339
+        ],
+        "missing_count": 2
+      }
+    },
+    {
+      "msg": "Cone leaks beyond leaves: hit PI/boundary node before encountering a leaf",
+      "ctx": {
+        "lut": "LUT_362",
+        "boundary_outside_leaves": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "count": 5
+      }
+    },
+    {
+      "msg": "Missing leaves: listed as leaf but not reached when cutting at leaves",
+      "ctx": {
+        "lut": "LUT_364",
+        "missing_leaves": [
+          356,
+          362
+        ],
+        "missing_count": 2
+      }
+    },
+    {
+      "msg": "Cone leaks beyond leaves: hit PI/boundary node before encountering a leaf",
+      "ctx": {
+        "lut": "LUT_364",
+        "boundary_outside_leaves": [
+          1,
+          2,
+          4,
+          5,
+          6
+        ],
+        "count": 5
+      }
+    },
+    {
+      "msg": "Missing leaves: listed as leaf but not reached when cutting at leaves",
+      "ctx": {
+        "lut": "LUT_366",
+        "missing_leaves": [
+          333,
+          343,
+          364
+        ],
+        "missing_count": 3
+      }
+    },
+    {
+      "msg": "Cone leaks beyond leaves: hit PI/boundary node before encountering a leaf",
+      "ctx": {
+        "lut": "LUT_366",
+        "boundary_outside_leaves": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "count": 5
+      }
+    },
+    {
+      "msg": "Missing leaves: listed as leaf but not reached when cutting at leaves",
+      "ctx": {
+        "lut": "LUT_369",
+        "missing_leaves": [
+          317,
+          366
+        ],
+        "missing_count": 2
+      }
+    },
+    {
+      "msg": "Cone leaks beyond leaves: hit PI/boundary node before encountering a leaf",
+      "ctx": {
+        "lut": "LUT_369",
+        "boundary_outside_leaves": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "count": 6
+      }
+    },
+    {
+      "msg": "Cone leaks beyond leaves: hit PI/boundary node before encountering a leaf",
+      "ctx": {
+        "lut": "LUT_374",
+        "boundary_outside_leaves": [
+          1,
+          3,
+          4,
+          5,
+          6
+        ],
+        "count": 5
+      }
+    },
+    {
+      "msg": "Missing leaves: listed as leaf but not reached when cutting at leaves",
+      "ctx": {
+        "lut": "LUT_375",
+        "missing_leaves": [
+          374
+        ],
+        "missing_count": 1
+      }
+    },
+    {
+      "msg": "Cone leaks beyond leaves: hit PI/boundary node before encountering a leaf",
+      "ctx": {
+        "lut": "LUT_375",
+        "boundary_outside_leaves": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "count": 6
+      }
+    },
+    {
+      "msg": "Cone leaks beyond leaves: hit PI/boundary node before encountering a leaf",
+      "ctx": {
+        "lut": "LUT_384",
+        "boundary_outside_leaves": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "count": 5
+      }
+    },
+    {
+      "msg": "Cone leaks beyond leaves: hit PI/boundary node before encountering a leaf",
+      "ctx": {
+        "lut": "LUT_385",
+        "boundary_outside_leaves": [
+          1,
+          2,
+          3,
+          4,
+          6
+        ],
+        "count": 5
+      }
+    },
+    {
+      "msg": "Missing leaves: listed as leaf but not reached when cutting at leaves",
+      "ctx": {
+        "lut": "LUT_386",
+        "missing_leaves": [
+          369
+        ],
+        "missing_count": 1
+      }
+    },
+    {
+      "msg": "Cone leaks beyond leaves: hit PI/boundary node before encountering a leaf",
+      "ctx": {
+        "lut": "LUT_386",
+        "boundary_outside_leaves": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "count": 6
+      }
+    },
+    {
+      "msg": "Missing leaves: listed as leaf but not reached when cutting at leaves",
+      "ctx": {
+        "lut": "LUT_387",
+        "missing_leaves": [
+          369
+        ],
+        "missing_count": 1
+      }
+    },
+    {
+      "msg": "Cone leaks beyond leaves: hit PI/boundary node before encountering a leaf",
+      "ctx": {
+        "lut": "LUT_387",
+        "boundary_outside_leaves": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "count": 6
+      }
+    }
+  ],
+  "lut_reports": {
+    "LUT_11": {
+      "lut_root": 11,
+      "leaves": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "reached_leaves": [
+        2,
+        3,
+        4
+      ],
+      "missing_leaves": [
+        1
+      ],
+      "boundary_outside_leaves": [
+        6
+      ],
+      "boundary_outside_count": 1
+    },
+    "LUT_16": {
+      "lut_root": 16,
+      "leaves": [
+        1,
+        2,
+        3,
+        5
+      ],
+      "reached_leaves": [
+        5
+      ],
+      "missing_leaves": [
+        1,
+        2,
+        3
+      ],
+      "boundary_outside_leaves": [
+        4
+      ],
+      "boundary_outside_count": 1
+    },
+    "LUT_22": {
+      "lut_root": 22,
+      "leaves": [
+        1,
+        4,
+        5,
+        6
+      ],
+      "reached_leaves": [
+        1,
+        5
+      ],
+      "missing_leaves": [
+        4,
+        6
+      ],
+      "boundary_outside_leaves": [
+        2,
+        3
+      ],
+      "boundary_outside_count": 2
+    },
+    "LUT_26": {
+      "lut_root": 26,
+      "leaves": [
+        1,
+        11,
+        16,
+        22
+      ],
+      "reached_leaves": [
+        1,
+        11,
+        16,
+        22
+      ],
+      "missing_leaves": [],
+      "boundary_outside_leaves": [
+        2,
+        6
+      ],
+      "boundary_outside_count": 2
+    },
+    "LUT_34": {
+      "lut_root": 34,
+      "leaves": [
+        2,
+        3,
+        4,
+        6
+      ],
+      "reached_leaves": [
+        2,
+        3,
+        6
+      ],
+      "missing_leaves": [
+        4
+      ],
+      "boundary_outside_leaves": [
+        1
+      ],
+      "boundary_outside_count": 1
+    },
+    "LUT_36": {
+      "lut_root": 36,
+      "leaves": [
+        2,
+        16,
+        22,
+        34
+      ],
+      "reached_leaves": [
+        2
+      ],
+      "missing_leaves": [
+        16,
+        22,
+        34
+      ],
+      "boundary_outside_leaves": [
+        1
+      ],
+      "boundary_outside_count": 1
+    },
+    "LUT_43": {
+      "lut_root": 43,
+      "leaves": [
+        1,
+        2,
+        5,
+        6
+      ],
+      "reached_leaves": [
+        1,
+        2,
+        5,
+        6
+      ],
+      "missing_leaves": [],
+      "boundary_outside_leaves": [
+        3,
+        4
+      ],
+      "boundary_outside_count": 2
+    },
+    "LUT_47": {
+      "lut_root": 47,
+      "leaves": [
+        3,
+        22,
+        34,
+        43
+      ],
+      "reached_leaves": [
+        3,
+        22
+      ],
+      "missing_leaves": [
+        34,
+        43
+      ],
+      "boundary_outside_leaves": [
+        1,
+        2,
+        4,
+        5,
+        6
+      ],
+      "boundary_outside_count": 5
+    },
+    "LUT_51": {
+      "lut_root": 51,
+      "leaves": [
+        1,
+        26,
+        36,
+        47
+      ],
+      "reached_leaves": [
+        1,
+        26,
+        36,
+        47
+      ],
+      "missing_leaves": [],
+      "boundary_outside_leaves": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "boundary_outside_count": 5
+    },
+    "LUT_59": {
+      "lut_root": 59,
+      "leaves": [
+        1,
+        3,
+        4,
+        5
+      ],
+      "reached_leaves": [
+        1,
+        3,
+        4,
+        5
+      ],
+      "missing_leaves": [],
+      "boundary_outside_leaves": [
+        2,
+        6
+      ],
+      "boundary_outside_count": 2
+    },
+    "LUT_61": {
+      "lut_root": 61,
+      "leaves": [
+        4,
+        34,
+        43,
+        59
+      ],
+      "reached_leaves": [
+        4,
+        59
+      ],
+      "missing_leaves": [
+        34,
+        43
+      ],
+      "boundary_outside_leaves": [
+        1,
+        2,
+        3
+      ],
+      "boundary_outside_count": 3
+    },
+    "LUT_65": {
+      "lut_root": 65,
+      "leaves": [
+        2,
+        36,
+        47,
+        61
+      ],
+      "reached_leaves": [
+        2,
+        36,
+        47,
+        61
+      ],
+      "missing_leaves": [],
+      "boundary_outside_leaves": [
+        1,
+        3,
+        4,
+        5,
+        6
+      ],
+      "boundary_outside_count": 5
+    },
+    "LUT_72": {
+      "lut_root": 72,
+      "leaves": [
+        2,
+        3,
+        5,
+        6
+      ],
+      "reached_leaves": [],
+      "missing_leaves": [
+        2,
+        3,
+        5,
+        6
+      ],
+      "boundary_outside_leaves": [
+        1,
+        4
+      ],
+      "boundary_outside_count": 2
+    },
+    "LUT_76": {
+      "lut_root": 76,
+      "leaves": [
+        5,
+        43,
+        59,
+        72
+      ],
+      "reached_leaves": [
+        5,
+        72
+      ],
+      "missing_leaves": [
+        43,
+        59
+      ],
+      "boundary_outside_leaves": [
+        1,
+        2,
+        3,
+        4,
+        6
+      ],
+      "boundary_outside_count": 5
+    },
+    "LUT_80": {
+      "lut_root": 80,
+      "leaves": [
+        3,
+        47,
+        61,
+        76
+      ],
+      "reached_leaves": [
+        3,
+        61,
+        76
+      ],
+      "missing_leaves": [
+        47
+      ],
+      "boundary_outside_leaves": [
+        1,
+        2,
+        4,
+        5,
+        6
+      ],
+      "boundary_outside_count": 5
+    },
+    "LUT_84": {
+      "lut_root": 84,
+      "leaves": [
+        5,
+        51,
+        65,
+        80
+      ],
+      "reached_leaves": [
+        5,
+        65,
+        80
+      ],
+      "missing_leaves": [
+        51
+      ],
+      "boundary_outside_leaves": [
+        1,
+        2,
+        3,
+        4,
+        6
+      ],
+      "boundary_outside_count": 5
+    },
+    "LUT_95": {
+      "lut_root": 95,
+      "leaves": [
+        1,
+        2,
+        4,
+        6
+      ],
+      "reached_leaves": [
+        1,
+        2,
+        4,
+        6
+      ],
+      "missing_leaves": [],
+      "boundary_outside_leaves": [
+        3,
+        5
+      ],
+      "boundary_outside_count": 2
+    },
+    "LUT_97": {
+      "lut_root": 97,
+      "leaves": [
+        6,
+        59,
+        72,
+        95
+      ],
+      "reached_leaves": [
+        6,
+        95
+      ],
+      "missing_leaves": [
+        59,
+        72
+      ],
+      "boundary_outside_leaves": [
+        1,
+        3,
+        4,
+        5
+      ],
+      "boundary_outside_count": 4
+    },
+    "LUT_101": {
+      "lut_root": 101,
+      "leaves": [
+        4,
+        61,
+        76,
+        97
+      ],
+      "reached_leaves": [
+        4,
+        61,
+        76,
+        97
+      ],
+      "missing_leaves": [],
+      "boundary_outside_leaves": [
+        1,
+        2,
+        3,
+        5,
+        6
+      ],
+      "boundary_outside_count": 5
+    },
+    "LUT_103": {
+      "lut_root": 103,
+      "leaves": [
+        6,
+        65,
+        80,
+        101
+      ],
+      "reached_leaves": [
+        6,
+        80,
+        101
+      ],
+      "missing_leaves": [
+        65
+      ],
+      "boundary_outside_leaves": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "boundary_outside_count": 5
+    },
+    "LUT_112": {
+      "lut_root": 112,
+      "leaves": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "reached_leaves": [
+        3,
+        4
+      ],
+      "missing_leaves": [
+        5,
+        6
+      ],
+      "boundary_outside_leaves": [],
+      "boundary_outside_count": 0
+    },
+    "LUT_116": {
+      "lut_root": 116,
+      "leaves": [
+        1,
+        72,
+        95,
+        112
+      ],
+      "reached_leaves": [
+        1,
+        112
+      ],
+      "missing_leaves": [
+        72,
+        95
+      ],
+      "boundary_outside_leaves": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "boundary_outside_count": 5
+    },
+    "LUT_120": {
+      "lut_root": 120,
+      "leaves": [
+        5,
+        76,
+        97,
+        116
+      ],
+      "reached_leaves": [
+        5,
+        97,
+        116
+      ],
+      "missing_leaves": [
+        76
+      ],
+      "boundary_outside_leaves": [
+        1,
+        2,
+        3,
+        4,
+        6
+      ],
+      "boundary_outside_count": 5
+    },
+    "LUT_124": {
+      "lut_root": 124,
+      "leaves": [
+        1,
+        80,
+        101,
+        120
+      ],
+      "reached_leaves": [
+        1,
+        101,
+        120
+      ],
+      "missing_leaves": [
+        80
+      ],
+      "boundary_outside_leaves": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "boundary_outside_count": 5
+    },
+    "LUT_128": {
+      "lut_root": 128,
+      "leaves": [
+        3,
+        84,
+        103,
+        124
+      ],
+      "reached_leaves": [
+        3,
+        84,
+        103,
+        124
+      ],
+      "missing_leaves": [],
+      "boundary_outside_leaves": [
+        1,
+        2,
+        4,
+        5,
+        6
+      ],
+      "boundary_outside_count": 5
+    },
+    "LUT_139": {
+      "lut_root": 139,
+      "leaves": [
+        1,
+        2,
+        3,
+        6
+      ],
+      "reached_leaves": [
+        1,
+        2,
+        3,
+        6
+      ],
+      "missing_leaves": [],
+      "boundary_outside_leaves": [
+        4,
+        5
+      ],
+      "boundary_outside_count": 2
+    },
+    "LUT_141": {
+      "lut_root": 141,
+      "leaves": [
+        2,
+        95,
+        112,
+        139
+      ],
+      "reached_leaves": [
+        2,
+        112,
+        139
+      ],
+      "missing_leaves": [
+        95
+      ],
+      "boundary_outside_leaves": [
+        1,
+        3,
+        4,
+        5,
+        6
+      ],
+      "boundary_outside_count": 5
+    },
+    "LUT_145": {
+      "lut_root": 145,
+      "leaves": [
+        6,
+        97,
+        116,
+        141
+      ],
+      "reached_leaves": [
+        6,
+        97,
+        116,
+        141
+      ],
+      "missing_leaves": [],
+      "boundary_outside_leaves": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "boundary_outside_count": 5
+    },
+    "LUT_147": {
+      "lut_root": 147,
+      "leaves": [
+        2,
+        101,
+        120,
+        145
+      ],
+      "reached_leaves": [
+        2,
+        101,
+        145
+      ],
+      "missing_leaves": [
+        120
+      ],
+      "boundary_outside_leaves": [
+        1,
+        3,
+        4,
+        5,
+        6
+      ],
+      "boundary_outside_count": 5
+    },
+    "LUT_151": {
+      "lut_root": 151,
+      "leaves": [
+        4,
+        103,
+        124,
+        147
+      ],
+      "reached_leaves": [
+        4,
+        103,
+        124,
+        147
+      ],
+      "missing_leaves": [],
+      "boundary_outside_leaves": [
+        1,
+        2,
+        3,
+        5,
+        6
+      ],
+      "boundary_outside_count": 5
+    },
+    "LUT_160": {
+      "lut_root": 160,
+      "leaves": [
+        3,
+        11,
+        112,
+        139
+      ],
+      "reached_leaves": [
+        3,
+        112
+      ],
+      "missing_leaves": [
+        11,
+        139
+      ],
+      "boundary_outside_leaves": [
+        1,
+        4,
+        5
+      ],
+      "boundary_outside_count": 3
+    },
+    "LUT_164": {
+      "lut_root": 164,
+      "leaves": [
+        1,
+        116,
+        141,
+        160
+      ],
+      "reached_leaves": [
+        1,
+        160
+      ],
+      "missing_leaves": [
+        116,
+        141
+      ],
+      "boundary_outside_leaves": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "boundary_outside_count": 5
+    },
+    "LUT_168": {
+      "lut_root": 168,
+      "leaves": [
+        3,
+        120,
+        145,
+        164
+      ],
+      "reached_leaves": [
+        3,
+        164
+      ],
+      "missing_leaves": [
+        120,
+        145
+      ],
+      "boundary_outside_leaves": [
+        1,
+        2,
+        4,
+        5,
+        6
+      ],
+      "boundary_outside_count": 5
+    },
+    "LUT_172": {
+      "lut_root": 172,
+      "leaves": [
+        5,
+        124,
+        147,
+        168
+      ],
+      "reached_leaves": [
+        5,
+        124,
+        147,
+        168
+      ],
+      "missing_leaves": [],
+      "boundary_outside_leaves": [
+        1,
+        2,
+        3,
+        4,
+        6
+      ],
+      "boundary_outside_count": 5
+    },
+    "LUT_176": {
+      "lut_root": 176,
+      "leaves": [
+        1,
+        128,
+        151,
+        172
+      ],
+      "reached_leaves": [
+        1,
+        128,
+        151,
+        172
+      ],
+      "missing_leaves": [],
+      "boundary_outside_leaves": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "boundary_outside_count": 5
+    },
+    "LUT_189": {
+      "lut_root": 189,
+      "leaves": [
+        4,
+        11,
+        16,
+        139
+      ],
+      "reached_leaves": [
+        4,
+        11,
+        16
+      ],
+      "missing_leaves": [
+        139
+      ],
+      "boundary_outside_leaves": [
+        1,
+        2,
+        3,
+        5,
+        6
+      ],
+      "boundary_outside_count": 5
+    },
+    "LUT_193": {
+      "lut_root": 193,
+      "leaves": [
+        2,
+        141,
+        160,
+        189
+      ],
+      "reached_leaves": [
+        2,
+        160,
+        189
+      ],
+      "missing_leaves": [
+        141
+      ],
+      "boundary_outside_leaves": [
+        1,
+        3,
+        4,
+        5,
+        6
+      ],
+      "boundary_outside_count": 5
+    },
+    "LUT_195": {
+      "lut_root": 195,
+      "leaves": [
+        4,
+        145,
+        164,
+        193
+      ],
+      "reached_leaves": [
+        4,
+        193
+      ],
+      "missing_leaves": [
+        145,
+        164
+      ],
+      "boundary_outside_leaves": [
+        1,
+        2,
+        3,
+        5,
+        6
+      ],
+      "boundary_outside_count": 5
+    },
+    "LUT_199": {
+      "lut_root": 199,
+      "leaves": [
+        6,
+        147,
+        168,
+        195
+      ],
+      "reached_leaves": [
+        6,
+        147,
+        168,
+        195
+      ],
+      "missing_leaves": [],
+      "boundary_outside_leaves": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "boundary_outside_count": 5
+    },
+    "LUT_201": {
+      "lut_root": 201,
+      "leaves": [
+        2,
+        151,
+        172,
+        199
+      ],
+      "reached_leaves": [
+        2,
+        172,
+        199
+      ],
+      "missing_leaves": [
+        151
+      ],
+      "boundary_outside_leaves": [
+        1,
+        3,
+        4,
+        5,
+        6
+      ],
+      "boundary_outside_count": 5
+    },
+    "LUT_210": {
+      "lut_root": 210,
+      "leaves": [
+        3,
+        26,
+        160,
+        189
+      ],
+      "reached_leaves": [
+        3,
+        160
+      ],
+      "missing_leaves": [
+        26,
+        189
+      ],
+      "boundary_outside_leaves": [
+        1,
+        2,
+        4,
+        5,
+        6
+      ],
+      "boundary_outside_count": 5
+    },
+    "LUT_214": {
+      "lut_root": 214,
+      "leaves": [
+        5,
+        164,
+        193,
+        210
+      ],
+      "reached_leaves": [
+        5,
+        164,
+        210
+      ],
+      "missing_leaves": [
+        193
+      ],
+      "boundary_outside_leaves": [
+        1,
+        2,
+        3,
+        4,
+        6
+      ],
+      "boundary_outside_count": 5
+    },
+    "LUT_218": {
+      "lut_root": 218,
+      "leaves": [
+        1,
+        168,
+        195,
+        214
+      ],
+      "reached_leaves": [
+        1,
+        214
+      ],
+      "missing_leaves": [
+        168,
+        195
+      ],
+      "boundary_outside_leaves": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "boundary_outside_count": 5
+    },
+    "LUT_222": {
+      "lut_root": 222,
+      "leaves": [
+        3,
+        172,
+        199,
+        218
+      ],
+      "reached_leaves": [
+        3,
+        199,
+        218
+      ],
+      "missing_leaves": [
+        172
+      ],
+      "boundary_outside_leaves": [
+        1,
+        2,
+        4,
+        5,
+        6
+      ],
+      "boundary_outside_count": 5
+    },
+    "LUT_226": {
+      "lut_root": 226,
+      "leaves": [
+        5,
+        176,
+        201,
+        222
+      ],
+      "reached_leaves": [
+        5,
+        176,
+        201,
+        222
+      ],
+      "missing_leaves": [],
+      "boundary_outside_leaves": [
+        1,
+        2,
+        3,
+        4,
+        6
+      ],
+      "boundary_outside_count": 5
+    },
+    "LUT_239": {
+      "lut_root": 239,
+      "leaves": [
+        4,
+        26,
+        36,
+        189
+      ],
+      "reached_leaves": [
+        4,
+        26,
+        36
+      ],
+      "missing_leaves": [
+        189
+      ],
+      "boundary_outside_leaves": [
+        1,
+        2,
+        3,
+        5,
+        6
+      ],
+      "boundary_outside_count": 5
+    },
+    "LUT_241": {
+      "lut_root": 241,
+      "leaves": [
+        6,
+        193,
+        210,
+        239
+      ],
+      "reached_leaves": [
+        6,
+        239
+      ],
+      "missing_leaves": [
+        193,
+        210
+      ],
+      "boundary_outside_leaves": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "boundary_outside_count": 5
+    },
+    "LUT_245": {
+      "lut_root": 245,
+      "leaves": [
+        2,
+        195,
+        214,
+        241
+      ],
+      "reached_leaves": [
+        2
+      ],
+      "missing_leaves": [
+        195,
+        214,
+        241
+      ],
+      "boundary_outside_leaves": [
+        1,
+        3,
+        4,
+        5,
+        6
+      ],
+      "boundary_outside_count": 5
+    },
+    "LUT_247": {
+      "lut_root": 247,
+      "leaves": [
+        4,
+        199,
+        218,
+        245
+      ],
+      "reached_leaves": [
+        4,
+        245
+      ],
+      "missing_leaves": [
+        199,
+        218
+      ],
+      "boundary_outside_leaves": [
+        1,
+        2,
+        3,
+        5,
+        6
+      ],
+      "boundary_outside_count": 5
+    },
+    "LUT_251": {
+      "lut_root": 251,
+      "leaves": [
+        6,
+        201,
+        222,
+        247
+      ],
+      "reached_leaves": [
+        6,
+        247
+      ],
+      "missing_leaves": [
+        201,
+        222
+      ],
+      "boundary_outside_leaves": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "boundary_outside_count": 5
+    },
+    "LUT_252": {
+      "lut_root": 252,
+      "leaves": [
+        226,
+        251
+      ],
+      "reached_leaves": [],
+      "missing_leaves": [
+        226,
+        251
+      ],
+      "boundary_outside_leaves": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "boundary_outside_count": 6
+    },
+    "LUT_260": {
+      "lut_root": 260,
+      "leaves": [
+        1,
+        51,
+        210,
+        239
+      ],
+      "reached_leaves": [
+        1,
+        210,
+        239
+      ],
+      "missing_leaves": [
+        51
+      ],
+      "boundary_outside_leaves": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "boundary_outside_count": 5
+    },
+    "LUT_264": {
+      "lut_root": 264,
+      "leaves": [
+        3,
+        214,
+        241,
+        260
+      ],
+      "reached_leaves": [
+        3,
+        214
+      ],
+      "missing_leaves": [
+        241,
+        260
+      ],
+      "boundary_outside_leaves": [
+        1,
+        2,
+        4,
+        5,
+        6
+      ],
+      "boundary_outside_count": 5
+    },
+    "LUT_268": {
+      "lut_root": 268,
+      "leaves": [
+        5,
+        218,
+        245,
+        264
+      ],
+      "reached_leaves": [
+        5
+      ],
+      "missing_leaves": [
+        218,
+        245,
+        264
+      ],
+      "boundary_outside_leaves": [
+        1,
+        2,
+        3,
+        4,
+        6
+      ],
+      "boundary_outside_count": 5
+    },
+    "LUT_272": {
+      "lut_root": 272,
+      "leaves": [
+        1,
+        222,
+        247,
+        268
+      ],
+      "reached_leaves": [
+        1,
+        222,
+        247,
+        268
+      ],
+      "missing_leaves": [],
+      "boundary_outside_leaves": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "boundary_outside_count": 5
+    },
+    "LUT_273": {
+      "lut_root": 273,
+      "leaves": [
+        3,
+        272
+      ],
+      "reached_leaves": [
+        3,
+        272
+      ],
+      "missing_leaves": [],
+      "boundary_outside_leaves": [
+        1,
+        2,
+        4,
+        5,
+        6
+      ],
+      "boundary_outside_count": 5
+    },
+    "LUT_286": {
+      "lut_root": 286,
+      "leaves": [
+        2,
+        51,
+        65,
+        239
+      ],
+      "reached_leaves": [
+        2,
+        65,
+        239
+      ],
+      "missing_leaves": [
+        51
+      ],
+      "boundary_outside_leaves": [
+        1,
+        3,
+        4,
+        5,
+        6
+      ],
+      "boundary_outside_count": 5
+    },
+    "LUT_290": {
+      "lut_root": 290,
+      "leaves": [
+        4,
+        241,
+        260,
+        286
+      ],
+      "reached_leaves": [
+        4,
+        241,
+        286
+      ],
+      "missing_leaves": [
+        260
+      ],
+      "boundary_outside_leaves": [
+        1,
+        2,
+        3,
+        5,
+        6
+      ],
+      "boundary_outside_count": 5
+    },
+    "LUT_292": {
+      "lut_root": 292,
+      "leaves": [
+        6,
+        245,
+        264,
+        290
+      ],
+      "reached_leaves": [
+        6,
+        245,
+        290
+      ],
+      "missing_leaves": [
+        264
+      ],
+      "boundary_outside_leaves": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "boundary_outside_count": 5
+    },
+    "LUT_296": {
+      "lut_root": 296,
+      "leaves": [
+        2,
+        247,
+        268,
+        292
+      ],
+      "reached_leaves": [
+        2,
+        247,
+        292
+      ],
+      "missing_leaves": [
+        268
+      ],
+      "boundary_outside_leaves": [
+        1,
+        3,
+        4,
+        5,
+        6
+      ],
+      "boundary_outside_count": 5
+    },
+    "LUT_297": {
+      "lut_root": 297,
+      "leaves": [
+        272,
+        296
+      ],
+      "reached_leaves": [
+        296
+      ],
+      "missing_leaves": [
+        272
+      ],
+      "boundary_outside_leaves": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "boundary_outside_count": 6
+    },
+    "LUT_304": {
+      "lut_root": 304,
+      "leaves": [
+        5,
+        84,
+        260,
+        286
+      ],
+      "reached_leaves": [
+        260
+      ],
+      "missing_leaves": [
+        5,
+        84,
+        286
+      ],
+      "boundary_outside_leaves": [
+        6
+      ],
+      "boundary_outside_count": 1
+    },
+    "LUT_308": {
+      "lut_root": 308,
+      "leaves": [
+        1,
+        264,
+        290,
+        304
+      ],
+      "reached_leaves": [
+        1
+      ],
+      "missing_leaves": [
+        264,
+        290,
+        304
+      ],
+      "boundary_outside_leaves": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "boundary_outside_count": 5
+    },
+    "LUT_312": {
+      "lut_root": 312,
+      "leaves": [
+        3,
+        268,
+        292,
+        308
+      ],
+      "reached_leaves": [
+        3,
+        308
+      ],
+      "missing_leaves": [
+        268,
+        292
+      ],
+      "boundary_outside_leaves": [
+        1,
+        2,
+        4,
+        5,
+        6
+      ],
+      "boundary_outside_count": 5
+    },
+    "LUT_313": {
+      "lut_root": 313,
+      "leaves": [
+        5,
+        312
+      ],
+      "reached_leaves": [
+        5,
+        312
+      ],
+      "missing_leaves": [],
+      "boundary_outside_leaves": [
+        1,
+        2,
+        3,
+        4,
+        6
+      ],
+      "boundary_outside_count": 5
+    },
+    "LUT_317": {
+      "lut_root": 317,
+      "leaves": [
+        252,
+        273,
+        297,
+        313
+      ],
+      "reached_leaves": [
+        252,
+        313
+      ],
+      "missing_leaves": [
+        273,
+        297
+      ],
+      "boundary_outside_leaves": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "boundary_outside_count": 6
+    },
+    "LUT_326": {
+      "lut_root": 326,
+      "leaves": [
+        6,
+        84,
+        103,
+        286
+      ],
+      "reached_leaves": [
+        6,
+        84,
+        103
+      ],
+      "missing_leaves": [
+        286
+      ],
+      "boundary_outside_leaves": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "boundary_outside_count": 5
+    },
+    "LUT_328": {
+      "lut_root": 328,
+      "leaves": [
+        2,
+        290,
+        304,
+        326
+      ],
+      "reached_leaves": [
+        2,
+        326
+      ],
+      "missing_leaves": [
+        290,
+        304
+      ],
+      "boundary_outside_leaves": [
+        1,
+        3,
+        4,
+        5,
+        6
+      ],
+      "boundary_outside_count": 5
+    },
+    "LUT_332": {
+      "lut_root": 332,
+      "leaves": [
+        4,
+        292,
+        308,
+        328
+      ],
+      "reached_leaves": [
+        4,
+        292,
+        308,
+        328
+      ],
+      "missing_leaves": [],
+      "boundary_outside_leaves": [
+        1,
+        2,
+        3,
+        5,
+        6
+      ],
+      "boundary_outside_count": 5
+    },
+    "LUT_333": {
+      "lut_root": 333,
+      "leaves": [
+        312,
+        332
+      ],
+      "reached_leaves": [
+        312,
+        332
+      ],
+      "missing_leaves": [],
+      "boundary_outside_leaves": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "boundary_outside_count": 6
+    },
+    "LUT_339": {
+      "lut_root": 339,
+      "leaves": [
+        3,
+        128,
+        304,
+        326
+      ],
+      "reached_leaves": [
+        3
+      ],
+      "missing_leaves": [
+        128,
+        304,
+        326
+      ],
+      "boundary_outside_leaves": [
+        1,
+        2,
+        4,
+        5,
+        6
+      ],
+      "boundary_outside_count": 5
+    },
+    "LUT_343": {
+      "lut_root": 343,
+      "leaves": [
+        5,
+        308,
+        328,
+        339
+      ],
+      "reached_leaves": [
+        5
+      ],
+      "missing_leaves": [
+        308,
+        328,
+        339
+      ],
+      "boundary_outside_leaves": [
+        1,
+        2,
+        3,
+        4,
+        6
+      ],
+      "boundary_outside_count": 5
+    },
+    "LUT_352": {
+      "lut_root": 352,
+      "leaves": [
+        4,
+        128,
+        151,
+        326
+      ],
+      "reached_leaves": [
+        4,
+        151
+      ],
+      "missing_leaves": [
+        128,
+        326
+      ],
+      "boundary_outside_leaves": [
+        1,
+        2,
+        3,
+        5,
+        6
+      ],
+      "boundary_outside_count": 5
+    },
+    "LUT_356": {
+      "lut_root": 356,
+      "leaves": [
+        6,
+        328,
+        339,
+        352
+      ],
+      "reached_leaves": [
+        6,
+        328,
+        352
+      ],
+      "missing_leaves": [
+        339
+      ],
+      "boundary_outside_leaves": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "boundary_outside_count": 5
+    },
+    "LUT_362": {
+      "lut_root": 362,
+      "leaves": [
+        1,
+        176,
+        339,
+        352
+      ],
+      "reached_leaves": [
+        1,
+        352
+      ],
+      "missing_leaves": [
+        176,
+        339
+      ],
+      "boundary_outside_leaves": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "boundary_outside_count": 5
+    },
+    "LUT_364": {
+      "lut_root": 364,
+      "leaves": [
+        3,
+        343,
+        356,
+        362
+      ],
+      "reached_leaves": [
+        3,
+        343
+      ],
+      "missing_leaves": [
+        356,
+        362
+      ],
+      "boundary_outside_leaves": [
+        1,
+        2,
+        4,
+        5,
+        6
+      ],
+      "boundary_outside_count": 5
+    },
+    "LUT_366": {
+      "lut_root": 366,
+      "leaves": [
+        1,
+        333,
+        343,
+        364
+      ],
+      "reached_leaves": [
+        1
+      ],
+      "missing_leaves": [
+        333,
+        343,
+        364
+      ],
+      "boundary_outside_leaves": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "boundary_outside_count": 5
+    },
+    "LUT_369": {
+      "lut_root": 369,
+      "leaves": [
+        317,
+        366
+      ],
+      "reached_leaves": [],
+      "missing_leaves": [
+        317,
+        366
+      ],
+      "boundary_outside_leaves": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "boundary_outside_count": 6
+    },
+    "LUT_374": {
+      "lut_root": 374,
+      "leaves": [
+        2,
+        176,
+        201,
+        352
+      ],
+      "reached_leaves": [
+        2,
+        176,
+        201,
+        352
+      ],
+      "missing_leaves": [],
+      "boundary_outside_leaves": [
+        1,
+        3,
+        4,
+        5,
+        6
+      ],
+      "boundary_outside_count": 5
+    },
+    "LUT_375": {
+      "lut_root": 375,
+      "leaves": [
+        362,
+        374
+      ],
+      "reached_leaves": [
+        362
+      ],
+      "missing_leaves": [
+        374
+      ],
+      "boundary_outside_leaves": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "boundary_outside_count": 6
+    },
+    "LUT_384": {
+      "lut_root": 384,
+      "leaves": [
+        6,
+        226,
+        251,
+        374
+      ],
+      "reached_leaves": [
+        6,
+        226,
+        251,
+        374
+      ],
+      "missing_leaves": [],
+      "boundary_outside_leaves": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "boundary_outside_count": 5
+    },
+    "LUT_385": {
+      "lut_root": 385,
+      "leaves": [
+        5,
+        226,
+        375,
+        384
+      ],
+      "reached_leaves": [
+        5,
+        226,
+        375,
+        384
+      ],
+      "missing_leaves": [],
+      "boundary_outside_leaves": [
+        1,
+        2,
+        3,
+        4,
+        6
+      ],
+      "boundary_outside_count": 5
+    },
+    "LUT_386": {
+      "lut_root": 386,
+      "leaves": [
+        369,
+        385
+      ],
+      "reached_leaves": [
+        385
+      ],
+      "missing_leaves": [
+        369
+      ],
+      "boundary_outside_leaves": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "boundary_outside_count": 6
+    },
+    "LUT_387": {
+      "lut_root": 387,
+      "leaves": [
+        369,
+        385
+      ],
+      "reached_leaves": [
+        385
+      ],
+      "missing_leaves": [
+        369
+      ],
+      "boundary_outside_leaves": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "boundary_outside_count": 6
+    },
+    "LUT_388": {
+      "lut_root": 388,
+      "leaves": [
+        386,
+        387
+      ],
+      "reached_leaves": [
+        386,
+        387
+      ],
+      "missing_leaves": [],
+      "boundary_outside_leaves": [],
+      "boundary_outside_count": 0
+    }
+  }
+}

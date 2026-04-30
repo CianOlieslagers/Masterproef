@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:36:09 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Tue Apr 21 17:04:31 2026
+# Process ID: 20636
+# Current directory: /home/cian/Masterproef/project/Vivado/scripts
+# Command line: vivado -mode batch -log /home/cian/Masterproef/project/results/run_lut_insertion/2026-04-21_17-04-29/logs/vivado_impl.log -journal /home/cian/Masterproef/project/results/run_lut_insertion/2026-04-21_17-04-29/logs/vivado_impl.jou -source /home/cian/Masterproef/project/Vivado/scripts/run_impl_timing.tcl -tclargs /home/cian/Masterproef/project/results/run_lut_insertion/2026-04-21_17-04-29/baseline_impl /home/cian/Masterproef/project/Vivado/src/adder.v top xcu200-fsgd2104-2-e /home/cian/Masterproef/project/Vivado/constraints/timing_exp.xdc
+# Log file: /home/cian/Masterproef/project/results/run_lut_insertion/2026-04-21_17-04-29/logs/vivado_impl.log
+# Journal file: /home/cian/Masterproef/project/results/run_lut_insertion/2026-04-21_17-04-29/logs/vivado_impl.jou
+# Running On        :MSI
+# Platform          :Ubuntu
+# Operating System  :Ubuntu 22.04.5 LTS
+# Processor Detail  :Intel(R) Core(TM) i7-10750H CPU @ 2.60GHz
+# CPU Frequency     :2592.008 MHz
+# CPU Physical cores:6
+# CPU Logical cores :12
+# Host memory       :8232 MB
+# Swap memory       :2147 MB
+# Total Virtual     :10380 MB
+# Available Virtual :9283 MB
+#-----------------------------------------------------------
+source /home/cian/Masterproef/project/Vivado/scripts/run_impl_timing.tcl

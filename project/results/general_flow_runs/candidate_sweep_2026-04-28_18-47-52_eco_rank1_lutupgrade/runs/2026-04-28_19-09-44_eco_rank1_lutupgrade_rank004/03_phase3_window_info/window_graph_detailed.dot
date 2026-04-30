@@ -1,0 +1,36 @@
+digraph window_detailed {
+  rankdir=LR;
+  "f[63]_INST_0_i_6" [shape=box,label="f[63]_INST_0_i_6\nLUT6\nSLICE_X106Y467/SLICEL.A6LUT"];
+  "f[68]_INST_0_i_7" [shape=box,label="f[68]_INST_0_i_7\nLUT6\nSLICE_X101Y467/SLICEL.A6LUT"];
+  "f[68]_INST_0_i_9" [shape=box,label="f[68]_INST_0_i_9\nLUT2\nSLICE_X98Y467/SLICEL.B6LUT"];
+  "BI_1" [shape=oval,label="BI_1\nf[63]_INST_0_i_7_n_0\nEXTERNAL_CELL"];
+  "BI_2" [shape=oval,label="BI_2\nf[63]_INST_0_i_8_n_0\nEXTERNAL_CELL"];
+  "BI_3" [shape=oval,label="BI_3\nf[56]_INST_0_i_2_n_0\nEXTERNAL_CELL"];
+  "BI_4" [shape=oval,label="BI_4\nf[56]_INST_0_i_3_n_0\nEXTERNAL_CELL"];
+  "BI_5" [shape=oval,label="BI_5\nf[57]_INST_0_i_2_n_0\nEXTERNAL_CELL"];
+  "BI_6" [shape=oval,label="BI_6\nf[57]_INST_0_i_3_n_0\nEXTERNAL_CELL"];
+  "BI_7" [shape=oval,label="BI_7\nf[59]_INST_0_i_3_n_0\nEXTERNAL_CELL"];
+  "BI_8" [shape=oval,label="BI_8\nf[59]_INST_0_i_2_n_0\nEXTERNAL_CELL"];
+  "BI_9" [shape=oval,label="BI_9\nf[58]_INST_0_i_3_n_0\nEXTERNAL_CELL"];
+  "BI_10" [shape=oval,label="BI_10\nf[58]_INST_0_i_2_n_0\nEXTERNAL_CELL"];
+  "BI_11" [shape=oval,label="BI_11\nf[60]_INST_0_i_2_n_0\nEXTERNAL_CELL"];
+  "BI_12" [shape=oval,label="BI_12\nf[60]_INST_0_i_3_n_0\nEXTERNAL_CELL"];
+  "BI_1" -> "f[63]_INST_0_i_6" [label="I0"];
+  "BI_2" -> "f[63]_INST_0_i_6" [label="I1"];
+  "BI_3" -> "f[63]_INST_0_i_6" [label="I2"];
+  "BI_4" -> "f[63]_INST_0_i_6" [label="I3"];
+  "BI_5" -> "f[63]_INST_0_i_6" [label="I4"];
+  "BI_6" -> "f[63]_INST_0_i_6" [label="I5"];
+  "BI_7" -> "f[68]_INST_0_i_7" [label="I1"];
+  "BI_8" -> "f[68]_INST_0_i_7" [label="I2"];
+  "BI_9" -> "f[68]_INST_0_i_7" [label="I3"];
+  "BI_10" -> "f[68]_INST_0_i_7" [label="I4"];
+  "BI_11" -> "f[68]_INST_0_i_9" [label="I0"];
+  "BI_12" -> "f[68]_INST_0_i_9" [label="I1"];
+  "f[68]_INST_0_i_9" -> "f[68]_INST_0_i_7" [label="I0\n152ps\nM=3", penwidth=2];
+  "f[63]_INST_0_i_6" -> "f[68]_INST_0_i_7" [label="I5\n234ps\nM=5", penwidth=2];
+  "BO_1" [shape=oval,label="BO_1\np_349_in\nloads=1"];
+  "f[63]_INST_0_i_6" -> "BO_1" [label="O"];
+  "BO_2" [shape=oval,label="BO_2\nf[68]_INST_0_i_7_n_0\nloads=1"];
+  "f[68]_INST_0_i_7" -> "BO_2" [label="O"];
+}

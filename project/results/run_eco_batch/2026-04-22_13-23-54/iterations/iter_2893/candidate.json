@@ -1,0 +1,25 @@
+{
+  "id": "cand_002795",
+  "net": "f[8]_INST_0_i_3/OUT",
+  "sink_cell": "f[8]_INST_0_i_3/IBUFCTRL_INST",
+  "sink_pin": null,
+  "target_slice": "SLICE_X0Y426",
+  "lut_delay_ps": 120.0,
+  "from": "f[8]_INST_0_i_3/INBUF_INST",
+  "to": "f[8]_INST_0_i_3/IBUFCTRL_INST",
+  "distance": 0,
+  "coords": {
+    "src": [
+      0,
+      426
+    ],
+    "dest": [
+      0,
+      426
+    ]
+  },
+  "eco_ready": true,
+  "issues": [
+    "missing_sink_pin"
+  ]
+}

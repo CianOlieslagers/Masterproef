@@ -1,0 +1,262 @@
+{
+  "phase": "FASE 5D ABC",
+  "phase5d_status": "PASS_IMPROVED_ESTIMATE",
+  "candidate_id": "phase5d_multi_abc_00001",
+  "family": "abc_lut6_mapping_physical_assignment",
+  "truth_table_equivalence": true,
+  "num_checked_vectors": 2048,
+  "same_window_boundary": true,
+  "same_lut_positions": true,
+  "abc_lut_count": 4,
+  "window_lut_count": 4,
+  "estimated_improvement": true,
+  "baseline_score": 60850,
+  "score_without_penalties": 38073,
+  "score_with_penalties": 44823,
+  "output_signal": "y",
+  "output_driver": {
+    "abc_node": "y",
+    "physical_cell": "f[108]_INST_0_i_6",
+    "physical_pin": "f[108]_INST_0_i_6/O"
+  },
+  "nodes": [
+    {
+      "abc_node": "y",
+      "physical_cell": "f[108]_INST_0_i_6",
+      "original_ref": "LUT6",
+      "logical_ref": "LUT3",
+      "site": "SLICE_X79Y531",
+      "bel": "SLICEL.A6LUT",
+      "input_count": 3,
+      "new_INIT": "64'h2B2B2B2B2B2B2B2B",
+      "inputs": [
+        {
+          "sink_pin": "I0",
+          "source_signal": "new_n15_",
+          "source_cell": "f[108]_INST_0_i_9"
+        },
+        {
+          "sink_pin": "I1",
+          "boundary_index": 8,
+          "source_signal": "b8"
+        },
+        {
+          "sink_pin": "I2",
+          "boundary_index": 9,
+          "source_signal": "b9"
+        }
+      ]
+    },
+    {
+      "abc_node": "new_n15_",
+      "physical_cell": "f[108]_INST_0_i_9",
+      "original_ref": "LUT2",
+      "logical_ref": "LUT6",
+      "site": "SLICE_X83Y514",
+      "bel": "SLICEL.H6LUT",
+      "input_count": 6,
+      "new_INIT": "64'h015701570157157F",
+      "inputs": [
+        {
+          "sink_pin": "I0",
+          "boundary_index": 6,
+          "source_signal": "b6"
+        },
+        {
+          "sink_pin": "I1",
+          "boundary_index": 10,
+          "source_signal": "b10"
+        },
+        {
+          "sink_pin": "I2",
+          "boundary_index": 11,
+          "source_signal": "b11"
+        },
+        {
+          "sink_pin": "I3",
+          "boundary_index": 7,
+          "source_signal": "b7"
+        },
+        {
+          "sink_pin": "I4",
+          "source_signal": "new_n17_",
+          "source_cell": "f[108]_INST_0_i_7"
+        },
+        {
+          "sink_pin": "I5",
+          "source_signal": "new_n16_",
+          "source_cell": "f[108]_INST_0_i_8"
+        }
+      ]
+    },
+    {
+      "abc_node": "new_n16_",
+      "physical_cell": "f[108]_INST_0_i_8",
+      "original_ref": "LUT2",
+      "logical_ref": "LUT2",
+      "site": "SLICE_X81Y528",
+      "bel": "SLICEM.G6LUT",
+      "input_count": 2,
+      "new_INIT": "64'h8888888888888888",
+      "inputs": [
+        {
+          "sink_pin": "I0",
+          "boundary_index": 1,
+          "source_signal": "b1"
+        },
+        {
+          "sink_pin": "I1",
+          "boundary_index": 2,
+          "source_signal": "b2"
+        }
+      ]
+    },
+    {
+      "abc_node": "new_n17_",
+      "physical_cell": "f[108]_INST_0_i_7",
+      "original_ref": "LUT6",
+      "logical_ref": "LUT5",
+      "site": "SLICE_X89Y491",
+      "bel": "SLICEL.F6LUT",
+      "input_count": 5,
+      "new_INIT": "64'hE000EEE0E000EEE0",
+      "inputs": [
+        {
+          "sink_pin": "I0",
+          "boundary_index": 1,
+          "source_signal": "b1"
+        },
+        {
+          "sink_pin": "I1",
+          "boundary_index": 2,
+          "source_signal": "b2"
+        },
+        {
+          "sink_pin": "I2",
+          "boundary_index": 3,
+          "source_signal": "b3"
+        },
+        {
+          "sink_pin": "I3",
+          "boundary_index": 4,
+          "source_signal": "b4"
+        },
+        {
+          "sink_pin": "I4",
+          "boundary_index": 5,
+          "source_signal": "b5"
+        }
+      ]
+    }
+  ],
+  "changed_pins": [
+    {
+      "sink_cell": "f[108]_INST_0_i_6",
+      "sink_pin": "I0",
+      "old_source": "INT:f[108]_INST_0_i_7/O",
+      "new_source": "INT:f[108]_INST_0_i_9/O"
+    },
+    {
+      "sink_cell": "f[108]_INST_0_i_6",
+      "sink_pin": "I1",
+      "old_source": "INT:f[108]_INST_0_i_8/O",
+      "new_source": "BI_NET:f[102]_INST_0_i_2_n_0"
+    },
+    {
+      "sink_cell": "f[108]_INST_0_i_6",
+      "sink_pin": "I2",
+      "old_source": "BI_NET:f[101]_INST_0_i_2_n_0",
+      "new_source": "BI_NET:f[102]_INST_0_i_3_n_0"
+    },
+    {
+      "sink_cell": "f[108]_INST_0_i_9",
+      "sink_pin": "I0",
+      "old_source": "BI_NET:f[100]_INST_0_i_2_n_0",
+      "new_source": "BI_NET:f[101]_INST_0_i_2_n_0"
+    },
+    {
+      "sink_cell": "f[108]_INST_0_i_9",
+      "sink_pin": "I2",
+      "old_source": "",
+      "new_source": "BI_NET:f[100]_INST_0_i_2_n_0"
+    },
+    {
+      "sink_cell": "f[108]_INST_0_i_9",
+      "sink_pin": "I3",
+      "old_source": "",
+      "new_source": "BI_NET:f[101]_INST_0_i_3_n_0"
+    },
+    {
+      "sink_cell": "f[108]_INST_0_i_9",
+      "sink_pin": "I4",
+      "old_source": "",
+      "new_source": "INT:f[108]_INST_0_i_7/O"
+    },
+    {
+      "sink_cell": "f[108]_INST_0_i_9",
+      "sink_pin": "I5",
+      "old_source": "",
+      "new_source": "INT:f[108]_INST_0_i_8/O"
+    },
+    {
+      "sink_cell": "f[108]_INST_0_i_8",
+      "sink_pin": "I0",
+      "old_source": "BI_NET:f[100]_INST_0_i_3_n_0",
+      "new_source": "BI_NET:f[99]_INST_0_i_3_n_0"
+    },
+    {
+      "sink_cell": "f[108]_INST_0_i_8",
+      "sink_pin": "I1",
+      "old_source": "BI_NET:f[100]_INST_0_i_2_n_0",
+      "new_source": "BI_NET:f[99]_INST_0_i_2_n_0"
+    },
+    {
+      "sink_cell": "f[108]_INST_0_i_7",
+      "sink_pin": "I0",
+      "old_source": "INT:f[108]_INST_0_i_9/O",
+      "new_source": "BI_NET:f[99]_INST_0_i_3_n_0"
+    },
+    {
+      "sink_cell": "f[108]_INST_0_i_7",
+      "sink_pin": "I1",
+      "old_source": "BI_NET:f[99]_INST_0_i_3_n_0",
+      "new_source": "BI_NET:f[99]_INST_0_i_2_n_0"
+    },
+    {
+      "sink_cell": "f[108]_INST_0_i_7",
+      "sink_pin": "I2",
+      "old_source": "BI_NET:f[99]_INST_0_i_2_n_0",
+      "new_source": "BI_NET:f[98]_INST_0_i_3_n_0"
+    },
+    {
+      "sink_cell": "f[108]_INST_0_i_7",
+      "sink_pin": "I3",
+      "old_source": "BI_NET:f[98]_INST_0_i_3_n_0",
+      "new_source": "BI_NET:f[98]_INST_0_i_2_n_0"
+    },
+    {
+      "sink_cell": "f[108]_INST_0_i_7",
+      "sink_pin": "I4",
+      "old_source": "BI_NET:f[98]_INST_0_i_2_n_0",
+      "new_source": "BI_NET:p_149_in"
+    }
+  ],
+  "cost": {
+    "internal_manhattan_total": 66,
+    "internal_manhattan_max": 29,
+    "boundary_manhattan_total": 2473,
+    "boundary_manhattan_missing": 0,
+    "output_driver_changed": false,
+    "upgrade_count": 1,
+    "upgraded_cells": [
+      "f[108]_INST_0_i_9"
+    ],
+    "changed_pin_count": 15,
+    "score_without_penalties": 38073,
+    "score_with_penalties": 44823
+  },
+  "recipe_name": "r07_rewrite_refactor_rewrite_if",
+  "recipe_body": "strash; rewrite; refactor; rewrite; if -K 6",
+  "abc_log": "/home/cian/Masterproef/project/results/general_flow_runs/2026-04-28_22-03-34_eco_rank1_lutupgrade/05_phase5d_multi_abc/abc/r07_rewrite_refactor_rewrite_if/abc.log",
+  "mapped_blif": "/home/cian/Masterproef/project/results/general_flow_runs/2026-04-28_22-03-34_eco_rank1_lutupgrade/05_phase5d_multi_abc/abc/r07_rewrite_refactor_rewrite_if/mapped.blif"
+}

@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:04:56 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Sat Apr 18 16:36:11 2026
+# Process ID: 14969
+# Current directory: /home/cian/Masterproef
+# Command line: vivado -mode batch -log /home/cian/Masterproef/project/results/run_lut_insertion/2026-04-18_16-32-35/logs/vivado_eco_extract.log -journal /home/cian/Masterproef/project/results/run_lut_insertion/2026-04-18_16-32-35/logs/vivado_eco_extract.jou -source /home/cian/Masterproef/project/Vivado/scripts/extract_connectivity.tcl -tclargs /home/cian/Masterproef/project/results/run_lut_insertion/2026-04-18_16-32-35/dcp/test_eco_output.dcp /home/cian/Masterproef/project/results/run_lut_insertion/2026-04-18_16-32-35/reports_eco/connectivity.csv
+# Log file: /home/cian/Masterproef/project/results/run_lut_insertion/2026-04-18_16-32-35/logs/vivado_eco_extract.log
+# Journal file: /home/cian/Masterproef/project/results/run_lut_insertion/2026-04-18_16-32-35/logs/vivado_eco_extract.jou
+# Running On: MSI, OS: Linux, CPU Frequency: 2592.008 MHz, CPU Physical cores: 6, Host memory: 8232 MB
+#-----------------------------------------------------------
+source /home/cian/Masterproef/project/Vivado/scripts/extract_connectivity.tcl

@@ -1,0 +1,31 @@
+[
+  {
+    "edge_name": "old_selected_edge",
+    "source_pin": "f[108]_INST_0_i_7/O",
+    "sink_pin": "f[108]_INST_0_i_6/I0",
+    "baseline_expected": "connected",
+    "eco_expected": "disconnected"
+  },
+  {
+    "edge_name": "new_internal_f_108__INST_0_i_7_to_root_I0",
+    "source_pin": "f[108]_INST_0_i_7/O",
+    "sink_pin": "f[108]_INST_0_i_8/I0",
+    "baseline_expected": "not_required",
+    "eco_expected": "connected"
+  },
+  {
+    "edge_name": "new_internal_f_108__INST_0_i_6_to_root_I1",
+    "source_pin": "f[108]_INST_0_i_6/O",
+    "sink_pin": "f[108]_INST_0_i_8/I1",
+    "baseline_expected": "not_required",
+    "eco_expected": "connected"
+  },
+  {
+    "edge_name": "new_output_driver_to_p_124_in",
+    "source_pin": "f[108]_INST_0_i_8/O",
+    "sink_pin": "",
+    "baseline_expected": "not_required",
+    "eco_expected": "driver_of_output_net",
+    "output_net": "p_124_in"
+  }
+]

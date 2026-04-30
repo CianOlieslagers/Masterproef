@@ -1,0 +1,43 @@
+design:
+  name: "example_big_300"
+  eco_root: "/home/cian/Masterproef/multisynthesis/results/example_big_300/PlaceAndRoute/06_eco_lut_insertion"
+
+tools:
+  vpr_bin: "/home/cian/Masterproef/vtr-verilog-to-routing/vpr/vpr"
+  abc_bin: "/home/cian/Masterproef/vtr-verilog-to-routing/abc/abc"
+  mt_aig_equiv_bin: "/home/cian/Masterproef/multisynthesis/logicSynthesis/tools/mockturtle/build/mt_aig_equiv"
+  arch_xml: "/home/cian/Masterproef/vtr-verilog-to-routing/vtr_flow/arch/custom/markus_k4.xml"
+
+inputs:
+  baseline_blif: "phase0_baseline/example_big_300.mapped.blif"
+  baseline_net: "phase0_baseline/baseline.net"
+  baseline_place: "phase0_baseline/baseline.place"
+  baseline_route_log: "phase0_baseline/baseline.route_only.log"
+  baseline_timing_rpt: "phase0_baseline/report_timing.setup.rpt"
+
+  # Belangrijk: als dit maar top20 bevat, kan het script max 20 onderzoeken.
+  top_connections_csv: "../05_custom_outputs/example_big_300.top20_manhattan.csv"
+
+experiment:
+  max_connections: 30
+
+  # false = elke kandidaat apart testen vanaf originele baseline
+  # true  = elke geslaagde ECO wordt nieuwe baseline voor volgende iteratie
+  cumulative: false
+
+  # per_iteration = na elke ECO routen en meten
+  # final_only = alleen nuttig bij cumulative=true; route enkel op het einde
+  route_policy: "per_iteration"
+
+  eco_type: "inverter_compensated"
+  route_chan_width: 100
+  timing_report_npaths: 100
+
+selection:
+  max_extra_manhattan: 4
+  search_radius: 8
+  skip_if_no_free_location: true
+
+outputs:
+  run_name: "eco_batch_test_002_spiral_timing"
+  overwrite: true

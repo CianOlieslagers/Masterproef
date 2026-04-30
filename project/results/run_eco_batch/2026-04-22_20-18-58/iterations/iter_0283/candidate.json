@@ -1,0 +1,25 @@
+{
+  "id": "cand_000063",
+  "net": "f[104]_INST_0_i_3_n_0",
+  "sink_cell": "f[104]_INST_0_i_1",
+  "sink_pin": null,
+  "target_slice": "SLICE_X33Y447",
+  "lut_delay_ps": 120.0,
+  "from": "f[104]_INST_0_i_3/IBUFCTRL_INST",
+  "to": "f[104]_INST_0_i_1",
+  "distance": 294,
+  "coords": {
+    "src": [
+      1,
+      332
+    ],
+    "dest": [
+      65,
+      562
+    ]
+  },
+  "eco_ready": true,
+  "issues": [
+    "missing_sink_pin"
+  ]
+}

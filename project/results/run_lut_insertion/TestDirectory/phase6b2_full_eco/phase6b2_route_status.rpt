@@ -1,0 +1,67 @@
+Design Route Status
+                                               :      # nets :
+   ------------------------------------------- : ----------- :
+   # of logical nets.......................... :        1224 :
+       # of nets not needing routing.......... :         642 :
+           # of internally routed nets........ :         641 :
+       # of routable nets..................... :         582 :
+           # of fully routed nets............. :         570 :
+       # of nets with routing errors.......... :          13 :
+           # of nets with no driver........... :           1 :
+           # of nets with some unrouted pins.. :          11 :
+           # of nets with resource conflicts.. :          10 :
+           # of nets with antennas/islands.... :           7 :
+   ------------------------------------------- : ----------- :
+
+
+Nets with Routing Errors:
+  eco_f_108_INST_0_i_6_O_to_f_108_INST_0_i_8_I1
+    Conflicts with Site Pins: CLEL_R_X50Y531/CLE_CLE_L_SITE_0_A_O (SLICE_X79Y531/A_O)
+  eco_f_108_INST_0_i_7_O_to_f_108_INST_0_i_8_I0
+  f[100]_INST_0_i_2/O
+    Unrouted Pin: f[108]_INST_0_i_6/I1
+    Conflicts with Site Pins:
+      INT_X50Y531/IMUX_E26 (SLICE_X79Y531/A5)
+      INT_X52Y528/IMUX_W32 (SLICE_X81Y528/G3)
+    Antenna Nodes: INT_X52Y528/IMUX_W32
+  f[100]_INST_0_i_3/O
+    Unrouted Pin: f[108]_INST_0_i_6/I0
+    Conflicts with Site Pins: INT_X52Y528/IMUX_W38 (SLICE_X81Y528/G5)
+    Antenna Nodes: INT_X52Y528/IMUX_W38
+  f[101]_INST_0_i_2/O
+    Unrouted Pin: f[108]_INST_0_i_8/I2
+    Conflicts with Site Pins: INT_X52Y528/IMUX_W32 (SLICE_X81Y528/G3)
+  f[101]_INST_0_i_3/O
+    Unrouted Pin: f[108]_INST_0_i_8/I3
+  f[102]_INST_0_i_2/O
+    Unrouted Pin: f[108]_INST_0_i_8/I4
+    Conflicts with Site Pins: INT_X52Y528/IMUX_W38 (SLICE_X81Y528/G5)
+  f[102]_INST_0_i_3/O
+    Unrouted Pin: f[108]_INST_0_i_8/I5
+  f[108]_INST_0_i_7_n_0
+    Conflicts with Site Pins: INT_X50Y531/IMUX_E26 (SLICE_X79Y531/A5)
+    Antenna Nodes: INT_X50Y531/IMUX_E26
+    Islands reason: This net has no logical loads but has route data.
+  f[98]_INST_0_i_2/O
+    Unrouted Pin: f[108]_INST_0_i_7/I4
+    Conflicts with Site Pins:
+      INT_X57Y491/IMUX_E41 (SLICE_X89Y491/F3)
+      INT_X57Y491/IMUX_E43 (SLICE_X89Y491/F5)
+    Antenna Nodes: INT_X57Y491/IMUX_E41
+  f[99]_INST_0_i_2/O
+    Unrouted Pin: f[108]_INST_0_i_7/I2
+    Conflicts with Site Pins:
+      INT_X57Y491/IMUX_E41 (SLICE_X89Y491/F3)
+      INT_X57Y491/IMUX_E5 (SLICE_X89Y491/F2)
+    Antenna Nodes: INT_X57Y491/IMUX_E5
+  f[99]_INST_0_i_3/O
+    Unrouted Pin: f[108]_INST_0_i_7/I1
+    Conflicts with Site Pins:
+      INT_X57Y491/IMUX_E43 (SLICE_X89Y491/F5)
+      INT_X57Y491/IMUX_E5 (SLICE_X89Y491/F2)
+    Antenna Nodes: INT_X57Y491/IMUX_E43
+  p_124_in
+    Unrouted Pin: f[108]_INST_0_i_8/O
+    Conflicts with Site Pins: CLEL_R_X50Y531/CLE_CLE_L_SITE_0_A_O (SLICE_X79Y531/A_O)
+    Antenna Nodes: CLEL_R_X50Y531/CLE_CLE_L_SITE_0_A_O
+

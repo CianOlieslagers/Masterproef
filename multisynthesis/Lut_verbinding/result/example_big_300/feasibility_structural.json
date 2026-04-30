@@ -1,0 +1,743 @@
+{
+  "json_path": "/home/cian/Masterproef/multisynthesis/Lut_verbinding/result/example_big_300/example_big_300.super.sat.v2.json",
+  "total_connections": 20,
+  "total_pitstop_entries": 34,
+  "structural_ok_count": 7,
+  "failed_count": 27,
+  "results": [
+    {
+      "conn_id": null,
+      "src_root": 97,
+      "dst_root": 101,
+      "pit_root": 11,
+      "src_key": "LUT_97",
+      "dst_key": "LUT_101",
+      "pit_key": "LUT_11",
+      "structural_ok": false,
+      "reasons": [
+        "net_link_missing_dst_pin_and_net"
+      ],
+      "gain": 18,
+      "d_ap": null,
+      "d_pb": null,
+      "d_ab": 6,
+      "net_link": {
+        "pit_output_net": "LUT_11",
+        "dst_input_pin": null,
+        "dst_input_net": null
+      }
+    },
+    {
+      "conn_id": null,
+      "src_root": 97,
+      "dst_root": 101,
+      "pit_root": 120,
+      "src_key": "LUT_97",
+      "dst_key": "LUT_101",
+      "pit_key": "LUT_120",
+      "structural_ok": false,
+      "reasons": [
+        "net_link_missing_dst_pin_and_net"
+      ],
+      "gain": 18,
+      "d_ap": null,
+      "d_pb": null,
+      "d_ab": 6,
+      "net_link": {
+        "pit_output_net": "LUT_120",
+        "dst_input_pin": null,
+        "dst_input_net": null
+      }
+    },
+    {
+      "conn_id": null,
+      "src_root": 97,
+      "dst_root": 101,
+      "pit_root": 160,
+      "src_key": "LUT_97",
+      "dst_key": "LUT_101",
+      "pit_key": "LUT_160",
+      "structural_ok": false,
+      "reasons": [
+        "net_link_missing_dst_pin_and_net"
+      ],
+      "gain": 18,
+      "d_ap": null,
+      "d_pb": null,
+      "d_ab": 6,
+      "net_link": {
+        "pit_output_net": "LUT_160",
+        "dst_input_pin": null,
+        "dst_input_net": null
+      }
+    },
+    {
+      "conn_id": null,
+      "src_root": 16,
+      "dst_root": 36,
+      "pit_root": 22,
+      "src_key": "LUT_16",
+      "dst_key": "LUT_36",
+      "pit_key": "LUT_22",
+      "structural_ok": true,
+      "reasons": [],
+      "gain": 8,
+      "d_ap": null,
+      "d_pb": null,
+      "d_ab": 4,
+      "net_link": {
+        "pit_output_net": "LUT_22",
+        "dst_input_pin": 3,
+        "dst_input_net": "LUT_22"
+      }
+    },
+    {
+      "conn_id": null,
+      "src_root": 16,
+      "dst_root": 36,
+      "pit_root": 76,
+      "src_key": "LUT_16",
+      "dst_key": "LUT_36",
+      "pit_key": "LUT_76",
+      "structural_ok": false,
+      "reasons": [
+        "net_link_missing_dst_pin_and_net"
+      ],
+      "gain": 8,
+      "d_ap": null,
+      "d_pb": null,
+      "d_ab": 4,
+      "net_link": {
+        "pit_output_net": "LUT_76",
+        "dst_input_pin": null,
+        "dst_input_net": null
+      }
+    },
+    {
+      "conn_id": null,
+      "src_root": 16,
+      "dst_root": 36,
+      "pit_root": 189,
+      "src_key": "LUT_16",
+      "dst_key": "LUT_36",
+      "pit_key": "LUT_189",
+      "structural_ok": false,
+      "reasons": [
+        "net_link_missing_dst_pin_and_net"
+      ],
+      "gain": 8,
+      "d_ap": null,
+      "d_pb": null,
+      "d_ab": 4,
+      "net_link": {
+        "pit_output_net": "LUT_189",
+        "dst_input_pin": null,
+        "dst_input_net": null
+      }
+    },
+    {
+      "conn_id": null,
+      "src_root": 51,
+      "dst_root": 260,
+      "pit_root": 124,
+      "src_key": "LUT_51",
+      "dst_key": "LUT_260",
+      "pit_key": "LUT_124",
+      "structural_ok": false,
+      "reasons": [
+        "net_link_missing_dst_pin_and_net"
+      ],
+      "gain": 8,
+      "d_ap": null,
+      "d_pb": null,
+      "d_ab": 4,
+      "net_link": {
+        "pit_output_net": "LUT_124",
+        "dst_input_pin": null,
+        "dst_input_net": null
+      }
+    },
+    {
+      "conn_id": null,
+      "src_root": 51,
+      "dst_root": 260,
+      "pit_root": 239,
+      "src_key": "LUT_51",
+      "dst_key": "LUT_260",
+      "pit_key": "LUT_239",
+      "structural_ok": true,
+      "reasons": [],
+      "gain": 8,
+      "d_ap": null,
+      "d_pb": null,
+      "d_ab": 4,
+      "net_link": {
+        "pit_output_net": "LUT_239",
+        "dst_input_pin": 0,
+        "dst_input_net": "LUT_239"
+      }
+    },
+    {
+      "conn_id": null,
+      "src_root": 51,
+      "dst_root": 260,
+      "pit_root": 304,
+      "src_key": "LUT_51",
+      "dst_key": "LUT_260",
+      "pit_key": "LUT_304",
+      "structural_ok": false,
+      "reasons": [
+        "net_link_missing_dst_pin_and_net"
+      ],
+      "gain": 8,
+      "d_ap": null,
+      "d_pb": null,
+      "d_ab": 4,
+      "net_link": {
+        "pit_output_net": "LUT_304",
+        "dst_input_pin": null,
+        "dst_input_net": null
+      }
+    },
+    {
+      "conn_id": null,
+      "src_root": 61,
+      "dst_root": 101,
+      "pit_root": 36,
+      "src_key": "LUT_61",
+      "dst_key": "LUT_101",
+      "pit_key": "LUT_36",
+      "structural_ok": false,
+      "reasons": [
+        "net_link_missing_dst_pin_and_net"
+      ],
+      "gain": 8,
+      "d_ap": null,
+      "d_pb": null,
+      "d_ab": 4,
+      "net_link": {
+        "pit_output_net": "LUT_36",
+        "dst_input_pin": null,
+        "dst_input_net": null
+      }
+    },
+    {
+      "conn_id": null,
+      "src_root": 61,
+      "dst_root": 101,
+      "pit_root": 65,
+      "src_key": "LUT_61",
+      "dst_key": "LUT_101",
+      "pit_key": "LUT_65",
+      "structural_ok": false,
+      "reasons": [
+        "net_link_missing_dst_pin_and_net"
+      ],
+      "gain": 8,
+      "d_ap": null,
+      "d_pb": null,
+      "d_ab": 4,
+      "net_link": {
+        "pit_output_net": "LUT_65",
+        "dst_input_pin": null,
+        "dst_input_net": null
+      }
+    },
+    {
+      "conn_id": null,
+      "src_root": 61,
+      "dst_root": 101,
+      "pit_root": 76,
+      "src_key": "LUT_61",
+      "dst_key": "LUT_101",
+      "pit_key": "LUT_76",
+      "structural_ok": true,
+      "reasons": [],
+      "gain": 8,
+      "d_ap": null,
+      "d_pb": null,
+      "d_ab": 4,
+      "net_link": {
+        "pit_output_net": "LUT_76",
+        "dst_input_pin": 3,
+        "dst_input_net": "LUT_76"
+      }
+    },
+    {
+      "conn_id": null,
+      "src_root": 76,
+      "dst_root": 80,
+      "pit_root": 36,
+      "src_key": "LUT_76",
+      "dst_key": "LUT_80",
+      "pit_key": "LUT_36",
+      "structural_ok": false,
+      "reasons": [
+        "net_link_missing_dst_pin_and_net"
+      ],
+      "gain": 8,
+      "d_ap": null,
+      "d_pb": null,
+      "d_ab": 4,
+      "net_link": {
+        "pit_output_net": "LUT_36",
+        "dst_input_pin": null,
+        "dst_input_net": null
+      }
+    },
+    {
+      "conn_id": null,
+      "src_root": 76,
+      "dst_root": 80,
+      "pit_root": 61,
+      "src_key": "LUT_76",
+      "dst_key": "LUT_80",
+      "pit_key": "LUT_61",
+      "structural_ok": true,
+      "reasons": [],
+      "gain": 8,
+      "d_ap": null,
+      "d_pb": null,
+      "d_ab": 4,
+      "net_link": {
+        "pit_output_net": "LUT_61",
+        "dst_input_pin": 3,
+        "dst_input_net": "LUT_61"
+      }
+    },
+    {
+      "conn_id": null,
+      "src_root": 120,
+      "dst_root": 124,
+      "pit_root": 193,
+      "src_key": "LUT_120",
+      "dst_key": "LUT_124",
+      "pit_key": "LUT_193",
+      "structural_ok": false,
+      "reasons": [
+        "net_link_missing_dst_pin_and_net"
+      ],
+      "gain": 8,
+      "d_ap": null,
+      "d_pb": null,
+      "d_ab": 4,
+      "net_link": {
+        "pit_output_net": "LUT_193",
+        "dst_input_pin": null,
+        "dst_input_net": null
+      }
+    },
+    {
+      "conn_id": null,
+      "src_root": 120,
+      "dst_root": 124,
+      "pit_root": 239,
+      "src_key": "LUT_120",
+      "dst_key": "LUT_124",
+      "pit_key": "LUT_239",
+      "structural_ok": false,
+      "reasons": [
+        "net_link_missing_dst_pin_and_net"
+      ],
+      "gain": 8,
+      "d_ap": null,
+      "d_pb": null,
+      "d_ab": 4,
+      "net_link": {
+        "pit_output_net": "LUT_239",
+        "dst_input_pin": null,
+        "dst_input_net": null
+      }
+    },
+    {
+      "conn_id": null,
+      "src_root": 124,
+      "dst_root": 128,
+      "pit_root": 304,
+      "src_key": "LUT_124",
+      "dst_key": "LUT_128",
+      "pit_key": "LUT_304",
+      "structural_ok": false,
+      "reasons": [
+        "net_link_missing_dst_pin_and_net"
+      ],
+      "gain": 8,
+      "d_ap": null,
+      "d_pb": null,
+      "d_ab": 4,
+      "net_link": {
+        "pit_output_net": "LUT_304",
+        "dst_input_pin": null,
+        "dst_input_net": null
+      }
+    },
+    {
+      "conn_id": null,
+      "src_root": 124,
+      "dst_root": 128,
+      "pit_root": 326,
+      "src_key": "LUT_124",
+      "dst_key": "LUT_128",
+      "pit_key": "LUT_326",
+      "structural_ok": false,
+      "reasons": [
+        "net_link_missing_dst_pin_and_net"
+      ],
+      "gain": 8,
+      "d_ap": null,
+      "d_pb": null,
+      "d_ab": 4,
+      "net_link": {
+        "pit_output_net": "LUT_326",
+        "dst_input_pin": null,
+        "dst_input_net": null
+      }
+    },
+    {
+      "conn_id": null,
+      "src_root": 145,
+      "dst_root": 147,
+      "pit_root": 168,
+      "src_key": "LUT_145",
+      "dst_key": "LUT_147",
+      "pit_key": "LUT_168",
+      "structural_ok": false,
+      "reasons": [
+        "net_link_missing_dst_pin_and_net"
+      ],
+      "gain": 8,
+      "d_ap": null,
+      "d_pb": null,
+      "d_ab": 4,
+      "net_link": {
+        "pit_output_net": "LUT_168",
+        "dst_input_pin": null,
+        "dst_input_net": null
+      }
+    },
+    {
+      "conn_id": null,
+      "src_root": 145,
+      "dst_root": 147,
+      "pit_root": 210,
+      "src_key": "LUT_145",
+      "dst_key": "LUT_147",
+      "pit_key": "LUT_210",
+      "structural_ok": false,
+      "reasons": [
+        "net_link_missing_dst_pin_and_net"
+      ],
+      "gain": 8,
+      "d_ap": null,
+      "d_pb": null,
+      "d_ab": 4,
+      "net_link": {
+        "pit_output_net": "LUT_210",
+        "dst_input_pin": null,
+        "dst_input_net": null
+      }
+    },
+    {
+      "conn_id": null,
+      "src_root": 147,
+      "dst_root": 151,
+      "pit_root": 172,
+      "src_key": "LUT_147",
+      "dst_key": "LUT_151",
+      "pit_key": "LUT_172",
+      "structural_ok": false,
+      "reasons": [
+        "net_link_missing_dst_pin_and_net"
+      ],
+      "gain": 8,
+      "d_ap": null,
+      "d_pb": null,
+      "d_ab": 4,
+      "net_link": {
+        "pit_output_net": "LUT_172",
+        "dst_input_pin": null,
+        "dst_input_net": null
+      }
+    },
+    {
+      "conn_id": null,
+      "src_root": 147,
+      "dst_root": 151,
+      "pit_root": 286,
+      "src_key": "LUT_147",
+      "dst_key": "LUT_151",
+      "pit_key": "LUT_286",
+      "structural_ok": false,
+      "reasons": [
+        "net_link_missing_dst_pin_and_net"
+      ],
+      "gain": 8,
+      "d_ap": null,
+      "d_pb": null,
+      "d_ab": 4,
+      "net_link": {
+        "pit_output_net": "LUT_286",
+        "dst_input_pin": null,
+        "dst_input_net": null
+      }
+    },
+    {
+      "conn_id": null,
+      "src_root": 160,
+      "dst_root": 164,
+      "pit_root": 116,
+      "src_key": "LUT_160",
+      "dst_key": "LUT_164",
+      "pit_key": "LUT_116",
+      "structural_ok": true,
+      "reasons": [],
+      "gain": 8,
+      "d_ap": null,
+      "d_pb": null,
+      "d_ab": 4,
+      "net_link": {
+        "pit_output_net": "LUT_116",
+        "dst_input_pin": 1,
+        "dst_input_net": "LUT_116"
+      }
+    },
+    {
+      "conn_id": null,
+      "src_root": 160,
+      "dst_root": 164,
+      "pit_root": 120,
+      "src_key": "LUT_160",
+      "dst_key": "LUT_164",
+      "pit_key": "LUT_120",
+      "structural_ok": false,
+      "reasons": [
+        "net_link_missing_dst_pin_and_net"
+      ],
+      "gain": 8,
+      "d_ap": null,
+      "d_pb": null,
+      "d_ab": 4,
+      "net_link": {
+        "pit_output_net": "LUT_120",
+        "dst_input_pin": null,
+        "dst_input_net": null
+      }
+    },
+    {
+      "conn_id": null,
+      "src_root": 160,
+      "dst_root": 164,
+      "pit_root": 193,
+      "src_key": "LUT_160",
+      "dst_key": "LUT_164",
+      "pit_key": "LUT_193",
+      "structural_ok": false,
+      "reasons": [
+        "net_link_missing_dst_pin_and_net"
+      ],
+      "gain": 8,
+      "d_ap": null,
+      "d_pb": null,
+      "d_ab": 4,
+      "net_link": {
+        "pit_output_net": "LUT_193",
+        "dst_input_pin": null,
+        "dst_input_net": null
+      }
+    },
+    {
+      "conn_id": null,
+      "src_root": 168,
+      "dst_root": 172,
+      "pit_root": 147,
+      "src_key": "LUT_168",
+      "dst_key": "LUT_172",
+      "pit_key": "LUT_147",
+      "structural_ok": true,
+      "reasons": [],
+      "gain": 8,
+      "d_ap": null,
+      "d_pb": null,
+      "d_ab": 4,
+      "net_link": {
+        "pit_output_net": "LUT_147",
+        "dst_input_pin": 3,
+        "dst_input_net": "LUT_147"
+      }
+    },
+    {
+      "conn_id": null,
+      "src_root": 168,
+      "dst_root": 172,
+      "pit_root": 241,
+      "src_key": "LUT_168",
+      "dst_key": "LUT_172",
+      "pit_key": "LUT_241",
+      "structural_ok": false,
+      "reasons": [
+        "net_link_missing_dst_pin_and_net"
+      ],
+      "gain": 8,
+      "d_ap": null,
+      "d_pb": null,
+      "d_ab": 4,
+      "net_link": {
+        "pit_output_net": "LUT_241",
+        "dst_input_pin": null,
+        "dst_input_net": null
+      }
+    },
+    {
+      "conn_id": null,
+      "src_root": 172,
+      "dst_root": 222,
+      "pit_root": 264,
+      "src_key": "LUT_172",
+      "dst_key": "LUT_222",
+      "pit_key": "LUT_264",
+      "structural_ok": false,
+      "reasons": [
+        "net_link_missing_dst_pin_and_net"
+      ],
+      "gain": 8,
+      "d_ap": null,
+      "d_pb": null,
+      "d_ab": 4,
+      "net_link": {
+        "pit_output_net": "LUT_264",
+        "dst_input_pin": null,
+        "dst_input_net": null
+      }
+    },
+    {
+      "conn_id": null,
+      "src_root": 172,
+      "dst_root": 222,
+      "pit_root": 308,
+      "src_key": "LUT_172",
+      "dst_key": "LUT_222",
+      "pit_key": "LUT_308",
+      "structural_ok": false,
+      "reasons": [
+        "net_link_missing_dst_pin_and_net"
+      ],
+      "gain": 8,
+      "d_ap": null,
+      "d_pb": null,
+      "d_ab": 4,
+      "net_link": {
+        "pit_output_net": "LUT_308",
+        "dst_input_pin": null,
+        "dst_input_net": null
+      }
+    },
+    {
+      "conn_id": null,
+      "src_root": 172,
+      "dst_root": 176,
+      "pit_root": 151,
+      "src_key": "LUT_172",
+      "dst_key": "LUT_176",
+      "pit_key": "LUT_151",
+      "structural_ok": true,
+      "reasons": [],
+      "gain": 8,
+      "d_ap": null,
+      "d_pb": null,
+      "d_ab": 4,
+      "net_link": {
+        "pit_output_net": "LUT_151",
+        "dst_input_pin": 3,
+        "dst_input_net": "LUT_151"
+      }
+    },
+    {
+      "conn_id": null,
+      "src_root": 199,
+      "dst_root": 201,
+      "pit_root": 292,
+      "src_key": "LUT_199",
+      "dst_key": "LUT_201",
+      "pit_key": "LUT_292",
+      "structural_ok": false,
+      "reasons": [
+        "net_link_missing_dst_pin_and_net"
+      ],
+      "gain": 8,
+      "d_ap": null,
+      "d_pb": null,
+      "d_ab": 4,
+      "net_link": {
+        "pit_output_net": "LUT_292",
+        "dst_input_pin": null,
+        "dst_input_net": null
+      }
+    },
+    {
+      "conn_id": null,
+      "src_root": 218,
+      "dst_root": 222,
+      "pit_root": 247,
+      "src_key": "LUT_218",
+      "dst_key": "LUT_222",
+      "pit_key": "LUT_247",
+      "structural_ok": false,
+      "reasons": [
+        "net_link_missing_dst_pin_and_net"
+      ],
+      "gain": 8,
+      "d_ap": null,
+      "d_pb": null,
+      "d_ab": 4,
+      "net_link": {
+        "pit_output_net": "LUT_247",
+        "dst_input_pin": null,
+        "dst_input_net": null
+      }
+    },
+    {
+      "conn_id": null,
+      "src_root": 218,
+      "dst_root": 222,
+      "pit_root": 264,
+      "src_key": "LUT_218",
+      "dst_key": "LUT_222",
+      "pit_key": "LUT_264",
+      "structural_ok": false,
+      "reasons": [
+        "net_link_missing_dst_pin_and_net"
+      ],
+      "gain": 8,
+      "d_ap": null,
+      "d_pb": null,
+      "d_ab": 4,
+      "net_link": {
+        "pit_output_net": "LUT_264",
+        "dst_input_pin": null,
+        "dst_input_net": null
+      }
+    },
+    {
+      "conn_id": null,
+      "src_root": 218,
+      "dst_root": 222,
+      "pit_root": 268,
+      "src_key": "LUT_218",
+      "dst_key": "LUT_222",
+      "pit_key": "LUT_268",
+      "structural_ok": false,
+      "reasons": [
+        "net_link_missing_dst_pin_and_net"
+      ],
+      "gain": 8,
+      "d_ap": null,
+      "d_pb": null,
+      "d_ab": 4,
+      "net_link": {
+        "pit_output_net": "LUT_268",
+        "dst_input_pin": null,
+        "dst_input_net": null
+      }
+    }
+  ]
+}

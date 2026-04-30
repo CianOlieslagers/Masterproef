@@ -1,0 +1,31 @@
+Design Route Status
+                                               :      # nets :
+   ------------------------------------------- : ----------- :
+   # of logical nets.......................... :        1223 :
+       # of nets not needing routing.......... :         641 :
+           # of internally routed nets........ :         641 :
+       # of routable nets..................... :         575 :
+           # of unrouted nets................. :           8 :
+           # of fully routed nets............. :         567 :
+       # of nets with routing errors.......... :           7 :
+           # of nets with some unplaced pins.. :           7 :
+           # of nets with some unrouted pins.. :           6 :
+   ------------------------------------------- : ----------- :
+
+
+Nets with Routing Errors:
+  f[100]_INST_0_i_2/O
+    Unplaced Pin: f[108]_INST_0_i_9/I2
+  f[100]_INST_0_i_3/O
+    Unplaced Pin: f[108]_INST_0_i_9/I1
+  f[101]_INST_0_i_2/O
+    Unplaced Pin: f[108]_INST_0_i_9/I0
+  f[101]_INST_0_i_3/O
+    Unplaced Pin: f[108]_INST_0_i_9/I3
+  f[108]_INST_0_i_7_n_0
+    Unplaced Pin: f[108]_INST_0_i_9/I4
+  f[108]_INST_0_i_8_n_0
+    Unplaced Pin: f[108]_INST_0_i_9/I5
+  n11840132_in
+    Unplaced Pin: f[108]_INST_0_i_9/O
+

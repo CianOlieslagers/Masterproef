@@ -1,0 +1,1013 @@
+{
+  "super": "/home/cian/Masterproef/multisynthesis/Lut_verbinding/result/example_big_300/example_big_300.super.sat.v2.json",
+  "targets": "/home/cian/Masterproef/multisynthesis/tony_sat/ViableOptiosnJson/targets_per_combo.json",
+  "solver": "glucose4",
+  "total": 34,
+  "success": 0,
+  "failed": 34,
+  "results": [
+    {
+      "dst": "LUT_101",
+      "pit": "LUT_11",
+      "dst_input_pin": 0,
+      "success": false,
+      "reason": "no_target_passed_sat2",
+      "chosen_target": null,
+      "patched_hex": null,
+      "notes": [
+        "row 0: DC_X (reachable, Y unconstrained)",
+        "row 1: DC_X (reachable, Y unconstrained)",
+        "row 4: DC_X (reachable, Y unconstrained)",
+        "row 5: DC_X (reachable, Y unconstrained)",
+        "row 8: DC_X (reachable, Y unconstrained)",
+        "row 9: DC_X (reachable, Y unconstrained)",
+        "row 12: DC_X (reachable, Y unconstrained)",
+        "row 13: DC_X (reachable, Y unconstrained)",
+        "WARNING: original func_hex mismatches CARE rows at [2, 6, 7, 10]"
+      ],
+      "stats": {
+        "num_reachable": 16,
+        "num_care": 8,
+        "num_dc_unreach": 0,
+        "num_dc_x": 8,
+        "num_dc_total": 8,
+        "orig_hex": "8777",
+        "orig_hex_care_mismatch_count": 4,
+        "targets_tried": 3
+      }
+    },
+    {
+      "dst": "LUT_101",
+      "pit": "LUT_120",
+      "dst_input_pin": 0,
+      "success": false,
+      "reason": "no_target_passed_sat2",
+      "chosen_target": null,
+      "patched_hex": null,
+      "notes": [
+        "row 0: DC_X (reachable, Y unconstrained)",
+        "row 4: DC_X (reachable, Y unconstrained)",
+        "row 5: DC_X (reachable, Y unconstrained)",
+        "row 8: DC_X (reachable, Y unconstrained)",
+        "WARNING: original func_hex mismatches CARE rows at [1, 13]"
+      ],
+      "stats": {
+        "num_reachable": 9,
+        "num_care": 5,
+        "num_dc_unreach": 7,
+        "num_dc_x": 4,
+        "num_dc_total": 11,
+        "orig_hex": "0ca6",
+        "orig_hex_care_mismatch_count": 2,
+        "targets_tried": 3
+      }
+    },
+    {
+      "dst": "LUT_101",
+      "pit": "LUT_160",
+      "dst_input_pin": 0,
+      "success": false,
+      "reason": "no_target_passed_sat2",
+      "chosen_target": null,
+      "patched_hex": null,
+      "notes": [
+        "row 8: DC_X (reachable, Y unconstrained)",
+        "row 9: DC_X (reachable, Y unconstrained)",
+        "row 12: DC_X (reachable, Y unconstrained)",
+        "row 13: DC_X (reachable, Y unconstrained)",
+        "WARNING: original func_hex mismatches CARE rows at [3, 7]"
+      ],
+      "stats": {
+        "num_reachable": 12,
+        "num_care": 8,
+        "num_dc_unreach": 4,
+        "num_dc_x": 4,
+        "num_dc_total": 8,
+        "orig_hex": "4b44",
+        "orig_hex_care_mismatch_count": 2,
+        "targets_tried": 3
+      }
+    },
+    {
+      "dst": "LUT_36",
+      "pit": "LUT_22",
+      "dst_input_pin": 1,
+      "success": false,
+      "reason": "no_target_passed_sat2",
+      "chosen_target": null,
+      "patched_hex": null,
+      "notes": [
+        "row 0: DC_X (reachable, Y unconstrained)",
+        "row 1: DC_X (reachable, Y unconstrained)",
+        "row 2: DC_X (reachable, Y unconstrained)",
+        "row 3: DC_X (reachable, Y unconstrained)",
+        "row 4: DC_X (reachable, Y unconstrained)",
+        "row 5: DC_X (reachable, Y unconstrained)",
+        "row 6: DC_X (reachable, Y unconstrained)",
+        "row 7: DC_X (reachable, Y unconstrained)",
+        "row 8: DC_X (reachable, Y unconstrained)",
+        "row 9: DC_X (reachable, Y unconstrained)",
+        "row 10: DC_X (reachable, Y unconstrained)",
+        "row 11: DC_X (reachable, Y unconstrained)",
+        "row 12: DC_X (reachable, Y unconstrained)",
+        "row 13: DC_X (reachable, Y unconstrained)",
+        "row 14: DC_X (reachable, Y unconstrained)",
+        "row 15: DC_X (reachable, Y unconstrained)"
+      ],
+      "stats": {
+        "num_reachable": 16,
+        "num_care": 0,
+        "num_dc_unreach": 0,
+        "num_dc_x": 16,
+        "num_dc_total": 16,
+        "orig_hex": "2a15",
+        "orig_hex_care_mismatch_count": 0,
+        "targets_tried": 3
+      }
+    },
+    {
+      "dst": "LUT_36",
+      "pit": "LUT_76",
+      "dst_input_pin": 1,
+      "success": false,
+      "reason": "no_target_passed_sat2",
+      "chosen_target": null,
+      "patched_hex": null,
+      "notes": [
+        "row 0: DC_X (reachable, Y unconstrained)",
+        "row 2: DC_X (reachable, Y unconstrained)",
+        "row 4: DC_X (reachable, Y unconstrained)",
+        "row 6: DC_X (reachable, Y unconstrained)",
+        "row 8: DC_X (reachable, Y unconstrained)",
+        "row 9: DC_X (reachable, Y unconstrained)",
+        "row 10: DC_X (reachable, Y unconstrained)",
+        "row 11: DC_X (reachable, Y unconstrained)",
+        "row 12: DC_X (reachable, Y unconstrained)",
+        "row 13: DC_X (reachable, Y unconstrained)",
+        "row 14: DC_X (reachable, Y unconstrained)",
+        "row 15: DC_X (reachable, Y unconstrained)",
+        "WARNING: original func_hex mismatches CARE rows at [5]"
+      ],
+      "stats": {
+        "num_reachable": 16,
+        "num_care": 4,
+        "num_dc_unreach": 0,
+        "num_dc_x": 12,
+        "num_dc_total": 12,
+        "orig_hex": "6530",
+        "orig_hex_care_mismatch_count": 1,
+        "targets_tried": 3
+      }
+    },
+    {
+      "dst": "LUT_36",
+      "pit": "LUT_189",
+      "dst_input_pin": 1,
+      "success": false,
+      "reason": "no_target_passed_sat2",
+      "chosen_target": null,
+      "patched_hex": null,
+      "notes": [
+        "row 0: DC_X (reachable, Y unconstrained)",
+        "row 1: DC_X (reachable, Y unconstrained)",
+        "row 4: DC_X (reachable, Y unconstrained)",
+        "row 5: DC_X (reachable, Y unconstrained)",
+        "row 8: DC_X (reachable, Y unconstrained)",
+        "row 9: DC_X (reachable, Y unconstrained)",
+        "row 10: DC_X (reachable, Y unconstrained)",
+        "row 11: DC_X (reachable, Y unconstrained)",
+        "row 12: DC_X (reachable, Y unconstrained)",
+        "row 13: DC_X (reachable, Y unconstrained)",
+        "row 14: DC_X (reachable, Y unconstrained)",
+        "row 15: DC_X (reachable, Y unconstrained)"
+      ],
+      "stats": {
+        "num_reachable": 12,
+        "num_care": 0,
+        "num_dc_unreach": 4,
+        "num_dc_x": 12,
+        "num_dc_total": 16,
+        "orig_hex": "c832",
+        "orig_hex_care_mismatch_count": 0,
+        "targets_tried": 3
+      }
+    },
+    {
+      "dst": "LUT_260",
+      "pit": "LUT_124",
+      "dst_input_pin": 1,
+      "success": false,
+      "reason": "no_targets_for_combo",
+      "chosen_target": null,
+      "patched_hex": null,
+      "notes": [
+        "row 0: DC_X (reachable, Y unconstrained)",
+        "row 2: DC_X (reachable, Y unconstrained)",
+        "row 8: DC_X (reachable, Y unconstrained)",
+        "row 10: DC_X (reachable, Y unconstrained)",
+        "row 12: DC_X (reachable, Y unconstrained)",
+        "WARNING: original func_hex mismatches CARE rows at [3, 7, 9]"
+      ],
+      "stats": {
+        "num_reachable": 10,
+        "num_care": 5,
+        "num_dc_unreach": 6,
+        "num_dc_x": 5,
+        "num_dc_total": 11,
+        "orig_hex": "5603",
+        "orig_hex_care_mismatch_count": 3
+      }
+    },
+    {
+      "dst": "LUT_260",
+      "pit": "LUT_239",
+      "dst_input_pin": 1,
+      "success": false,
+      "reason": "no_targets_for_combo",
+      "chosen_target": null,
+      "patched_hex": null,
+      "notes": [
+        "row 0: DC_X (reachable, Y unconstrained)",
+        "row 1: DC_X (reachable, Y unconstrained)",
+        "row 2: DC_X (reachable, Y unconstrained)",
+        "row 3: DC_X (reachable, Y unconstrained)",
+        "row 4: DC_X (reachable, Y unconstrained)",
+        "row 6: DC_X (reachable, Y unconstrained)",
+        "row 8: DC_X (reachable, Y unconstrained)",
+        "row 9: DC_X (reachable, Y unconstrained)",
+        "row 14: DC_X (reachable, Y unconstrained)",
+        "WARNING: original func_hex mismatches CARE rows at [10, 12, 13]"
+      ],
+      "stats": {
+        "num_reachable": 16,
+        "num_care": 7,
+        "num_dc_unreach": 0,
+        "num_dc_x": 9,
+        "num_dc_total": 9,
+        "orig_hex": "84a5",
+        "orig_hex_care_mismatch_count": 3
+      }
+    },
+    {
+      "dst": "LUT_260",
+      "pit": "LUT_304",
+      "dst_input_pin": 1,
+      "success": false,
+      "reason": "no_targets_for_combo",
+      "chosen_target": null,
+      "patched_hex": null,
+      "notes": [
+        "row 0: DC_X (reachable, Y unconstrained)",
+        "row 1: DC_X (reachable, Y unconstrained)",
+        "row 4: DC_X (reachable, Y unconstrained)",
+        "row 5: DC_X (reachable, Y unconstrained)",
+        "row 8: DC_X (reachable, Y unconstrained)",
+        "row 9: DC_X (reachable, Y unconstrained)",
+        "row 12: DC_X (reachable, Y unconstrained)",
+        "row 13: DC_X (reachable, Y unconstrained)",
+        "WARNING: original func_hex mismatches CARE rows at [6, 7]"
+      ],
+      "stats": {
+        "num_reachable": 16,
+        "num_care": 8,
+        "num_dc_unreach": 0,
+        "num_dc_x": 8,
+        "num_dc_total": 8,
+        "orig_hex": "22d2",
+        "orig_hex_care_mismatch_count": 2
+      }
+    },
+    {
+      "dst": "LUT_101",
+      "pit": "LUT_36",
+      "dst_input_pin": 1,
+      "success": false,
+      "reason": "no_target_passed_sat2",
+      "chosen_target": null,
+      "patched_hex": null,
+      "notes": [
+        "row 8: DC_X (reachable, Y unconstrained)",
+        "row 9: DC_X (reachable, Y unconstrained)",
+        "row 10: DC_X (reachable, Y unconstrained)",
+        "row 11: DC_X (reachable, Y unconstrained)",
+        "row 12: DC_X (reachable, Y unconstrained)",
+        "row 13: DC_X (reachable, Y unconstrained)",
+        "row 14: DC_X (reachable, Y unconstrained)",
+        "row 15: DC_X (reachable, Y unconstrained)",
+        "WARNING: original func_hex mismatches CARE rows at [0, 1, 6, 7]"
+      ],
+      "stats": {
+        "num_reachable": 16,
+        "num_care": 8,
+        "num_dc_unreach": 0,
+        "num_dc_x": 8,
+        "num_dc_total": 8,
+        "orig_hex": "82c3",
+        "orig_hex_care_mismatch_count": 4,
+        "targets_tried": 1
+      }
+    },
+    {
+      "dst": "LUT_101",
+      "pit": "LUT_65",
+      "dst_input_pin": 1,
+      "success": false,
+      "reason": "no_target_passed_sat2",
+      "chosen_target": null,
+      "patched_hex": null,
+      "notes": [
+        "row 0: DC_X (reachable, Y unconstrained)",
+        "row 8: DC_X (reachable, Y unconstrained)",
+        "row 12: DC_X (reachable, Y unconstrained)",
+        "WARNING: original func_hex mismatches CARE rows at [1]"
+      ],
+      "stats": {
+        "num_reachable": 6,
+        "num_care": 3,
+        "num_dc_unreach": 10,
+        "num_dc_x": 3,
+        "num_dc_total": 13,
+        "orig_hex": "a251",
+        "orig_hex_care_mismatch_count": 1,
+        "targets_tried": 1
+      }
+    },
+    {
+      "dst": "LUT_101",
+      "pit": "LUT_76",
+      "dst_input_pin": 1,
+      "success": false,
+      "reason": "no_target_passed_sat2",
+      "chosen_target": null,
+      "patched_hex": null,
+      "notes": [
+        "row 0: DC_X (reachable, Y unconstrained)",
+        "row 2: DC_X (reachable, Y unconstrained)",
+        "row 4: DC_X (reachable, Y unconstrained)",
+        "row 6: DC_X (reachable, Y unconstrained)",
+        "row 8: DC_X (reachable, Y unconstrained)",
+        "row 9: DC_X (reachable, Y unconstrained)",
+        "row 10: DC_X (reachable, Y unconstrained)",
+        "row 11: DC_X (reachable, Y unconstrained)",
+        "row 12: DC_X (reachable, Y unconstrained)",
+        "row 13: DC_X (reachable, Y unconstrained)",
+        "row 14: DC_X (reachable, Y unconstrained)",
+        "row 15: DC_X (reachable, Y unconstrained)",
+        "WARNING: original func_hex mismatches CARE rows at [5]"
+      ],
+      "stats": {
+        "num_reachable": 16,
+        "num_care": 4,
+        "num_dc_unreach": 0,
+        "num_dc_x": 12,
+        "num_dc_total": 12,
+        "orig_hex": "6530",
+        "orig_hex_care_mismatch_count": 1,
+        "targets_tried": 1
+      }
+    },
+    {
+      "dst": "LUT_80",
+      "pit": "LUT_36",
+      "dst_input_pin": 0,
+      "success": false,
+      "reason": "no_target_passed_sat2",
+      "chosen_target": null,
+      "patched_hex": null,
+      "notes": [
+        "row 8: DC_X (reachable, Y unconstrained)",
+        "row 9: DC_X (reachable, Y unconstrained)",
+        "row 10: DC_X (reachable, Y unconstrained)",
+        "row 11: DC_X (reachable, Y unconstrained)",
+        "row 12: DC_X (reachable, Y unconstrained)",
+        "row 13: DC_X (reachable, Y unconstrained)",
+        "row 14: DC_X (reachable, Y unconstrained)",
+        "row 15: DC_X (reachable, Y unconstrained)",
+        "WARNING: original func_hex mismatches CARE rows at [0, 1, 6, 7]"
+      ],
+      "stats": {
+        "num_reachable": 16,
+        "num_care": 8,
+        "num_dc_unreach": 0,
+        "num_dc_x": 8,
+        "num_dc_total": 8,
+        "orig_hex": "82c3",
+        "orig_hex_care_mismatch_count": 4,
+        "targets_tried": 5
+      }
+    },
+    {
+      "dst": "LUT_80",
+      "pit": "LUT_61",
+      "dst_input_pin": 0,
+      "success": false,
+      "reason": "no_target_passed_sat2",
+      "chosen_target": null,
+      "patched_hex": null,
+      "notes": [
+        "row 5: DC_X (reachable, Y unconstrained)",
+        "row 7: DC_X (reachable, Y unconstrained)",
+        "row 13: DC_X (reachable, Y unconstrained)",
+        "row 15: DC_X (reachable, Y unconstrained)",
+        "WARNING: original func_hex mismatches CARE rows at [10, 12]"
+      ],
+      "stats": {
+        "num_reachable": 12,
+        "num_care": 8,
+        "num_dc_unreach": 4,
+        "num_dc_x": 4,
+        "num_dc_total": 8,
+        "orig_hex": "3c28",
+        "orig_hex_care_mismatch_count": 2,
+        "targets_tried": 5
+      }
+    },
+    {
+      "dst": "LUT_124",
+      "pit": "LUT_193",
+      "dst_input_pin": 0,
+      "success": false,
+      "reason": "no_target_passed_sat2",
+      "chosen_target": null,
+      "patched_hex": null,
+      "notes": [
+        "row 0: DC_X (reachable, Y unconstrained)",
+        "row 1: DC_X (reachable, Y unconstrained)",
+        "row 3: DC_X (reachable, Y unconstrained)",
+        "row 4: DC_X (reachable, Y unconstrained)",
+        "row 10: DC_X (reachable, Y unconstrained)",
+        "row 12: DC_X (reachable, Y unconstrained)",
+        "WARNING: original func_hex mismatches CARE rows at [2, 6, 9, 13, 15]"
+      ],
+      "stats": {
+        "num_reachable": 15,
+        "num_care": 9,
+        "num_dc_unreach": 1,
+        "num_dc_x": 6,
+        "num_dc_total": 7,
+        "orig_hex": "a251",
+        "orig_hex_care_mismatch_count": 5,
+        "targets_tried": 5
+      }
+    },
+    {
+      "dst": "LUT_124",
+      "pit": "LUT_239",
+      "dst_input_pin": 0,
+      "success": false,
+      "reason": "no_target_passed_sat2",
+      "chosen_target": null,
+      "patched_hex": null,
+      "notes": [
+        "row 0: DC_X (reachable, Y unconstrained)",
+        "row 1: DC_X (reachable, Y unconstrained)",
+        "row 2: DC_X (reachable, Y unconstrained)",
+        "row 3: DC_X (reachable, Y unconstrained)",
+        "row 4: DC_X (reachable, Y unconstrained)",
+        "row 6: DC_X (reachable, Y unconstrained)",
+        "row 8: DC_X (reachable, Y unconstrained)",
+        "row 9: DC_X (reachable, Y unconstrained)",
+        "row 14: DC_X (reachable, Y unconstrained)",
+        "WARNING: original func_hex mismatches CARE rows at [10, 12, 13]"
+      ],
+      "stats": {
+        "num_reachable": 16,
+        "num_care": 7,
+        "num_dc_unreach": 0,
+        "num_dc_x": 9,
+        "num_dc_total": 9,
+        "orig_hex": "84a5",
+        "orig_hex_care_mismatch_count": 3,
+        "targets_tried": 5
+      }
+    },
+    {
+      "dst": "LUT_128",
+      "pit": "LUT_304",
+      "dst_input_pin": 0,
+      "success": false,
+      "reason": "no_target_passed_sat2",
+      "chosen_target": null,
+      "patched_hex": null,
+      "notes": [
+        "row 0: DC_X (reachable, Y unconstrained)",
+        "row 1: DC_X (reachable, Y unconstrained)",
+        "row 4: DC_X (reachable, Y unconstrained)",
+        "row 5: DC_X (reachable, Y unconstrained)",
+        "row 8: DC_X (reachable, Y unconstrained)",
+        "row 9: DC_X (reachable, Y unconstrained)",
+        "row 12: DC_X (reachable, Y unconstrained)",
+        "row 13: DC_X (reachable, Y unconstrained)",
+        "WARNING: original func_hex mismatches CARE rows at [6, 7]"
+      ],
+      "stats": {
+        "num_reachable": 16,
+        "num_care": 8,
+        "num_dc_unreach": 0,
+        "num_dc_x": 8,
+        "num_dc_total": 8,
+        "orig_hex": "22d2",
+        "orig_hex_care_mismatch_count": 2,
+        "targets_tried": 3
+      }
+    },
+    {
+      "dst": "LUT_128",
+      "pit": "LUT_326",
+      "dst_input_pin": 0,
+      "success": false,
+      "reason": "no_target_passed_sat2",
+      "chosen_target": null,
+      "patched_hex": null,
+      "notes": [
+        "row 4: DC_X (reachable, Y unconstrained)",
+        "row 5: DC_X (reachable, Y unconstrained)",
+        "row 8: DC_X (reachable, Y unconstrained)",
+        "row 10: DC_X (reachable, Y unconstrained)",
+        "row 12: DC_X (reachable, Y unconstrained)",
+        "WARNING: original func_hex mismatches CARE rows at [0, 2, 9, 13, 15]"
+      ],
+      "stats": {
+        "num_reachable": 14,
+        "num_care": 9,
+        "num_dc_unreach": 2,
+        "num_dc_x": 5,
+        "num_dc_total": 7,
+        "orig_hex": "84a5",
+        "orig_hex_care_mismatch_count": 5,
+        "targets_tried": 3
+      }
+    },
+    {
+      "dst": "LUT_147",
+      "pit": "LUT_168",
+      "dst_input_pin": 0,
+      "success": false,
+      "reason": "no_target_passed_sat2",
+      "chosen_target": null,
+      "patched_hex": null,
+      "notes": [
+        "row 0: DC_X (reachable, Y unconstrained)",
+        "row 1: DC_X (reachable, Y unconstrained)",
+        "row 4: DC_X (reachable, Y unconstrained)",
+        "row 8: DC_X (reachable, Y unconstrained)",
+        "row 9: DC_X (reachable, Y unconstrained)",
+        "row 12: DC_X (reachable, Y unconstrained)",
+        "WARNING: original func_hex mismatches CARE rows at [10, 13, 14]"
+      ],
+      "stats": {
+        "num_reachable": 13,
+        "num_care": 7,
+        "num_dc_unreach": 3,
+        "num_dc_x": 6,
+        "num_dc_total": 9,
+        "orig_hex": "5603",
+        "orig_hex_care_mismatch_count": 3,
+        "targets_tried": 5
+      }
+    },
+    {
+      "dst": "LUT_147",
+      "pit": "LUT_210",
+      "dst_input_pin": 0,
+      "success": false,
+      "reason": "no_target_passed_sat2",
+      "chosen_target": null,
+      "patched_hex": null,
+      "notes": [
+        "row 0: DC_X (reachable, Y unconstrained)",
+        "row 1: DC_X (reachable, Y unconstrained)",
+        "row 2: DC_X (reachable, Y unconstrained)",
+        "row 3: DC_X (reachable, Y unconstrained)",
+        "row 4: DC_X (reachable, Y unconstrained)",
+        "row 5: DC_X (reachable, Y unconstrained)",
+        "row 6: DC_X (reachable, Y unconstrained)",
+        "row 7: DC_X (reachable, Y unconstrained)",
+        "row 8: DC_X (reachable, Y unconstrained)",
+        "row 9: DC_X (reachable, Y unconstrained)",
+        "row 10: DC_X (reachable, Y unconstrained)",
+        "row 11: DC_X (reachable, Y unconstrained)",
+        "row 12: DC_X (reachable, Y unconstrained)",
+        "row 13: DC_X (reachable, Y unconstrained)",
+        "row 14: DC_X (reachable, Y unconstrained)",
+        "row 15: DC_X (reachable, Y unconstrained)"
+      ],
+      "stats": {
+        "num_reachable": 16,
+        "num_care": 0,
+        "num_dc_unreach": 0,
+        "num_dc_x": 16,
+        "num_dc_total": 16,
+        "orig_hex": "22d2",
+        "orig_hex_care_mismatch_count": 0,
+        "targets_tried": 5
+      }
+    },
+    {
+      "dst": "LUT_151",
+      "pit": "LUT_172",
+      "dst_input_pin": 0,
+      "success": false,
+      "reason": "no_target_passed_sat2",
+      "chosen_target": null,
+      "patched_hex": null,
+      "notes": [
+        "row 0: DC_X (reachable, Y unconstrained)",
+        "row 2: DC_X (reachable, Y unconstrained)",
+        "row 4: DC_X (reachable, Y unconstrained)",
+        "row 8: DC_X (reachable, Y unconstrained)",
+        "row 9: DC_X (reachable, Y unconstrained)",
+        "row 10: DC_X (reachable, Y unconstrained)",
+        "row 12: DC_X (reachable, Y unconstrained)",
+        "row 13: DC_X (reachable, Y unconstrained)",
+        "WARNING: original func_hex mismatches CARE rows at [1, 5]"
+      ],
+      "stats": {
+        "num_reachable": 10,
+        "num_care": 2,
+        "num_dc_unreach": 6,
+        "num_dc_x": 8,
+        "num_dc_total": 14,
+        "orig_hex": "0ca6",
+        "orig_hex_care_mismatch_count": 2,
+        "targets_tried": 3
+      }
+    },
+    {
+      "dst": "LUT_151",
+      "pit": "LUT_286",
+      "dst_input_pin": 0,
+      "success": false,
+      "reason": "no_target_passed_sat2",
+      "chosen_target": null,
+      "patched_hex": null,
+      "notes": [
+        "row 0: DC_X (reachable, Y unconstrained)",
+        "row 2: DC_X (reachable, Y unconstrained)",
+        "row 4: DC_X (reachable, Y unconstrained)",
+        "row 9: DC_X (reachable, Y unconstrained)",
+        "WARNING: original func_hex mismatches CARE rows at [6, 8, 11, 12, 13]"
+      ],
+      "stats": {
+        "num_reachable": 14,
+        "num_care": 10,
+        "num_dc_unreach": 2,
+        "num_dc_x": 4,
+        "num_dc_total": 6,
+        "orig_hex": "238c",
+        "orig_hex_care_mismatch_count": 5,
+        "targets_tried": 3
+      }
+    },
+    {
+      "dst": "LUT_164",
+      "pit": "LUT_116",
+      "dst_input_pin": 0,
+      "success": false,
+      "reason": "no_target_passed_sat2",
+      "chosen_target": null,
+      "patched_hex": null,
+      "notes": [
+        "row 0: DC_X (reachable, Y unconstrained)",
+        "row 1: DC_X (reachable, Y unconstrained)",
+        "row 2: DC_X (reachable, Y unconstrained)",
+        "row 8: DC_X (reachable, Y unconstrained)",
+        "row 10: DC_X (reachable, Y unconstrained)",
+        "row 13: DC_X (reachable, Y unconstrained)",
+        "WARNING: original func_hex mismatches CARE rows at [3, 14, 15]"
+      ],
+      "stats": {
+        "num_reachable": 10,
+        "num_care": 4,
+        "num_dc_unreach": 6,
+        "num_dc_x": 6,
+        "num_dc_total": 12,
+        "orig_hex": "6530",
+        "orig_hex_care_mismatch_count": 3,
+        "targets_tried": 5
+      }
+    },
+    {
+      "dst": "LUT_164",
+      "pit": "LUT_120",
+      "dst_input_pin": 0,
+      "success": false,
+      "reason": "no_target_passed_sat2",
+      "chosen_target": null,
+      "patched_hex": null,
+      "notes": [
+        "row 0: DC_X (reachable, Y unconstrained)",
+        "row 4: DC_X (reachable, Y unconstrained)",
+        "row 5: DC_X (reachable, Y unconstrained)",
+        "row 8: DC_X (reachable, Y unconstrained)",
+        "WARNING: original func_hex mismatches CARE rows at [1, 13]"
+      ],
+      "stats": {
+        "num_reachable": 9,
+        "num_care": 5,
+        "num_dc_unreach": 7,
+        "num_dc_x": 4,
+        "num_dc_total": 11,
+        "orig_hex": "0ca6",
+        "orig_hex_care_mismatch_count": 2,
+        "targets_tried": 5
+      }
+    },
+    {
+      "dst": "LUT_164",
+      "pit": "LUT_193",
+      "dst_input_pin": 0,
+      "success": false,
+      "reason": "no_target_passed_sat2",
+      "chosen_target": null,
+      "patched_hex": null,
+      "notes": [
+        "row 0: DC_X (reachable, Y unconstrained)",
+        "row 1: DC_X (reachable, Y unconstrained)",
+        "row 3: DC_X (reachable, Y unconstrained)",
+        "row 4: DC_X (reachable, Y unconstrained)",
+        "row 10: DC_X (reachable, Y unconstrained)",
+        "row 12: DC_X (reachable, Y unconstrained)",
+        "WARNING: original func_hex mismatches CARE rows at [2, 6, 9, 13, 15]"
+      ],
+      "stats": {
+        "num_reachable": 15,
+        "num_care": 9,
+        "num_dc_unreach": 1,
+        "num_dc_x": 6,
+        "num_dc_total": 7,
+        "orig_hex": "a251",
+        "orig_hex_care_mismatch_count": 5,
+        "targets_tried": 5
+      }
+    },
+    {
+      "dst": "LUT_172",
+      "pit": "LUT_147",
+      "dst_input_pin": 0,
+      "success": false,
+      "reason": "no_target_passed_sat2",
+      "chosen_target": null,
+      "patched_hex": null,
+      "notes": [
+        "row 3: DC_X (reachable, Y unconstrained)",
+        "row 9: DC_X (reachable, Y unconstrained)",
+        "WARNING: original func_hex mismatches CARE rows at [2, 4, 11, 13]"
+      ],
+      "stats": {
+        "num_reachable": 15,
+        "num_care": 13,
+        "num_dc_unreach": 1,
+        "num_dc_x": 2,
+        "num_dc_total": 3,
+        "orig_hex": "283c",
+        "orig_hex_care_mismatch_count": 4,
+        "targets_tried": 4
+      }
+    },
+    {
+      "dst": "LUT_172",
+      "pit": "LUT_241",
+      "dst_input_pin": 0,
+      "success": false,
+      "reason": "no_target_passed_sat2",
+      "chosen_target": null,
+      "patched_hex": null,
+      "notes": [
+        "row 0: DC_X (reachable, Y unconstrained)",
+        "row 1: DC_X (reachable, Y unconstrained)",
+        "row 2: DC_X (reachable, Y unconstrained)",
+        "row 3: DC_X (reachable, Y unconstrained)",
+        "row 4: DC_X (reachable, Y unconstrained)",
+        "row 5: DC_X (reachable, Y unconstrained)",
+        "row 6: DC_X (reachable, Y unconstrained)",
+        "row 7: DC_X (reachable, Y unconstrained)",
+        "row 9: DC_X (reachable, Y unconstrained)",
+        "row 11: DC_X (reachable, Y unconstrained)",
+        "row 13: DC_X (reachable, Y unconstrained)",
+        "row 15: DC_X (reachable, Y unconstrained)"
+      ],
+      "stats": {
+        "num_reachable": 16,
+        "num_care": 4,
+        "num_dc_unreach": 0,
+        "num_dc_x": 12,
+        "num_dc_total": 12,
+        "orig_hex": "283c",
+        "orig_hex_care_mismatch_count": 0,
+        "targets_tried": 4
+      }
+    },
+    {
+      "dst": "LUT_222",
+      "pit": "LUT_264",
+      "dst_input_pin": 1,
+      "success": false,
+      "reason": "no_target_passed_sat2",
+      "chosen_target": null,
+      "patched_hex": null,
+      "notes": [
+        "row 0: DC_X (reachable, Y unconstrained)",
+        "row 1: DC_X (reachable, Y unconstrained)",
+        "row 2: DC_X (reachable, Y unconstrained)",
+        "row 3: DC_X (reachable, Y unconstrained)",
+        "row 4: DC_X (reachable, Y unconstrained)",
+        "row 5: DC_X (reachable, Y unconstrained)",
+        "row 6: DC_X (reachable, Y unconstrained)",
+        "row 7: DC_X (reachable, Y unconstrained)",
+        "row 12: DC_X (reachable, Y unconstrained)",
+        "row 13: DC_X (reachable, Y unconstrained)",
+        "WARNING: original func_hex mismatches CARE rows at [10, 11]"
+      ],
+      "stats": {
+        "num_reachable": 16,
+        "num_care": 6,
+        "num_dc_unreach": 0,
+        "num_dc_x": 10,
+        "num_dc_total": 10,
+        "orig_hex": "0ca6",
+        "orig_hex_care_mismatch_count": 2,
+        "targets_tried": 1
+      }
+    },
+    {
+      "dst": "LUT_222",
+      "pit": "LUT_308",
+      "dst_input_pin": 1,
+      "success": false,
+      "reason": "no_target_passed_sat2",
+      "chosen_target": null,
+      "patched_hex": null,
+      "notes": [
+        "row 0: DC_X (reachable, Y unconstrained)",
+        "row 1: DC_X (reachable, Y unconstrained)",
+        "row 2: DC_X (reachable, Y unconstrained)",
+        "row 3: DC_X (reachable, Y unconstrained)",
+        "row 4: DC_X (reachable, Y unconstrained)",
+        "row 5: DC_X (reachable, Y unconstrained)",
+        "row 6: DC_X (reachable, Y unconstrained)",
+        "row 7: DC_X (reachable, Y unconstrained)",
+        "row 8: DC_X (reachable, Y unconstrained)",
+        "row 9: DC_X (reachable, Y unconstrained)",
+        "row 10: DC_X (reachable, Y unconstrained)",
+        "row 11: DC_X (reachable, Y unconstrained)",
+        "row 12: DC_X (reachable, Y unconstrained)",
+        "row 13: DC_X (reachable, Y unconstrained)",
+        "row 14: DC_X (reachable, Y unconstrained)",
+        "row 15: DC_X (reachable, Y unconstrained)"
+      ],
+      "stats": {
+        "num_reachable": 16,
+        "num_care": 0,
+        "num_dc_unreach": 0,
+        "num_dc_x": 16,
+        "num_dc_total": 16,
+        "orig_hex": "5603",
+        "orig_hex_care_mismatch_count": 0,
+        "targets_tried": 1
+      }
+    },
+    {
+      "dst": "LUT_176",
+      "pit": "LUT_151",
+      "dst_input_pin": 0,
+      "success": false,
+      "reason": "no_target_passed_sat2",
+      "chosen_target": null,
+      "patched_hex": null,
+      "notes": [
+        "row 0: DC_X (reachable, Y unconstrained)",
+        "row 1: DC_X (reachable, Y unconstrained)",
+        "row 2: DC_X (reachable, Y unconstrained)",
+        "row 6: DC_X (reachable, Y unconstrained)",
+        "row 8: DC_X (reachable, Y unconstrained)",
+        "row 9: DC_X (reachable, Y unconstrained)",
+        "row 10: DC_X (reachable, Y unconstrained)",
+        "row 12: DC_X (reachable, Y unconstrained)",
+        "WARNING: original func_hex mismatches CARE rows at [14]"
+      ],
+      "stats": {
+        "num_reachable": 10,
+        "num_care": 2,
+        "num_dc_unreach": 6,
+        "num_dc_x": 8,
+        "num_dc_total": 14,
+        "orig_hex": "a251",
+        "orig_hex_care_mismatch_count": 1,
+        "targets_tried": 4
+      }
+    },
+    {
+      "dst": "LUT_201",
+      "pit": "LUT_292",
+      "dst_input_pin": 0,
+      "success": false,
+      "reason": "no_target_passed_sat2",
+      "chosen_target": null,
+      "patched_hex": null,
+      "notes": [
+        "row 13: DC_X (reachable, Y unconstrained)",
+        "row 15: DC_X (reachable, Y unconstrained)",
+        "WARNING: original func_hex mismatches CARE rows at [2, 3, 4, 5, 11]"
+      ],
+      "stats": {
+        "num_reachable": 16,
+        "num_care": 14,
+        "num_dc_unreach": 0,
+        "num_dc_x": 2,
+        "num_dc_total": 2,
+        "orig_hex": "283c",
+        "orig_hex_care_mismatch_count": 5,
+        "targets_tried": 5
+      }
+    },
+    {
+      "dst": "LUT_222",
+      "pit": "LUT_247",
+      "dst_input_pin": 0,
+      "success": false,
+      "reason": "no_target_passed_sat2",
+      "chosen_target": null,
+      "patched_hex": null,
+      "notes": [
+        "row 0: DC_X (reachable, Y unconstrained)",
+        "row 2: DC_X (reachable, Y unconstrained)",
+        "row 4: DC_X (reachable, Y unconstrained)",
+        "row 6: DC_X (reachable, Y unconstrained)",
+        "row 8: DC_X (reachable, Y unconstrained)",
+        "row 10: DC_X (reachable, Y unconstrained)",
+        "row 12: DC_X (reachable, Y unconstrained)",
+        "row 14: DC_X (reachable, Y unconstrained)",
+        "WARNING: original func_hex mismatches CARE rows at [3, 5, 11, 13]"
+      ],
+      "stats": {
+        "num_reachable": 16,
+        "num_care": 8,
+        "num_dc_unreach": 0,
+        "num_dc_x": 8,
+        "num_dc_total": 8,
+        "orig_hex": "283c",
+        "orig_hex_care_mismatch_count": 4,
+        "targets_tried": 5
+      }
+    },
+    {
+      "dst": "LUT_222",
+      "pit": "LUT_264",
+      "dst_input_pin": 0,
+      "success": false,
+      "reason": "no_target_passed_sat2",
+      "chosen_target": null,
+      "patched_hex": null,
+      "notes": [
+        "row 0: DC_X (reachable, Y unconstrained)",
+        "row 1: DC_X (reachable, Y unconstrained)",
+        "row 2: DC_X (reachable, Y unconstrained)",
+        "row 3: DC_X (reachable, Y unconstrained)",
+        "row 4: DC_X (reachable, Y unconstrained)",
+        "row 5: DC_X (reachable, Y unconstrained)",
+        "row 6: DC_X (reachable, Y unconstrained)",
+        "row 7: DC_X (reachable, Y unconstrained)",
+        "row 12: DC_X (reachable, Y unconstrained)",
+        "row 13: DC_X (reachable, Y unconstrained)",
+        "WARNING: original func_hex mismatches CARE rows at [10, 11]"
+      ],
+      "stats": {
+        "num_reachable": 16,
+        "num_care": 6,
+        "num_dc_unreach": 0,
+        "num_dc_x": 10,
+        "num_dc_total": 10,
+        "orig_hex": "0ca6",
+        "orig_hex_care_mismatch_count": 2,
+        "targets_tried": 5
+      }
+    },
+    {
+      "dst": "LUT_222",
+      "pit": "LUT_268",
+      "dst_input_pin": 0,
+      "success": false,
+      "reason": "no_target_passed_sat2",
+      "chosen_target": null,
+      "patched_hex": null,
+      "notes": [
+        "row 8: DC_X (reachable, Y unconstrained)",
+        "row 9: DC_X (reachable, Y unconstrained)",
+        "row 12: DC_X (reachable, Y unconstrained)",
+        "row 13: DC_X (reachable, Y unconstrained)",
+        "WARNING: original func_hex mismatches CARE rows at [0, 1]"
+      ],
+      "stats": {
+        "num_reachable": 12,
+        "num_care": 8,
+        "num_dc_unreach": 4,
+        "num_dc_x": 4,
+        "num_dc_total": 8,
+        "orig_hex": "5603",
+        "orig_hex_care_mismatch_count": 2,
+        "targets_tried": 5
+      }
+    }
+  ]
+}

@@ -1,0 +1,182 @@
+{
+  "run_name": "eco_rank1_lutupgrade",
+  "run_dir": "/home/cian/Masterproef/project/results/general_flow_runs/2026-04-26_19-55-33_eco_rank1_lutupgrade",
+  "copied_config": "/home/cian/Masterproef/project/results/general_flow_runs/2026-04-26_19-55-33_eco_rank1_lutupgrade/00_config/config.yaml",
+  "status": "PASS_PHASE0_TO_PHASE4",
+  "phase_rows": [
+    {
+      "phase": "precheck",
+      "status": "PASS",
+      "detail": "baseline_dcp: /home/cian/Masterproef/project/results/run_lut_insertion/TestDirectory/baseline_impl/checkpoints/post_route_timingexp.dcp"
+    },
+    {
+      "phase": "precheck",
+      "status": "PASS",
+      "detail": "baseline_reports_dir: /home/cian/Masterproef/project/results/run_lut_insertion/TestDirectory/baseline_impl/reports"
+    },
+    {
+      "phase": "precheck",
+      "status": "PASS",
+      "detail": "rapidwright_jar: /home/cian/Masterproef/rapidwright-2024.1.1-standalone-lin64.jar"
+    },
+    {
+      "phase": "precheck",
+      "status": "PASS",
+      "detail": "java_scripts_dir: /home/cian/Masterproef/project/Readwright/scripts"
+    },
+    {
+      "phase": "precheck",
+      "status": "PASS",
+      "detail": "vivado_scripts_dir: /home/cian/Masterproef/project/Vivado/scripts"
+    },
+    {
+      "phase": "precheck",
+      "status": "PASS",
+      "detail": "phase1_tcl: /home/cian/Masterproef/project/Vivado/scripts/7_Phase_Steps_From_Hell/phase1_extract_lut_edges.tcl"
+    },
+    {
+      "phase": "precheck",
+      "status": "PASS",
+      "detail": "phase2_tcl: /home/cian/Masterproef/project/Vivado/scripts/7_Phase_Steps_From_Hell/phase2_extract_window.tcl"
+    },
+    {
+      "phase": "precheck",
+      "status": "PASS",
+      "detail": "phase3_tcl: /home/cian/Masterproef/project/Vivado/scripts/7_Phase_Steps_From_Hell/phase3_extract_window_info.tcl"
+    },
+    {
+      "phase": "precheck",
+      "status": "PASS",
+      "detail": "phase4_py: /home/cian/Masterproef/project/Vivado/scripts/7_Phase_Steps_From_Hell/phase4_simulate_window.py"
+    },
+    {
+      "phase": "precheck",
+      "status": "PASS",
+      "detail": "phase5b2_fast_py: /home/cian/Masterproef/project/Vivado/scripts/7_Phase_Steps_From_Hell/phase5b2_fast_decompose_upgrade_lut2.py"
+    },
+    {
+      "phase": "precheck",
+      "status": "PASS",
+      "detail": "phase6a_py: /home/cian/Masterproef/project/Vivado/scripts/7_Phase_Steps_From_Hell/phase6a_prepare_eco_manifest.py"
+    },
+    {
+      "phase": "precheck",
+      "status": "PASS",
+      "detail": "phase6b2_rewire_py: /home/cian/Masterproef/project/Vivado/scripts/7_Phase_Steps_From_Hell/phase6b2_generate_rewire_tcl.py"
+    },
+    {
+      "phase": "precheck",
+      "status": "PASS",
+      "detail": "phase7_py: /home/cian/Masterproef/project/Vivado/scripts/7_Phase_Steps_From_Hell/phase7_validate_eco.py"
+    },
+    {
+      "phase": "phase0",
+      "status": "PASS",
+      "detail": "route_errors=0"
+    },
+    {
+      "phase": "phase0",
+      "status": "PASS",
+      "detail": "no DRC Error rules"
+    },
+    {
+      "phase": "phase0",
+      "status": "PASS",
+      "detail": "WNS=-8.312, TNS=-680.539"
+    },
+    {
+      "phase": "phase1",
+      "status": "PASS",
+      "detail": "phase1_json: /home/cian/Masterproef/project/results/general_flow_runs/2026-04-26_19-55-33_eco_rank1_lutupgrade/01_phase1_timing_edges/phase1_lut_timing_edges.json"
+    },
+    {
+      "phase": "phase1",
+      "status": "PASS",
+      "detail": "phase1_csv: /home/cian/Masterproef/project/results/general_flow_runs/2026-04-26_19-55-33_eco_rank1_lutupgrade/01_phase1_timing_edges/phase1_lut_timing_edges.csv"
+    },
+    {
+      "phase": "phase1",
+      "status": "PASS",
+      "detail": "status=PASS, candidates=490, selected_net=f[108]_INST_0_i_7_n_0"
+    },
+    {
+      "phase": "phase2",
+      "status": "PASS",
+      "detail": "phase2_window_json: /home/cian/Masterproef/project/results/general_flow_runs/2026-04-26_19-55-33_eco_rank1_lutupgrade/02_phase2_window/phase2_window.json"
+    },
+    {
+      "phase": "phase2",
+      "status": "PASS",
+      "detail": "phase2_summary: /home/cian/Masterproef/project/results/general_flow_runs/2026-04-26_19-55-33_eco_rank1_lutupgrade/02_phase2_window/phase2_window_summary.txt"
+    },
+    {
+      "phase": "phase2",
+      "status": "PASS",
+      "detail": "phase2_checks: /home/cian/Masterproef/project/results/general_flow_runs/2026-04-26_19-55-33_eco_rank1_lutupgrade/02_phase2_window/validation_checks.csv"
+    },
+    {
+      "phase": "phase2",
+      "status": "PASS",
+      "detail": "PASS"
+    },
+    {
+      "phase": "phase3",
+      "status": "PASS",
+      "detail": "phase3_window_info_json: /home/cian/Masterproef/project/results/general_flow_runs/2026-04-26_19-55-33_eco_rank1_lutupgrade/03_phase3_window_info/phase3_window_info.json"
+    },
+    {
+      "phase": "phase3",
+      "status": "PASS",
+      "detail": "phase3_summary: /home/cian/Masterproef/project/results/general_flow_runs/2026-04-26_19-55-33_eco_rank1_lutupgrade/03_phase3_window_info/phase3_summary.txt"
+    },
+    {
+      "phase": "phase3",
+      "status": "PASS",
+      "detail": "phase3_checks: /home/cian/Masterproef/project/results/general_flow_runs/2026-04-26_19-55-33_eco_rank1_lutupgrade/03_phase3_window_info/validation_checks.csv"
+    },
+    {
+      "phase": "phase3",
+      "status": "PASS",
+      "detail": "status=PASS, num_luts=, inputs="
+    },
+    {
+      "phase": "phase4",
+      "status": "PASS",
+      "detail": "truth_table_compact_json: /home/cian/Masterproef/project/results/general_flow_runs/2026-04-26_19-55-33_eco_rank1_lutupgrade/04_phase4_truth_table/truth_table_compact.json"
+    },
+    {
+      "phase": "phase4",
+      "status": "PASS",
+      "detail": "truth_table_csv: /home/cian/Masterproef/project/results/general_flow_runs/2026-04-26_19-55-33_eco_rank1_lutupgrade/04_phase4_truth_table/truth_table.csv"
+    },
+    {
+      "phase": "phase4",
+      "status": "PASS",
+      "detail": "phase4_summary: /home/cian/Masterproef/project/results/general_flow_runs/2026-04-26_19-55-33_eco_rank1_lutupgrade/04_phase4_truth_table/phase4_summary.txt"
+    },
+    {
+      "phase": "phase4",
+      "status": "PASS",
+      "detail": "phase4_checks: /home/cian/Masterproef/project/results/general_flow_runs/2026-04-26_19-55-33_eco_rank1_lutupgrade/04_phase4_truth_table/phase4_validation_checks.csv"
+    },
+    {
+      "phase": "phase4",
+      "status": "PASS",
+      "detail": "status=PASS, rows=, inputs=12"
+    }
+  ],
+  "important_outputs": {
+    "logs": "/home/cian/Masterproef/project/results/general_flow_runs/2026-04-26_19-55-33_eco_rank1_lutupgrade/00_logs",
+    "status": "/home/cian/Masterproef/project/results/general_flow_runs/2026-04-26_19-55-33_eco_rank1_lutupgrade/00_status",
+    "phase1": "/home/cian/Masterproef/project/results/general_flow_runs/2026-04-26_19-55-33_eco_rank1_lutupgrade/01_phase1_timing_edges",
+    "phase2": "/home/cian/Masterproef/project/results/general_flow_runs/2026-04-26_19-55-33_eco_rank1_lutupgrade/02_phase2_window",
+    "phase3": "/home/cian/Masterproef/project/results/general_flow_runs/2026-04-26_19-55-33_eco_rank1_lutupgrade/03_phase3_window_info",
+    "phase4": "/home/cian/Masterproef/project/results/general_flow_runs/2026-04-26_19-55-33_eco_rank1_lutupgrade/04_phase4_truth_table",
+    "phase5": "/home/cian/Masterproef/project/results/general_flow_runs/2026-04-26_19-55-33_eco_rank1_lutupgrade/05_phase5_candidate_search",
+    "phase6a": "/home/cian/Masterproef/project/results/general_flow_runs/2026-04-26_19-55-33_eco_rank1_lutupgrade/06_phase6a_manifest",
+    "phase6b_stage1": "/home/cian/Masterproef/project/results/general_flow_runs/2026-04-26_19-55-33_eco_rank1_lutupgrade/07_phase6b_stage1",
+    "phase6b_rewire": "/home/cian/Masterproef/project/results/general_flow_runs/2026-04-26_19-55-33_eco_rank1_lutupgrade/08_phase6b_rewire",
+    "phase6c": "/home/cian/Masterproef/project/results/general_flow_runs/2026-04-26_19-55-33_eco_rank1_lutupgrade/09_phase6c_fresh_route",
+    "phase7": "/home/cian/Masterproef/project/results/general_flow_runs/2026-04-26_19-55-33_eco_rank1_lutupgrade/10_phase7_validation"
+  }
+}

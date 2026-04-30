@@ -1,0 +1,73 @@
+{
+  "phase": "FASE 5C SAT",
+  "phase5c_status": "FAIL",
+  "phase3_json": "/home/cian/Masterproef/project/results/general_flow_runs/2026-04-28_22-03-34_eco_rank1_lutupgrade/03_phase3_window_info/phase3_window_info.json",
+  "truth_table_compact_json": "/home/cian/Masterproef/project/results/general_flow_runs/2026-04-28_22-03-34_eco_rank1_lutupgrade/04_phase4_truth_table/truth_table_compact.json",
+  "boundary_count": 11,
+  "truth_table_length": 2048,
+  "lut_count": 4,
+  "total_templates_generated": 500000,
+  "templates_checked": 500,
+  "top_templates": 500,
+  "max_generated": 500000,
+  "z3_timeout_ms": 2000,
+  "status_counts": {
+    "unsat": 500
+  },
+  "exact_candidate_count": 0,
+  "kept_candidate_count": 0,
+  "baseline_score": 60850,
+  "best_candidate_id": null,
+  "best_score_without_penalties": null,
+  "best_score_with_penalties": null,
+  "estimated_improvement": false,
+  "elapsed_seconds": 949.767,
+  "selected_candidate_json": "/home/cian/Masterproef/project/results/general_flow_runs/2026-04-28_22-03-34_eco_rank1_lutupgrade/05_phase5c_sat/phase5c_selected_candidate.json",
+  "validation_checks": [
+    {
+      "check": "phase3_status",
+      "status": "PASS",
+      "detail": "PASS"
+    },
+    {
+      "check": "phase4_status",
+      "status": "PASS",
+      "detail": "PASS"
+    },
+    {
+      "check": "single_output",
+      "status": "PASS",
+      "detail": "1"
+    },
+    {
+      "check": "boundary_count_supported",
+      "status": "PASS",
+      "detail": "11"
+    },
+    {
+      "check": "truth_table_length",
+      "status": "PASS",
+      "detail": "2048"
+    },
+    {
+      "check": "lut_count_supported",
+      "status": "PASS",
+      "detail": "4"
+    },
+    {
+      "check": "templates_generated",
+      "status": "PASS",
+      "detail": "generated=500000, selected=500"
+    },
+    {
+      "check": "exact_candidates_found",
+      "status": "FAIL",
+      "detail": "0"
+    },
+    {
+      "check": "best_candidate_selected",
+      "status": "FAIL",
+      "detail": "none"
+    }
+  ]
+}

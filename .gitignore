@@ -72,3 +72,18 @@ multisynthesis/**/results/
 *.route
 *.net
 *.log
+
+
+
+# Grote binaries en installers
+*.bin
+Zone.Identifier
+*.jar
+
+# Python cache bestanden
+__pycache__/
+*.pyc
+
+# Vivado/Xilinx logs en bestanden
+vivado.jou
+vivado.log

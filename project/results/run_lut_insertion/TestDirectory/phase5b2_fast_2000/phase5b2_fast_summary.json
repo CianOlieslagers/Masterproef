@@ -1,0 +1,69 @@
+{
+  "phase": "FASE 5B.2 FAST",
+  "phase5b2_fast_status": "FAIL",
+  "phase3_json": "/home/cian/Masterproef/project/results/run_lut_insertion/TestDirectory/phase3_window_info/phase3_window_info.json",
+  "truth_table_compact_json": "/home/cian/Masterproef/project/results/run_lut_insertion/TestDirectory/phase4_truth_table/truth_table_compact.json",
+  "total_template_count": 706860,
+  "templates_checked": 2000,
+  "top_templates_to_check": 2000,
+  "status_counts": {
+    "too_many_signatures": 1916,
+    "not_factorable": 84
+  },
+  "exact_candidate_count": 0,
+  "kept_candidate_count": 0,
+  "baseline_score": 57589,
+  "best_candidate_id": null,
+  "best_score_without_penalties": null,
+  "best_score_with_penalties": null,
+  "estimated_improvement": false,
+  "elapsed_seconds": 31.694,
+  "selected_candidate_json": "/home/cian/Masterproef/project/results/run_lut_insertion/TestDirectory/phase5b2_fast_2000/phase5b2_fast_selected_candidate.json",
+  "validation_checks": [
+    {
+      "check": "phase3_status",
+      "status": "PASS",
+      "detail": "PASS"
+    },
+    {
+      "check": "phase4_status",
+      "status": "PASS",
+      "detail": "PASS"
+    },
+    {
+      "check": "boundary_count_is_12",
+      "status": "PASS",
+      "detail": "12"
+    },
+    {
+      "check": "single_output",
+      "status": "PASS",
+      "detail": "1"
+    },
+    {
+      "check": "truth_table_length",
+      "status": "PASS",
+      "detail": "4096"
+    },
+    {
+      "check": "three_luts",
+      "status": "PASS",
+      "detail": "3"
+    },
+    {
+      "check": "templates_generated",
+      "status": "PASS",
+      "detail": "total=706860, selected=2000"
+    },
+    {
+      "check": "exact_candidates_found",
+      "status": "FAIL",
+      "detail": "0"
+    },
+    {
+      "check": "best_candidate_selected",
+      "status": "FAIL",
+      "detail": "none"
+    }
+  ]
+}

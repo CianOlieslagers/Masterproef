@@ -1,0 +1,1628 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version      : Vivado v.2023.1 (lin64) Build 3865809 Sun May  7 15:04:56 MDT 2023
+| Date              : Sun Apr 19 18:38:13 2026
+| Host              : MSI running 64-bit Ubuntu 22.04.5 LTS
+| Command           : report_timing -delay_type max -max_paths 10 -sort_by slack -file /home/cian/Masterproef/project/results/run_lut_insertion/2026-04-19_18-27-57/final_verification/eco_worst_paths.rpt
+| Design            : top
+| Device            : xcu200-fsgd2104
+| Speed File        : -2  PRODUCTION 1.28 03-30-2022
+| Design State      : Routed
+| Temperature Grade : E
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack (VIOLATED) :        -8.430ns  (required time - arrival time)
+  Source:                 b[2]
+                            (input port)
+  Destination:            f[99]
+  Path Group:             **default**
+  Path Type:              Max at Slow Process Corner
+  Requirement:            5.000ns  (MaxDelay Path 5.000ns)
+  Data Path Delay:        13.430ns  (logic 3.233ns (24.076%)  route 10.196ns (75.924%))
+  Logic Levels:           44  (IBUFCTRL=1 INBUF=1 LUT3=1 LUT5=3 LUT6=37 OBUF=1)
+  Output Delay:           0.000ns
+  Timing Exception:       MaxDelay Path 5.000ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    AW21                                              0.000     0.000 f  b[2] (IN)
+                         net (fo=0)                   0.000     0.000    f[2]_INST_0_i_3/I
+    AW21                 INBUF (Prop_INBUF_HPIOB_M_PAD_O)
+                                                      0.593     0.593 f  f[2]_INST_0_i_3/INBUF_INST/O
+                         net (fo=1, routed)           0.000     0.593    f[2]_INST_0_i_3/OUT
+    AW21                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000     0.593 f  f[2]_INST_0_i_3/IBUFCTRL_INST/O
+                         net (fo=2, routed)           2.322     2.915    f[2]_INST_0_i_3_n_0
+    SLICE_X101Y472       LUT6 (Prop_G6LUT_SLICEL_I5_O)
+                                                      0.050     2.965 r  f[3]_INST_0_i_4/O
+                         net (fo=4, routed)           0.094     3.059    p_624_in
+    SLICE_X101Y472       LUT6 (Prop_F6LUT_SLICEL_I5_O)
+                                                      0.097     3.156 r  f[13]_INST_0_i_7/O
+                         net (fo=1, routed)           0.213     3.369    f[13]_INST_0_i_7_n_0
+    SLICE_X101Y481       LUT6 (Prop_H6LUT_SLICEL_I0_O)
+                                                      0.036     3.405 r  f[13]_INST_0_i_6/O
+                         net (fo=2, routed)           0.208     3.613    p_599_in
+    SLICE_X106Y481       LUT6 (Prop_H6LUT_SLICEL_I5_O)
+                                                      0.036     3.649 r  f[18]_INST_0_i_7/O
+                         net (fo=1, routed)           0.089     3.738    f[18]_INST_0_i_7_n_0
+    SLICE_X107Y481       LUT6 (Prop_G6LUT_SLICEM_I0_O)
+                                                      0.037     3.775 r  f[18]_INST_0_i_6/O
+                         net (fo=2, routed)           0.152     3.927    p_574_in
+    SLICE_X108Y479       LUT6 (Prop_E6LUT_SLICEM_I5_O)
+                                                      0.037     3.964 r  f[23]_INST_0_i_7/O
+                         net (fo=1, routed)           0.040     4.004    f[23]_INST_0_i_7_n_0
+    SLICE_X108Y479       LUT6 (Prop_C6LUT_SLICEM_I0_O)
+                                                      0.037     4.041 r  f[23]_INST_0_i_6/O
+                         net (fo=2, routed)           0.138     4.179    p_549_in
+    SLICE_X108Y476       LUT6 (Prop_C6LUT_SLICEM_I5_O)
+                                                      0.037     4.216 r  f[28]_INST_0_i_7/O
+                         net (fo=1, routed)           0.040     4.256    f[28]_INST_0_i_7_n_0
+    SLICE_X108Y476       LUT6 (Prop_D6LUT_SLICEM_I0_O)
+                                                      0.037     4.293 r  f[28]_INST_0_i_6/O
+                         net (fo=2, routed)           0.085     4.379    p_524_in
+    SLICE_X109Y476       LUT6 (Prop_D6LUT_SLICEL_I5_O)
+                                                      0.050     4.429 r  f[33]_INST_0_i_7/O
+                         net (fo=1, routed)           0.038     4.467    f[33]_INST_0_i_7_n_0
+    SLICE_X109Y476       LUT6 (Prop_F6LUT_SLICEL_I0_O)
+                                                      0.035     4.502 r  f[33]_INST_0_i_6/O
+                         net (fo=2, routed)           0.091     4.593    p_499_in
+    SLICE_X110Y476       LUT6 (Prop_F6LUT_SLICEM_I5_O)
+                                                      0.051     4.644 r  f[38]_INST_0_i_7/O
+                         net (fo=1, routed)           0.087     4.731    f[38]_INST_0_i_7_n_0
+    SLICE_X110Y475       LUT6 (Prop_H6LUT_SLICEM_I0_O)
+                                                      0.053     4.784 r  f[38]_INST_0_i_6/O
+                         net (fo=2, routed)           0.203     4.986    p_474_in
+    SLICE_X109Y470       LUT6 (Prop_E6LUT_SLICEL_I5_O)
+                                                      0.051     5.037 r  f[43]_INST_0_i_7/O
+                         net (fo=1, routed)           0.038     5.075    f[43]_INST_0_i_7_n_0
+    SLICE_X109Y470       LUT6 (Prop_C6LUT_SLICEL_I0_O)
+                                                      0.035     5.110 r  f[43]_INST_0_i_6/O
+                         net (fo=2, routed)           0.098     5.209    p_449_in
+    SLICE_X109Y468       LUT6 (Prop_A6LUT_SLICEL_I5_O)
+                                                      0.035     5.244 r  f[48]_INST_0_i_7/O
+                         net (fo=1, routed)           0.040     5.284    f[48]_INST_0_i_7_n_0
+    SLICE_X109Y468       LUT6 (Prop_C6LUT_SLICEL_I0_O)
+                                                      0.035     5.319 r  f[48]_INST_0_i_6/O
+                         net (fo=2, routed)           0.098     5.417    p_424_in
+    SLICE_X109Y466       LUT6 (Prop_C6LUT_SLICEL_I5_O)
+                                                      0.035     5.452 r  f[53]_INST_0_i_7/O
+                         net (fo=1, routed)           0.044     5.496    f[53]_INST_0_i_7_n_0
+    SLICE_X109Y465       LUT6 (Prop_H6LUT_SLICEL_I0_O)
+                                                      0.036     5.532 r  f[53]_INST_0_i_6/O
+                         net (fo=2, routed)           0.187     5.718    p_399_in
+    SLICE_X106Y464       LUT6 (Prop_C6LUT_SLICEL_I5_O)
+                                                      0.035     5.753 r  f[58]_INST_0_i_7/O
+                         net (fo=1, routed)           0.089     5.842    f[58]_INST_0_i_7_n_0
+    SLICE_X106Y464       LUT6 (Prop_D6LUT_SLICEL_I0_O)
+                                                      0.089     5.931 r  f[58]_INST_0_i_6/O
+                         net (fo=2, routed)           0.049     5.980    p_374_in
+    SLICE_X106Y464       LUT6 (Prop_H6LUT_SLICEL_I5_O)
+                                                      0.099     6.079 r  f[63]_INST_0_i_7/O
+                         net (fo=1, routed)           0.189     6.268    f[63]_INST_0_i_7_n_0
+    SLICE_X103Y465       LUT6 (Prop_A6LUT_SLICEL_I0_O)
+                                                      0.035     6.303 r  f[63]_INST_0_i_6/O
+                         net (fo=2, routed)           0.176     6.479    p_349_in
+    SLICE_X98Y465        LUT6 (Prop_A6LUT_SLICEL_I5_O)
+                                                      0.035     6.514 r  f[68]_INST_0_i_7/O
+                         net (fo=1, routed)           0.040     6.554    f[68]_INST_0_i_7_n_0
+    SLICE_X98Y465        LUT6 (Prop_C6LUT_SLICEL_I0_O)
+                                                      0.035     6.589 r  f[68]_INST_0_i_6/O
+                         net (fo=2, routed)           0.087     6.676    p_324_in
+    SLICE_X97Y465        LUT6 (Prop_C6LUT_SLICEM_I5_O)
+                                                      0.037     6.713 r  f[73]_INST_0_i_7/O
+                         net (fo=1, routed)           0.093     6.806    f[73]_INST_0_i_7_n_0
+    SLICE_X97Y467        LUT6 (Prop_C6LUT_SLICEM_I0_O)
+                                                      0.037     6.843 r  f[73]_INST_0_i_6/O
+                         net (fo=2, routed)           0.342     7.185    p_299_in
+    SLICE_X94Y471        LUT6 (Prop_C6LUT_SLICEL_I5_O)
+                                                      0.035     7.220 r  f[78]_INST_0_i_7/O
+                         net (fo=1, routed)           0.041     7.261    f[78]_INST_0_i_7_n_0
+    SLICE_X94Y471        LUT6 (Prop_D6LUT_SLICEL_I0_O)
+                                                      0.036     7.297 r  f[78]_INST_0_i_6/O
+                         net (fo=2, routed)           0.044     7.341    p_274_in
+    SLICE_X94Y471        LUT6 (Prop_E6LUT_SLICEL_I5_O)
+                                                      0.035     7.376 r  f[83]_INST_0_i_7/O
+                         net (fo=1, routed)           0.380     7.756    f[83]_INST_0_i_7_n_0
+    SLICE_X91Y496        LUT6 (Prop_E6LUT_SLICEL_I0_O)
+                                                      0.035     7.791 r  f[83]_INST_0_i_6/O
+                         net (fo=2, routed)           0.044     7.835    p_249_in
+    SLICE_X91Y496        LUT6 (Prop_C6LUT_SLICEL_I5_O)
+                                                      0.035     7.870 r  f[88]_INST_0_i_7/O
+                         net (fo=1, routed)           0.088     7.958    f[88]_INST_0_i_7_n_0
+    SLICE_X90Y496        LUT6 (Prop_C6LUT_SLICEM_I0_O)
+                                                      0.037     7.995 r  f[88]_INST_0_i_6/O
+                         net (fo=2, routed)           0.099     8.094    p_224_in
+    SLICE_X90Y498        LUT6 (Prop_C6LUT_SLICEM_I5_O)
+                                                      0.037     8.131 r  f[93]_INST_0_i_7/O
+                         net (fo=1, routed)           0.040     8.171    f[93]_INST_0_i_7_n_0
+    SLICE_X90Y498        LUT6 (Prop_D6LUT_SLICEM_I0_O)
+                                                      0.037     8.208 r  f[93]_INST_0_i_6/O
+                         net (fo=2, routed)           0.042     8.250    p_199_in
+    SLICE_X90Y498        LUT6 (Prop_F6LUT_SLICEM_I5_O)
+                                                      0.037     8.287 r  f[98]_INST_0_i_7/O
+                         net (fo=1, routed)           0.040     8.327    f[98]_INST_0_i_7_n_0
+    SLICE_X90Y498        LUT6 (Prop_G6LUT_SLICEM_I0_O)
+                                                      0.037     8.364 r  f[98]_INST_0_i_6/O
+                         net (fo=2, routed)           0.369     8.733    p_174_in
+    SLICE_X85Y510        LUT5 (Prop_E6LUT_SLICEL_I0_O)
+                                                      0.035     8.768 r  f[98]_INST_0_i_5/O
+                         net (fo=1, routed)           0.038     8.806    p_164_in
+    SLICE_X85Y510        LUT5 (Prop_C6LUT_SLICEL_I0_O)
+                                                      0.035     8.841 r  f[98]_INST_0_i_4/O
+                         net (fo=2, routed)           0.045     8.886    p_154_in
+    SLICE_X85Y510        LUT5 (Prop_D6LUT_SLICEL_I0_O)
+                                                      0.036     8.922 r  f[99]_INST_0_i_4/O
+                         net (fo=3, routed)           0.093     9.015    p_144_in
+    SLICE_X85Y511        LUT3 (Prop_F6LUT_SLICEL_I2_O)
+                                                      0.035     9.050 r  f[99]_INST_0_i_1/O
+                         net (fo=1, routed)           3.463    12.513    f[99]_INST_0_i_1_n_0
+    SLR Crossing[1->2]   
+    H16                  OBUF (Prop_OUTBUF_HPIOB_S_I_O)
+                                                      0.917    13.430 r  f[99]_INST_0/O
+                         net (fo=0)                   0.000    13.430    f[99]
+    H16                                                               r  f[99] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                    5.000     5.000    
+                         output delay                -0.000     5.000    
+  -------------------------------------------------------------------
+                         required time                          5.000    
+                         arrival time                         -13.430    
+  -------------------------------------------------------------------
+                         slack                                 -8.430    
+
+Slack (VIOLATED) :        -8.380ns  (required time - arrival time)
+  Source:                 b[2]
+                            (input port)
+  Destination:            f[97]
+  Path Group:             **default**
+  Path Type:              Max at Slow Process Corner
+  Requirement:            5.000ns  (MaxDelay Path 5.000ns)
+  Data Path Delay:        13.380ns  (logic 3.210ns (23.989%)  route 10.170ns (76.011%))
+  Logic Levels:           43  (IBUFCTRL=1 INBUF=1 LUT5=5 LUT6=35 OBUF=1)
+  Output Delay:           0.000ns
+  Timing Exception:       MaxDelay Path 5.000ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    AW21                                              0.000     0.000 f  b[2] (IN)
+                         net (fo=0)                   0.000     0.000    f[2]_INST_0_i_3/I
+    AW21                 INBUF (Prop_INBUF_HPIOB_M_PAD_O)
+                                                      0.593     0.593 f  f[2]_INST_0_i_3/INBUF_INST/O
+                         net (fo=1, routed)           0.000     0.593    f[2]_INST_0_i_3/OUT
+    AW21                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000     0.593 f  f[2]_INST_0_i_3/IBUFCTRL_INST/O
+                         net (fo=2, routed)           2.322     2.915    f[2]_INST_0_i_3_n_0
+    SLICE_X101Y472       LUT6 (Prop_G6LUT_SLICEL_I5_O)
+                                                      0.050     2.965 r  f[3]_INST_0_i_4/O
+                         net (fo=4, routed)           0.094     3.059    p_624_in
+    SLICE_X101Y472       LUT6 (Prop_F6LUT_SLICEL_I5_O)
+                                                      0.097     3.156 r  f[13]_INST_0_i_7/O
+                         net (fo=1, routed)           0.213     3.369    f[13]_INST_0_i_7_n_0
+    SLICE_X101Y481       LUT6 (Prop_H6LUT_SLICEL_I0_O)
+                                                      0.036     3.405 r  f[13]_INST_0_i_6/O
+                         net (fo=2, routed)           0.208     3.613    p_599_in
+    SLICE_X106Y481       LUT6 (Prop_H6LUT_SLICEL_I5_O)
+                                                      0.036     3.649 r  f[18]_INST_0_i_7/O
+                         net (fo=1, routed)           0.089     3.738    f[18]_INST_0_i_7_n_0
+    SLICE_X107Y481       LUT6 (Prop_G6LUT_SLICEM_I0_O)
+                                                      0.037     3.775 r  f[18]_INST_0_i_6/O
+                         net (fo=2, routed)           0.152     3.927    p_574_in
+    SLICE_X108Y479       LUT6 (Prop_E6LUT_SLICEM_I5_O)
+                                                      0.037     3.964 r  f[23]_INST_0_i_7/O
+                         net (fo=1, routed)           0.040     4.004    f[23]_INST_0_i_7_n_0
+    SLICE_X108Y479       LUT6 (Prop_C6LUT_SLICEM_I0_O)
+                                                      0.037     4.041 r  f[23]_INST_0_i_6/O
+                         net (fo=2, routed)           0.138     4.179    p_549_in
+    SLICE_X108Y476       LUT6 (Prop_C6LUT_SLICEM_I5_O)
+                                                      0.037     4.216 r  f[28]_INST_0_i_7/O
+                         net (fo=1, routed)           0.040     4.256    f[28]_INST_0_i_7_n_0
+    SLICE_X108Y476       LUT6 (Prop_D6LUT_SLICEM_I0_O)
+                                                      0.037     4.293 r  f[28]_INST_0_i_6/O
+                         net (fo=2, routed)           0.085     4.379    p_524_in
+    SLICE_X109Y476       LUT6 (Prop_D6LUT_SLICEL_I5_O)
+                                                      0.050     4.429 r  f[33]_INST_0_i_7/O
+                         net (fo=1, routed)           0.038     4.467    f[33]_INST_0_i_7_n_0
+    SLICE_X109Y476       LUT6 (Prop_F6LUT_SLICEL_I0_O)
+                                                      0.035     4.502 r  f[33]_INST_0_i_6/O
+                         net (fo=2, routed)           0.091     4.593    p_499_in
+    SLICE_X110Y476       LUT6 (Prop_F6LUT_SLICEM_I5_O)
+                                                      0.051     4.644 r  f[38]_INST_0_i_7/O
+                         net (fo=1, routed)           0.087     4.731    f[38]_INST_0_i_7_n_0
+    SLICE_X110Y475       LUT6 (Prop_H6LUT_SLICEM_I0_O)
+                                                      0.053     4.784 r  f[38]_INST_0_i_6/O
+                         net (fo=2, routed)           0.203     4.986    p_474_in
+    SLICE_X109Y470       LUT6 (Prop_E6LUT_SLICEL_I5_O)
+                                                      0.051     5.037 r  f[43]_INST_0_i_7/O
+                         net (fo=1, routed)           0.038     5.075    f[43]_INST_0_i_7_n_0
+    SLICE_X109Y470       LUT6 (Prop_C6LUT_SLICEL_I0_O)
+                                                      0.035     5.110 r  f[43]_INST_0_i_6/O
+                         net (fo=2, routed)           0.098     5.209    p_449_in
+    SLICE_X109Y468       LUT6 (Prop_A6LUT_SLICEL_I5_O)
+                                                      0.035     5.244 r  f[48]_INST_0_i_7/O
+                         net (fo=1, routed)           0.040     5.284    f[48]_INST_0_i_7_n_0
+    SLICE_X109Y468       LUT6 (Prop_C6LUT_SLICEL_I0_O)
+                                                      0.035     5.319 r  f[48]_INST_0_i_6/O
+                         net (fo=2, routed)           0.098     5.417    p_424_in
+    SLICE_X109Y466       LUT6 (Prop_C6LUT_SLICEL_I5_O)
+                                                      0.035     5.452 r  f[53]_INST_0_i_7/O
+                         net (fo=1, routed)           0.044     5.496    f[53]_INST_0_i_7_n_0
+    SLICE_X109Y465       LUT6 (Prop_H6LUT_SLICEL_I0_O)
+                                                      0.036     5.532 r  f[53]_INST_0_i_6/O
+                         net (fo=2, routed)           0.187     5.718    p_399_in
+    SLICE_X106Y464       LUT6 (Prop_C6LUT_SLICEL_I5_O)
+                                                      0.035     5.753 r  f[58]_INST_0_i_7/O
+                         net (fo=1, routed)           0.089     5.842    f[58]_INST_0_i_7_n_0
+    SLICE_X106Y464       LUT6 (Prop_D6LUT_SLICEL_I0_O)
+                                                      0.089     5.931 r  f[58]_INST_0_i_6/O
+                         net (fo=2, routed)           0.049     5.980    p_374_in
+    SLICE_X106Y464       LUT6 (Prop_H6LUT_SLICEL_I5_O)
+                                                      0.099     6.079 r  f[63]_INST_0_i_7/O
+                         net (fo=1, routed)           0.189     6.268    f[63]_INST_0_i_7_n_0
+    SLICE_X103Y465       LUT6 (Prop_A6LUT_SLICEL_I0_O)
+                                                      0.035     6.303 r  f[63]_INST_0_i_6/O
+                         net (fo=2, routed)           0.176     6.479    p_349_in
+    SLICE_X98Y465        LUT6 (Prop_A6LUT_SLICEL_I5_O)
+                                                      0.035     6.514 r  f[68]_INST_0_i_7/O
+                         net (fo=1, routed)           0.040     6.554    f[68]_INST_0_i_7_n_0
+    SLICE_X98Y465        LUT6 (Prop_C6LUT_SLICEL_I0_O)
+                                                      0.035     6.589 r  f[68]_INST_0_i_6/O
+                         net (fo=2, routed)           0.087     6.676    p_324_in
+    SLICE_X97Y465        LUT6 (Prop_C6LUT_SLICEM_I5_O)
+                                                      0.037     6.713 r  f[73]_INST_0_i_7/O
+                         net (fo=1, routed)           0.093     6.806    f[73]_INST_0_i_7_n_0
+    SLICE_X97Y467        LUT6 (Prop_C6LUT_SLICEM_I0_O)
+                                                      0.037     6.843 r  f[73]_INST_0_i_6/O
+                         net (fo=2, routed)           0.342     7.185    p_299_in
+    SLICE_X94Y471        LUT6 (Prop_C6LUT_SLICEL_I5_O)
+                                                      0.035     7.220 r  f[78]_INST_0_i_7/O
+                         net (fo=1, routed)           0.041     7.261    f[78]_INST_0_i_7_n_0
+    SLICE_X94Y471        LUT6 (Prop_D6LUT_SLICEL_I0_O)
+                                                      0.036     7.297 r  f[78]_INST_0_i_6/O
+                         net (fo=2, routed)           0.044     7.341    p_274_in
+    SLICE_X94Y471        LUT6 (Prop_E6LUT_SLICEL_I5_O)
+                                                      0.035     7.376 r  f[83]_INST_0_i_7/O
+                         net (fo=1, routed)           0.380     7.756    f[83]_INST_0_i_7_n_0
+    SLICE_X91Y496        LUT6 (Prop_E6LUT_SLICEL_I0_O)
+                                                      0.035     7.791 r  f[83]_INST_0_i_6/O
+                         net (fo=2, routed)           0.044     7.835    p_249_in
+    SLICE_X91Y496        LUT6 (Prop_C6LUT_SLICEL_I5_O)
+                                                      0.035     7.870 r  f[88]_INST_0_i_7/O
+                         net (fo=1, routed)           0.088     7.958    f[88]_INST_0_i_7_n_0
+    SLICE_X90Y496        LUT6 (Prop_C6LUT_SLICEM_I0_O)
+                                                      0.037     7.995 r  f[88]_INST_0_i_6/O
+                         net (fo=2, routed)           0.099     8.094    p_224_in
+    SLICE_X90Y498        LUT6 (Prop_C6LUT_SLICEM_I5_O)
+                                                      0.037     8.131 r  f[93]_INST_0_i_7/O
+                         net (fo=1, routed)           0.040     8.171    f[93]_INST_0_i_7_n_0
+    SLICE_X90Y498        LUT6 (Prop_D6LUT_SLICEM_I0_O)
+                                                      0.037     8.208 r  f[93]_INST_0_i_6/O
+                         net (fo=2, routed)           0.200     8.408    p_199_in
+    SLICE_X89Y503        LUT5 (Prop_E6LUT_SLICEL_I0_O)
+                                                      0.035     8.443 r  f[93]_INST_0_i_5/O
+                         net (fo=1, routed)           0.038     8.481    p_189_in
+    SLICE_X89Y503        LUT5 (Prop_C6LUT_SLICEL_I0_O)
+                                                      0.035     8.516 r  f[93]_INST_0_i_4/O
+                         net (fo=2, routed)           0.094     8.611    p_179_in
+    SLICE_X89Y505        LUT5 (Prop_C6LUT_SLICEL_I0_O)
+                                                      0.035     8.646 r  f[94]_INST_0_i_4/O
+                         net (fo=3, routed)           0.096     8.742    p_169_in
+    SLICE_X89Y507        LUT5 (Prop_A6LUT_SLICEL_I0_O)
+                                                      0.035     8.777 r  f[96]_INST_0_i_4/O
+                         net (fo=2, routed)           0.156     8.933    p_159_in
+    SLICE_X89Y511        LUT5 (Prop_A6LUT_SLICEL_I4_O)
+                                                      0.035     8.968 r  f[97]_INST_0_i_1/O
+                         net (fo=1, routed)           3.479    12.447    f[97]_INST_0_i_1_n_0
+    SLR Crossing[1->2]   
+    H13                  OBUF (Prop_OUTBUF_HPIOB_S_I_O)
+                                                      0.933    13.380 r  f[97]_INST_0/O
+                         net (fo=0)                   0.000    13.380    f[97]
+    H13                                                               r  f[97] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                    5.000     5.000    
+                         output delay                -0.000     5.000    
+  -------------------------------------------------------------------
+                         required time                          5.000    
+                         arrival time                         -13.380    
+  -------------------------------------------------------------------
+                         slack                                 -8.380    
+
+Slack (VIOLATED) :        -8.363ns  (required time - arrival time)
+  Source:                 b[2]
+                            (input port)
+  Destination:            f[96]
+  Path Group:             **default**
+  Path Type:              Max at Slow Process Corner
+  Requirement:            5.000ns  (MaxDelay Path 5.000ns)
+  Data Path Delay:        13.363ns  (logic 3.210ns (24.022%)  route 10.153ns (75.978%))
+  Logic Levels:           43  (IBUFCTRL=1 INBUF=1 LUT3=1 LUT5=4 LUT6=35 OBUF=1)
+  Output Delay:           0.000ns
+  Timing Exception:       MaxDelay Path 5.000ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    AW21                                              0.000     0.000 f  b[2] (IN)
+                         net (fo=0)                   0.000     0.000    f[2]_INST_0_i_3/I
+    AW21                 INBUF (Prop_INBUF_HPIOB_M_PAD_O)
+                                                      0.593     0.593 f  f[2]_INST_0_i_3/INBUF_INST/O
+                         net (fo=1, routed)           0.000     0.593    f[2]_INST_0_i_3/OUT
+    AW21                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000     0.593 f  f[2]_INST_0_i_3/IBUFCTRL_INST/O
+                         net (fo=2, routed)           2.322     2.915    f[2]_INST_0_i_3_n_0
+    SLICE_X101Y472       LUT6 (Prop_G6LUT_SLICEL_I5_O)
+                                                      0.050     2.965 r  f[3]_INST_0_i_4/O
+                         net (fo=4, routed)           0.094     3.059    p_624_in
+    SLICE_X101Y472       LUT6 (Prop_F6LUT_SLICEL_I5_O)
+                                                      0.097     3.156 r  f[13]_INST_0_i_7/O
+                         net (fo=1, routed)           0.213     3.369    f[13]_INST_0_i_7_n_0
+    SLICE_X101Y481       LUT6 (Prop_H6LUT_SLICEL_I0_O)
+                                                      0.036     3.405 r  f[13]_INST_0_i_6/O
+                         net (fo=2, routed)           0.208     3.613    p_599_in
+    SLICE_X106Y481       LUT6 (Prop_H6LUT_SLICEL_I5_O)
+                                                      0.036     3.649 r  f[18]_INST_0_i_7/O
+                         net (fo=1, routed)           0.089     3.738    f[18]_INST_0_i_7_n_0
+    SLICE_X107Y481       LUT6 (Prop_G6LUT_SLICEM_I0_O)
+                                                      0.037     3.775 r  f[18]_INST_0_i_6/O
+                         net (fo=2, routed)           0.152     3.927    p_574_in
+    SLICE_X108Y479       LUT6 (Prop_E6LUT_SLICEM_I5_O)
+                                                      0.037     3.964 r  f[23]_INST_0_i_7/O
+                         net (fo=1, routed)           0.040     4.004    f[23]_INST_0_i_7_n_0
+    SLICE_X108Y479       LUT6 (Prop_C6LUT_SLICEM_I0_O)
+                                                      0.037     4.041 r  f[23]_INST_0_i_6/O
+                         net (fo=2, routed)           0.138     4.179    p_549_in
+    SLICE_X108Y476       LUT6 (Prop_C6LUT_SLICEM_I5_O)
+                                                      0.037     4.216 r  f[28]_INST_0_i_7/O
+                         net (fo=1, routed)           0.040     4.256    f[28]_INST_0_i_7_n_0
+    SLICE_X108Y476       LUT6 (Prop_D6LUT_SLICEM_I0_O)
+                                                      0.037     4.293 r  f[28]_INST_0_i_6/O
+                         net (fo=2, routed)           0.085     4.379    p_524_in
+    SLICE_X109Y476       LUT6 (Prop_D6LUT_SLICEL_I5_O)
+                                                      0.050     4.429 r  f[33]_INST_0_i_7/O
+                         net (fo=1, routed)           0.038     4.467    f[33]_INST_0_i_7_n_0
+    SLICE_X109Y476       LUT6 (Prop_F6LUT_SLICEL_I0_O)
+                                                      0.035     4.502 r  f[33]_INST_0_i_6/O
+                         net (fo=2, routed)           0.091     4.593    p_499_in
+    SLICE_X110Y476       LUT6 (Prop_F6LUT_SLICEM_I5_O)
+                                                      0.051     4.644 r  f[38]_INST_0_i_7/O
+                         net (fo=1, routed)           0.087     4.731    f[38]_INST_0_i_7_n_0
+    SLICE_X110Y475       LUT6 (Prop_H6LUT_SLICEM_I0_O)
+                                                      0.053     4.784 r  f[38]_INST_0_i_6/O
+                         net (fo=2, routed)           0.203     4.986    p_474_in
+    SLICE_X109Y470       LUT6 (Prop_E6LUT_SLICEL_I5_O)
+                                                      0.051     5.037 r  f[43]_INST_0_i_7/O
+                         net (fo=1, routed)           0.038     5.075    f[43]_INST_0_i_7_n_0
+    SLICE_X109Y470       LUT6 (Prop_C6LUT_SLICEL_I0_O)
+                                                      0.035     5.110 r  f[43]_INST_0_i_6/O
+                         net (fo=2, routed)           0.098     5.209    p_449_in
+    SLICE_X109Y468       LUT6 (Prop_A6LUT_SLICEL_I5_O)
+                                                      0.035     5.244 r  f[48]_INST_0_i_7/O
+                         net (fo=1, routed)           0.040     5.284    f[48]_INST_0_i_7_n_0
+    SLICE_X109Y468       LUT6 (Prop_C6LUT_SLICEL_I0_O)
+                                                      0.035     5.319 r  f[48]_INST_0_i_6/O
+                         net (fo=2, routed)           0.098     5.417    p_424_in
+    SLICE_X109Y466       LUT6 (Prop_C6LUT_SLICEL_I5_O)
+                                                      0.035     5.452 r  f[53]_INST_0_i_7/O
+                         net (fo=1, routed)           0.044     5.496    f[53]_INST_0_i_7_n_0
+    SLICE_X109Y465       LUT6 (Prop_H6LUT_SLICEL_I0_O)
+                                                      0.036     5.532 r  f[53]_INST_0_i_6/O
+                         net (fo=2, routed)           0.187     5.718    p_399_in
+    SLICE_X106Y464       LUT6 (Prop_C6LUT_SLICEL_I5_O)
+                                                      0.035     5.753 r  f[58]_INST_0_i_7/O
+                         net (fo=1, routed)           0.089     5.842    f[58]_INST_0_i_7_n_0
+    SLICE_X106Y464       LUT6 (Prop_D6LUT_SLICEL_I0_O)
+                                                      0.089     5.931 r  f[58]_INST_0_i_6/O
+                         net (fo=2, routed)           0.049     5.980    p_374_in
+    SLICE_X106Y464       LUT6 (Prop_H6LUT_SLICEL_I5_O)
+                                                      0.099     6.079 r  f[63]_INST_0_i_7/O
+                         net (fo=1, routed)           0.189     6.268    f[63]_INST_0_i_7_n_0
+    SLICE_X103Y465       LUT6 (Prop_A6LUT_SLICEL_I0_O)
+                                                      0.035     6.303 r  f[63]_INST_0_i_6/O
+                         net (fo=2, routed)           0.176     6.479    p_349_in
+    SLICE_X98Y465        LUT6 (Prop_A6LUT_SLICEL_I5_O)
+                                                      0.035     6.514 r  f[68]_INST_0_i_7/O
+                         net (fo=1, routed)           0.040     6.554    f[68]_INST_0_i_7_n_0
+    SLICE_X98Y465        LUT6 (Prop_C6LUT_SLICEL_I0_O)
+                                                      0.035     6.589 r  f[68]_INST_0_i_6/O
+                         net (fo=2, routed)           0.087     6.676    p_324_in
+    SLICE_X97Y465        LUT6 (Prop_C6LUT_SLICEM_I5_O)
+                                                      0.037     6.713 r  f[73]_INST_0_i_7/O
+                         net (fo=1, routed)           0.093     6.806    f[73]_INST_0_i_7_n_0
+    SLICE_X97Y467        LUT6 (Prop_C6LUT_SLICEM_I0_O)
+                                                      0.037     6.843 r  f[73]_INST_0_i_6/O
+                         net (fo=2, routed)           0.342     7.185    p_299_in
+    SLICE_X94Y471        LUT6 (Prop_C6LUT_SLICEL_I5_O)
+                                                      0.035     7.220 r  f[78]_INST_0_i_7/O
+                         net (fo=1, routed)           0.041     7.261    f[78]_INST_0_i_7_n_0
+    SLICE_X94Y471        LUT6 (Prop_D6LUT_SLICEL_I0_O)
+                                                      0.036     7.297 r  f[78]_INST_0_i_6/O
+                         net (fo=2, routed)           0.044     7.341    p_274_in
+    SLICE_X94Y471        LUT6 (Prop_E6LUT_SLICEL_I5_O)
+                                                      0.035     7.376 r  f[83]_INST_0_i_7/O
+                         net (fo=1, routed)           0.380     7.756    f[83]_INST_0_i_7_n_0
+    SLICE_X91Y496        LUT6 (Prop_E6LUT_SLICEL_I0_O)
+                                                      0.035     7.791 r  f[83]_INST_0_i_6/O
+                         net (fo=2, routed)           0.044     7.835    p_249_in
+    SLICE_X91Y496        LUT6 (Prop_C6LUT_SLICEL_I5_O)
+                                                      0.035     7.870 r  f[88]_INST_0_i_7/O
+                         net (fo=1, routed)           0.088     7.958    f[88]_INST_0_i_7_n_0
+    SLICE_X90Y496        LUT6 (Prop_C6LUT_SLICEM_I0_O)
+                                                      0.037     7.995 r  f[88]_INST_0_i_6/O
+                         net (fo=2, routed)           0.099     8.094    p_224_in
+    SLICE_X90Y498        LUT6 (Prop_C6LUT_SLICEM_I5_O)
+                                                      0.037     8.131 r  f[93]_INST_0_i_7/O
+                         net (fo=1, routed)           0.040     8.171    f[93]_INST_0_i_7_n_0
+    SLICE_X90Y498        LUT6 (Prop_D6LUT_SLICEM_I0_O)
+                                                      0.037     8.208 r  f[93]_INST_0_i_6/O
+                         net (fo=2, routed)           0.200     8.408    p_199_in
+    SLICE_X89Y503        LUT5 (Prop_E6LUT_SLICEL_I0_O)
+                                                      0.035     8.443 r  f[93]_INST_0_i_5/O
+                         net (fo=1, routed)           0.038     8.481    p_189_in
+    SLICE_X89Y503        LUT5 (Prop_C6LUT_SLICEL_I0_O)
+                                                      0.035     8.516 r  f[93]_INST_0_i_4/O
+                         net (fo=2, routed)           0.094     8.611    p_179_in
+    SLICE_X89Y505        LUT5 (Prop_C6LUT_SLICEL_I0_O)
+                                                      0.035     8.646 r  f[94]_INST_0_i_4/O
+                         net (fo=3, routed)           0.096     8.742    p_169_in
+    SLICE_X89Y507        LUT5 (Prop_A6LUT_SLICEL_I0_O)
+                                                      0.035     8.777 r  f[96]_INST_0_i_4/O
+                         net (fo=2, routed)           0.044     8.821    p_159_in
+    SLICE_X89Y507        LUT3 (Prop_C6LUT_SLICEL_I2_O)
+                                                      0.035     8.856 r  f[96]_INST_0_i_1/O
+                         net (fo=1, routed)           3.574    12.430    f[96]_INST_0_i_1_n_0
+    SLR Crossing[1->2]   
+    H14                  OBUF (Prop_OUTBUF_HPIOB_M_I_O)
+                                                      0.933    13.363 r  f[96]_INST_0/O
+                         net (fo=0)                   0.000    13.363    f[96]
+    H14                                                               r  f[96] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                    5.000     5.000    
+                         output delay                -0.000     5.000    
+  -------------------------------------------------------------------
+                         required time                          5.000    
+                         arrival time                         -13.363    
+  -------------------------------------------------------------------
+                         slack                                 -8.363    
+
+Slack (VIOLATED) :        -8.315ns  (required time - arrival time)
+  Source:                 b[2]
+                            (input port)
+  Destination:            f[94]
+  Path Group:             **default**
+  Path Type:              Max at Slow Process Corner
+  Requirement:            5.000ns  (MaxDelay Path 5.000ns)
+  Data Path Delay:        13.315ns  (logic 3.240ns (24.336%)  route 10.075ns (75.664%))
+  Logic Levels:           42  (IBUFCTRL=1 INBUF=1 LUT3=1 LUT5=3 LUT6=35 OBUF=1)
+  Output Delay:           0.000ns
+  Timing Exception:       MaxDelay Path 5.000ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    AW21                                              0.000     0.000 f  b[2] (IN)
+                         net (fo=0)                   0.000     0.000    f[2]_INST_0_i_3/I
+    AW21                 INBUF (Prop_INBUF_HPIOB_M_PAD_O)
+                                                      0.593     0.593 f  f[2]_INST_0_i_3/INBUF_INST/O
+                         net (fo=1, routed)           0.000     0.593    f[2]_INST_0_i_3/OUT
+    AW21                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000     0.593 f  f[2]_INST_0_i_3/IBUFCTRL_INST/O
+                         net (fo=2, routed)           2.322     2.915    f[2]_INST_0_i_3_n_0
+    SLICE_X101Y472       LUT6 (Prop_G6LUT_SLICEL_I5_O)
+                                                      0.050     2.965 r  f[3]_INST_0_i_4/O
+                         net (fo=4, routed)           0.094     3.059    p_624_in
+    SLICE_X101Y472       LUT6 (Prop_F6LUT_SLICEL_I5_O)
+                                                      0.097     3.156 r  f[13]_INST_0_i_7/O
+                         net (fo=1, routed)           0.213     3.369    f[13]_INST_0_i_7_n_0
+    SLICE_X101Y481       LUT6 (Prop_H6LUT_SLICEL_I0_O)
+                                                      0.036     3.405 r  f[13]_INST_0_i_6/O
+                         net (fo=2, routed)           0.208     3.613    p_599_in
+    SLICE_X106Y481       LUT6 (Prop_H6LUT_SLICEL_I5_O)
+                                                      0.036     3.649 r  f[18]_INST_0_i_7/O
+                         net (fo=1, routed)           0.089     3.738    f[18]_INST_0_i_7_n_0
+    SLICE_X107Y481       LUT6 (Prop_G6LUT_SLICEM_I0_O)
+                                                      0.037     3.775 r  f[18]_INST_0_i_6/O
+                         net (fo=2, routed)           0.152     3.927    p_574_in
+    SLICE_X108Y479       LUT6 (Prop_E6LUT_SLICEM_I5_O)
+                                                      0.037     3.964 r  f[23]_INST_0_i_7/O
+                         net (fo=1, routed)           0.040     4.004    f[23]_INST_0_i_7_n_0
+    SLICE_X108Y479       LUT6 (Prop_C6LUT_SLICEM_I0_O)
+                                                      0.037     4.041 r  f[23]_INST_0_i_6/O
+                         net (fo=2, routed)           0.138     4.179    p_549_in
+    SLICE_X108Y476       LUT6 (Prop_C6LUT_SLICEM_I5_O)
+                                                      0.037     4.216 r  f[28]_INST_0_i_7/O
+                         net (fo=1, routed)           0.040     4.256    f[28]_INST_0_i_7_n_0
+    SLICE_X108Y476       LUT6 (Prop_D6LUT_SLICEM_I0_O)
+                                                      0.037     4.293 r  f[28]_INST_0_i_6/O
+                         net (fo=2, routed)           0.085     4.379    p_524_in
+    SLICE_X109Y476       LUT6 (Prop_D6LUT_SLICEL_I5_O)
+                                                      0.050     4.429 r  f[33]_INST_0_i_7/O
+                         net (fo=1, routed)           0.038     4.467    f[33]_INST_0_i_7_n_0
+    SLICE_X109Y476       LUT6 (Prop_F6LUT_SLICEL_I0_O)
+                                                      0.035     4.502 r  f[33]_INST_0_i_6/O
+                         net (fo=2, routed)           0.091     4.593    p_499_in
+    SLICE_X110Y476       LUT6 (Prop_F6LUT_SLICEM_I5_O)
+                                                      0.051     4.644 r  f[38]_INST_0_i_7/O
+                         net (fo=1, routed)           0.087     4.731    f[38]_INST_0_i_7_n_0
+    SLICE_X110Y475       LUT6 (Prop_H6LUT_SLICEM_I0_O)
+                                                      0.053     4.784 r  f[38]_INST_0_i_6/O
+                         net (fo=2, routed)           0.203     4.986    p_474_in
+    SLICE_X109Y470       LUT6 (Prop_E6LUT_SLICEL_I5_O)
+                                                      0.051     5.037 r  f[43]_INST_0_i_7/O
+                         net (fo=1, routed)           0.038     5.075    f[43]_INST_0_i_7_n_0
+    SLICE_X109Y470       LUT6 (Prop_C6LUT_SLICEL_I0_O)
+                                                      0.035     5.110 r  f[43]_INST_0_i_6/O
+                         net (fo=2, routed)           0.098     5.209    p_449_in
+    SLICE_X109Y468       LUT6 (Prop_A6LUT_SLICEL_I5_O)
+                                                      0.035     5.244 r  f[48]_INST_0_i_7/O
+                         net (fo=1, routed)           0.040     5.284    f[48]_INST_0_i_7_n_0
+    SLICE_X109Y468       LUT6 (Prop_C6LUT_SLICEL_I0_O)
+                                                      0.035     5.319 r  f[48]_INST_0_i_6/O
+                         net (fo=2, routed)           0.098     5.417    p_424_in
+    SLICE_X109Y466       LUT6 (Prop_C6LUT_SLICEL_I5_O)
+                                                      0.035     5.452 r  f[53]_INST_0_i_7/O
+                         net (fo=1, routed)           0.044     5.496    f[53]_INST_0_i_7_n_0
+    SLICE_X109Y465       LUT6 (Prop_H6LUT_SLICEL_I0_O)
+                                                      0.036     5.532 r  f[53]_INST_0_i_6/O
+                         net (fo=2, routed)           0.187     5.718    p_399_in
+    SLICE_X106Y464       LUT6 (Prop_C6LUT_SLICEL_I5_O)
+                                                      0.035     5.753 r  f[58]_INST_0_i_7/O
+                         net (fo=1, routed)           0.089     5.842    f[58]_INST_0_i_7_n_0
+    SLICE_X106Y464       LUT6 (Prop_D6LUT_SLICEL_I0_O)
+                                                      0.089     5.931 r  f[58]_INST_0_i_6/O
+                         net (fo=2, routed)           0.049     5.980    p_374_in
+    SLICE_X106Y464       LUT6 (Prop_H6LUT_SLICEL_I5_O)
+                                                      0.099     6.079 r  f[63]_INST_0_i_7/O
+                         net (fo=1, routed)           0.189     6.268    f[63]_INST_0_i_7_n_0
+    SLICE_X103Y465       LUT6 (Prop_A6LUT_SLICEL_I0_O)
+                                                      0.035     6.303 r  f[63]_INST_0_i_6/O
+                         net (fo=2, routed)           0.176     6.479    p_349_in
+    SLICE_X98Y465        LUT6 (Prop_A6LUT_SLICEL_I5_O)
+                                                      0.035     6.514 r  f[68]_INST_0_i_7/O
+                         net (fo=1, routed)           0.040     6.554    f[68]_INST_0_i_7_n_0
+    SLICE_X98Y465        LUT6 (Prop_C6LUT_SLICEL_I0_O)
+                                                      0.035     6.589 r  f[68]_INST_0_i_6/O
+                         net (fo=2, routed)           0.087     6.676    p_324_in
+    SLICE_X97Y465        LUT6 (Prop_C6LUT_SLICEM_I5_O)
+                                                      0.037     6.713 r  f[73]_INST_0_i_7/O
+                         net (fo=1, routed)           0.093     6.806    f[73]_INST_0_i_7_n_0
+    SLICE_X97Y467        LUT6 (Prop_C6LUT_SLICEM_I0_O)
+                                                      0.037     6.843 r  f[73]_INST_0_i_6/O
+                         net (fo=2, routed)           0.342     7.185    p_299_in
+    SLICE_X94Y471        LUT6 (Prop_C6LUT_SLICEL_I5_O)
+                                                      0.035     7.220 r  f[78]_INST_0_i_7/O
+                         net (fo=1, routed)           0.041     7.261    f[78]_INST_0_i_7_n_0
+    SLICE_X94Y471        LUT6 (Prop_D6LUT_SLICEL_I0_O)
+                                                      0.036     7.297 r  f[78]_INST_0_i_6/O
+                         net (fo=2, routed)           0.044     7.341    p_274_in
+    SLICE_X94Y471        LUT6 (Prop_E6LUT_SLICEL_I5_O)
+                                                      0.035     7.376 r  f[83]_INST_0_i_7/O
+                         net (fo=1, routed)           0.380     7.756    f[83]_INST_0_i_7_n_0
+    SLICE_X91Y496        LUT6 (Prop_E6LUT_SLICEL_I0_O)
+                                                      0.035     7.791 r  f[83]_INST_0_i_6/O
+                         net (fo=2, routed)           0.044     7.835    p_249_in
+    SLICE_X91Y496        LUT6 (Prop_C6LUT_SLICEL_I5_O)
+                                                      0.035     7.870 r  f[88]_INST_0_i_7/O
+                         net (fo=1, routed)           0.088     7.958    f[88]_INST_0_i_7_n_0
+    SLICE_X90Y496        LUT6 (Prop_C6LUT_SLICEM_I0_O)
+                                                      0.037     7.995 r  f[88]_INST_0_i_6/O
+                         net (fo=2, routed)           0.099     8.094    p_224_in
+    SLICE_X90Y498        LUT6 (Prop_C6LUT_SLICEM_I5_O)
+                                                      0.037     8.131 r  f[93]_INST_0_i_7/O
+                         net (fo=1, routed)           0.040     8.171    f[93]_INST_0_i_7_n_0
+    SLICE_X90Y498        LUT6 (Prop_D6LUT_SLICEM_I0_O)
+                                                      0.037     8.208 r  f[93]_INST_0_i_6/O
+                         net (fo=2, routed)           0.200     8.408    p_199_in
+    SLICE_X89Y503        LUT5 (Prop_E6LUT_SLICEL_I0_O)
+                                                      0.035     8.443 r  f[93]_INST_0_i_5/O
+                         net (fo=1, routed)           0.038     8.481    p_189_in
+    SLICE_X89Y503        LUT5 (Prop_C6LUT_SLICEL_I0_O)
+                                                      0.035     8.516 r  f[93]_INST_0_i_4/O
+                         net (fo=2, routed)           0.094     8.611    p_179_in
+    SLICE_X89Y505        LUT5 (Prop_C6LUT_SLICEL_I0_O)
+                                                      0.035     8.646 r  f[94]_INST_0_i_4/O
+                         net (fo=3, routed)           0.053     8.698    p_169_in
+    SLICE_X89Y505        LUT3 (Prop_A6LUT_SLICEL_I2_O)
+                                                      0.090     8.788 r  f[94]_INST_0_i_1/O
+                         net (fo=1, routed)           3.583    12.371    f[94]_INST_0_i_1_n_0
+    SLR Crossing[1->2]   
+    F13                  OBUF (Prop_OUTBUF_HPIOB_M_I_O)
+                                                      0.944    13.315 r  f[94]_INST_0/O
+                         net (fo=0)                   0.000    13.315    f[94]
+    F13                                                               r  f[94] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                    5.000     5.000    
+                         output delay                -0.000     5.000    
+  -------------------------------------------------------------------
+                         required time                          5.000    
+                         arrival time                         -13.315    
+  -------------------------------------------------------------------
+                         slack                                 -8.315    
+
+Slack (VIOLATED) :        -8.293ns  (required time - arrival time)
+  Source:                 b[2]
+                            (input port)
+  Destination:            f[98]
+  Path Group:             **default**
+  Path Type:              Max at Slow Process Corner
+  Requirement:            5.000ns  (MaxDelay Path 5.000ns)
+  Data Path Delay:        13.293ns  (logic 3.198ns (24.053%)  route 10.096ns (75.947%))
+  Logic Levels:           43  (IBUFCTRL=1 INBUF=1 LUT5=3 LUT6=37 OBUF=1)
+  Output Delay:           0.000ns
+  Timing Exception:       MaxDelay Path 5.000ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    AW21                                              0.000     0.000 f  b[2] (IN)
+                         net (fo=0)                   0.000     0.000    f[2]_INST_0_i_3/I
+    AW21                 INBUF (Prop_INBUF_HPIOB_M_PAD_O)
+                                                      0.593     0.593 f  f[2]_INST_0_i_3/INBUF_INST/O
+                         net (fo=1, routed)           0.000     0.593    f[2]_INST_0_i_3/OUT
+    AW21                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000     0.593 f  f[2]_INST_0_i_3/IBUFCTRL_INST/O
+                         net (fo=2, routed)           2.322     2.915    f[2]_INST_0_i_3_n_0
+    SLICE_X101Y472       LUT6 (Prop_G6LUT_SLICEL_I5_O)
+                                                      0.050     2.965 r  f[3]_INST_0_i_4/O
+                         net (fo=4, routed)           0.094     3.059    p_624_in
+    SLICE_X101Y472       LUT6 (Prop_F6LUT_SLICEL_I5_O)
+                                                      0.097     3.156 r  f[13]_INST_0_i_7/O
+                         net (fo=1, routed)           0.213     3.369    f[13]_INST_0_i_7_n_0
+    SLICE_X101Y481       LUT6 (Prop_H6LUT_SLICEL_I0_O)
+                                                      0.036     3.405 r  f[13]_INST_0_i_6/O
+                         net (fo=2, routed)           0.208     3.613    p_599_in
+    SLICE_X106Y481       LUT6 (Prop_H6LUT_SLICEL_I5_O)
+                                                      0.036     3.649 r  f[18]_INST_0_i_7/O
+                         net (fo=1, routed)           0.089     3.738    f[18]_INST_0_i_7_n_0
+    SLICE_X107Y481       LUT6 (Prop_G6LUT_SLICEM_I0_O)
+                                                      0.037     3.775 r  f[18]_INST_0_i_6/O
+                         net (fo=2, routed)           0.152     3.927    p_574_in
+    SLICE_X108Y479       LUT6 (Prop_E6LUT_SLICEM_I5_O)
+                                                      0.037     3.964 r  f[23]_INST_0_i_7/O
+                         net (fo=1, routed)           0.040     4.004    f[23]_INST_0_i_7_n_0
+    SLICE_X108Y479       LUT6 (Prop_C6LUT_SLICEM_I0_O)
+                                                      0.037     4.041 r  f[23]_INST_0_i_6/O
+                         net (fo=2, routed)           0.138     4.179    p_549_in
+    SLICE_X108Y476       LUT6 (Prop_C6LUT_SLICEM_I5_O)
+                                                      0.037     4.216 r  f[28]_INST_0_i_7/O
+                         net (fo=1, routed)           0.040     4.256    f[28]_INST_0_i_7_n_0
+    SLICE_X108Y476       LUT6 (Prop_D6LUT_SLICEM_I0_O)
+                                                      0.037     4.293 r  f[28]_INST_0_i_6/O
+                         net (fo=2, routed)           0.085     4.379    p_524_in
+    SLICE_X109Y476       LUT6 (Prop_D6LUT_SLICEL_I5_O)
+                                                      0.050     4.429 r  f[33]_INST_0_i_7/O
+                         net (fo=1, routed)           0.038     4.467    f[33]_INST_0_i_7_n_0
+    SLICE_X109Y476       LUT6 (Prop_F6LUT_SLICEL_I0_O)
+                                                      0.035     4.502 r  f[33]_INST_0_i_6/O
+                         net (fo=2, routed)           0.091     4.593    p_499_in
+    SLICE_X110Y476       LUT6 (Prop_F6LUT_SLICEM_I5_O)
+                                                      0.051     4.644 r  f[38]_INST_0_i_7/O
+                         net (fo=1, routed)           0.087     4.731    f[38]_INST_0_i_7_n_0
+    SLICE_X110Y475       LUT6 (Prop_H6LUT_SLICEM_I0_O)
+                                                      0.053     4.784 r  f[38]_INST_0_i_6/O
+                         net (fo=2, routed)           0.203     4.986    p_474_in
+    SLICE_X109Y470       LUT6 (Prop_E6LUT_SLICEL_I5_O)
+                                                      0.051     5.037 r  f[43]_INST_0_i_7/O
+                         net (fo=1, routed)           0.038     5.075    f[43]_INST_0_i_7_n_0
+    SLICE_X109Y470       LUT6 (Prop_C6LUT_SLICEL_I0_O)
+                                                      0.035     5.110 r  f[43]_INST_0_i_6/O
+                         net (fo=2, routed)           0.098     5.209    p_449_in
+    SLICE_X109Y468       LUT6 (Prop_A6LUT_SLICEL_I5_O)
+                                                      0.035     5.244 r  f[48]_INST_0_i_7/O
+                         net (fo=1, routed)           0.040     5.284    f[48]_INST_0_i_7_n_0
+    SLICE_X109Y468       LUT6 (Prop_C6LUT_SLICEL_I0_O)
+                                                      0.035     5.319 r  f[48]_INST_0_i_6/O
+                         net (fo=2, routed)           0.098     5.417    p_424_in
+    SLICE_X109Y466       LUT6 (Prop_C6LUT_SLICEL_I5_O)
+                                                      0.035     5.452 r  f[53]_INST_0_i_7/O
+                         net (fo=1, routed)           0.044     5.496    f[53]_INST_0_i_7_n_0
+    SLICE_X109Y465       LUT6 (Prop_H6LUT_SLICEL_I0_O)
+                                                      0.036     5.532 r  f[53]_INST_0_i_6/O
+                         net (fo=2, routed)           0.187     5.718    p_399_in
+    SLICE_X106Y464       LUT6 (Prop_C6LUT_SLICEL_I5_O)
+                                                      0.035     5.753 r  f[58]_INST_0_i_7/O
+                         net (fo=1, routed)           0.089     5.842    f[58]_INST_0_i_7_n_0
+    SLICE_X106Y464       LUT6 (Prop_D6LUT_SLICEL_I0_O)
+                                                      0.089     5.931 r  f[58]_INST_0_i_6/O
+                         net (fo=2, routed)           0.049     5.980    p_374_in
+    SLICE_X106Y464       LUT6 (Prop_H6LUT_SLICEL_I5_O)
+                                                      0.099     6.079 r  f[63]_INST_0_i_7/O
+                         net (fo=1, routed)           0.189     6.268    f[63]_INST_0_i_7_n_0
+    SLICE_X103Y465       LUT6 (Prop_A6LUT_SLICEL_I0_O)
+                                                      0.035     6.303 r  f[63]_INST_0_i_6/O
+                         net (fo=2, routed)           0.176     6.479    p_349_in
+    SLICE_X98Y465        LUT6 (Prop_A6LUT_SLICEL_I5_O)
+                                                      0.035     6.514 r  f[68]_INST_0_i_7/O
+                         net (fo=1, routed)           0.040     6.554    f[68]_INST_0_i_7_n_0
+    SLICE_X98Y465        LUT6 (Prop_C6LUT_SLICEL_I0_O)
+                                                      0.035     6.589 r  f[68]_INST_0_i_6/O
+                         net (fo=2, routed)           0.087     6.676    p_324_in
+    SLICE_X97Y465        LUT6 (Prop_C6LUT_SLICEM_I5_O)
+                                                      0.037     6.713 r  f[73]_INST_0_i_7/O
+                         net (fo=1, routed)           0.093     6.806    f[73]_INST_0_i_7_n_0
+    SLICE_X97Y467        LUT6 (Prop_C6LUT_SLICEM_I0_O)
+                                                      0.037     6.843 r  f[73]_INST_0_i_6/O
+                         net (fo=2, routed)           0.342     7.185    p_299_in
+    SLICE_X94Y471        LUT6 (Prop_C6LUT_SLICEL_I5_O)
+                                                      0.035     7.220 r  f[78]_INST_0_i_7/O
+                         net (fo=1, routed)           0.041     7.261    f[78]_INST_0_i_7_n_0
+    SLICE_X94Y471        LUT6 (Prop_D6LUT_SLICEL_I0_O)
+                                                      0.036     7.297 r  f[78]_INST_0_i_6/O
+                         net (fo=2, routed)           0.044     7.341    p_274_in
+    SLICE_X94Y471        LUT6 (Prop_E6LUT_SLICEL_I5_O)
+                                                      0.035     7.376 r  f[83]_INST_0_i_7/O
+                         net (fo=1, routed)           0.380     7.756    f[83]_INST_0_i_7_n_0
+    SLICE_X91Y496        LUT6 (Prop_E6LUT_SLICEL_I0_O)
+                                                      0.035     7.791 r  f[83]_INST_0_i_6/O
+                         net (fo=2, routed)           0.044     7.835    p_249_in
+    SLICE_X91Y496        LUT6 (Prop_C6LUT_SLICEL_I5_O)
+                                                      0.035     7.870 r  f[88]_INST_0_i_7/O
+                         net (fo=1, routed)           0.088     7.958    f[88]_INST_0_i_7_n_0
+    SLICE_X90Y496        LUT6 (Prop_C6LUT_SLICEM_I0_O)
+                                                      0.037     7.995 r  f[88]_INST_0_i_6/O
+                         net (fo=2, routed)           0.099     8.094    p_224_in
+    SLICE_X90Y498        LUT6 (Prop_C6LUT_SLICEM_I5_O)
+                                                      0.037     8.131 r  f[93]_INST_0_i_7/O
+                         net (fo=1, routed)           0.040     8.171    f[93]_INST_0_i_7_n_0
+    SLICE_X90Y498        LUT6 (Prop_D6LUT_SLICEM_I0_O)
+                                                      0.037     8.208 r  f[93]_INST_0_i_6/O
+                         net (fo=2, routed)           0.042     8.250    p_199_in
+    SLICE_X90Y498        LUT6 (Prop_F6LUT_SLICEM_I5_O)
+                                                      0.037     8.287 r  f[98]_INST_0_i_7/O
+                         net (fo=1, routed)           0.040     8.327    f[98]_INST_0_i_7_n_0
+    SLICE_X90Y498        LUT6 (Prop_G6LUT_SLICEM_I0_O)
+                                                      0.037     8.364 r  f[98]_INST_0_i_6/O
+                         net (fo=2, routed)           0.369     8.733    p_174_in
+    SLICE_X85Y510        LUT5 (Prop_E6LUT_SLICEL_I0_O)
+                                                      0.035     8.768 r  f[98]_INST_0_i_5/O
+                         net (fo=1, routed)           0.038     8.806    p_164_in
+    SLICE_X85Y510        LUT5 (Prop_C6LUT_SLICEL_I0_O)
+                                                      0.035     8.841 r  f[98]_INST_0_i_4/O
+                         net (fo=2, routed)           0.198     9.040    p_154_in
+    SLICE_X86Y514        LUT5 (Prop_A6LUT_SLICEL_I4_O)
+                                                      0.035     9.075 r  f[98]_INST_0_i_1/O
+                         net (fo=1, routed)           3.302    12.377    f[98]_INST_0_i_1_n_0
+    SLR Crossing[1->2]   
+    J16                  OBUF (Prop_OUTBUF_HPIOB_M_I_O)
+                                                      0.917    13.293 r  f[98]_INST_0/O
+                         net (fo=0)                   0.000    13.293    f[98]
+    J16                                                               r  f[98] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                    5.000     5.000    
+                         output delay                -0.000     5.000    
+  -------------------------------------------------------------------
+                         required time                          5.000    
+                         arrival time                         -13.293    
+  -------------------------------------------------------------------
+                         slack                                 -8.293    
+
+Slack (VIOLATED) :        -8.283ns  (required time - arrival time)
+  Source:                 b[2]
+                            (input port)
+  Destination:            f[92]
+  Path Group:             **default**
+  Path Type:              Max at Slow Process Corner
+  Requirement:            5.000ns  (MaxDelay Path 5.000ns)
+  Data Path Delay:        13.283ns  (logic 3.175ns (23.901%)  route 10.108ns (76.099%))
+  Logic Levels:           41  (IBUFCTRL=1 INBUF=1 LUT5=5 LUT6=33 OBUF=1)
+  Output Delay:           0.000ns
+  Timing Exception:       MaxDelay Path 5.000ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    AW21                                              0.000     0.000 f  b[2] (IN)
+                         net (fo=0)                   0.000     0.000    f[2]_INST_0_i_3/I
+    AW21                 INBUF (Prop_INBUF_HPIOB_M_PAD_O)
+                                                      0.593     0.593 f  f[2]_INST_0_i_3/INBUF_INST/O
+                         net (fo=1, routed)           0.000     0.593    f[2]_INST_0_i_3/OUT
+    AW21                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000     0.593 f  f[2]_INST_0_i_3/IBUFCTRL_INST/O
+                         net (fo=2, routed)           2.322     2.915    f[2]_INST_0_i_3_n_0
+    SLICE_X101Y472       LUT6 (Prop_G6LUT_SLICEL_I5_O)
+                                                      0.050     2.965 r  f[3]_INST_0_i_4/O
+                         net (fo=4, routed)           0.094     3.059    p_624_in
+    SLICE_X101Y472       LUT6 (Prop_F6LUT_SLICEL_I5_O)
+                                                      0.097     3.156 r  f[13]_INST_0_i_7/O
+                         net (fo=1, routed)           0.213     3.369    f[13]_INST_0_i_7_n_0
+    SLICE_X101Y481       LUT6 (Prop_H6LUT_SLICEL_I0_O)
+                                                      0.036     3.405 r  f[13]_INST_0_i_6/O
+                         net (fo=2, routed)           0.208     3.613    p_599_in
+    SLICE_X106Y481       LUT6 (Prop_H6LUT_SLICEL_I5_O)
+                                                      0.036     3.649 r  f[18]_INST_0_i_7/O
+                         net (fo=1, routed)           0.089     3.738    f[18]_INST_0_i_7_n_0
+    SLICE_X107Y481       LUT6 (Prop_G6LUT_SLICEM_I0_O)
+                                                      0.037     3.775 r  f[18]_INST_0_i_6/O
+                         net (fo=2, routed)           0.152     3.927    p_574_in
+    SLICE_X108Y479       LUT6 (Prop_E6LUT_SLICEM_I5_O)
+                                                      0.037     3.964 r  f[23]_INST_0_i_7/O
+                         net (fo=1, routed)           0.040     4.004    f[23]_INST_0_i_7_n_0
+    SLICE_X108Y479       LUT6 (Prop_C6LUT_SLICEM_I0_O)
+                                                      0.037     4.041 r  f[23]_INST_0_i_6/O
+                         net (fo=2, routed)           0.138     4.179    p_549_in
+    SLICE_X108Y476       LUT6 (Prop_C6LUT_SLICEM_I5_O)
+                                                      0.037     4.216 r  f[28]_INST_0_i_7/O
+                         net (fo=1, routed)           0.040     4.256    f[28]_INST_0_i_7_n_0
+    SLICE_X108Y476       LUT6 (Prop_D6LUT_SLICEM_I0_O)
+                                                      0.037     4.293 r  f[28]_INST_0_i_6/O
+                         net (fo=2, routed)           0.085     4.379    p_524_in
+    SLICE_X109Y476       LUT6 (Prop_D6LUT_SLICEL_I5_O)
+                                                      0.050     4.429 r  f[33]_INST_0_i_7/O
+                         net (fo=1, routed)           0.038     4.467    f[33]_INST_0_i_7_n_0
+    SLICE_X109Y476       LUT6 (Prop_F6LUT_SLICEL_I0_O)
+                                                      0.035     4.502 r  f[33]_INST_0_i_6/O
+                         net (fo=2, routed)           0.091     4.593    p_499_in
+    SLICE_X110Y476       LUT6 (Prop_F6LUT_SLICEM_I5_O)
+                                                      0.051     4.644 r  f[38]_INST_0_i_7/O
+                         net (fo=1, routed)           0.087     4.731    f[38]_INST_0_i_7_n_0
+    SLICE_X110Y475       LUT6 (Prop_H6LUT_SLICEM_I0_O)
+                                                      0.053     4.784 r  f[38]_INST_0_i_6/O
+                         net (fo=2, routed)           0.203     4.986    p_474_in
+    SLICE_X109Y470       LUT6 (Prop_E6LUT_SLICEL_I5_O)
+                                                      0.051     5.037 r  f[43]_INST_0_i_7/O
+                         net (fo=1, routed)           0.038     5.075    f[43]_INST_0_i_7_n_0
+    SLICE_X109Y470       LUT6 (Prop_C6LUT_SLICEL_I0_O)
+                                                      0.035     5.110 r  f[43]_INST_0_i_6/O
+                         net (fo=2, routed)           0.098     5.209    p_449_in
+    SLICE_X109Y468       LUT6 (Prop_A6LUT_SLICEL_I5_O)
+                                                      0.035     5.244 r  f[48]_INST_0_i_7/O
+                         net (fo=1, routed)           0.040     5.284    f[48]_INST_0_i_7_n_0
+    SLICE_X109Y468       LUT6 (Prop_C6LUT_SLICEL_I0_O)
+                                                      0.035     5.319 r  f[48]_INST_0_i_6/O
+                         net (fo=2, routed)           0.098     5.417    p_424_in
+    SLICE_X109Y466       LUT6 (Prop_C6LUT_SLICEL_I5_O)
+                                                      0.035     5.452 r  f[53]_INST_0_i_7/O
+                         net (fo=1, routed)           0.044     5.496    f[53]_INST_0_i_7_n_0
+    SLICE_X109Y465       LUT6 (Prop_H6LUT_SLICEL_I0_O)
+                                                      0.036     5.532 r  f[53]_INST_0_i_6/O
+                         net (fo=2, routed)           0.187     5.718    p_399_in
+    SLICE_X106Y464       LUT6 (Prop_C6LUT_SLICEL_I5_O)
+                                                      0.035     5.753 r  f[58]_INST_0_i_7/O
+                         net (fo=1, routed)           0.089     5.842    f[58]_INST_0_i_7_n_0
+    SLICE_X106Y464       LUT6 (Prop_D6LUT_SLICEL_I0_O)
+                                                      0.089     5.931 r  f[58]_INST_0_i_6/O
+                         net (fo=2, routed)           0.049     5.980    p_374_in
+    SLICE_X106Y464       LUT6 (Prop_H6LUT_SLICEL_I5_O)
+                                                      0.099     6.079 r  f[63]_INST_0_i_7/O
+                         net (fo=1, routed)           0.189     6.268    f[63]_INST_0_i_7_n_0
+    SLICE_X103Y465       LUT6 (Prop_A6LUT_SLICEL_I0_O)
+                                                      0.035     6.303 r  f[63]_INST_0_i_6/O
+                         net (fo=2, routed)           0.176     6.479    p_349_in
+    SLICE_X98Y465        LUT6 (Prop_A6LUT_SLICEL_I5_O)
+                                                      0.035     6.514 r  f[68]_INST_0_i_7/O
+                         net (fo=1, routed)           0.040     6.554    f[68]_INST_0_i_7_n_0
+    SLICE_X98Y465        LUT6 (Prop_C6LUT_SLICEL_I0_O)
+                                                      0.035     6.589 r  f[68]_INST_0_i_6/O
+                         net (fo=2, routed)           0.087     6.676    p_324_in
+    SLICE_X97Y465        LUT6 (Prop_C6LUT_SLICEM_I5_O)
+                                                      0.037     6.713 r  f[73]_INST_0_i_7/O
+                         net (fo=1, routed)           0.093     6.806    f[73]_INST_0_i_7_n_0
+    SLICE_X97Y467        LUT6 (Prop_C6LUT_SLICEM_I0_O)
+                                                      0.037     6.843 r  f[73]_INST_0_i_6/O
+                         net (fo=2, routed)           0.342     7.185    p_299_in
+    SLICE_X94Y471        LUT6 (Prop_C6LUT_SLICEL_I5_O)
+                                                      0.035     7.220 r  f[78]_INST_0_i_7/O
+                         net (fo=1, routed)           0.041     7.261    f[78]_INST_0_i_7_n_0
+    SLICE_X94Y471        LUT6 (Prop_D6LUT_SLICEL_I0_O)
+                                                      0.036     7.297 r  f[78]_INST_0_i_6/O
+                         net (fo=2, routed)           0.044     7.341    p_274_in
+    SLICE_X94Y471        LUT6 (Prop_E6LUT_SLICEL_I5_O)
+                                                      0.035     7.376 r  f[83]_INST_0_i_7/O
+                         net (fo=1, routed)           0.380     7.756    f[83]_INST_0_i_7_n_0
+    SLICE_X91Y496        LUT6 (Prop_E6LUT_SLICEL_I0_O)
+                                                      0.035     7.791 r  f[83]_INST_0_i_6/O
+                         net (fo=2, routed)           0.044     7.835    p_249_in
+    SLICE_X91Y496        LUT6 (Prop_C6LUT_SLICEL_I5_O)
+                                                      0.035     7.870 r  f[88]_INST_0_i_7/O
+                         net (fo=1, routed)           0.088     7.958    f[88]_INST_0_i_7_n_0
+    SLICE_X90Y496        LUT6 (Prop_C6LUT_SLICEM_I0_O)
+                                                      0.037     7.995 r  f[88]_INST_0_i_6/O
+                         net (fo=2, routed)           0.137     8.132    p_224_in
+    SLICE_X91Y498        LUT5 (Prop_C6LUT_SLICEL_I0_O)
+                                                      0.035     8.167 r  f[88]_INST_0_i_5/O
+                         net (fo=1, routed)           0.041     8.208    p_214_in
+    SLICE_X91Y498        LUT5 (Prop_D6LUT_SLICEL_I0_O)
+                                                      0.036     8.244 r  f[88]_INST_0_i_4/O
+                         net (fo=2, routed)           0.095     8.339    p_204_in
+    SLICE_X89Y498        LUT5 (Prop_A6LUT_SLICEL_I0_O)
+                                                      0.050     8.389 r  f[89]_INST_0_i_4/O
+                         net (fo=3, routed)           0.654     9.044    p_194_in
+    SLICE_X89Y564        LUT5 (Prop_H6LUT_SLICEL_I0_O)
+                                                      0.051     9.095 r  f[91]_INST_0_i_4/O
+                         net (fo=2, routed)           0.097     9.192    p_184_in
+    SLICE_X89Y566        LUT5 (Prop_H6LUT_SLICEL_I4_O)
+                                                      0.036     9.228 r  f[92]_INST_0_i_1/O
+                         net (fo=1, routed)           3.116    12.344    f[92]_INST_0_i_1_n_0
+    SLR Crossing[1->2]   
+    G14                  OBUF (Prop_OUTBUF_HPIOB_M_I_O)
+                                                      0.939    13.283 r  f[92]_INST_0/O
+                         net (fo=0)                   0.000    13.283    f[92]
+    G14                                                               r  f[92] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                    5.000     5.000    
+                         output delay                -0.000     5.000    
+  -------------------------------------------------------------------
+                         required time                          5.000    
+                         arrival time                         -13.283    
+  -------------------------------------------------------------------
+                         slack                                 -8.283    
+
+Slack (VIOLATED) :        -8.263ns  (required time - arrival time)
+  Source:                 b[2]
+                            (input port)
+  Destination:            f[86]
+  Path Group:             **default**
+  Path Type:              Max at Slow Process Corner
+  Requirement:            5.000ns  (MaxDelay Path 5.000ns)
+  Data Path Delay:        13.263ns  (logic 3.301ns (24.888%)  route 9.962ns (75.112%))
+  Logic Levels:           39  (IBUFCTRL=1 INBUF=1 LUT3=1 LUT5=4 LUT6=31 OBUF=1)
+  Output Delay:           0.000ns
+  Timing Exception:       MaxDelay Path 5.000ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    AW21                                              0.000     0.000 f  b[2] (IN)
+                         net (fo=0)                   0.000     0.000    f[2]_INST_0_i_3/I
+    AW21                 INBUF (Prop_INBUF_HPIOB_M_PAD_O)
+                                                      0.593     0.593 f  f[2]_INST_0_i_3/INBUF_INST/O
+                         net (fo=1, routed)           0.000     0.593    f[2]_INST_0_i_3/OUT
+    AW21                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000     0.593 f  f[2]_INST_0_i_3/IBUFCTRL_INST/O
+                         net (fo=2, routed)           2.322     2.915    f[2]_INST_0_i_3_n_0
+    SLICE_X101Y472       LUT6 (Prop_G6LUT_SLICEL_I5_O)
+                                                      0.050     2.965 r  f[3]_INST_0_i_4/O
+                         net (fo=4, routed)           0.094     3.059    p_624_in
+    SLICE_X101Y472       LUT6 (Prop_F6LUT_SLICEL_I5_O)
+                                                      0.097     3.156 r  f[13]_INST_0_i_7/O
+                         net (fo=1, routed)           0.213     3.369    f[13]_INST_0_i_7_n_0
+    SLICE_X101Y481       LUT6 (Prop_H6LUT_SLICEL_I0_O)
+                                                      0.036     3.405 r  f[13]_INST_0_i_6/O
+                         net (fo=2, routed)           0.208     3.613    p_599_in
+    SLICE_X106Y481       LUT6 (Prop_H6LUT_SLICEL_I5_O)
+                                                      0.036     3.649 r  f[18]_INST_0_i_7/O
+                         net (fo=1, routed)           0.089     3.738    f[18]_INST_0_i_7_n_0
+    SLICE_X107Y481       LUT6 (Prop_G6LUT_SLICEM_I0_O)
+                                                      0.037     3.775 r  f[18]_INST_0_i_6/O
+                         net (fo=2, routed)           0.152     3.927    p_574_in
+    SLICE_X108Y479       LUT6 (Prop_E6LUT_SLICEM_I5_O)
+                                                      0.037     3.964 r  f[23]_INST_0_i_7/O
+                         net (fo=1, routed)           0.040     4.004    f[23]_INST_0_i_7_n_0
+    SLICE_X108Y479       LUT6 (Prop_C6LUT_SLICEM_I0_O)
+                                                      0.037     4.041 r  f[23]_INST_0_i_6/O
+                         net (fo=2, routed)           0.138     4.179    p_549_in
+    SLICE_X108Y476       LUT6 (Prop_C6LUT_SLICEM_I5_O)
+                                                      0.037     4.216 r  f[28]_INST_0_i_7/O
+                         net (fo=1, routed)           0.040     4.256    f[28]_INST_0_i_7_n_0
+    SLICE_X108Y476       LUT6 (Prop_D6LUT_SLICEM_I0_O)
+                                                      0.037     4.293 r  f[28]_INST_0_i_6/O
+                         net (fo=2, routed)           0.085     4.379    p_524_in
+    SLICE_X109Y476       LUT6 (Prop_D6LUT_SLICEL_I5_O)
+                                                      0.050     4.429 r  f[33]_INST_0_i_7/O
+                         net (fo=1, routed)           0.038     4.467    f[33]_INST_0_i_7_n_0
+    SLICE_X109Y476       LUT6 (Prop_F6LUT_SLICEL_I0_O)
+                                                      0.035     4.502 r  f[33]_INST_0_i_6/O
+                         net (fo=2, routed)           0.091     4.593    p_499_in
+    SLICE_X110Y476       LUT6 (Prop_F6LUT_SLICEM_I5_O)
+                                                      0.051     4.644 r  f[38]_INST_0_i_7/O
+                         net (fo=1, routed)           0.087     4.731    f[38]_INST_0_i_7_n_0
+    SLICE_X110Y475       LUT6 (Prop_H6LUT_SLICEM_I0_O)
+                                                      0.053     4.784 r  f[38]_INST_0_i_6/O
+                         net (fo=2, routed)           0.203     4.986    p_474_in
+    SLICE_X109Y470       LUT6 (Prop_E6LUT_SLICEL_I5_O)
+                                                      0.051     5.037 r  f[43]_INST_0_i_7/O
+                         net (fo=1, routed)           0.038     5.075    f[43]_INST_0_i_7_n_0
+    SLICE_X109Y470       LUT6 (Prop_C6LUT_SLICEL_I0_O)
+                                                      0.035     5.110 r  f[43]_INST_0_i_6/O
+                         net (fo=2, routed)           0.098     5.209    p_449_in
+    SLICE_X109Y468       LUT6 (Prop_A6LUT_SLICEL_I5_O)
+                                                      0.035     5.244 r  f[48]_INST_0_i_7/O
+                         net (fo=1, routed)           0.040     5.284    f[48]_INST_0_i_7_n_0
+    SLICE_X109Y468       LUT6 (Prop_C6LUT_SLICEL_I0_O)
+                                                      0.035     5.319 r  f[48]_INST_0_i_6/O
+                         net (fo=2, routed)           0.098     5.417    p_424_in
+    SLICE_X109Y466       LUT6 (Prop_C6LUT_SLICEL_I5_O)
+                                                      0.035     5.452 r  f[53]_INST_0_i_7/O
+                         net (fo=1, routed)           0.044     5.496    f[53]_INST_0_i_7_n_0
+    SLICE_X109Y465       LUT6 (Prop_H6LUT_SLICEL_I0_O)
+                                                      0.036     5.532 r  f[53]_INST_0_i_6/O
+                         net (fo=2, routed)           0.187     5.718    p_399_in
+    SLICE_X106Y464       LUT6 (Prop_C6LUT_SLICEL_I5_O)
+                                                      0.035     5.753 r  f[58]_INST_0_i_7/O
+                         net (fo=1, routed)           0.089     5.842    f[58]_INST_0_i_7_n_0
+    SLICE_X106Y464       LUT6 (Prop_D6LUT_SLICEL_I0_O)
+                                                      0.089     5.931 r  f[58]_INST_0_i_6/O
+                         net (fo=2, routed)           0.049     5.980    p_374_in
+    SLICE_X106Y464       LUT6 (Prop_H6LUT_SLICEL_I5_O)
+                                                      0.099     6.079 r  f[63]_INST_0_i_7/O
+                         net (fo=1, routed)           0.189     6.268    f[63]_INST_0_i_7_n_0
+    SLICE_X103Y465       LUT6 (Prop_A6LUT_SLICEL_I0_O)
+                                                      0.035     6.303 r  f[63]_INST_0_i_6/O
+                         net (fo=2, routed)           0.176     6.479    p_349_in
+    SLICE_X98Y465        LUT6 (Prop_A6LUT_SLICEL_I5_O)
+                                                      0.035     6.514 r  f[68]_INST_0_i_7/O
+                         net (fo=1, routed)           0.040     6.554    f[68]_INST_0_i_7_n_0
+    SLICE_X98Y465        LUT6 (Prop_C6LUT_SLICEL_I0_O)
+                                                      0.035     6.589 r  f[68]_INST_0_i_6/O
+                         net (fo=2, routed)           0.087     6.676    p_324_in
+    SLICE_X97Y465        LUT6 (Prop_C6LUT_SLICEM_I5_O)
+                                                      0.037     6.713 r  f[73]_INST_0_i_7/O
+                         net (fo=1, routed)           0.093     6.806    f[73]_INST_0_i_7_n_0
+    SLICE_X97Y467        LUT6 (Prop_C6LUT_SLICEM_I0_O)
+                                                      0.037     6.843 r  f[73]_INST_0_i_6/O
+                         net (fo=2, routed)           0.342     7.185    p_299_in
+    SLICE_X94Y471        LUT6 (Prop_C6LUT_SLICEL_I5_O)
+                                                      0.035     7.220 r  f[78]_INST_0_i_7/O
+                         net (fo=1, routed)           0.041     7.261    f[78]_INST_0_i_7_n_0
+    SLICE_X94Y471        LUT6 (Prop_D6LUT_SLICEL_I0_O)
+                                                      0.036     7.297 r  f[78]_INST_0_i_6/O
+                         net (fo=2, routed)           0.044     7.341    p_274_in
+    SLICE_X94Y471        LUT6 (Prop_E6LUT_SLICEL_I5_O)
+                                                      0.035     7.376 r  f[83]_INST_0_i_7/O
+                         net (fo=1, routed)           0.380     7.756    f[83]_INST_0_i_7_n_0
+    SLICE_X91Y496        LUT6 (Prop_E6LUT_SLICEL_I0_O)
+                                                      0.035     7.791 r  f[83]_INST_0_i_6/O
+                         net (fo=2, routed)           0.093     7.884    p_249_in
+    SLICE_X91Y496        LUT5 (Prop_H6LUT_SLICEL_I0_O)
+                                                      0.090     7.974 r  f[83]_INST_0_i_5/O
+                         net (fo=1, routed)           0.085     8.059    p_239_in
+    SLICE_X91Y498        LUT5 (Prop_B6LUT_SLICEL_I0_O)
+                                                      0.036     8.095 r  f[83]_INST_0_i_4/O
+                         net (fo=2, routed)           0.051     8.146    p_229_in
+    SLICE_X91Y498        LUT5 (Prop_G6LUT_SLICEL_I0_O)
+                                                      0.097     8.243 r  f[84]_INST_0_i_4/O
+                         net (fo=3, routed)           0.050     8.293    p_219_in
+    SLICE_X91Y498        LUT5 (Prop_E5LUT_SLICEL_I0_O)
+                                                      0.114     8.407 r  f[86]_INST_0_i_4/O
+                         net (fo=2, routed)           1.615    10.022    p_209_in
+    SLR Crossing[1->2]   
+    SLICE_X102Y604       LUT3 (Prop_A6LUT_SLICEM_I2_O)
+                                                      0.053    10.075 r  f[86]_INST_0_i_1/O
+                         net (fo=1, routed)           2.233    12.308    f[86]_INST_0_i_1_n_0
+    C14                  OBUF (Prop_OUTBUF_HPIOB_S_I_O)
+                                                      0.955    13.263 r  f[86]_INST_0/O
+                         net (fo=0)                   0.000    13.263    f[86]
+    C14                                                               r  f[86] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                    5.000     5.000    
+                         output delay                -0.000     5.000    
+  -------------------------------------------------------------------
+                         required time                          5.000    
+                         arrival time                         -13.263    
+  -------------------------------------------------------------------
+                         slack                                 -8.263    
+
+Slack (VIOLATED) :        -8.261ns  (required time - arrival time)
+  Source:                 b[2]
+                            (input port)
+  Destination:            f[127]
+  Path Group:             **default**
+  Path Type:              Max at Slow Process Corner
+  Requirement:            5.000ns  (MaxDelay Path 5.000ns)
+  Data Path Delay:        13.261ns  (logic 3.614ns (27.254%)  route 9.647ns (72.747%))
+  Logic Levels:           54  (IBUFCTRL=1 INBUF=1 LUT5=1 LUT6=50 OBUF=1)
+  Output Delay:           0.000ns
+  Timing Exception:       MaxDelay Path 5.000ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    AW21                                              0.000     0.000 f  b[2] (IN)
+                         net (fo=0)                   0.000     0.000    f[2]_INST_0_i_3/I
+    AW21                 INBUF (Prop_INBUF_HPIOB_M_PAD_O)
+                                                      0.593     0.593 f  f[2]_INST_0_i_3/INBUF_INST/O
+                         net (fo=1, routed)           0.000     0.593    f[2]_INST_0_i_3/OUT
+    AW21                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000     0.593 f  f[2]_INST_0_i_3/IBUFCTRL_INST/O
+                         net (fo=2, routed)           2.322     2.915    f[2]_INST_0_i_3_n_0
+    SLICE_X101Y472       LUT6 (Prop_G6LUT_SLICEL_I5_O)
+                                                      0.050     2.965 r  f[3]_INST_0_i_4/O
+                         net (fo=4, routed)           0.094     3.059    p_624_in
+    SLICE_X101Y472       LUT6 (Prop_F6LUT_SLICEL_I5_O)
+                                                      0.097     3.156 r  f[13]_INST_0_i_7/O
+                         net (fo=1, routed)           0.213     3.369    f[13]_INST_0_i_7_n_0
+    SLICE_X101Y481       LUT6 (Prop_H6LUT_SLICEL_I0_O)
+                                                      0.036     3.405 r  f[13]_INST_0_i_6/O
+                         net (fo=2, routed)           0.208     3.613    p_599_in
+    SLICE_X106Y481       LUT6 (Prop_H6LUT_SLICEL_I5_O)
+                                                      0.036     3.649 r  f[18]_INST_0_i_7/O
+                         net (fo=1, routed)           0.089     3.738    f[18]_INST_0_i_7_n_0
+    SLICE_X107Y481       LUT6 (Prop_G6LUT_SLICEM_I0_O)
+                                                      0.037     3.775 r  f[18]_INST_0_i_6/O
+                         net (fo=2, routed)           0.152     3.927    p_574_in
+    SLICE_X108Y479       LUT6 (Prop_E6LUT_SLICEM_I5_O)
+                                                      0.037     3.964 r  f[23]_INST_0_i_7/O
+                         net (fo=1, routed)           0.040     4.004    f[23]_INST_0_i_7_n_0
+    SLICE_X108Y479       LUT6 (Prop_C6LUT_SLICEM_I0_O)
+                                                      0.037     4.041 r  f[23]_INST_0_i_6/O
+                         net (fo=2, routed)           0.138     4.179    p_549_in
+    SLICE_X108Y476       LUT6 (Prop_C6LUT_SLICEM_I5_O)
+                                                      0.037     4.216 r  f[28]_INST_0_i_7/O
+                         net (fo=1, routed)           0.040     4.256    f[28]_INST_0_i_7_n_0
+    SLICE_X108Y476       LUT6 (Prop_D6LUT_SLICEM_I0_O)
+                                                      0.037     4.293 r  f[28]_INST_0_i_6/O
+                         net (fo=2, routed)           0.085     4.379    p_524_in
+    SLICE_X109Y476       LUT6 (Prop_D6LUT_SLICEL_I5_O)
+                                                      0.050     4.429 r  f[33]_INST_0_i_7/O
+                         net (fo=1, routed)           0.038     4.467    f[33]_INST_0_i_7_n_0
+    SLICE_X109Y476       LUT6 (Prop_F6LUT_SLICEL_I0_O)
+                                                      0.035     4.502 r  f[33]_INST_0_i_6/O
+                         net (fo=2, routed)           0.091     4.593    p_499_in
+    SLICE_X110Y476       LUT6 (Prop_F6LUT_SLICEM_I5_O)
+                                                      0.051     4.644 r  f[38]_INST_0_i_7/O
+                         net (fo=1, routed)           0.087     4.731    f[38]_INST_0_i_7_n_0
+    SLICE_X110Y475       LUT6 (Prop_H6LUT_SLICEM_I0_O)
+                                                      0.053     4.784 r  f[38]_INST_0_i_6/O
+                         net (fo=2, routed)           0.203     4.986    p_474_in
+    SLICE_X109Y470       LUT6 (Prop_E6LUT_SLICEL_I5_O)
+                                                      0.051     5.037 r  f[43]_INST_0_i_7/O
+                         net (fo=1, routed)           0.038     5.075    f[43]_INST_0_i_7_n_0
+    SLICE_X109Y470       LUT6 (Prop_C6LUT_SLICEL_I0_O)
+                                                      0.035     5.110 r  f[43]_INST_0_i_6/O
+                         net (fo=2, routed)           0.098     5.209    p_449_in
+    SLICE_X109Y468       LUT6 (Prop_A6LUT_SLICEL_I5_O)
+                                                      0.035     5.244 r  f[48]_INST_0_i_7/O
+                         net (fo=1, routed)           0.040     5.284    f[48]_INST_0_i_7_n_0
+    SLICE_X109Y468       LUT6 (Prop_C6LUT_SLICEL_I0_O)
+                                                      0.035     5.319 r  f[48]_INST_0_i_6/O
+                         net (fo=2, routed)           0.098     5.417    p_424_in
+    SLICE_X109Y466       LUT6 (Prop_C6LUT_SLICEL_I5_O)
+                                                      0.035     5.452 r  f[53]_INST_0_i_7/O
+                         net (fo=1, routed)           0.044     5.496    f[53]_INST_0_i_7_n_0
+    SLICE_X109Y465       LUT6 (Prop_H6LUT_SLICEL_I0_O)
+                                                      0.036     5.532 r  f[53]_INST_0_i_6/O
+                         net (fo=2, routed)           0.187     5.718    p_399_in
+    SLICE_X106Y464       LUT6 (Prop_C6LUT_SLICEL_I5_O)
+                                                      0.035     5.753 r  f[58]_INST_0_i_7/O
+                         net (fo=1, routed)           0.089     5.842    f[58]_INST_0_i_7_n_0
+    SLICE_X106Y464       LUT6 (Prop_D6LUT_SLICEL_I0_O)
+                                                      0.089     5.931 r  f[58]_INST_0_i_6/O
+                         net (fo=2, routed)           0.049     5.980    p_374_in
+    SLICE_X106Y464       LUT6 (Prop_H6LUT_SLICEL_I5_O)
+                                                      0.099     6.079 r  f[63]_INST_0_i_7/O
+                         net (fo=1, routed)           0.189     6.268    f[63]_INST_0_i_7_n_0
+    SLICE_X103Y465       LUT6 (Prop_A6LUT_SLICEL_I0_O)
+                                                      0.035     6.303 r  f[63]_INST_0_i_6/O
+                         net (fo=2, routed)           0.176     6.479    p_349_in
+    SLICE_X98Y465        LUT6 (Prop_A6LUT_SLICEL_I5_O)
+                                                      0.035     6.514 r  f[68]_INST_0_i_7/O
+                         net (fo=1, routed)           0.040     6.554    f[68]_INST_0_i_7_n_0
+    SLICE_X98Y465        LUT6 (Prop_C6LUT_SLICEL_I0_O)
+                                                      0.035     6.589 r  f[68]_INST_0_i_6/O
+                         net (fo=2, routed)           0.087     6.676    p_324_in
+    SLICE_X97Y465        LUT6 (Prop_C6LUT_SLICEM_I5_O)
+                                                      0.037     6.713 r  f[73]_INST_0_i_7/O
+                         net (fo=1, routed)           0.093     6.806    f[73]_INST_0_i_7_n_0
+    SLICE_X97Y467        LUT6 (Prop_C6LUT_SLICEM_I0_O)
+                                                      0.037     6.843 r  f[73]_INST_0_i_6/O
+                         net (fo=2, routed)           0.342     7.185    p_299_in
+    SLICE_X94Y471        LUT6 (Prop_C6LUT_SLICEL_I5_O)
+                                                      0.035     7.220 r  f[78]_INST_0_i_7/O
+                         net (fo=1, routed)           0.041     7.261    f[78]_INST_0_i_7_n_0
+    SLICE_X94Y471        LUT6 (Prop_D6LUT_SLICEL_I0_O)
+                                                      0.036     7.297 r  f[78]_INST_0_i_6/O
+                         net (fo=2, routed)           0.044     7.341    p_274_in
+    SLICE_X94Y471        LUT6 (Prop_E6LUT_SLICEL_I5_O)
+                                                      0.035     7.376 r  f[83]_INST_0_i_7/O
+                         net (fo=1, routed)           0.380     7.756    f[83]_INST_0_i_7_n_0
+    SLICE_X91Y496        LUT6 (Prop_E6LUT_SLICEL_I0_O)
+                                                      0.035     7.791 r  f[83]_INST_0_i_6/O
+                         net (fo=2, routed)           0.044     7.835    p_249_in
+    SLICE_X91Y496        LUT6 (Prop_C6LUT_SLICEL_I5_O)
+                                                      0.035     7.870 r  f[88]_INST_0_i_7/O
+                         net (fo=1, routed)           0.088     7.958    f[88]_INST_0_i_7_n_0
+    SLICE_X90Y496        LUT6 (Prop_C6LUT_SLICEM_I0_O)
+                                                      0.037     7.995 r  f[88]_INST_0_i_6/O
+                         net (fo=2, routed)           0.099     8.094    p_224_in
+    SLICE_X90Y498        LUT6 (Prop_C6LUT_SLICEM_I5_O)
+                                                      0.037     8.131 r  f[93]_INST_0_i_7/O
+                         net (fo=1, routed)           0.040     8.171    f[93]_INST_0_i_7_n_0
+    SLICE_X90Y498        LUT6 (Prop_D6LUT_SLICEM_I0_O)
+                                                      0.037     8.208 r  f[93]_INST_0_i_6/O
+                         net (fo=2, routed)           0.042     8.250    p_199_in
+    SLICE_X90Y498        LUT6 (Prop_F6LUT_SLICEM_I5_O)
+                                                      0.037     8.287 r  f[98]_INST_0_i_7/O
+                         net (fo=1, routed)           0.040     8.327    f[98]_INST_0_i_7_n_0
+    SLICE_X90Y498        LUT6 (Prop_G6LUT_SLICEM_I0_O)
+                                                      0.037     8.364 r  f[98]_INST_0_i_6/O
+                         net (fo=2, routed)           0.052     8.416    p_174_in
+    SLICE_X90Y498        LUT6 (Prop_H6LUT_SLICEM_I5_O)
+                                                      0.053     8.469 r  f[103]_INST_0_i_7/O
+                         net (fo=1, routed)           0.091     8.560    f[103]_INST_0_i_7_n_0
+    SLICE_X90Y499        LUT6 (Prop_A6LUT_SLICEM_I0_O)
+                                                      0.038     8.598 r  f[103]_INST_0_i_6/O
+                         net (fo=2, routed)           0.047     8.645    p_149_in
+    SLICE_X90Y499        LUT6 (Prop_C6LUT_SLICEM_I5_O)
+                                                      0.037     8.682 r  f[108]_INST_0_i_7/O
+                         net (fo=1, routed)           0.040     8.722    f[108]_INST_0_i_7_n_0
+    SLICE_X90Y499        LUT6 (Prop_D6LUT_SLICEM_I0_O)
+                                                      0.037     8.759 r  f[108]_INST_0_i_6/O
+                         net (fo=2, routed)           0.042     8.801    p_124_in
+    SLICE_X90Y499        LUT6 (Prop_F6LUT_SLICEM_I5_O)
+                                                      0.037     8.838 r  f[113]_INST_0_i_7/O
+                         net (fo=1, routed)           0.805     9.643    f[113]_INST_0_i_7_n_0
+    SLICE_X69Y534        LUT6 (Prop_A6LUT_SLICEL_I0_O)
+                                                      0.035     9.678 r  f[113]_INST_0_i_6/O
+                         net (fo=2, routed)           0.044     9.722    p_99_in
+    SLICE_X69Y534        LUT6 (Prop_C6LUT_SLICEL_I5_O)
+                                                      0.035     9.757 r  f[118]_INST_0_i_7/O
+                         net (fo=1, routed)           0.094     9.851    f[118]_INST_0_i_7_n_0
+    SLICE_X69Y536        LUT6 (Prop_A6LUT_SLICEL_I0_O)
+                                                      0.035     9.886 r  f[118]_INST_0_i_6/O
+                         net (fo=2, routed)           0.366    10.252    p_74_in
+    SLICE_X61Y536        LUT6 (Prop_A6LUT_SLICEL_I5_O)
+                                                      0.035    10.287 r  f[123]_INST_0_i_7/O
+                         net (fo=1, routed)           0.040    10.327    f[123]_INST_0_i_7_n_0
+    SLICE_X61Y536        LUT6 (Prop_C6LUT_SLICEL_I0_O)
+                                                      0.035    10.362 r  f[123]_INST_0_i_6/O
+                         net (fo=2, routed)           0.292    10.654    p_49_in
+    SLICE_X58Y544        LUT6 (Prop_A6LUT_SLICEL_I5_O)
+                                                      0.035    10.689 r  f[126]_INST_0_i_6/O
+                         net (fo=1, routed)           0.174    10.863    f[126]_INST_0_i_6_n_0
+    SLICE_X57Y546        LUT6 (Prop_A6LUT_SLICEL_I0_O)
+                                                      0.035    10.898 r  f[126]_INST_0_i_5/O
+                         net (fo=2, routed)           0.144    11.042    p_24_in
+    SLICE_X55Y548        LUT5 (Prop_B6LUT_SLICEL_I0_O)
+                                                      0.036    11.078 r  f[126]_INST_0_i_4/O
+                         net (fo=2, routed)           0.283    11.362    p_14_in
+    SLICE_X55Y561        LUT6 (Prop_D6LUT_SLICEL_I5_O)
+                                                      0.036    11.398 r  f[127]_INST_0_i_1/O
+                         net (fo=1, routed)           0.944    12.342    f[127]_INST_0_i_1_n_0
+    K27                  OBUF (Prop_OUTBUF_HPIOB_S_I_O)
+                                                      0.919    13.261 r  f[127]_INST_0/O
+                         net (fo=0)                   0.000    13.261    f[127]
+    K27                                                               r  f[127] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                    5.000     5.000    
+                         output delay                -0.000     5.000    
+  -------------------------------------------------------------------
+                         required time                          5.000    
+                         arrival time                         -13.261    
+  -------------------------------------------------------------------
+                         slack                                 -8.261    
+
+Slack (VIOLATED) :        -8.238ns  (required time - arrival time)
+  Source:                 b[2]
+                            (input port)
+  Destination:            f[91]
+  Path Group:             **default**
+  Path Type:              Max at Slow Process Corner
+  Requirement:            5.000ns  (MaxDelay Path 5.000ns)
+  Data Path Delay:        13.238ns  (logic 3.168ns (23.931%)  route 10.070ns (76.069%))
+  Logic Levels:           41  (IBUFCTRL=1 INBUF=1 LUT3=1 LUT5=4 LUT6=33 OBUF=1)
+  Output Delay:           0.000ns
+  Timing Exception:       MaxDelay Path 5.000ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    AW21                                              0.000     0.000 f  b[2] (IN)
+                         net (fo=0)                   0.000     0.000    f[2]_INST_0_i_3/I
+    AW21                 INBUF (Prop_INBUF_HPIOB_M_PAD_O)
+                                                      0.593     0.593 f  f[2]_INST_0_i_3/INBUF_INST/O
+                         net (fo=1, routed)           0.000     0.593    f[2]_INST_0_i_3/OUT
+    AW21                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000     0.593 f  f[2]_INST_0_i_3/IBUFCTRL_INST/O
+                         net (fo=2, routed)           2.322     2.915    f[2]_INST_0_i_3_n_0
+    SLICE_X101Y472       LUT6 (Prop_G6LUT_SLICEL_I5_O)
+                                                      0.050     2.965 r  f[3]_INST_0_i_4/O
+                         net (fo=4, routed)           0.094     3.059    p_624_in
+    SLICE_X101Y472       LUT6 (Prop_F6LUT_SLICEL_I5_O)
+                                                      0.097     3.156 r  f[13]_INST_0_i_7/O
+                         net (fo=1, routed)           0.213     3.369    f[13]_INST_0_i_7_n_0
+    SLICE_X101Y481       LUT6 (Prop_H6LUT_SLICEL_I0_O)
+                                                      0.036     3.405 r  f[13]_INST_0_i_6/O
+                         net (fo=2, routed)           0.208     3.613    p_599_in
+    SLICE_X106Y481       LUT6 (Prop_H6LUT_SLICEL_I5_O)
+                                                      0.036     3.649 r  f[18]_INST_0_i_7/O
+                         net (fo=1, routed)           0.089     3.738    f[18]_INST_0_i_7_n_0
+    SLICE_X107Y481       LUT6 (Prop_G6LUT_SLICEM_I0_O)
+                                                      0.037     3.775 r  f[18]_INST_0_i_6/O
+                         net (fo=2, routed)           0.152     3.927    p_574_in
+    SLICE_X108Y479       LUT6 (Prop_E6LUT_SLICEM_I5_O)
+                                                      0.037     3.964 r  f[23]_INST_0_i_7/O
+                         net (fo=1, routed)           0.040     4.004    f[23]_INST_0_i_7_n_0
+    SLICE_X108Y479       LUT6 (Prop_C6LUT_SLICEM_I0_O)
+                                                      0.037     4.041 r  f[23]_INST_0_i_6/O
+                         net (fo=2, routed)           0.138     4.179    p_549_in
+    SLICE_X108Y476       LUT6 (Prop_C6LUT_SLICEM_I5_O)
+                                                      0.037     4.216 r  f[28]_INST_0_i_7/O
+                         net (fo=1, routed)           0.040     4.256    f[28]_INST_0_i_7_n_0
+    SLICE_X108Y476       LUT6 (Prop_D6LUT_SLICEM_I0_O)
+                                                      0.037     4.293 r  f[28]_INST_0_i_6/O
+                         net (fo=2, routed)           0.085     4.379    p_524_in
+    SLICE_X109Y476       LUT6 (Prop_D6LUT_SLICEL_I5_O)
+                                                      0.050     4.429 r  f[33]_INST_0_i_7/O
+                         net (fo=1, routed)           0.038     4.467    f[33]_INST_0_i_7_n_0
+    SLICE_X109Y476       LUT6 (Prop_F6LUT_SLICEL_I0_O)
+                                                      0.035     4.502 r  f[33]_INST_0_i_6/O
+                         net (fo=2, routed)           0.091     4.593    p_499_in
+    SLICE_X110Y476       LUT6 (Prop_F6LUT_SLICEM_I5_O)
+                                                      0.051     4.644 r  f[38]_INST_0_i_7/O
+                         net (fo=1, routed)           0.087     4.731    f[38]_INST_0_i_7_n_0
+    SLICE_X110Y475       LUT6 (Prop_H6LUT_SLICEM_I0_O)
+                                                      0.053     4.784 r  f[38]_INST_0_i_6/O
+                         net (fo=2, routed)           0.203     4.986    p_474_in
+    SLICE_X109Y470       LUT6 (Prop_E6LUT_SLICEL_I5_O)
+                                                      0.051     5.037 r  f[43]_INST_0_i_7/O
+                         net (fo=1, routed)           0.038     5.075    f[43]_INST_0_i_7_n_0
+    SLICE_X109Y470       LUT6 (Prop_C6LUT_SLICEL_I0_O)
+                                                      0.035     5.110 r  f[43]_INST_0_i_6/O
+                         net (fo=2, routed)           0.098     5.209    p_449_in
+    SLICE_X109Y468       LUT6 (Prop_A6LUT_SLICEL_I5_O)
+                                                      0.035     5.244 r  f[48]_INST_0_i_7/O
+                         net (fo=1, routed)           0.040     5.284    f[48]_INST_0_i_7_n_0
+    SLICE_X109Y468       LUT6 (Prop_C6LUT_SLICEL_I0_O)
+                                                      0.035     5.319 r  f[48]_INST_0_i_6/O
+                         net (fo=2, routed)           0.098     5.417    p_424_in
+    SLICE_X109Y466       LUT6 (Prop_C6LUT_SLICEL_I5_O)
+                                                      0.035     5.452 r  f[53]_INST_0_i_7/O
+                         net (fo=1, routed)           0.044     5.496    f[53]_INST_0_i_7_n_0
+    SLICE_X109Y465       LUT6 (Prop_H6LUT_SLICEL_I0_O)
+                                                      0.036     5.532 r  f[53]_INST_0_i_6/O
+                         net (fo=2, routed)           0.187     5.718    p_399_in
+    SLICE_X106Y464       LUT6 (Prop_C6LUT_SLICEL_I5_O)
+                                                      0.035     5.753 r  f[58]_INST_0_i_7/O
+                         net (fo=1, routed)           0.089     5.842    f[58]_INST_0_i_7_n_0
+    SLICE_X106Y464       LUT6 (Prop_D6LUT_SLICEL_I0_O)
+                                                      0.089     5.931 r  f[58]_INST_0_i_6/O
+                         net (fo=2, routed)           0.049     5.980    p_374_in
+    SLICE_X106Y464       LUT6 (Prop_H6LUT_SLICEL_I5_O)
+                                                      0.099     6.079 r  f[63]_INST_0_i_7/O
+                         net (fo=1, routed)           0.189     6.268    f[63]_INST_0_i_7_n_0
+    SLICE_X103Y465       LUT6 (Prop_A6LUT_SLICEL_I0_O)
+                                                      0.035     6.303 r  f[63]_INST_0_i_6/O
+                         net (fo=2, routed)           0.176     6.479    p_349_in
+    SLICE_X98Y465        LUT6 (Prop_A6LUT_SLICEL_I5_O)
+                                                      0.035     6.514 r  f[68]_INST_0_i_7/O
+                         net (fo=1, routed)           0.040     6.554    f[68]_INST_0_i_7_n_0
+    SLICE_X98Y465        LUT6 (Prop_C6LUT_SLICEL_I0_O)
+                                                      0.035     6.589 r  f[68]_INST_0_i_6/O
+                         net (fo=2, routed)           0.087     6.676    p_324_in
+    SLICE_X97Y465        LUT6 (Prop_C6LUT_SLICEM_I5_O)
+                                                      0.037     6.713 r  f[73]_INST_0_i_7/O
+                         net (fo=1, routed)           0.093     6.806    f[73]_INST_0_i_7_n_0
+    SLICE_X97Y467        LUT6 (Prop_C6LUT_SLICEM_I0_O)
+                                                      0.037     6.843 r  f[73]_INST_0_i_6/O
+                         net (fo=2, routed)           0.342     7.185    p_299_in
+    SLICE_X94Y471        LUT6 (Prop_C6LUT_SLICEL_I5_O)
+                                                      0.035     7.220 r  f[78]_INST_0_i_7/O
+                         net (fo=1, routed)           0.041     7.261    f[78]_INST_0_i_7_n_0
+    SLICE_X94Y471        LUT6 (Prop_D6LUT_SLICEL_I0_O)
+                                                      0.036     7.297 r  f[78]_INST_0_i_6/O
+                         net (fo=2, routed)           0.044     7.341    p_274_in
+    SLICE_X94Y471        LUT6 (Prop_E6LUT_SLICEL_I5_O)
+                                                      0.035     7.376 r  f[83]_INST_0_i_7/O
+                         net (fo=1, routed)           0.380     7.756    f[83]_INST_0_i_7_n_0
+    SLICE_X91Y496        LUT6 (Prop_E6LUT_SLICEL_I0_O)
+                                                      0.035     7.791 r  f[83]_INST_0_i_6/O
+                         net (fo=2, routed)           0.044     7.835    p_249_in
+    SLICE_X91Y496        LUT6 (Prop_C6LUT_SLICEL_I5_O)
+                                                      0.035     7.870 r  f[88]_INST_0_i_7/O
+                         net (fo=1, routed)           0.088     7.958    f[88]_INST_0_i_7_n_0
+    SLICE_X90Y496        LUT6 (Prop_C6LUT_SLICEM_I0_O)
+                                                      0.037     7.995 r  f[88]_INST_0_i_6/O
+                         net (fo=2, routed)           0.137     8.132    p_224_in
+    SLICE_X91Y498        LUT5 (Prop_C6LUT_SLICEL_I0_O)
+                                                      0.035     8.167 r  f[88]_INST_0_i_5/O
+                         net (fo=1, routed)           0.041     8.208    p_214_in
+    SLICE_X91Y498        LUT5 (Prop_D6LUT_SLICEL_I0_O)
+                                                      0.036     8.244 r  f[88]_INST_0_i_4/O
+                         net (fo=2, routed)           0.095     8.339    p_204_in
+    SLICE_X89Y498        LUT5 (Prop_A6LUT_SLICEL_I0_O)
+                                                      0.050     8.389 r  f[89]_INST_0_i_4/O
+                         net (fo=3, routed)           0.654     9.044    p_194_in
+    SLICE_X89Y564        LUT5 (Prop_H6LUT_SLICEL_I0_O)
+                                                      0.051     9.095 r  f[91]_INST_0_i_4/O
+                         net (fo=2, routed)           0.087     9.182    p_184_in
+    SLICE_X89Y563        LUT3 (Prop_H6LUT_SLICEL_I2_O)
+                                                      0.036     9.218 r  f[91]_INST_0_i_1/O
+                         net (fo=1, routed)           3.088    12.306    f[91]_INST_0_i_1_n_0
+    SLR Crossing[1->2]   
+    E15                  OBUF (Prop_OUTBUF_HPIOB_S_I_O)
+                                                      0.932    13.238 r  f[91]_INST_0/O
+                         net (fo=0)                   0.000    13.238    f[91]
+    E15                                                               r  f[91] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                    5.000     5.000    
+                         output delay                -0.000     5.000    
+  -------------------------------------------------------------------
+                         required time                          5.000    
+                         arrival time                         -13.238    
+  -------------------------------------------------------------------
+                         slack                                 -8.238    
+
+Slack (VIOLATED) :        -8.236ns  (required time - arrival time)
+  Source:                 b[2]
+                            (input port)
+  Destination:            f[125]
+  Path Group:             **default**
+  Path Type:              Max at Slow Process Corner
+  Requirement:            5.000ns  (MaxDelay Path 5.000ns)
+  Data Path Delay:        13.236ns  (logic 3.639ns (27.494%)  route 9.597ns (72.506%))
+  Logic Levels:           54  (IBUFCTRL=1 INBUF=1 LUT5=4 LUT6=47 OBUF=1)
+  Output Delay:           0.000ns
+  Timing Exception:       MaxDelay Path 5.000ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    AW21                                              0.000     0.000 f  b[2] (IN)
+                         net (fo=0)                   0.000     0.000    f[2]_INST_0_i_3/I
+    AW21                 INBUF (Prop_INBUF_HPIOB_M_PAD_O)
+                                                      0.593     0.593 f  f[2]_INST_0_i_3/INBUF_INST/O
+                         net (fo=1, routed)           0.000     0.593    f[2]_INST_0_i_3/OUT
+    AW21                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000     0.593 f  f[2]_INST_0_i_3/IBUFCTRL_INST/O
+                         net (fo=2, routed)           2.322     2.915    f[2]_INST_0_i_3_n_0
+    SLICE_X101Y472       LUT6 (Prop_G6LUT_SLICEL_I5_O)
+                                                      0.050     2.965 r  f[3]_INST_0_i_4/O
+                         net (fo=4, routed)           0.094     3.059    p_624_in
+    SLICE_X101Y472       LUT6 (Prop_F6LUT_SLICEL_I5_O)
+                                                      0.097     3.156 r  f[13]_INST_0_i_7/O
+                         net (fo=1, routed)           0.213     3.369    f[13]_INST_0_i_7_n_0
+    SLICE_X101Y481       LUT6 (Prop_H6LUT_SLICEL_I0_O)
+                                                      0.036     3.405 r  f[13]_INST_0_i_6/O
+                         net (fo=2, routed)           0.208     3.613    p_599_in
+    SLICE_X106Y481       LUT6 (Prop_H6LUT_SLICEL_I5_O)
+                                                      0.036     3.649 r  f[18]_INST_0_i_7/O
+                         net (fo=1, routed)           0.089     3.738    f[18]_INST_0_i_7_n_0
+    SLICE_X107Y481       LUT6 (Prop_G6LUT_SLICEM_I0_O)
+                                                      0.037     3.775 r  f[18]_INST_0_i_6/O
+                         net (fo=2, routed)           0.152     3.927    p_574_in
+    SLICE_X108Y479       LUT6 (Prop_E6LUT_SLICEM_I5_O)
+                                                      0.037     3.964 r  f[23]_INST_0_i_7/O
+                         net (fo=1, routed)           0.040     4.004    f[23]_INST_0_i_7_n_0
+    SLICE_X108Y479       LUT6 (Prop_C6LUT_SLICEM_I0_O)
+                                                      0.037     4.041 r  f[23]_INST_0_i_6/O
+                         net (fo=2, routed)           0.138     4.179    p_549_in
+    SLICE_X108Y476       LUT6 (Prop_C6LUT_SLICEM_I5_O)
+                                                      0.037     4.216 r  f[28]_INST_0_i_7/O
+                         net (fo=1, routed)           0.040     4.256    f[28]_INST_0_i_7_n_0
+    SLICE_X108Y476       LUT6 (Prop_D6LUT_SLICEM_I0_O)
+                                                      0.037     4.293 r  f[28]_INST_0_i_6/O
+                         net (fo=2, routed)           0.085     4.379    p_524_in
+    SLICE_X109Y476       LUT6 (Prop_D6LUT_SLICEL_I5_O)
+                                                      0.050     4.429 r  f[33]_INST_0_i_7/O
+                         net (fo=1, routed)           0.038     4.467    f[33]_INST_0_i_7_n_0
+    SLICE_X109Y476       LUT6 (Prop_F6LUT_SLICEL_I0_O)
+                                                      0.035     4.502 r  f[33]_INST_0_i_6/O
+                         net (fo=2, routed)           0.091     4.593    p_499_in
+    SLICE_X110Y476       LUT6 (Prop_F6LUT_SLICEM_I5_O)
+                                                      0.051     4.644 r  f[38]_INST_0_i_7/O
+                         net (fo=1, routed)           0.087     4.731    f[38]_INST_0_i_7_n_0
+    SLICE_X110Y475       LUT6 (Prop_H6LUT_SLICEM_I0_O)
+                                                      0.053     4.784 r  f[38]_INST_0_i_6/O
+                         net (fo=2, routed)           0.203     4.986    p_474_in
+    SLICE_X109Y470       LUT6 (Prop_E6LUT_SLICEL_I5_O)
+                                                      0.051     5.037 r  f[43]_INST_0_i_7/O
+                         net (fo=1, routed)           0.038     5.075    f[43]_INST_0_i_7_n_0
+    SLICE_X109Y470       LUT6 (Prop_C6LUT_SLICEL_I0_O)
+                                                      0.035     5.110 r  f[43]_INST_0_i_6/O
+                         net (fo=2, routed)           0.098     5.209    p_449_in
+    SLICE_X109Y468       LUT6 (Prop_A6LUT_SLICEL_I5_O)
+                                                      0.035     5.244 r  f[48]_INST_0_i_7/O
+                         net (fo=1, routed)           0.040     5.284    f[48]_INST_0_i_7_n_0
+    SLICE_X109Y468       LUT6 (Prop_C6LUT_SLICEL_I0_O)
+                                                      0.035     5.319 r  f[48]_INST_0_i_6/O
+                         net (fo=2, routed)           0.098     5.417    p_424_in
+    SLICE_X109Y466       LUT6 (Prop_C6LUT_SLICEL_I5_O)
+                                                      0.035     5.452 r  f[53]_INST_0_i_7/O
+                         net (fo=1, routed)           0.044     5.496    f[53]_INST_0_i_7_n_0
+    SLICE_X109Y465       LUT6 (Prop_H6LUT_SLICEL_I0_O)
+                                                      0.036     5.532 r  f[53]_INST_0_i_6/O
+                         net (fo=2, routed)           0.187     5.718    p_399_in
+    SLICE_X106Y464       LUT6 (Prop_C6LUT_SLICEL_I5_O)
+                                                      0.035     5.753 r  f[58]_INST_0_i_7/O
+                         net (fo=1, routed)           0.089     5.842    f[58]_INST_0_i_7_n_0
+    SLICE_X106Y464       LUT6 (Prop_D6LUT_SLICEL_I0_O)
+                                                      0.089     5.931 r  f[58]_INST_0_i_6/O
+                         net (fo=2, routed)           0.049     5.980    p_374_in
+    SLICE_X106Y464       LUT6 (Prop_H6LUT_SLICEL_I5_O)
+                                                      0.099     6.079 r  f[63]_INST_0_i_7/O
+                         net (fo=1, routed)           0.189     6.268    f[63]_INST_0_i_7_n_0
+    SLICE_X103Y465       LUT6 (Prop_A6LUT_SLICEL_I0_O)
+                                                      0.035     6.303 r  f[63]_INST_0_i_6/O
+                         net (fo=2, routed)           0.176     6.479    p_349_in
+    SLICE_X98Y465        LUT6 (Prop_A6LUT_SLICEL_I5_O)
+                                                      0.035     6.514 r  f[68]_INST_0_i_7/O
+                         net (fo=1, routed)           0.040     6.554    f[68]_INST_0_i_7_n_0
+    SLICE_X98Y465        LUT6 (Prop_C6LUT_SLICEL_I0_O)
+                                                      0.035     6.589 r  f[68]_INST_0_i_6/O
+                         net (fo=2, routed)           0.087     6.676    p_324_in
+    SLICE_X97Y465        LUT6 (Prop_C6LUT_SLICEM_I5_O)
+                                                      0.037     6.713 r  f[73]_INST_0_i_7/O
+                         net (fo=1, routed)           0.093     6.806    f[73]_INST_0_i_7_n_0
+    SLICE_X97Y467        LUT6 (Prop_C6LUT_SLICEM_I0_O)
+                                                      0.037     6.843 r  f[73]_INST_0_i_6/O
+                         net (fo=2, routed)           0.342     7.185    p_299_in
+    SLICE_X94Y471        LUT6 (Prop_C6LUT_SLICEL_I5_O)
+                                                      0.035     7.220 r  f[78]_INST_0_i_7/O
+                         net (fo=1, routed)           0.041     7.261    f[78]_INST_0_i_7_n_0
+    SLICE_X94Y471        LUT6 (Prop_D6LUT_SLICEL_I0_O)
+                                                      0.036     7.297 r  f[78]_INST_0_i_6/O
+                         net (fo=2, routed)           0.044     7.341    p_274_in
+    SLICE_X94Y471        LUT6 (Prop_E6LUT_SLICEL_I5_O)
+                                                      0.035     7.376 r  f[83]_INST_0_i_7/O
+                         net (fo=1, routed)           0.380     7.756    f[83]_INST_0_i_7_n_0
+    SLICE_X91Y496        LUT6 (Prop_E6LUT_SLICEL_I0_O)
+                                                      0.035     7.791 r  f[83]_INST_0_i_6/O
+                         net (fo=2, routed)           0.044     7.835    p_249_in
+    SLICE_X91Y496        LUT6 (Prop_C6LUT_SLICEL_I5_O)
+                                                      0.035     7.870 r  f[88]_INST_0_i_7/O
+                         net (fo=1, routed)           0.088     7.958    f[88]_INST_0_i_7_n_0
+    SLICE_X90Y496        LUT6 (Prop_C6LUT_SLICEM_I0_O)
+                                                      0.037     7.995 r  f[88]_INST_0_i_6/O
+                         net (fo=2, routed)           0.099     8.094    p_224_in
+    SLICE_X90Y498        LUT6 (Prop_C6LUT_SLICEM_I5_O)
+                                                      0.037     8.131 r  f[93]_INST_0_i_7/O
+                         net (fo=1, routed)           0.040     8.171    f[93]_INST_0_i_7_n_0
+    SLICE_X90Y498        LUT6 (Prop_D6LUT_SLICEM_I0_O)
+                                                      0.037     8.208 r  f[93]_INST_0_i_6/O
+                         net (fo=2, routed)           0.042     8.250    p_199_in
+    SLICE_X90Y498        LUT6 (Prop_F6LUT_SLICEM_I5_O)
+                                                      0.037     8.287 r  f[98]_INST_0_i_7/O
+                         net (fo=1, routed)           0.040     8.327    f[98]_INST_0_i_7_n_0
+    SLICE_X90Y498        LUT6 (Prop_G6LUT_SLICEM_I0_O)
+                                                      0.037     8.364 r  f[98]_INST_0_i_6/O
+                         net (fo=2, routed)           0.052     8.416    p_174_in
+    SLICE_X90Y498        LUT6 (Prop_H6LUT_SLICEM_I5_O)
+                                                      0.053     8.469 r  f[103]_INST_0_i_7/O
+                         net (fo=1, routed)           0.091     8.560    f[103]_INST_0_i_7_n_0
+    SLICE_X90Y499        LUT6 (Prop_A6LUT_SLICEM_I0_O)
+                                                      0.038     8.598 r  f[103]_INST_0_i_6/O
+                         net (fo=2, routed)           0.047     8.645    p_149_in
+    SLICE_X90Y499        LUT6 (Prop_C6LUT_SLICEM_I5_O)
+                                                      0.037     8.682 r  f[108]_INST_0_i_7/O
+                         net (fo=1, routed)           0.040     8.722    f[108]_INST_0_i_7_n_0
+    SLICE_X90Y499        LUT6 (Prop_D6LUT_SLICEM_I0_O)
+                                                      0.037     8.759 r  f[108]_INST_0_i_6/O
+                         net (fo=2, routed)           0.042     8.801    p_124_in
+    SLICE_X90Y499        LUT6 (Prop_F6LUT_SLICEM_I5_O)
+                                                      0.037     8.838 r  f[113]_INST_0_i_7/O
+                         net (fo=1, routed)           0.805     9.643    f[113]_INST_0_i_7_n_0
+    SLICE_X69Y534        LUT6 (Prop_A6LUT_SLICEL_I0_O)
+                                                      0.035     9.678 r  f[113]_INST_0_i_6/O
+                         net (fo=2, routed)           0.044     9.722    p_99_in
+    SLICE_X69Y534        LUT6 (Prop_C6LUT_SLICEL_I5_O)
+                                                      0.035     9.757 r  f[118]_INST_0_i_7/O
+                         net (fo=1, routed)           0.094     9.851    f[118]_INST_0_i_7_n_0
+    SLICE_X69Y536        LUT6 (Prop_A6LUT_SLICEL_I0_O)
+                                                      0.035     9.886 r  f[118]_INST_0_i_6/O
+                         net (fo=2, routed)           0.366    10.252    p_74_in
+    SLICE_X61Y536        LUT6 (Prop_A6LUT_SLICEL_I5_O)
+                                                      0.035    10.287 r  f[123]_INST_0_i_7/O
+                         net (fo=1, routed)           0.040    10.327    f[123]_INST_0_i_7_n_0
+    SLICE_X61Y536        LUT6 (Prop_C6LUT_SLICEL_I0_O)
+                                                      0.035    10.362 r  f[123]_INST_0_i_6/O
+                         net (fo=2, routed)           0.302    10.664    p_49_in
+    SLICE_X57Y539        LUT5 (Prop_A6LUT_SLICEL_I0_O)
+                                                      0.035    10.699 r  f[123]_INST_0_i_5/O
+                         net (fo=1, routed)           0.148    10.847    p_39_in
+    SLICE_X57Y543        LUT5 (Prop_A6LUT_SLICEL_I0_O)
+                                                      0.035    10.882 r  f[123]_INST_0_i_4/O
+                         net (fo=2, routed)           0.046    10.928    p_29_in
+    SLICE_X57Y543        LUT5 (Prop_C6LUT_SLICEL_I0_O)
+                                                      0.035    10.963 r  f[124]_INST_0_i_4/O
+                         net (fo=2, routed)           0.138    11.101    p_19_in
+    SLICE_X57Y546        LUT5 (Prop_C6LUT_SLICEL_I4_O)
+                                                      0.035    11.136 r  f[125]_INST_0_i_1/O
+                         net (fo=1, routed)           1.153    12.289    f[125]_INST_0_i_1_n_0
+    J26                  OBUF (Prop_OUTBUF_HPIOB_S_I_O)
+                                                      0.946    13.236 r  f[125]_INST_0/O
+                         net (fo=0)                   0.000    13.236    f[125]
+    J26                                                               r  f[125] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                    5.000     5.000    
+                         output delay                -0.000     5.000    
+  -------------------------------------------------------------------
+                         required time                          5.000    
+                         arrival time                         -13.236    
+  -------------------------------------------------------------------
+                         slack                                 -8.236    
+
+
+
+

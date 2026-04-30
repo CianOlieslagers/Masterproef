@@ -1,0 +1,387 @@
+{
+  "phase": "FASE 2",
+  "phase2_status": "PASS",
+  "baseline_dcp": "/home/cian/Masterproef/project/results/run_lut_insertion/TestDirectory/baseline_impl/checkpoints/post_route_timingexp.dcp",
+  "phase1_json": "/home/cian/Masterproef/project/results/general_flow_runs/candidate_sweep_2026-04-28_18-47-52_eco_rank1_lutupgrade/runs/2026-04-28_19-28-58_eco_rank1_lutupgrade_rank008/01_phase1_timing_edges/phase1_lut_timing_edges.json",
+  "part": "",
+  "selected_edge": {
+    "source_cell": "f[13]_INST_0_i_7",
+    "source_pin": "f[13]_INST_0_i_7/O",
+    "sink_cell": "f[13]_INST_0_i_6",
+    "sink_pin": "f[13]_INST_0_i_6/I0",
+    "net": "f[13]_INST_0_i_7_n_0",
+    "interconnect_delay_ps": 207
+  },
+  "limits": {
+    "max_luts": 5,
+    "max_boundary_inputs": 12,
+    "max_boundary_outputs": 2
+  },
+  "summary": {
+    "num_luts": 3,
+    "num_internal_edges": 2,
+    "num_boundary_inputs": 12,
+    "num_boundary_outputs": 1,
+    "contains_only_luts": true,
+    "contains_lut6_2": false,
+    "contains_forbidden": false,
+    "selected_edge_inside_window": true,
+    "window_graph_acyclic": true
+  },
+  "luts": [
+    {
+      "cell": "f[13]_INST_0_i_7",
+      "ref": "LUT6",
+      "loc": "SLICE_X103Y473",
+      "bel": "SLICEL.F6LUT",
+      "site": "SLICE_X103Y473",
+      "site_x": 103,
+      "site_y": 473,
+      "init": "64'h022A2A2A0202022A",
+      "is_source": true,
+      "is_sink": false,
+      "input_count": 6,
+      "output_pin": "f[13]_INST_0_i_7/O",
+      "fanout": 1
+    },
+    {
+      "cell": "f[13]_INST_0_i_6",
+      "ref": "LUT6",
+      "loc": "SLICE_X103Y481",
+      "bel": "SLICEL.H6LUT",
+      "site": "SLICE_X103Y481",
+      "site_x": 103,
+      "site_y": 481,
+      "init": "64'h00000EEF0EEFFFFF",
+      "is_source": false,
+      "is_sink": true,
+      "input_count": 6,
+      "output_pin": "f[13]_INST_0_i_6/O",
+      "fanout": 2
+    },
+    {
+      "cell": "f[13]_INST_0_i_8",
+      "ref": "LUT2",
+      "loc": "SLICE_X103Y481",
+      "bel": "SLICEL.E6LUT",
+      "site": "SLICE_X103Y481",
+      "site_x": 103,
+      "site_y": 481,
+      "init": "4'h1",
+      "is_source": false,
+      "is_sink": false,
+      "input_count": 2,
+      "output_pin": "f[13]_INST_0_i_8/O",
+      "fanout": 1
+    }
+  ],
+  "internal_edges": [
+    {
+      "source_cell": "f[13]_INST_0_i_7",
+      "source_pin": "f[13]_INST_0_i_7/O",
+      "source_ref_pin": "O",
+      "sink_cell": "f[13]_INST_0_i_6",
+      "sink_pin": "f[13]_INST_0_i_6/I0",
+      "sink_ref_pin": "I0",
+      "net": "f[13]_INST_0_i_7_n_0",
+      "fanout": 1,
+      "interconnect_delay_ps": 207,
+      "manhattan_distance": 8,
+      "selected_edge": true
+    },
+    {
+      "source_cell": "f[13]_INST_0_i_8",
+      "source_pin": "f[13]_INST_0_i_8/O",
+      "source_ref_pin": "O",
+      "sink_cell": "f[13]_INST_0_i_6",
+      "sink_pin": "f[13]_INST_0_i_6/I1",
+      "sink_ref_pin": "I1",
+      "net": "f[13]_INST_0_i_8_n_0",
+      "fanout": 1,
+      "interconnect_delay_ps": 87,
+      "manhattan_distance": 0,
+      "selected_edge": false
+    }
+  ],
+  "boundary_inputs": [
+    {
+      "boundary_index": 1,
+      "net": "n4240607_in",
+      "driver_kind": "CELL",
+      "driver_cell": "f[13]_INST_0_i_9",
+      "driver_pin": "f[13]_INST_0_i_9/O",
+      "driver_port": "",
+      "connection_count": 1
+    },
+    {
+      "boundary_index": 2,
+      "net": "f[4]_INST_0_i_3_n_0",
+      "driver_kind": "CELL",
+      "driver_cell": "f[4]_INST_0_i_3",
+      "driver_pin": "f[4]_INST_0_i_3/O",
+      "driver_port": "",
+      "connection_count": 1
+    },
+    {
+      "boundary_index": 3,
+      "net": "f[4]_INST_0_i_2_n_0",
+      "driver_kind": "CELL",
+      "driver_cell": "f[4]_INST_0_i_2",
+      "driver_pin": "f[4]_INST_0_i_2/O",
+      "driver_port": "",
+      "connection_count": 1
+    },
+    {
+      "boundary_index": 4,
+      "net": "f[3]_INST_0_i_3_n_0",
+      "driver_kind": "CELL",
+      "driver_cell": "f[3]_INST_0_i_3",
+      "driver_pin": "f[3]_INST_0_i_3/O",
+      "driver_port": "",
+      "connection_count": 1
+    },
+    {
+      "boundary_index": 5,
+      "net": "f[3]_INST_0_i_2_n_0",
+      "driver_kind": "CELL",
+      "driver_cell": "f[3]_INST_0_i_2",
+      "driver_pin": "f[3]_INST_0_i_2/O",
+      "driver_port": "",
+      "connection_count": 1
+    },
+    {
+      "boundary_index": 6,
+      "net": "p_624_in",
+      "driver_kind": "CELL",
+      "driver_cell": "f[3]_INST_0_i_4",
+      "driver_pin": "f[3]_INST_0_i_4/O",
+      "driver_port": "",
+      "connection_count": 1
+    },
+    {
+      "boundary_index": 7,
+      "net": "f[6]_INST_0_i_2_n_0",
+      "driver_kind": "CELL",
+      "driver_cell": "f[6]_INST_0_i_2",
+      "driver_pin": "f[6]_INST_0_i_2/O",
+      "driver_port": "",
+      "connection_count": 1
+    },
+    {
+      "boundary_index": 8,
+      "net": "f[6]_INST_0_i_3_n_0",
+      "driver_kind": "CELL",
+      "driver_cell": "f[6]_INST_0_i_3",
+      "driver_pin": "f[6]_INST_0_i_3/O",
+      "driver_port": "",
+      "connection_count": 1
+    },
+    {
+      "boundary_index": 9,
+      "net": "f[7]_INST_0_i_2_n_0",
+      "driver_kind": "CELL",
+      "driver_cell": "f[7]_INST_0_i_2",
+      "driver_pin": "f[7]_INST_0_i_2/O",
+      "driver_port": "",
+      "connection_count": 1
+    },
+    {
+      "boundary_index": 10,
+      "net": "f[7]_INST_0_i_3_n_0",
+      "driver_kind": "CELL",
+      "driver_cell": "f[7]_INST_0_i_3",
+      "driver_pin": "f[7]_INST_0_i_3/O",
+      "driver_port": "",
+      "connection_count": 1
+    },
+    {
+      "boundary_index": 11,
+      "net": "f[5]_INST_0_i_3_n_0",
+      "driver_kind": "CELL",
+      "driver_cell": "f[5]_INST_0_i_3",
+      "driver_pin": "f[5]_INST_0_i_3/O",
+      "driver_port": "",
+      "connection_count": 1
+    },
+    {
+      "boundary_index": 12,
+      "net": "f[5]_INST_0_i_2_n_0",
+      "driver_kind": "CELL",
+      "driver_cell": "f[5]_INST_0_i_2",
+      "driver_pin": "f[5]_INST_0_i_2/O",
+      "driver_port": "",
+      "connection_count": 1
+    }
+  ],
+  "boundary_input_connections": [
+    {
+      "boundary_index": 1,
+      "net": "n4240607_in",
+      "sink_cell": "f[13]_INST_0_i_7",
+      "sink_pin": "f[13]_INST_0_i_7/I0",
+      "sink_ref_pin": "I0"
+    },
+    {
+      "boundary_index": 2,
+      "net": "f[4]_INST_0_i_3_n_0",
+      "sink_cell": "f[13]_INST_0_i_7",
+      "sink_pin": "f[13]_INST_0_i_7/I1",
+      "sink_ref_pin": "I1"
+    },
+    {
+      "boundary_index": 3,
+      "net": "f[4]_INST_0_i_2_n_0",
+      "sink_cell": "f[13]_INST_0_i_7",
+      "sink_pin": "f[13]_INST_0_i_7/I2",
+      "sink_ref_pin": "I2"
+    },
+    {
+      "boundary_index": 4,
+      "net": "f[3]_INST_0_i_3_n_0",
+      "sink_cell": "f[13]_INST_0_i_7",
+      "sink_pin": "f[13]_INST_0_i_7/I3",
+      "sink_ref_pin": "I3"
+    },
+    {
+      "boundary_index": 5,
+      "net": "f[3]_INST_0_i_2_n_0",
+      "sink_cell": "f[13]_INST_0_i_7",
+      "sink_pin": "f[13]_INST_0_i_7/I4",
+      "sink_ref_pin": "I4"
+    },
+    {
+      "boundary_index": 6,
+      "net": "p_624_in",
+      "sink_cell": "f[13]_INST_0_i_7",
+      "sink_pin": "f[13]_INST_0_i_7/I5",
+      "sink_ref_pin": "I5"
+    },
+    {
+      "boundary_index": 7,
+      "net": "f[6]_INST_0_i_2_n_0",
+      "sink_cell": "f[13]_INST_0_i_6",
+      "sink_pin": "f[13]_INST_0_i_6/I2",
+      "sink_ref_pin": "I2"
+    },
+    {
+      "boundary_index": 8,
+      "net": "f[6]_INST_0_i_3_n_0",
+      "sink_cell": "f[13]_INST_0_i_6",
+      "sink_pin": "f[13]_INST_0_i_6/I3",
+      "sink_ref_pin": "I3"
+    },
+    {
+      "boundary_index": 9,
+      "net": "f[7]_INST_0_i_2_n_0",
+      "sink_cell": "f[13]_INST_0_i_6",
+      "sink_pin": "f[13]_INST_0_i_6/I4",
+      "sink_ref_pin": "I4"
+    },
+    {
+      "boundary_index": 10,
+      "net": "f[7]_INST_0_i_3_n_0",
+      "sink_cell": "f[13]_INST_0_i_6",
+      "sink_pin": "f[13]_INST_0_i_6/I5",
+      "sink_ref_pin": "I5"
+    },
+    {
+      "boundary_index": 11,
+      "net": "f[5]_INST_0_i_3_n_0",
+      "sink_cell": "f[13]_INST_0_i_8",
+      "sink_pin": "f[13]_INST_0_i_8/I0",
+      "sink_ref_pin": "I0"
+    },
+    {
+      "boundary_index": 12,
+      "net": "f[5]_INST_0_i_2_n_0",
+      "sink_cell": "f[13]_INST_0_i_8",
+      "sink_pin": "f[13]_INST_0_i_8/I1",
+      "sink_ref_pin": "I1"
+    }
+  ],
+  "boundary_outputs": [
+    {
+      "boundary_index": 1,
+      "source_cell": "f[13]_INST_0_i_6",
+      "source_pin": "f[13]_INST_0_i_6/O",
+      "source_ref_pin": "O",
+      "net": "p_599_in",
+      "outside_load_count": 2,
+      "outside_loads": "f[13]_INST_0_i_5/I0|f[18]_INST_0_i_7/I5",
+      "outside_port_count": 0,
+      "outside_ports": ""
+    }
+  ],
+  "validation_checks": [
+    {
+      "check": "source_cell_exists",
+      "status": "PASS",
+      "detail": "f[13]_INST_0_i_7"
+    },
+    {
+      "check": "sink_cell_exists",
+      "status": "PASS",
+      "detail": "f[13]_INST_0_i_6"
+    },
+    {
+      "check": "source_is_simple_lut",
+      "status": "PASS",
+      "detail": "LUT6"
+    },
+    {
+      "check": "sink_is_simple_lut",
+      "status": "PASS",
+      "detail": "LUT6"
+    },
+    {
+      "check": "max_luts",
+      "status": "PASS",
+      "detail": "num_luts=3 <= max_luts=5"
+    },
+    {
+      "check": "max_boundary_inputs",
+      "status": "PASS",
+      "detail": "num_boundary_inputs=12 <= max_boundary_inputs=12"
+    },
+    {
+      "check": "max_boundary_outputs",
+      "status": "PASS",
+      "detail": "num_boundary_outputs=1 <= max_boundary_outputs=2"
+    },
+    {
+      "check": "contains_only_luts",
+      "status": "PASS",
+      "detail": "all included cells are LUT1-LUT6"
+    },
+    {
+      "check": "no_lut6_2",
+      "status": "PASS",
+      "detail": "no LUT6_2 cells in window"
+    },
+    {
+      "check": "no_forbidden_primitives",
+      "status": "PASS",
+      "detail": "no CARRY/DSP/BRAM/SRL/RAMD/FF included"
+    },
+    {
+      "check": "selected_edge_inside_window",
+      "status": "PASS",
+      "detail": "selected edge is an internal window edge"
+    },
+    {
+      "check": "window_graph_acyclic",
+      "status": "PASS",
+      "detail": "internal LUT graph is acyclic"
+    },
+    {
+      "check": "all_luts_have_init",
+      "status": "PASS",
+      "detail": "INIT present for every LUT"
+    },
+    {
+      "check": "all_lut_inputs_classified",
+      "status": "PASS",
+      "detail": "every LUT input is internal or boundary"
+    }
+  ]
+}

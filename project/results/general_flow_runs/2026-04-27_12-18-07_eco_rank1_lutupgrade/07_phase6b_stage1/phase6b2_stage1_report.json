@@ -1,0 +1,8 @@
+{
+  "phase": "FASE 6B.2 stage1",
+  "status": "PASS",
+  "input_dcp": "/home/cian/Masterproef/project/results/run_lut_insertion/TestDirectory/baseline_impl/checkpoints/post_route_timingexp.dcp",
+  "output_dcp": "/home/cian/Masterproef/project/results/general_flow_runs/2026-04-27_12-18-07_eco_rank1_lutupgrade/07_phase6b_stage1/phase6b2_stage1_upgraded_inits.dcp",
+  "fail_message": "",
+  "ok_write_dcp": true
+}
